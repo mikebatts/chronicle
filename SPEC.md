@@ -1,57 +1,105 @@
 # Chronicle — Product & Technical Specification
 
-**Status:** Planning complete, ready for build  
+**Status:** Planning complete, spec locked  
 **Last updated:** March 29, 2026  
-**Domain:** thischronicle.com (secured)  
-**Discord channel:** #chronicle
+**Domain:** thischronicle.com (secured, $10/yr)  
+**Discord channel:** #chronicle  
+**GitHub:** romulus-silvius/chronicle
 
 ---
 
-## PRODUCT RECAP
+## THE PRODUCT
 
-**What it is:** A daily history guessing game. One historical event per day. One image. Guess the year in 3 attempts.
+Chronicle is a daily history guessing game. One historical event per day. One image. Guess the year in 3 attempts.
 
 **Core mechanic:**
 - Year input field (not a slider) — committed guess, higher stakes
 - Attempt 1: Image + headline only (cold)
-- Attempt 2: One contextual clue appears
-- Attempt 3: Second clue, more specific
-- "Too early" / "Too late" directional feedback after each wrong guess
-- Scoring: smooth curve (10yr off = 900pts, 25yr off = 700pts, 50yr off = 400pts)
+- Wrong guess → "Too early" / "Too late" directional feedback
+- Attempt 2: First contextual clue appears
+- Attempt 3: Second clue (more specific)
+- Correct guess OR attempts exhausted → result screen + share card
 
-**Difficulty arc (Mon–Sun):**
+**Difficulty arc (Mon–Sun baked into puzzle data):**
 - Monday: Warm, guiding clues
 - Tue/Wed: Breadcrumb clues
 - Thu/Fri: Tighter, more cryptic
 - Saturday: One oblique clue
 - Sunday: NO CLUES — pure knowledge, prestige badge
 
-**The share card IS the product:**
+---
+
+## THE SHARE CARD — LOCKED DESIGN
+
+This is the most important feature. The share text is pre-approved. Do not change it.
+
+**Win (3 attempts used):**
 ```
 Chronicle #47 📜 🔥12
 🔴→🟡→✅
 thischronicle.com
 ```
 
-**Fail share:**
+**Win (first try):**
+```
+Chronicle #47 📜 🔥12
+✅ ⬜ ⬜
+thischronicle.com
+```
+
+**Fail (lost):**
 ```
 Chronicle #47 📜 💔
 🔴→🟠→🟡
 thischronicle.com
 ```
 
-No year reveal on fail — preserves the mystery for friends who haven't played yet.
+**The emoji key:**
+- ✅ = exact year
+- 🟢 = within 5 years
+- 🟡 = within 15 years
+- 🟠 = within 30 years
+- 🔴 = 30+ years off
+- ⬜ = attempt not used
 
-**Stats modal (mirrors Wordle):**
-- Played, Win %, Current Streak, Max Streak
-- **Chronicle-specific:** Avg Distance (average years off across all wins)
-- Guess distribution bar chart
+**Rules:**
+- Never reveal the year in fail share (preserves mystery for friends who haven't played)
+- The URL in share text is `thischronicle.com`
+- The 📜 scroll emoji is the Chronicle signature
 
-**Social layer:** Crews (private groups of 10-30, weekly standings)
+---
 
-**Monetization:** Free forever. No ads. Optional Ko-fi tip jar for superfans.
+## STATS MODAL — LOCKED FORMAT
 
-**Acquisition target:** NYT Games. Clean code, D7/D30/D90 retention metrics, editorial quality.
+Mirrors Wordle's stat screen. Shows:
+
+```
+Played: 47
+Win %: 83
+
+Current Streak: 12 🔥
+Max Streak: 19
+
+Avg Distance: 11 yrs ← Chronicle-specific
+
+Guess Distribution:
+1 ██████ 14%
+2 ████████████ 52%
+3 ███████ 31%
+✗ ██ 3%
+```
+
+**Chronicle-specific stat:** Avg Distance — average years off across all wins. People brag about this.
+
+---
+
+## GAME GOALS
+
+**Free forever.** No ads, no paywall, no "play 3 free per day."
+
+**Shooting for NYT acquisition.** Clean code, D7/D30/D90 retention metrics, editorial quality. The NYT has Wordle, Connections, Spelling Bee, Strands — no history game. That's the gap.
+
+**Monetization (post-acquisition only):** Ko-fi tip jar for superfans. No paid tier, no ads.
 
 ---
 
@@ -59,252 +107,146 @@ No year reveal on fail — preserves the mystery for friends who haven't played 
 
 **Frontend:** Next.js (App Router) + Tailwind CSS  
 **Hosting:** Vercel (free tier, auto-scales)  
-**Game state:** localStorage only (no backend for V1)  
+**Game state:** localStorage only (no backend, no auth, no database for V1)  
 **Analytics:** Plausible.io ($9/mo) — privacy-first, shows DAU + retention  
 **Domain:** thischronicle.com  
 
-**Static generation model:** Puzzle content lives as a JSON file committed to the repo. Each day's puzzle is pre-rendered at build time. Zero server-side rendering overhead. Zero database cost. This is exactly how Wordle worked pre-acquisition.
+**Static generation model:** Puzzle content lives as a JSON file committed to the repo. Each day's puzzle is pre-rendered at build time. Zero server-side overhead. Zero database cost. Exactly how Wordle worked pre-acquisition.
 
 ---
 
-## PUZZLE GENERATION — THE CORE MOAT
+## PUZZLE GENERATION PIPELINE
 
-### Content tiers
+**Phase 1 (launch):** Hand-curated seed set (90 puzzles)  
+**Phase 2 (from day one):** AI-assisted generation + human editor
+
+### The Pipeline
+
+A Node.js script (`scripts/generate-puzzles.ts`) that:
+1. Calls an LLM API (Claude via OpenRouter) with a structured prompt
+2. Outputs candidate puzzles to a staging file
+3. Human editor reviews candidates against a checklist
+4. Approved puzzles get added to `data/puzzles.json`
+
+### The Generation Prompt
+
+```
+Generate a historically significant event puzzle with:
+- event_name, year (1900-2025, verifiable on Wikipedia)
+- headline (engaging, NO year mentioned)
+- clues for each day of week (Mon = warm, Sunday = none)
+- context_card (2-3 sentences, editorial voice, no year in first sentence)
+- tier (1/2/3), difficulty_rating (1-10)
+
+Rules:
+- Clues must narrow the window without giving it away
+- Context must be historically accurate and engaging
+- Year must be verifiable on Wikipedia
+- No tier-3 anchor events without a specific date alignment
+- Tier 1: Universally known era, surprising specifics
+- Tier 2: Obscure but fascinating (1-2x per week)
+- Tier 3: Anchor events on actual anniversary dates
+```
+
+### The Accuracy Checklist
+
+Every puzzle goes through human review:
+
+- [ ] Year is correct and verifiable on Wikipedia
+- [ ] Image exists on Wikimedia Commons (public domain)
+- [ ] Image is unambiguous — depicts the event clearly
+- [ ] Clues don't give away the year
+- [ ] Clues are historically accurate
+- [ ] Context card is engaging (not just Wikipedia text)
+- [ ] Difficulty rating is appropriate for the day
+
+### Content Tiers
 
 **Tier 1 — Universally known era, surprising specifics (most daily puzzles)**
-Easy to get in the right decade, hard to nail the exact year.
+Easy to get in the right decade, hard to nail exact year.
 Example: "The Berlin Wall falls" → Cold War era, but was it '88, '89, or '90?
 
 **Tier 2 — Obscure but fascinating (1-2x per week)**
-Genuinely surprising facts. "The first iPhone prototype was shown internally at Apple — but when?"
-Creates the "I had no idea" moment that drives word-of-mouth.
+Genuinely surprising facts that create "I had no idea" moments.
 
 **Tier 3 — Anchor events (rare, date-specific)**
-Run on actual anniversary dates. Moon landing → July 20th. MLK speech → August 28th.
-Creates "today in history" resonance and press hook potential.
-
-### Clue writing methodology
-
-The clue is the editorial craft. Each clue must:
-- Narrow the window without giving it away
-- Be historically accurate and interesting on its own
-- Match the day's difficulty level
-
-**Clue tightness by day:**
-
-| Day | Clue 1 | Clue 2 |
-|-----|--------|--------|
-| Monday | Broad context ("during a U.S. presidential election year") | Warm guidance ("the Cold War was ending") |
-| Tuesday | Economic context | Cultural milestone |
-| Wednesday | geopolitical framing | Specific decade signal |
-| Thursday | Tight single clue | — |
-| Friday | Tight single clue | — |
-| Saturday | Oblique, almost poetic ("the world was watching something else that day") | — |
-| Sunday | NO CLUES | NO CLUES |
-
-### AI-assisted content generation pipeline
-
-**Phase 1 (V1 launch):** Hand-curated seed set of 100 puzzles covering diverse eras, geographies, domains (politics, science, culture, sports, art). This establishes quality baseline and editorial voice.
-
-**Phase 2 (Scaling to 365):** Use AI to generate candidates, human editor reviews and refines.
-
-**Prompt structure for AI candidate generation:**
-```
-Generate a historically significant event with the following fields:
-- event_name: formal name of the event
-- year: exact year (must be verifiable)
-- image_description: described for Wikimedia Commons search (e.g., "1969 moon landing NASA astronaut on lunar surface")
-- clue_monday_1: broad contextual clue
-- clue_monday_2: guiding clue
-- clue_tuesday_1, clue_tuesday_2: progressively tighter
-- [repeat for each day]
-- context_card: 2-3 sentence engaging context about why this year mattered (written like a good tweet from a history professor)
-- tier: 1, 2, or 3
-- difficulty_rating: 1-10 (how hard to guess the exact year)
-
-Rules:
-- Year must be between 1900-2025
-- Event must have a verifiable Wikipedia page
-- Clues must not directly reveal the year
-- Clues must be historically accurate and interesting on their own
-- Do not generate events that are extremely famous (moon landing = tier 3 only)
-```
-
-**Human editor review checklist:**
-- [ ] Year is correct and verifiable
-- [ ] Image exists on Wikimedia Commons (public domain)
-- [ ] Clues don't give away the answer
-- [ ] Clues are historically accurate
-- [ ] Context card is engaging, not just Wikipedia text
-- [ ] Difficulty rating is appropriate for the day
-
-### Editorial calendar
-
-Build 90-day rolling calendar before launch. Ensures:
-- No clashing with major real-world events
-- Diverse era/geography distribution
-- Tier 2 puzzles spaced 1-2x per week
-- Tier 3 anchors on actual anniversary dates
+Run on actual anniversaries. Moon landing → July 20th. MLK speech → August 28th.
 
 ---
 
-## IMAGE SOURCING & MATCHING
+## IMAGE SOURCING — DISCIPLINED APPROACH
 
-### Source: Wikimedia Commons
+**Source:** Wikimedia Commons only. Public domain, permanent URLs, no licensing risk.
 
-All images from Wikimedia Commons. Public domain, zero licensing risk, permanent URLs, no hotlink protection issues.
+**Why Wikimedia:**
+- Public domain / CC-licensed content
+- Permanent URLs (the image won't disappear)
+- Most major historical events have their iconic photo there
+- Zero licensing ambiguity
 
-**Image requirements:**
-- Public domain (license tags: PD, CC0, CC-BY, CC-BY-SA with low complexity)
-- Minimum 1200px wide (crisp on retina)
-- High contrast (readable as small thumbnail)
+**Pipeline:**
+1. Find the event on Wikipedia → check "Media" section for the iconic image
+2. Locate it on Wikimedia Commons → verify license (PD, CC0, CC-BY with low complexity)
+3. Download → optimize to WebP (≥1200px wide, <200KB)
+4. Store in `/public/images/puzzles/` — NOT hotlinked, lives in the repo
+5. Add attribution to the context card
+
+**Fallback sources:**
+- National Archives (archives.gov)
+- Getty Open Access
+- Smithsonian Open Access
+
+**Quality rules:**
+- ≥1200px wide, crisp on retina
+- High contrast, readable as small thumbnail
+- No date watermarks that give away the year
 - Unambiguous — clearly depicts the event
 
-**Search strategy:**
-1. Wikipedia event page → "Media" section → almost always has the iconic image
-2. Wikimedia Commons search by event name + year
-3. Direct search: `site:commons.wikimedia.org [event name] [year]`
-
-**Image pipeline:**
-1. Editor selects image during puzzle curation
-2. Download + optimize (WebP, 1200px wide, <200KB)
-3. Store in `/public/images/puzzles/` with puzzle ID as filename
-4. Wikimedia attribution added to context card (required by most licenses)
-
-**Fallback:** If no good Wikimedia image exists, use a well-known public domain photograph from a verified museum collection (National Archives, Getty Open, Smithsonian Open Access).
-
-### Image verification checklist
-
-- [ ] Image is public domain or CC-licensed
-- [ ] Wikimedia attribution noted for context card
-- [ ] Image is unambiguous — someone who doesn't know the event can identify it depicts the right thing
-- [ ] Image doesn't reveal the year in text/date watermark
-- [ ] Image is 1200px+, compresses to <200KB WebP
+**What we cannot do:** Scrape random historical photos. Quality inconsistent, licensing unclear, URLs go dead.
 
 ---
 
-## ACCURACY VALIDATION
+## 365-PUZZLE PLAN
 
-### Year accuracy
+**Month 1 (before launch):** Generate 90 candidates → editor reviews → 75 approved → launch-ready
 
-Every puzzle year must be verified against a primary source.
+**Month 2-3:** Generate remaining candidates in batches of 30-50 → review → add to JSON
 
-**Verification priority:**
-1. Wikipedia (most events have accurate year)
-2. Primary source documents (official records, archives)
-3. Academic consensus
-
-**Red flags:**
-- Events with disputed dates (flag for editor review)
-- Events that spanned multiple years (specify which year is the puzzle year)
-- BC/BCE dates (avoid for V1, too complex)
-
-### Clue accuracy
-
-Each clue must be independently fact-checkable. If a clue references a specific person, event, or timeframe — that reference must be accurate.
-
-**Editor review:** Every clue reviewed by human editor before inclusion. Editor has history background or access to a fact-check resource.
-
-### Context card accuracy
-
-Context cards are editorial, not just factual. They tell a story. But the facts within must be accurate.
-
-**Style guide for context cards:**
-- Write like a smart friend who loves history, not a textbook
-- 2-3 sentences, ~80 words max
-- One surprising detail that reframes how you see the event
-- No date/year in the first sentence (save the reveal)
-- Example: "The Dow didn't just drop — it erased three years of gains in a single afternoon. Banks were hemorrhaging cash, and the Fed's emergency rate cuts couldn't stop the bleeding. Investors were so spooked that some stopped answering their phones."
+**Ongoing (post-launch):** Generate 30 days ahead, always maintain 30-puzzle buffer. Never publish un-reviewed puzzles.
 
 ---
 
-## DATA SCHEMA
+## WHAT STAYS STATIC FOREVER
 
-### Puzzle JSON (`/data/puzzles.json`)
+These decisions are architectural and don't change:
 
-```json
-{
-  "puzzles": [
-    {
-      "id": 1,
-      "date": "2026-04-07",
-      "day_of_week": "tuesday",
-      "event": "The Berlin Wall Falls",
-      "event_formal": "Fall of the Berlin Wall",
-      "year": 1989,
-      "image": "/images/puzzles/001.webp",
-      "image_attribution": " Wikimedia Commons / Bundesarchiv",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:BerlinWall-BrandenburgGate.jpg",
-      "headline": "A wall that divided a city for 28 years finally comes down",
-      "tier": 1,
-      "difficulty_rating": 4,
-      "clues": {
-        "monday": [
-          "This happened during the final chapter of a decades-long geopolitical standoff.",
-          "The leader of the Soviet Union had recently introduced sweeping reforms."
-        ],
-        "tuesday": [
-          "This occurred in a year of significant economic upheaval.",
-          "A cultural milestone in this same year changed music forever."
-        ],
-        "wednesday": [
-          "This was a major geopolitical event in the latter half of the 20th century.",
-          "The year saw significant changes in European governance."
-        ],
-        "thursday": "This occurred in the second half of the 20th century.",
-        "friday": "A major Cold War milestone fell in this year.",
-        "saturday": "The world was watching something else unfold that day."
-      },
-      "context_card": "For 28 years, Checkpoint Charlie was the defining symbol of the Cold War. On November 9th, 1989, a confused bureaucrat announced that East Germans could cross freely — and thousands flooded through. No one had planned the announcement. The wall fell because the system was already crumbling.",
-      "reveal_year": 1989
-    }
-  ]
-}
-```
+- **Game data:** JSON file in repo — no database, no API
+- **Game state:** localStorage — streaks, stats, today's play
+- **No user accounts** — NYT adds these on acquisition
+- **No ads, ever** — signals we know what we're building
+- **No paid tier** — free forever, revenue comes post-acquisition
 
-### localStorage schema (game state)
+**This is the NYT-friendly architecture:** clean code, proven retention mechanics, zero infra complexity, fast technical due diligence.
 
-```json
-{
-  "chronicle_state": {
-    "played": 47,
-    "wins": 39,
-    "losses": 8,
-    "current_streak": 12,
-    "max_streak": 19,
-    "total_distance": 287,
-    "wins_with_distance": 39,
-    "guess_distribution": {
-      "1": 6,
-      "2": 20,
-      "3": 13
-    },
-    "last_played": "2026-03-28",
-    "last_result": "win",
-    "last_guess_count": 2,
-    "last_distance": 8
-  }
-}
-```
+---
 
-### Puzzle of the day resolution (client-side)
+## ANALYTICS
 
-```javascript
-// Today's puzzle = puzzle where puzzle.date === today's date (YYYY-MM-DD)
-// This runs entirely client-side — no API call needed
-const today = new Date().toISOString().split('T')[0];
-const todaysPuzzle = puzzles.find(p => p.date === today);
-```
+**Plausible.io ($9/mo):** Privacy-first, shows DAU, D7/D30/D90 retention, share events.
+
+The metrics NYT will ask for in due diligence:
+- Daily active users
+- D7 retention (% still playing after 7 days)
+- D30 retention (% still playing after 30 days)
+- Share event rate (% sharing their result)
 
 ---
 
 ## BUILD ROADMAP
 
-### Phase 1 — Core loop (Week 1-2)
-
-**In scope:**
+### Phase 1 — Core Loop (Week 1-2)
 - Next.js app scaffold with Tailwind
-- Puzzle JSON with 90-day curated set
+- 90-puzzle curated set (real puzzles, real images)
 - Year input with 3-attempt logic
 - Directional feedback ("too early" / "too late")
 - Clue reveal system (progressive)
@@ -315,17 +257,13 @@ const todaysPuzzle = puzzles.find(p => p.date === today);
 - Mobile-first responsive design
 - Daily puzzle scheduler (date-based resolution)
 
-**Not in scope:** Crews, accounts, archive, analytics
-
-### Phase 2 — Social + retention (Week 3-4)
-
+### Phase 2 — Social + Retention (Week 3-4)
 - Streak system with notification prompt
 - Crew feature (invite link → private group → weekly leaderboard)
 - Email notification for daily puzzle (Remix Email or Resend)
 - Share card canvas rendering + download
 
-### Phase 3 — Polish + launch (Week 5-6)
-
+### Phase 3 — Polish + Launch (Week 5-6)
 - 365-puzzle archive (past puzzles accessible by date)
 - Plausible.io analytics integration
 - Press outreach template
@@ -333,11 +271,10 @@ const todaysPuzzle = puzzles.find(p => p.date === today);
 - Reddit community postings (r/movies for Cinema vertical, r/history)
 
 ### Phase 4 — Growth (Month 2-3)
-
 - Second vertical (Cinema — guess year from film still)
 - Hard mode (no clues, harder events)
 - Difficulty rating system for personalization
-- Press coverage (history/culture journalists)
+- Press coverage
 
 ---
 
@@ -348,7 +285,6 @@ chronicle/
 ├── app/
 │   ├── layout.tsx
 │   ├── page.tsx              # Main game
-│   ├── stats/page.tsx       # Stats modal
 │   └── globals.css
 ├── components/
 │   ├── Game.tsx              # Core game logic
@@ -356,20 +292,22 @@ chronicle/
 │   ├── ClueReveal.tsx        # Progressive clue display
 │   ├── ShareCard.tsx         # Share card canvas
 │   ├── StatsModal.tsx        # Stats display
+│   ├── ResultScreen.tsx      # Win/loss screen
 │   └── PuzzleDisplay.tsx     # Event image + headline
 ├── lib/
 │   ├── puzzles.ts            # Puzzle loader + date resolution
 │   ├── scoring.ts            # Score calculation
 │   ├── storage.ts            # localStorage read/write
-│   └── share.ts              # Share text generation
+│   ├── share.ts              # Share text generation
+│   └── types.ts              # TypeScript interfaces
 ├── data/
-│   └── puzzles.json          # 365 puzzles (Phase 1: 90)
+│   └── puzzles.json          # Puzzle library (365 target)
+├── scripts/
+│   └── generate-puzzles.ts   # AI-assisted puzzle generation
 ├── public/
 │   └── images/
 │       └── puzzles/           # Optimized puzzle images
-├── scripts/
-│   └── generate-puzzles.ts   # AI-assisted puzzle generation
-├── CLAUDE.md                 # Full build instructions for Claude Code
+├── CLAUDE.md                 # Build instructions for Claude Code
 ├── SPEC.md                   # This file
 └── README.md
 ```
@@ -378,11 +316,12 @@ chronicle/
 
 ## NEXT STEPS
 
-1. **Create repo** → `romulus-silvius/chronicle` on GitHub
-2. **Write CLAUDE.md** → Comprehensive build instructions for Claude Code
-3. **Seed puzzles.json** → First 30 puzzles (diverse, hand-curated)
-4. **Scaffold Next.js app** → With Tailwind, components, game logic
-5. **Connect to Mike** → Review scaffold, confirm direction, hand off to Claude Code for Phase 1 build
+1. **Finalize SPEC + CLAUDE.md** ← this update
+2. **Write `scripts/generate-puzzles.ts`** — AI-assisted generation script
+3. **Hand-curate 90 puzzles with real images** — 2-3 hours with Wikipedia + Wikimedia Commons open
+4. **Run generation script** — produce candidates, editor reviews, approve
+5. **Build Phase 1** — hand off to Claude Code with updated CLAUDE.md
+6. **Launch** — deploy to Vercel, connect domain
 
 ---
 
