@@ -1,15 +1,45 @@
 @import "tailwindcss";
 
+/* Light mode (default) */
 :root {
+  --bg: #ffffff;
+  --surface: #f7f7f7;
+  --text-primary: #1a1a1a;
+  --text-secondary: #6b6b6b;
+  --accent: #1a1a1a;
+  --border: rgba(0, 0, 0, 0.1);
+  --digit-correct: #2D8B75;
+  --digit-close: #C4873B;
+  --digit-miss: #5A5E6B;
+  --font-serif: 'New York', 'Iowan Old Style', Georgia, serif;
+}
+
+/* Dark mode via data-theme */
+[data-theme="dark"] {
   --bg: #0f0f1a;
   --surface: #1a1a2e;
   --text-primary: #f5f5f5;
   --text-secondary: #a0a0b0;
-  --accent: #e8c547;
-  --correct: #4ade80;
-  --warm: #fbbf24;
-  --cold: #f87171;
-  --border: #3a3a5e;
+  --accent: #f5f5f5;
+  --border: rgba(255, 255, 255, 0.1);
+  --digit-correct: #2D8B75;
+  --digit-close: #C4873B;
+  --digit-miss: #3A3D47;
+}
+
+/* Fallback for SSR/initial paint before JS runs */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f0f1a;
+    --surface: #1a1a2e;
+    --text-primary: #f5f5f5;
+    --text-secondary: #a0a0b0;
+    --accent: #f5f5f5;
+    --border: rgba(255, 255, 255, 0.1);
+    --digit-correct: #2D8B75;
+    --digit-close: #C4873B;
+    --digit-miss: #3A3D47;
+  }
 }
 
 html,
@@ -18,10 +48,91 @@ body {
   padding: 0;
   background: var(--bg);
   color: var(--text-primary);
-  font-family: Inter, system-ui, sans-serif;
+  font-family: var(--font-inter), system-ui, sans-serif;
   min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 * {
   box-sizing: border-box;
+}
+
+/* Digit reveal animation — scale-up pulse */
+@keyframes digitReveal {
+  0% { transform: scale(1); opacity: 0.6; }
+  50% { transform: scale(1.12); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.digit-reveal {
+  animation: digitReveal 0.35s ease-out both;
+}
+
+/* Clue reveal animation */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.clue-reveal {
+  animation: fadeSlideIn 0.4s ease-out both;
+}
+
+/* Result screen fade in */
+@keyframes resultFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.result-fade-in {
+  animation: resultFadeIn 0.5s ease-out both;
+}
+
+/* Splash screen animations */
+@keyframes splashFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.splash-title {
+  animation: splashFadeUp 0.6s ease-out 0.2s both;
+}
+
+.splash-tagline {
+  animation: splashFadeUp 0.5s ease-out 0.6s both;
+}
+
+.splash-info {
+  animation: splashFadeUp 0.5s ease-out 0.9s both;
+}
+
+.splash-button {
+  animation: splashFadeUp 0.5s ease-out 1.3s both;
+}
+
+/* Smooth transitions on interactive elements */
+button {
+  transition: opacity 0.15s ease, background-color 0.15s ease;
+}
+
+input:focus {
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
 }

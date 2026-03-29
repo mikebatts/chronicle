@@ -1,28 +1,57 @@
-export function calculateScore(guess: number, correct: number): number {
-  const distance = Math.abs(guess - correct);
+import type { DigitFeedback, DigitColor } from "./types";
 
-  if (distance === 0) return 1000;
-  if (distance <= 5) return 950;
-  if (distance <= 10) return 900;
-  if (distance <= 15) return 800;
-  if (distance <= 20) return 700;
-  if (distance <= 25) return 600;
-  if (distance <= 30) return 500;
-  if (distance <= 40) return 400;
-  if (distance <= 50) return 300;
-  if (distance <= 75) return 200;
-  return 100;
+/**
+ * Wordle-style digit feedback for a 4-digit year guess.
+ * correct = correct digit in correct position
+ * close = digit exists in answer but wrong position
+ * miss = digit not in answer
+ */
+export function getDigitFeedback(guess: number, answer: number): DigitFeedback[] {
+  const guessStr = guess.toString().padStart(4, "0");
+  const answerStr = answer.toString().padStart(4, "0");
+
+  const result: DigitFeedback[] = guessStr.split("").map((d) => ({
+    digit: d,
+    color: "miss" as DigitColor,
+  }));
+
+  // Track which answer digits have been "used" by correct or close
+  const answerUsed = [false, false, false, false];
+
+  // First pass: mark correct
+  for (let i = 0; i < 4; i++) {
+    if (guessStr[i] === answerStr[i]) {
+      result[i].color = "correct";
+      answerUsed[i] = true;
+    }
+  }
+
+  // Second pass: mark close
+  for (let i = 0; i < 4; i++) {
+    if (result[i].color === "correct") continue;
+    for (let j = 0; j < 4; j++) {
+      if (!answerUsed[j] && guessStr[i] === answerStr[j]) {
+        result[i].color = "close";
+        answerUsed[j] = true;
+        break;
+      }
+    }
+  }
+
+  return result;
 }
 
-export function getDistanceCategory(
-  guess: number,
-  correct: number
-): "exact" | "very_close" | "close" | "warm" | "cold" {
-  const distance = Math.abs(guess - correct);
-
-  if (distance === 0) return "exact";
-  if (distance <= 5) return "very_close";
-  if (distance <= 15) return "close";
-  if (distance <= 30) return "warm";
-  return "cold";
+/**
+ * Convert digit feedback to share emoji row.
+ */
+export function digitFeedbackToEmoji(feedback: DigitFeedback[]): string {
+  return feedback
+    .map((d) => {
+      switch (d.color) {
+        case "correct": return "🟩";
+        case "close": return "🟨";
+        case "miss": return "⬛";
+      }
+    })
+    .join("");
 }

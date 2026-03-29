@@ -2,33 +2,45 @@
   "puzzles": [
     {
       "id": 1,
-      "date": "2026-04-07",
-      "day_of_week": "tuesday",
+      "date": "2026-03-29",
+      "day_of_week": "sunday",
       "event": "The Berlin Wall Falls",
       "event_formal": "Fall of the Berlin Wall",
       "year": 1989,
       "image": "/images/puzzles/001.webp",
       "image_attribution": "Bundesarchiv, Wikimedia Commons",
       "image_source_url": "https://commons.wikimedia.org/wiki/File:BerlinWall-BrandenburgGate.jpg",
-      "headline": "A wall that divided a city for 28 years finally comes down",
+      "headline": "The Fall of the Berlin Wall",
+      "description": "After 28 years dividing East and West Berlin, the concrete barrier came down in a single chaotic night. Thousands of citizens surged to the checkpoints after a confused government spokesman seemed to announce the border was open. Within hours, people were dancing on the wall and chipping away at it with hammers.",
       "tier": 1,
       "difficulty_rating": 4,
       "clues": {
         "monday": [
           "This happened during the final chapter of a decades-long geopolitical standoff.",
-          "The leader of the Soviet Union had recently introduced sweeping reforms."
+          "The leader of the Soviet Union had recently introduced sweeping reforms.",
+          "The city had been divided since a wall was built in 1961."
         ],
         "tuesday": [
-          "This occurred in a year of significant economic upheaval.",
-          "A cultural milestone in this same year changed music forever."
+          "This occurred in a year of significant upheaval across Eastern Europe.",
+          "A confused bureaucrat accidentally triggered the events.",
+          "The wall had divided the same city for 28 years."
         ],
         "wednesday": [
           "This was a major geopolitical event in the latter half of the 20th century.",
-          "The year saw significant changes in European governance."
+          "The year saw significant changes in European governance.",
+          "Mikhail Gorbachev's reforms helped make this possible."
         ],
-        "thursday": "This occurred in the second half of the 20th century.",
-        "friday": "A major Cold War milestone fell in this year.",
-        "saturday": "The world was watching something else unfold that day."
+        "thursday": [
+          "This occurred in the second half of the 20th century.",
+          "A Cold War milestone fell in this year."
+        ],
+        "friday": [
+          "This happened during the Cold War era.",
+          "The event took place in a divided European capital."
+        ],
+        "saturday": [
+          "The world was watching something else unfold that day."
+        ]
       },
       "context_card": "For 28 years, Checkpoint Charlie was the defining symbol of the Cold War. On November 9th, 1989, a confused bureaucrat announced that East Germans could cross freely — and thousands flooded through. No one had planned the announcement. The wall fell because the system was already crumbling."
     },
@@ -42,25 +54,37 @@
       "image": "/images/puzzles/002.webp",
       "image_attribution": "Orville Wright, Wikimedia Commons",
       "image_source_url": "https://commons.wikimedia.org/wiki/File:First_flight2.jpg",
-      "headline": "Two brothers from Ohio change transportation forever in a field in North Carolina",
+      "headline": "The Wright Brothers' First Flight",
+      "description": "Two bicycle mechanics from Dayton, Ohio traveled to the windswept sand dunes of Kitty Hawk, North Carolina to test their latest flying machine. On a cold December morning, with only five witnesses present, Orville Wright lay prone on the lower wing, opened the throttle, and lifted off the ground for 12 seconds.",
       "tier": 1,
       "difficulty_rating": 3,
       "clues": {
         "monday": [
           "This happened in the early years of a new century.",
-          "The inventors were two brothers who ran a bicycle shop."
+          "The inventors were two brothers who ran a bicycle shop.",
+          "The event took place on a beach known for its constant winds."
         ],
         "tuesday": [
-          "The event took place on a beach known for its constant winds.",
-          "The flight lasted less than a minute."
+          "The flight lasted less than a minute.",
+          "They had been studying bird flight to solve the problem.",
+          "The event happened in North Carolina."
         ],
         "wednesday": [
           "This occurred in the first decade of the 20th century.",
-          "The event happened in North America."
+          "The event happened in North America.",
+          "Only five people witnessed it."
         ],
-        "thursday": "This was an American invention that changed the world.",
-        "friday": "The first flight lasted under 60 seconds.",
-        "saturday": "The inventors were brothers."
+        "thursday": [
+          "This was an American invention that changed the world.",
+          "The first flight lasted under 60 seconds."
+        ],
+        "friday": [
+          "This happened in the early 1900s.",
+          "Two brothers achieved what many thought impossible."
+        ],
+        "saturday": [
+          "The inventors were brothers from Ohio."
+        ]
       },
       "context_card": "The Wright Brothers made four flights at Kitty Hawk on December 17th, 1903. The first lasted just 12 seconds and covered 120 feet. By the end of that day, they had flown a total of 59 seconds. Orville would later say that the sensation of flight never fully wore off on him — it just kept getting better."
     },
@@ -74,25 +98,37 @@
       "image": "/images/puzzles/003.webp",
       "image_attribution": "NASA, Wikimedia Commons",
       "image_source_url": "https://commons.wikimedia.org/wiki/File:Apollo_11_first_step.jpg",
-      "headline": "A man takes one small step that changes humanity's place in the universe",
+      "headline": "The Apollo 11 Moon Landing",
+      "description": "Neil Armstrong and Buzz Aldrin descended in the lunar module Eagle while Michael Collins orbited above. Alarms blared and Armstrong had to manually guide the craft past a boulder field with only 30 seconds of fuel remaining. When the module touched down, Mission Control erupted. Six hundred million people watched the grainy footage on television.",
       "tier": 3,
       "difficulty_rating": 2,
       "clues": {
         "monday": [
           "This happened in the year humans first walked on another world.",
-          "The mission was part of the space race between two superpowers."
+          "The mission was part of the space race between two superpowers.",
+          "The event fulfilled a president's promise earlier in the decade."
         ],
         "tuesday": [
           "The event happened in the summer and was watched by millions worldwide.",
-          "The commander was from Ohio."
+          "The commander was from Ohio.",
+          "The year also saw Woodstock and a famous music festival."
         ],
         "wednesday": [
           "This was a major achievement of the 1960s.",
-          "The year also saw Woodstock and a famous Woodstock music festival."
+          "The mission launched from Cape Canaveral, Florida.",
+          "The famous first words were about 'one small step.'"
         ],
-        "thursday": "The first words spoken on the surface were about this being one small step.",
-        "friday": "This was in the 1960s.",
-        "saturday": "This changed how we see our place in the universe."
+        "thursday": [
+          "This was in the 1960s.",
+          "The first words spoken on the surface were about this being one small step."
+        ],
+        "friday": [
+          "This happened during the Space Race.",
+          "The mission was called Apollo."
+        ],
+        "saturday": [
+          "This changed how we see our place in the universe."
+        ]
       },
       "context_card": "Neil Armstrong's first steps on the Moon were watched by an estimated 600 million people — one-fifth of the world's population. The lunar module was called Eagle. Armstrong had only 30 seconds of fuel remaining when he found a landing spot. He called it 'magnificent desolation.'"
     },
@@ -106,25 +142,37 @@
       "image": "/images/puzzles/004.webp",
       "image_attribution": "Wikimedia Commons",
       "image_source_url": "https://commons.wikimedia.org/wiki/File:RMS_Titanic_3.jpg",
-      "headline": "The largest ship afloat sinks on its first voyage, taking over 1,500 lives",
+      "headline": "The Sinking of the Titanic",
+      "description": "The most luxurious ocean liner ever built was four days into its maiden voyage across the North Atlantic, carrying some of the wealthiest people in the world alongside hundreds of immigrants seeking new lives in America. A lookout spotted an iceberg dead ahead. Despite a hard turn, the ship's starboard side scraped along the ice, opening a fatal gash below the waterline. Over 1,500 people died.",
       "tier": 1,
       "difficulty_rating": 3,
       "clues": {
         "monday": [
           "This was a maritime disaster that shocked the world.",
-          "The ship was called 'unsinkable' before its maiden voyage."
+          "The ship was called 'unsinkable' before its maiden voyage.",
+          "Fewer lifeboats were aboard than needed for all passengers."
         ],
         "tuesday": [
           "The ship was bound for New York when it struck an iceberg.",
-          "Fewer lifeboats were aboard than regulations required."
+          "A famous film about it was released in 1997.",
+          "The ship sank in under three hours."
         ],
         "wednesday": [
           "This was an Edwardian-era tragedy.",
-          "A famous film about it was released in 1997."
+          "It led to major changes in maritime safety regulations.",
+          "The ship carried both millionaires and immigrants."
         ],
-        "thursday": "The ship was called the largest in the world at the time.",
-        "friday": "This was in the early 20th century.",
-        "saturday": "It was called 'unsinkable.'"
+        "thursday": [
+          "The ship was the largest in the world at the time.",
+          "This was in the early 20th century."
+        ],
+        "friday": [
+          "The ship struck an iceberg in the North Atlantic.",
+          "It was called 'unsinkable.'"
+        ],
+        "saturday": [
+          "It sank on its maiden voyage."
+        ]
       },
       "context_card": "The Titanic was carrying some of the world's wealthiest people and hundreds of immigrants seeking a new life in America. It struck the iceberg at 11:40 PM and sank in under three hours. The nearby RMS Carpathia rescued 705 survivors. The disaster led to major changes in maritime safety regulations."
     },
@@ -137,26 +185,38 @@
       "year": 1914,
       "image": "/images/puzzles/005.webp",
       "image_attribution": "Wikimedia Commons",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:Ww1-tig.jpg",
-      "headline": "The assassination of an archduke triggers a war that reshapes the world",
+      "image_source_url": "https://commons.wikimedia.org/wiki/File:Assassination_of_Archduke_Franz_Ferdinand_1914.jpg",
+      "headline": "The Assassination of Archduke Franz Ferdinand",
+      "description": "A young Bosnian Serb nationalist fired two shots at a royal motorcade in Sarajevo, killing Archduke Franz Ferdinand and his wife Sophie. Within weeks, a web of alliances and ultimatums dragged the great powers of Europe into World War I — a conflict that would last four years, destroy four empires, and kill 17 million people.",
       "tier": 1,
       "difficulty_rating": 4,
       "clues": {
         "monday": [
           "A political assassination in the Balkans sparked this conflict.",
-          "The war involved most of the great powers of the era."
+          "The war involved most of the great powers of the era.",
+          "The conflict lasted four years and destroyed four empires."
         ],
         "tuesday": [
           "The war introduced trench warfare and new weapons of destruction.",
-          "It was triggered by an event in Sarajevo."
+          "It was triggered by an event in Sarajevo.",
+          "The assassinated leader was heir to the Austro-Hungarian throne."
         ],
         "wednesday": [
           "This began in the decade before the Great Depression.",
-          "The conflict lasted four years and involved four empires."
+          "The conflict involved four empires and lasted four years.",
+          "It was supposed to be 'the war to end all wars.'"
         ],
-        "thursday": "A Balkan assassination triggered this war.",
-        "friday": "This happened in the 20th century.",
-        "saturday": "The assassination was in Sarajevo."
+        "thursday": [
+          "A Balkan assassination triggered this war.",
+          "The conflict ended four empires."
+        ],
+        "friday": [
+          "This happened in the early 20th century.",
+          "The assassination was in Sarajevo."
+        ],
+        "saturday": [
+          "The assassination was in Sarajevo."
+        ]
       },
       "context_card": "The assassination of Archduke Franz Ferdinand in Sarajevo on June 28, 1914, set off a chain reaction of alliance obligations. What was supposed to be a short war became a four-year conflict that killed 17 million people and destroyed four empires: the German, Austro-Hungarian, Ottoman, and Russian empires."
     },
@@ -169,26 +229,38 @@
       "year": 2001,
       "image": "/images/puzzles/006.webp",
       "image_attribution": " Wikimedia Commons",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:World_trade_center_aftermath.jpg",
-      "headline": "A day that changed America and the world forever",
+      "image_source_url": "https://commons.wikimedia.org/wiki/File:UA_Flight_175_hits_WTC_south_tower_9-11_edit.jpeg",
+      "headline": "The September 11 Attacks",
+      "description": "On a clear Tuesday morning, al-Qaeda terrorists hijacked four commercial airplanes and carried out coordinated attacks on the United States. Two planes struck the Twin Towers of the World Trade Center in New York. A third hit the Pentagon. A fourth crashed in a Pennsylvania field after passengers fought back. Nearly 3,000 people were killed.",
       "tier": 1,
       "difficulty_rating": 2,
       "clues": {
         "monday": [
           "This happened in the early 21st century.",
-          "Terrorists hijacked four commercial airplanes."
+          "Terrorists hijacked four commercial airplanes.",
+          "It led to the creation of the Department of Homeland Security."
         ],
         "tuesday": [
           "Two planes struck the tallest buildings in New York City.",
-          "This led to the creation of the Department of Homeland Security."
+          "This led to the 'War on Terror.'",
+          "The attacks were by al-Qaeda terrorists."
         ],
         "wednesday": [
           "This happened on a Tuesday morning in September.",
-          "The attacks were by al-Qaeda terrorists."
+          "Nearly 3,000 people were killed.",
+          "It fundamentally changed American foreign policy."
         ],
-        "thursday": "This happened in the 21st century.",
-        "friday": "Two planes hit the World Trade Center.",
-        "saturday": "Terrorists hijacked four planes."
+        "thursday": [
+          "This happened in the 21st century.",
+          "Two planes hit the World Trade Center."
+        ],
+        "friday": [
+          "Terrorists hijacked four planes.",
+          "It changed airport security forever."
+        ],
+        "saturday": [
+          "Nearly 3,000 people died that day."
+        ]
       },
       "context_card": "On September 11, 2001, nearly 3,000 people were killed in a series of coordinated terrorist attacks. The FBI quickly opened an investigation called PENTTBOM. Within days, President George W. Bush had signed the USA PATRIOT Act. The attacks reshaped American foreign policy, airport security, and domestic surveillance in ways still felt today."
     },
@@ -201,26 +273,38 @@
       "year": 1964,
       "image": "/images/puzzles/007.webp",
       "image_attribution": "Mickey Crystal, Wikimedia Commons",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:Beatles_arrive_at_airport.jpg",
-      "headline": "Beatlemania arrives in America and changes pop music forever",
+      "image_source_url": "https://commons.wikimedia.org/wiki/File:The_Beatles_in_America.JPG",
+      "headline": "The Beatles Arrive in America",
+      "description": "The four-piece rock band from Liverpool landed at JFK Airport in New York to absolute pandemonium. Thousands of screaming teenagers packed the terminal. Within days, they appeared on the Ed Sullivan Show, watched by 73 million viewers — the largest TV audience in American history at that point. The British Invasion of pop music had begun.",
       "tier": 1,
       "difficulty_rating": 5,
       "clues": {
         "monday": [
           "A British Invasion began with this event.",
-          "The band appeared on a major American TV show shortly after arriving."
+          "The band appeared on a major American TV show shortly after arriving.",
+          "73 million viewers watched their TV appearance."
         ],
         "tuesday": [
           "They landed at a New York airport to screaming fans.",
-          "This occurred at the height of youth cultural revolution."
+          "This occurred at the height of youth cultural revolution.",
+          "The same year, a major civil rights act was signed."
         ],
         "wednesday": [
-          "This happened the same year a major civil rights act was signed.",
-          "The Fab Four's arrival triggered mass hysteria."
+          "This happened the same year a landmark civil rights law passed.",
+          "The Fab Four's arrival triggered mass hysteria.",
+          "The band was from Liverpool."
         ],
-        "thursday": "This was in the 1960s.",
-        "friday": "This year saw a British musical invasion.",
-        "saturday": "The band was from Liverpool."
+        "thursday": [
+          "This was in the 1960s.",
+          "This year saw a British musical invasion."
+        ],
+        "friday": [
+          "The band arrived from England.",
+          "It changed American pop music overnight."
+        ],
+        "saturday": [
+          "The band was from Liverpool."
+        ]
       },
       "context_card": "When The Beatles landed at JFK Airport on February 7, 1964, they were met by 3,000 screaming fans — the largest welcome in airport history to that point. They appeared on Ed Sullivan Show ten days later, watched by 73 million viewers. Within weeks, Beatlemania had completely reshaped American pop music and youth culture."
     },
@@ -233,26 +317,38 @@
       "year": 2007,
       "image": "/images/puzzles/008.webp",
       "image_attribution": "Steve Jurvetson, Wikimedia Commons",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:IPhone_1st_Gen.svg",
-      "headline": "A computer company CEO introduces a device that puts the world in your pocket",
+      "image_source_url": "https://commons.wikimedia.org/wiki/File:Apple_iPhone_2G_8GB.jpg",
+      "headline": "Apple Unveils the iPhone",
+      "description": "Steve Jobs walked onto a stage in San Francisco wearing his signature black turtleneck and announced three new products: a widescreen iPod, a mobile phone, and an internet communicator. The crowd cheered each one. Then he revealed they were all the same device. No physical keyboard, no stylus — just a multi-touch glass screen that responded to your fingertips.",
       "tier": 1,
       "difficulty_rating": 4,
       "clues": {
         "monday": [
-          "This was unveiled by the CEO of a computer company.",
-          "The announcement promised to revolutionize mobile phones."
+          "This was unveiled by the CEO of a computer company in a keynote.",
+          "The announcement promised to revolutionize mobile phones.",
+          "The device had no physical keyboard."
         ],
         "tuesday": [
           "The year also saw the start of a global financial crisis.",
-          "The device had no physical keyboard."
+          "The CEO wore his signature black turtleneck on stage.",
+          "The device used a multi-touch glass screen."
         ],
         "wednesday": [
-          "This was in the second decade of the 21st century.",
-          "The company was founded in a garage in California."
+          "This was in the first decade of the 21st century.",
+          "The company was founded in a garage in California.",
+          "It was unveiled in San Francisco."
         ],
-        "thursday": "This was a product announcement that changed an industry.",
-        "friday": "The device was a smartphone.",
-        "saturday": "It was unveiled by Steve Jobs."
+        "thursday": [
+          "This was a product announcement that changed an industry.",
+          "The device was a smartphone."
+        ],
+        "friday": [
+          "It was unveiled by Steve Jobs.",
+          "The device had no physical keyboard."
+        ],
+        "saturday": [
+          "It was unveiled by Steve Jobs."
+        ]
       },
       "context_card": "Steve Jobs unveiled the iPhone on January 9, 2007, calling it 'a revolutionary product.' It didn't go on sale until June, but it immediately changed what people expected from mobile devices. The initial model had no App Store — that came in 2008. By 2011, the iPhone had made Apple the most valuable company in the world."
     },
@@ -264,27 +360,39 @@
       "event_formal": "Dissolution of the Soviet Union",
       "year": 1991,
       "image": "/images/puzzles/009.webp",
-      "image_attmission": "Wikimedia Commons",
+      "image_attribution": "Wikimedia Commons",
       "image_source_url": "https://commons.wikimedia.org/wiki/File:Soviet_Union_1989_election.svg",
-      "headline": "The red flag over the Kremlin comes down, ending an era",
+      "headline": "The Dissolution of the Soviet Union",
+      "description": "On a cold December evening, the red hammer-and-sickle flag was lowered from the Kremlin for the last time and replaced by the Russian tricolor. The USSR — a superpower that had shaped world politics for nearly seven decades — ceased to exist, fracturing into fifteen independent nations. Mikhail Gorbachev resigned and handed the nuclear codes to Boris Yeltsin.",
       "tier": 1,
       "difficulty_rating": 4,
       "clues": {
         "monday": [
           "This happened during a period of rapid political change.",
-          "The superpower was led by Mikhail Gorbachev before this happened."
+          "The superpower was led by Mikhail Gorbachev before this happened.",
+          "The country fractured into 15 independent nations."
         ],
         "tuesday": [
-          "The event happened around Christmas time in a specific year.",
-          "The country had been a superpower since after World War II."
+          "The event happened around Christmas time.",
+          "The country had been a superpower since after World War II.",
+          "Reforms called 'glasnost' and 'perestroika' preceded this."
         ],
         "wednesday": [
           "This occurred at the end of the Cold War.",
-          "The USSR was dissolved into 15 independent states."
+          "The USSR was dissolved into 15 independent states.",
+          "The hammer-and-sickle flag was lowered for the last time."
         ],
-        "thursday": "This happened in the 20th century.",
-        "friday": "Mikhail Gorbachev was a key figure.",
-        "saturday": "The Cold War ended with this event."
+        "thursday": [
+          "This happened in the early 1990s.",
+          "Mikhail Gorbachev resigned as the leader."
+        ],
+        "friday": [
+          "The Cold War ended with this event.",
+          "It happened around Christmas."
+        ],
+        "saturday": [
+          "The Cold War ended with this event."
+        ]
       },
       "context_card": "On December 26, 1991, the Supreme Soviet of the USSR ratified the Belovezh Accords, formally ending the Soviet Union. What had been the world's largest country by area splintered into 15 independent nations. For 69 years, the Soviet experiment had shaped global politics. Its end brought both hope for a new world order and anxiety about nuclear weapons in unstable new states."
     },
@@ -298,25 +406,37 @@
       "image": "/images/puzzles/010.webp",
       "image_attribution": "Wikimedia Commons",
       "image_source_url": "https://commons.wikimedia.org/wiki/File:Arpanet_logo.svg",
-      "headline": "A computer engineer sends the first message over a network that would become the internet",
+      "headline": "The First Email Is Sent",
+      "description": "Ray Tomlinson, a programmer at BBN Technologies in Cambridge, Massachusetts, devised a way to send messages between users on different machines connected by ARPANET. He chose the @ symbol to separate the user name from the machine name. The first test message was so unremarkable he couldn't remember what it said — probably just 'QWERTYUIOP.'",
       "tier": 2,
       "difficulty_rating": 7,
       "clues": {
         "monday": [
           "This happened at a US defense research institution.",
-          "The network would eventually evolve into the World Wide Web."
+          "The network would eventually evolve into the internet.",
+          "The sender chose the @ symbol for the address format."
         ],
         "tuesday": [
           "The first message was sent between two computers in different locations.",
-          "This predates the personal computer revolution."
+          "This predates the personal computer revolution.",
+          "The message content was something like 'QWERTYUIOP.'"
         ],
         "wednesday": [
           "This was in the early 1970s.",
-          "The sender worked on ARPANET, a precursor to the internet."
+          "The sender worked on ARPANET, a precursor to the internet.",
+          "Ray Tomlinson was the programmer."
         ],
-        "thursday": "This was at a defense research institution.",
-        "friday": "It was in the early 1970s.",
-        "saturday": "The network became the internet."
+        "thursday": [
+          "This was at a defense research institution.",
+          "It was in the early 1970s."
+        ],
+        "friday": [
+          "The network became the internet.",
+          "Ray Tomlinson sent it."
+        ],
+        "saturday": [
+          "The @ symbol was born from this."
+        ]
       },
       "context_card": "Ray Tomlinson sent the first email in 1971, choosing the @ symbol to separate the user name from the computer name. The message itself was largely forgettable — something like 'QWERTYUIOP.' But the @ sign became Tomlinson's lasting contribution to digital communication, now used in billions of email addresses worldwide."
     },
@@ -330,25 +450,37 @@
       "image": "/images/puzzles/011.webp",
       "image_attribution": "Wikimedia Commons",
       "image_source_url": "https://commons.wikimedia.org/wiki/File:Great_Wall_near_Mutianyu.jpg",
-      "headline": "After centuries of construction, the longest wall in the world is finished",
+      "headline": "The Great Wall of China Completed",
+      "description": "Over thousands of miles of mountains, deserts, and plains, generations of workers — soldiers, peasants, and prisoners — built and rebuilt a massive fortification to protect China from northern invaders. The final major phase of construction under the Ming Dynasty ended as the dynasty fell and the Qing rose to power, completing the 13,000-mile network of walls, watchtowers, and garrison stations.",
       "tier": 2,
       "difficulty_rating": 6,
       "clues": {
         "monday": [
           "This is one of the most recognizable structures in human history.",
-          "It was built to protect against invasions from the north."
+          "It was built to protect against invasions from the north.",
+          "Construction took place over many dynasties."
         ],
         "tuesday": [
-          "Construction took place over many dynasties.",
-          "The wall is visible from space — a popular myth."
+          "The wall is often said to be visible from space — a popular myth.",
+          "The structure spans over 13,000 miles.",
+          "The final phase was completed as a dynasty fell."
         ],
         "wednesday": [
           "This happened in the 17th century.",
-          "The Ming Dynasty had recently ended when it was completed."
+          "The Ming Dynasty had recently ended when it was completed.",
+          "Millions of workers built and rebuilt it over centuries."
         ],
-        "thursday": "This was in the 17th century.",
-        "friday": "It was built over many dynasties.",
-        "saturday": "It's visible from space — or so they say."
+        "thursday": [
+          "This was in the 17th century.",
+          "It was built over many dynasties."
+        ],
+        "friday": [
+          "The Ming Dynasty oversaw the most famous sections.",
+          "It protected against invasions from the north."
+        ],
+        "saturday": [
+          "It's visible from space — or so they say."
+        ]
       },
       "context_card": "The Great Wall was built, rebuilt, and maintained over centuries by millions of workers, many of whom died building it. The wall we see today was mostly built during the Ming Dynasty (1368-1644). The total length, including all branches, is over 13,000 miles. Contrary to popular myth, it's not visible from space with the naked eye."
     },
@@ -362,25 +494,37 @@
       "image": "/images/puzzles/012.webp",
       "image_attribution": "Wikimedia Commons",
       "image_source_url": "https://commons.wikimedia.org/wiki/File:Prise_de_la_Bastille.jpg",
-      "headline": "Parisians storm a medieval fortress and spark a revolution",
+      "headline": "The Storming of the Bastille",
+      "description": "Bread prices had skyrocketed and anger at King Louis XVI was boiling over. An armed crowd of Parisians marched on the Bastille — a medieval fortress and symbol of royal tyranny — demanding the weapons stored inside. When negotiations broke down, the crowd attacked. By evening, the fortress had fallen, its governor was killed, and the French Revolution had begun.",
       "tier": 1,
       "difficulty_rating": 4,
       "clues": {
         "monday": [
           "This happened during the Enlightenment era.",
-          "A medieval fortress in Paris was attacked."
+          "A medieval fortress in Paris was attacked.",
+          "The event led to the end of absolute monarchy in France."
         ],
         "tuesday": [
           "The event happened in the summer.",
-          "It led to the end of absolute monarchy in France."
+          "France was ruled by King Louis XVI at the time.",
+          "The fortress had become a symbol of royal tyranny."
         ],
         "wednesday": [
           "This occurred in the late 18th century.",
-          "France was ruled by King Louis XVI at the time."
+          "Rising bread prices fueled the anger.",
+          "A major revolution began with this event."
         ],
-        "thursday": "This was in the 18th century.",
-        "friday": "The Bastille was a prison in Paris.",
-        "saturday": "It was in Paris."
+        "thursday": [
+          "This was in the 18th century.",
+          "The Bastille was a prison in Paris."
+        ],
+        "friday": [
+          "It happened in Paris.",
+          "A medieval fortress was stormed."
+        ],
+        "saturday": [
+          "Bread prices helped start a revolution."
+        ]
       },
       "context_card": "On July 14, 1789, several hundred Parisians stormed the Bastille, a medieval fortress that had become a symbol of royal tyranny. They freed the seven prisoners inside and killed the governor. The event became the defining moment of the French Revolution and is now commemorated annually as Bastille Day, France's national holiday."
     },
@@ -394,25 +538,37 @@
       "image": "/images/puzzles/013.webp",
       "image_attribution": "Wikimedia Commons",
       "image_source_url": "https://commons.wikimedia.org/wiki/File:Trinity_shot_color.jpg",
-      "headline": "The world's first nuclear explosion lights up the New Mexico desert",
+      "headline": "The Trinity Nuclear Test",
+      "description": "In the predawn darkness of the New Mexico desert, the Manhattan Project reached its climax. A team of scientists and military officials gathered around a steel tower holding the world's first atomic bomb. When the device detonated, the flash was visible for 200 miles and turned sand to glass. J. Robert Oppenheimer later recalled thinking of the Bhagavad Gita: 'Now I am become Death, the destroyer of worlds.'",
       "tier": 1,
       "difficulty_rating": 5,
       "clues": {
         "monday": [
           "This happened in the American Southwest.",
-          "The project was called the Manhattan Project."
+          "The project was called the Manhattan Project.",
+          "Robert Oppenheimer was the scientific director."
         ],
         "tuesday": [
           "The test was conducted before the end of World War II.",
-          "Robert Oppenheimer was the scientific director."
+          "The desert landscape glowed brighter than any light ever seen.",
+          "Weeks later, similar devices were used on two Japanese cities."
         ],
         "wednesday": [
           "This happened in the 1940s.",
-          "The desert landscape glowed brighter than any light ever seen before."
+          "The flash was visible 200 miles away.",
+          "It was a top-secret military project."
         ],
-        "thursday": "Robert Oppenheimer led the project.",
-        "friday": "It was in the 1940s.",
-        "saturday": "The desert lit up brighter than daylight."
+        "thursday": [
+          "Robert Oppenheimer led the project.",
+          "It was in the 1940s."
+        ],
+        "friday": [
+          "The test took place in the New Mexico desert.",
+          "The project had been top secret."
+        ],
+        "saturday": [
+          "The desert lit up brighter than daylight."
+        ]
       },
       "context_card": "At 5:29 AM on July 16, 1945, J. Robert Oppenheimer watched the Trinity test explode with the words of the Bhagavad Gita in his mind: 'Now I am become Death, the destroyer of worlds.' The blast was visible 200 miles away. Three weeks later, atomic bombs destroyed Hiroshima and Nagasaki, ending World War II."
     },
@@ -426,25 +582,37 @@
       "image": "/images/puzzles/014.webp",
       "image_attribution": "Leonardo da Vinci, Wikimedia Commons",
       "image_source_url": "https://commons.wikimedia.org/wiki/File:Mona_LLisa.jpg",
-      "headline": "The world's most famous painting vanishes from a Paris museum",
+      "headline": "The Mona Lisa Is Stolen from the Louvre",
+      "description": "On a Monday morning, a Louvre worker noticed something alarming: four iron pegs on a wall where the world's most famous painting should have been. Vincenzo Peruggia, a former employee, had hidden in a closet overnight and walked out the next morning with Leonardo da Vinci's masterpiece tucked under his coat. The painting was missing for two years.",
       "tier": 2,
       "difficulty_rating": 6,
       "clues": {
         "monday": [
           "The theft made the painting more famous than ever.",
-          "The thief was a handyman who worked at the museum."
+          "The thief was a handyman who worked at the museum.",
+          "The painting was missing for two years before being recovered."
         ],
         "tuesday": [
-          "The painting was missing for two years before being recovered.",
-          "The artist was an Italian Renaissance master."
+          "The artist was an Italian Renaissance master.",
+          "The theft was discovered when a worker noticed empty pegs on the wall.",
+          "The thief hid in a closet overnight."
         ],
         "wednesday": [
           "This happened in the 1910s.",
-          "The theft occurred in Paris."
+          "The theft occurred in a famous Paris museum.",
+          "The painting was recovered in Florence, Italy."
         ],
-        "thursday": "This was in the 1910s.",
-        "friday": "The painting was missing for two years.",
-        "saturday": "The thief was a handyman."
+        "thursday": [
+          "This was in the 1910s.",
+          "The painting was missing for two years."
+        ],
+        "friday": [
+          "The thief was a museum employee.",
+          "The painting was found in Italy."
+        ],
+        "saturday": [
+          "The thief was a handyman at the Louvre."
+        ]
       },
       "context_card": "Vincenzo Peruggia, a Louvre employee, stole the Mona Lisa by hiding in a broom closet overnight. He simply walked out with it under his coat the next morning. It was missing for two years and was found in Florence in 1913. Paradoxically, the theft transformed the Mona Lisa from a respected painting into a global celebrity."
     },
@@ -458,25 +626,37 @@
       "image": "/images/puzzles/015.webp",
       "image_attribution": "Wikimedia Commons",
       "image_source_url": "https://commons.wikimedia.org/wiki/File:Gagarin_1981_stamp.jpg",
-      "headline": "A Soviet cosmonaut becomes the first human to journey into outer space",
+      "headline": "Yuri Gagarin Becomes the First Human in Space",
+      "description": "The 27-year-old Soviet cosmonaut was strapped into Vostok 1 and launched from a cosmodrome in the Kazakh steppe. For 108 minutes he orbited the Earth, becoming the first human to see our planet from space. He described the blue halo of the atmosphere with childlike wonder. Upon re-entry, he ejected from the capsule and parachuted into a farm field, startling a woman and her granddaughter.",
       "tier": 1,
       "difficulty_rating": 3,
       "clues": {
         "monday": [
           "This was a major victory in the Space Race.",
-          "The cosmonaut was from the Soviet Union."
+          "The cosmonaut was from the Soviet Union.",
+          "His flight lasted 108 minutes."
         ],
         "tuesday": [
           "His spacecraft made one orbit around Earth.",
-          "He said 'Earth is blue' when he saw it from space."
+          "He said 'Earth is blue' when he saw it from space.",
+          "He was only 27 years old at the time."
         ],
         "wednesday": [
           "This happened in the 1960s.",
-          "His flight lasted 108 minutes."
+          "The flight launched from a cosmodrome in Kazakhstan.",
+          "He parachuted to Earth upon re-entry."
         ],
-        "thursday": "This was in the 1960s.",
-        "friday": "He was a Soviet cosmonaut.",
-        "saturday": "His famous words were about Earth being blue."
+        "thursday": [
+          "This was in the 1960s.",
+          "He was a Soviet cosmonaut."
+        ],
+        "friday": [
+          "The flight lasted 108 minutes.",
+          "He orbited the Earth once."
+        ],
+        "saturday": [
+          "His famous words were about Earth being blue."
+        ]
       },
       "context_card": "Yuri Gagarin orbited Earth in Vostok 1 on April 12, 1961, completing one orbit in 108 minutes. At 27, he became the first human to see Earth from space. He parachuted from his capsule before it landed — ejection at 7km was standard procedure. A city in Kazakhstan was renamed Baikonur in his honor, and his face became a symbol of Soviet achievement."
     },
@@ -490,25 +670,37 @@
       "image": "/images/puzzles/016.webp",
       "image_attribution": "Wikipedia",
       "image_source_url": "https://en.wikipedia.org/wiki/Google",
-      "headline": "Two Stanford students launch a search engine that would organize the world's information",
+      "headline": "Google Is Founded",
+      "description": "Stanford PhD students Larry Page and Sergey Brin had a simple but powerful insight: rank web pages by how many other pages link to them, not by counting keywords. They built a prototype search engine in a dorm room, running it on cheap hardware held together by Lego bricks. When they outgrew the university, they moved operations to a friend's garage in Menlo Park.",
       "tier": 2,
       "difficulty_rating": 6,
       "clues": {
         "monday": [
           "The company started in a garage — actually, a friend's garage.",
-          "The name comes from a misspelling."
+          "The name comes from a misspelling of a mathematical term.",
+          "The founders were computer science PhD students."
         ],
         "tuesday": [
-          "The founders were computer science PhD students.",
-          "The first investment was $100,000 from an angel investor."
+          "The first investment was $100,000 from an angel investor.",
+          "The company began in Menlo Park, California.",
+          "Their ranking algorithm was based on links, not keywords."
         ],
         "wednesday": [
           "This happened in the late 1990s.",
-          "The company began in Menlo Park, California."
+          "The prototype was built with hardware held together by Lego bricks.",
+          "The founders met at Stanford University."
         ],
-        "thursday": "This was in the late 1990s.",
-        "friday": "The founders were Stanford students.",
-        "saturday": "The name was a misspelling."
+        "thursday": [
+          "This was in the late 1990s.",
+          "The founders were Stanford students."
+        ],
+        "friday": [
+          "The name was a misspelling.",
+          "It started in a garage."
+        ],
+        "saturday": [
+          "The name was a misspelling of a math term."
+        ]
       },
       "context_card": "Larry Page and Sergey Brin met at Stanford in 1995 and initially didn't get along. Their search algorithm, PageRank, ranked websites by their links rather than keywords. Their first office was a garage rented from a friend. The name 'Google' came from 'googol,' a mathematical term for 1 followed by 100 zeros."
     },
@@ -522,25 +714,37 @@
       "image": "/images/puzzles/017.webp",
       "image_attribution": "Wikimedia Commons",
       "image_source_url": "https://commons.wikimedia.org/wiki/File:HIV_replication.png",
-      "headline": "Doctors notice a mysterious new illness affecting young gay men",
+      "headline": "AIDS Is First Identified",
+      "description": "Doctors in Los Angeles and New York began seeing something alarming: otherwise healthy young gay men developing rare cancers and pneumonias that only affected people with severely compromised immune systems. The CDC published a brief report describing five cases of a rare lung infection — a notice that marked the beginning of one of the deadliest pandemics in modern history.",
       "tier": 2,
       "difficulty_rating": 7,
       "clues": {
         "monday": [
           "This was first reported in Los Angeles and New York.",
-          "Early cases appeared in otherwise healthy young men."
+          "Early cases appeared in otherwise healthy young men.",
+          "Scientists later identified the virus causing it."
         ],
         "tuesday": [
           "The disease was initially called 'GRID' (Gay-Related Immune Deficiency).",
-          "Scientists later identified the virus causing it."
+          "A government health bulletin first documented the cases.",
+          "By year's end, there were 159 reported cases."
         ],
         "wednesday": [
           "This was in the early 1980s.",
-          "It would become one of the deadliest pandemics in history."
+          "It would become one of the deadliest pandemics in history.",
+          "The virus wouldn't be identified until three years later."
         ],
-        "thursday": "This was in the early 1980s.",
-        "friday": "It was first noticed in Los Angeles.",
-        "saturday": "It was initially called GRID."
+        "thursday": [
+          "This was in the early 1980s.",
+          "It was first noticed in Los Angeles."
+        ],
+        "friday": [
+          "Early cases involved rare pneumonias.",
+          "It was initially called GRID."
+        ],
+        "saturday": [
+          "It was initially called GRID."
+        ]
       },
       "context_card": "The CDC's Morbidity and Mortality Weekly Report on June 5, 1981, documented five young gay men in Los Angeles with a rare pneumonia. By the end of 1981, there were 159 reported cases. The disease wouldn't be called AIDS until 1982, and the HIV virus wouldn't be identified until 1984. It would eventually kill 35 million people worldwide."
     },
@@ -554,25 +758,37 @@
       "image": "/images/puzzles/018.webp",
       "image_attribution": "Wikimedia Commons",
       "image_source_url": "https://commons.wikimedia.org/wiki/File:Amazon_logo.svg",
-      "headline": "A former hedge fund analyst starts an online bookstore in his garage",
+      "headline": "Jeff Bezos Founds Amazon",
+      "description": "A Wall Street analyst quit his lucrative hedge fund job, drove to Seattle, and wrote a business plan in the car. Jeff Bezos had determined that books were the perfect product for online retail — millions of titles, far more than any physical store could stock. Working out of his garage, he built a website called Amazon.com that would grow from selling books to selling everything.",
       "tier": 2,
       "difficulty_rating": 6,
       "clues": {
         "monday": [
           "The founder started this in his garage in Seattle.",
-          "He originally named it Cadabra.com."
+          "He originally named it Cadabra.com.",
+          "The company went public three years after being founded."
         ],
         "tuesday": [
-          "The company went public three years after being founded.",
-          "Initially, the founder warned investors it would take 5-7 years to profit."
+          "Initially, the founder warned investors it would take 5-7 years to profit.",
+          "The name was changed because it sounded 'exotic and different.'",
+          "The founder left a Wall Street job to start it."
         ],
         "wednesday": [
           "This happened in the mid-1990s.",
-          "The name was changed because it was easier to remember."
+          "The name was easier to remember than the original choice.",
+          "It started as an online bookstore."
         ],
-        "thursday": "This was in the mid-1990s.",
-        "friday": "The founder started in his garage.",
-        "saturday": "It was originally named Cadabra."
+        "thursday": [
+          "This was in the mid-1990s.",
+          "The founder started in his garage."
+        ],
+        "friday": [
+          "It was originally named Cadabra.",
+          "It started by selling books online."
+        ],
+        "saturday": [
+          "It was originally named Cadabra."
+        ]
       },
       "context_card": "Jeff Bezos left his hedge fund job in 1994 to start an online bookstore, originally called Cadabra. He chose the name Amazon because it sounded 'exotic and different,' and the Amazon River was the biggest river he could think of. He raised $1 million from his own parents — the minimum viable investment to start. By 2020, Amazon had a market cap of $1.7 trillion."
     },
@@ -586,25 +802,37 @@
       "image": "/images/puzzles/019.webp",
       "image_attribution": "Wikimedia Commons",
       "image_source_url": "https://commons.wikimedia.org/wiki/File:DNA_replication_split.svg",
-      "headline": "Two scientists in Cambridge reveal the secret of life itself",
+      "headline": "Watson and Crick Discover the Structure of DNA",
+      "description": "At the University of Cambridge, James Watson and Francis Crick had been racing to solve the fundamental puzzle of biology: how does life replicate itself? Using X-ray crystallography data from Rosalind Franklin's Photo 51, they built a physical model of a molecule that twisted into an elegant double helix. When they saw the structure, they knew they had found the mechanism of heredity.",
       "tier": 1,
       "difficulty_rating": 5,
       "clues": {
         "monday": [
           "This discovery was made in England.",
-          "The scientists used X-ray crystallography data from Rosalind Franklin."
+          "The scientists used X-ray crystallography data from Rosalind Franklin.",
+          "The finding was published in the journal Nature."
         ],
         "tuesday": [
-          "The finding was published in the journal Nature.",
-          "It revolutionized biology and medicine."
+          "It revolutionized biology and medicine.",
+          "The discovery explained how genetic information is passed on.",
+          "One scientist was American, the other British."
         ],
         "wednesday": [
           "This was in the 1950s.",
-          "The discovery explained how genetic information is passed on."
+          "The molecule has a famous twisted shape.",
+          "Rosalind Franklin's Photo 51 was critical to the discovery."
         ],
-        "thursday": "This was in the 1950s.",
-        "friday": "The discovery was in England.",
-        "saturday": "Rosalind Franklin's data was key."
+        "thursday": [
+          "This was in the 1950s.",
+          "The discovery was in England."
+        ],
+        "friday": [
+          "Rosalind Franklin's data was key.",
+          "The discovery was at Cambridge University."
+        ],
+        "saturday": [
+          "Rosalind Franklin's data was key."
+        ]
       },
       "context_card": "Watson and Crick published their double helix model in Nature on April 25, 1953. Their famous line: 'It has not escaped our notice that the specific pairing we have postulated immediately suggests a possible copying mechanism for the genetic material.' Rosalind Franklin's Photo 51, which showed the helix structure, was critical — but she died in 1958 and never shared the Nobel Prize."
     },
@@ -618,25 +846,37 @@
       "image": "/images/puzzles/020.webp",
       "image_attribution": "Wikimedia Commons",
       "image_source_url": "https://commons.wikimedia.org/wiki/File:Chernobyl_206.jpg",
-      "headline": "A reactor explodes at a Soviet nuclear power plant, releasing radioactive fallout",
+      "headline": "The Chernobyl Disaster",
+      "description": "During a late-night safety test at the Chernobyl Nuclear Power Plant in Soviet Ukraine, a series of operator errors and design flaws triggered a catastrophic explosion that ripped open Reactor 4. A plume of radioactive material shot into the atmosphere. The nearby city of Pripyat — population 49,000 — was not evacuated for over 36 hours. Within days, radiation was detected across Europe.",
       "tier": 1,
       "difficulty_rating": 5,
       "clues": {
         "monday": [
           "This happened during a safety test at a Ukrainian power plant.",
-          "The Soviet government initially tried to cover up the disaster."
+          "The Soviet government initially tried to cover up the disaster.",
+          "The town of Pripyat was evacuated."
         ],
         "tuesday": [
           "The explosion sent a plume of radioactive material across Europe.",
-          "The town of Pripyat was evacuated."
+          "Firefighters were among the first responders.",
+          "The nearby city had a population of nearly 50,000."
         ],
         "wednesday": [
           "This occurred in the 1980s.",
-          "Ukraine was part of the Soviet Union at the time."
+          "Ukraine was part of the Soviet Union at the time.",
+          "Radiation was detected as far away as Scandinavia."
         ],
-        "thursday": "This was in the 1980s.",
-        "friday": "The town of Pripyat was evacuated.",
-        "saturday": "A safety test went wrong."
+        "thursday": [
+          "This was in the 1980s.",
+          "The town of Pripyat was evacuated."
+        ],
+        "friday": [
+          "A safety test went wrong.",
+          "The disaster was in Ukraine."
+        ],
+        "saturday": [
+          "A safety test went wrong."
+        ]
       },
       "context_card": "On April 26, 1986, Reactor 4 at Chernobyl exploded during a low-power test. The fire released radioactive material 9 kilometers into the atmosphere. Soviet authorities evacuated Pripyat (population 49,000) 36 hours later. The final death toll remains disputed — from 31 immediate deaths to estimates of thousands of cancer cases from radiation exposure. The destroyed reactor was finally enclosed in a giant steel sarcophagus in 2016."
     },
@@ -650,25 +890,37 @@
       "image": "/images/puzzles/021.webp",
       "image_attribution": "Wikipedia",
       "image_source_url": "https://en.wikipedia.org/wiki/MP3_player",
-      "headline": "A Korean company creates a device that would revolutionize how we listen to music",
+      "headline": "The First Portable MP3 Player",
+      "description": "Saehan Information Systems, a small electronics company in South Korea, developed the MPMan — a pocket-sized device that could play music stored as compressed digital files. No moving parts, no CD, no tape. Just a small amount of flash memory that could hold about a dozen songs. The device was clunky and expensive, but music was becoming data — and data could be copied and shared endlessly.",
       "tier": 2,
       "difficulty_rating": 8,
       "clues": {
         "monday": [
           "This invention came from South Korea.",
-          "The technology compressed audio files without major quality loss."
+          "The technology compressed audio files without major quality loss.",
+          "The first model held only about 12 songs."
         ],
         "tuesday": [
-          "The first model held only about 12 songs.",
-          "It would take the iPod to make this technology mainstream."
+          "It would take the iPod to make this technology mainstream.",
+          "The device had no moving parts.",
+          "It used flash memory to store music."
         ],
         "wednesday": [
           "This was in the late 1990s.",
-          "It was developed by Saehan Information Systems."
+          "It was developed by Saehan Information Systems.",
+          "The device cost about $250."
         ],
-        "thursday": "This was in the late 1990s.",
-        "friday": "It was from South Korea.",
-        "saturday": "It held only about 12 songs."
+        "thursday": [
+          "This was in the late 1990s.",
+          "It was from South Korea."
+        ],
+        "friday": [
+          "It held only about 12 songs.",
+          "The iPod later made this mainstream."
+        ],
+        "saturday": [
+          "It held only about 12 songs."
+        ]
       },
       "context_card": "The Saehan MP-X, released in 1997, was the first portable MP3 player. It held about 12 songs using flash memory and cost around $250. It had no screen and required a PC to load music. The technology was made mainstream by the iPod in 2001, which Apple co-founder Steve Jobs dismissed as 'just a feature' — meaning a flash-based MP3 player — before reconsidering."
     },
@@ -682,25 +934,37 @@
       "image": "/images/puzzles/022.webp",
       "image_attribution": "Wikimedia Commons",
       "image_source_url": "https://commons.wikimedia.org/wiki/File:Euro_Symbol.jpg",
-      "headline": "A new currency begins a new era for European financial integration",
+      "headline": "The Euro Currency Is Introduced",
+      "description": "Twelve European nations took the most dramatic step in continental integration yet: replacing their individual national currencies with a single shared one. The Deutsche Mark, French Franc, Italian Lira, and nine other currencies were retired in favor of the euro. Centuries of monetary sovereignty were exchanged for the promise of a more unified continent.",
       "tier": 2,
       "difficulty_rating": 6,
       "clues": {
         "monday": [
           "This currency replaced multiple national currencies in Europe.",
-          "It was first introduced electronically before physical notes appeared."
+          "It was first introduced electronically before physical notes appeared.",
+          "Germany, France, and Italy were among the original members."
         ],
         "tuesday": [
           "Twelve European countries initially adopted it.",
-          "Germany, France, and Italy were among the original members."
+          "Physical notes and coins came a few years after the electronic launch.",
+          "The Deutsche Mark and French Franc were among those replaced."
         ],
         "wednesday": [
           "This happened at the turn of the millennium.",
-          "The currency was designed to unify European markets."
+          "The currency was designed to unify European markets.",
+          "It involved twelve countries giving up their national currencies."
         ],
-        "thursday": "This was at the turn of the millennium.",
-        "friday": "Twelve countries first adopted it.",
-        "saturday": "It replaced multiple national currencies."
+        "thursday": [
+          "This was at the turn of the millennium.",
+          "Twelve countries first adopted it."
+        ],
+        "friday": [
+          "It replaced multiple national currencies.",
+          "Germany, France, and Italy were founding members."
+        ],
+        "saturday": [
+          "It replaced multiple national currencies."
+        ]
       },
       "context_card": "The Euro was introduced as an accounting currency on January 1, 1999, with physical notes and coins following on January 1, 2002. Twelve countries abandoned their national currencies — including the Deutsche Mark, French Franc, and Italian Lira — for the first time in history. The transition was initially chaotic in some countries, with ATM glitches and confusion at stores."
     },
@@ -714,25 +978,37 @@
       "image": "/images/puzzles/023.webp",
       "image_attribution": "Wikipedia",
       "image_source_url": "https://en.wikipedia.org/wiki/Instagram",
-      "headline": "Two Stanford graduates launch a photo-sharing app that reaches 1 million users in two months",
+      "headline": "Instagram Launches",
+      "description": "Stanford graduates Kevin Systrom and Mike Krieger built a simple mobile app that let people take photos, apply vintage-style filters, and share them in a feed. It launched exclusively on iPhone and reached one million users in just two months — no advertising, no marketing budget. The concept was deceptively simple: make everyone's photos look artistic with one tap.",
       "tier": 2,
       "difficulty_rating": 7,
       "clues": {
         "monday": [
           "The app was created by two people who sold it to Facebook for $1 billion.",
-          "The name combines 'instant camera' and 'telegram.'"
+          "The name combines 'instant camera' and 'telegram.'",
+          "Only iPhone users could use it at first."
         ],
         "tuesday": [
-          "Only iPhone users could use it at first.",
-          "It popularized square photo filters."
+          "It popularized square photo filters.",
+          "The company had just 13 employees when acquired.",
+          "It reached 1 million users in just two months."
         ],
         "wednesday": [
           "This was in the early 2010s.",
-          "It was acquired by Facebook just 18 months after launch."
+          "It was acquired by Facebook just 18 months after launch.",
+          "The founders met at Stanford University."
         ],
-        "thursday": "This was in the early 2010s.",
-        "friday": "It was founded by two people.",
-        "saturday": "It reached 1 million users quickly."
+        "thursday": [
+          "This was in the early 2010s.",
+          "It was founded by two people."
+        ],
+        "friday": [
+          "It reached 1 million users quickly.",
+          "It was acquired for $1 billion."
+        ],
+        "saturday": [
+          "It reached 1 million users in just two months."
+        ]
       },
       "context_card": "Kevin Systrom and Mike Krieger launched Instagram on October 6, 2010. It reached 1 million users in just two months. Systrom had 12 employees when Facebook acquired it for $1 billion in 2012 — an astonishing valuation for a company with 13 employees and no revenue. By 2018, Instagram had 1 billion users and was Facebook's most valuable asset."
     },
@@ -746,25 +1022,37 @@
       "image": "/images/puzzles/024.webp",
       "image_attribution": "Wikimedia Commons",
       "image_source_url": "https://commons.wikimedia.org/wiki/File:Mp3_logo.svg",
-      "headline": "German scientists create a format that would kill the CD and change music forever",
+      "headline": "The MP3 Format Is Created",
+      "description": "Researchers at the Fraunhofer Institute in Germany developed a method to compress audio files by a factor of 10 or more, stripping out sounds the human ear can't perceive. The resulting files were small enough to transmit over early computer networks. Nobody believed people would want compressed music — the researchers struggled to find anyone interested. They had no idea they'd just created the technology that would upend the entire music industry.",
       "tier": 2,
       "difficulty_rating": 8,
       "clues": {
         "monday": [
           "This format compressed audio files by removing sounds humans can't hear.",
-          "The researchers worked at the Fraunhofer Institute in Germany."
+          "The researchers worked at the Fraunhofer Institute in Germany.",
+          "It made music piracy explode by enabling fast downloads."
         ],
         "tuesday": [
-          "It made music piracy explode by enabling fast downloads.",
-          "Napster was built around this format."
+          "Napster was built around this format.",
+          "A 3.5-minute track could be compressed from 30MB to about 3MB.",
+          "The researchers initially couldn't find interested companies."
         ],
         "wednesday": [
           "This was in the early 1990s.",
-          "It compressed audio roughly 10-12 times without major quality loss."
+          "It compressed audio roughly 10-12 times without major quality loss.",
+          "The format eventually helped destroy physical album sales."
         ],
-        "thursday": "This was in the early 1990s.",
-        "friday": "The researchers were from Germany.",
-        "saturday": "Napster used this format."
+        "thursday": [
+          "This was in the early 1990s.",
+          "The researchers were from Germany."
+        ],
+        "friday": [
+          "Napster used this format.",
+          "It compressed audio by removing inaudible frequencies."
+        ],
+        "saturday": [
+          "Napster used this format."
+        ]
       },
       "context_card": "The MP3 format was developed by the Fraunhofer Institute in Germany and standardized in 1991. It could compress a 3.5-minute CD track from 30MB to about 3MB. The researchers initially struggled to find companies interested — nobody believed people would want CD-quality music compressed so much. They earned about $1 per licensed player. By 2000, MP3 had destroyed the CD singles market and would eventually help nearly destroy physical album sales."
     },
@@ -778,25 +1066,37 @@
       "image": "/images/puzzles/025.webp",
       "image_attribution": "Wikimedia Commons",
       "image_source_url": "https://commons.wikimedia.org/wiki/File:Wall_Street_Crash_of_1929.png",
-      "headline": "The stock market collapses, ending the Roaring Twenties and triggering the Great Depression",
+      "headline": "The Wall Street Crash of 1929",
+      "description": "For years, ordinary Americans had been pouring money into the stock market, often buying on margin. Shoeshine boys offered stock tips. Housewives traded shares. Then, on a single October day known as Black Tuesday, panic swept through Wall Street. The Dow fell 12% in one session. Billions of dollars in value evaporated. The Roaring Twenties were over, and the Great Depression had begun.",
       "tier": 1,
       "difficulty_rating": 4,
       "clues": {
         "monday": [
           "This happened in October.",
-          "Billions of dollars in stock value vanished in days."
+          "Billions of dollars in stock value vanished in days.",
+          "The crash ended a decade of reckless speculation."
         ],
         "tuesday": [
-          "The crash ended a decade of reckless speculation.",
-          "It led to the Great Depression."
+          "It led to the Great Depression.",
+          "Ordinary Americans had been buying stocks on credit.",
+          "The Dow fell 12% in a single day."
         ],
         "wednesday": [
           "This was in the 1920s.",
-          "It was the worst stock market crash in American history at the time."
+          "It was the worst stock market crash in American history at the time.",
+          "The Depression that followed saw 25% unemployment."
         ],
-        "thursday": "This was in the 1920s.",
-        "friday": "It happened in October.",
-        "saturday": "Billions vanished in days."
+        "thursday": [
+          "This was in the 1920s.",
+          "It happened in October."
+        ],
+        "friday": [
+          "Billions vanished in days.",
+          "It ended the Roaring Twenties."
+        ],
+        "saturday": [
+          "Billions vanished in a single day."
+        ]
       },
       "context_card": "On October 29, 1929, investors traded 16 million shares in a panic. The Dow fell 12% in a single day. Over the next few weeks, $30 billion in stock value evaporated — equivalent to about $400 billion today. The crash ended the Roaring Twenties and triggered the Great Depression, which would last a decade and see 25% unemployment in the United States."
     },
@@ -810,25 +1110,37 @@
       "image": "/images/puzzles/026.webp",
       "image_attribution": "Wikimedia Commons",
       "image_source_url": "https://commons.wikimedia.org/wiki/File:Christiaan_Baan.jpg",
-      "headline": "A South African surgeon performs the first successful human-to-human heart transplant",
+      "headline": "The First Human Heart Transplant",
+      "description": "In Groote Schuur Hospital in Cape Town, South Africa, Dr. Christiaan Barnard and his surgical team worked through the night to transplant a human heart from a young woman killed in a car accident into 53-year-old Louis Washkansky. When the new heart began beating on its own inside the patient's chest, the operating room fell silent. Washkansky survived the surgery but died 18 days later from pneumonia.",
       "tier": 2,
       "difficulty_rating": 6,
       "clues": {
         "monday": [
           "The surgeon was from South Africa.",
-          "The operation lasted about 5 hours."
+          "The operation lasted about 5 hours.",
+          "The recipient survived the operation but died 18 days later."
         ],
         "tuesday": [
-          "The recipient was a 53-year-old dentist.",
-          "The donor was a woman who died in a car accident."
+          "The recipient was a 53-year-old with heart disease.",
+          "The donor was a woman who died in a car accident.",
+          "The surgeon became an overnight celebrity."
         ],
         "wednesday": [
           "This was in the 1960s.",
-          "The surgeon was Dr. Christiaan Barnard."
+          "The surgeon was Dr. Christiaan Barnard.",
+          "The operation took place in Cape Town."
         ],
-        "thursday": "This was in the 1960s.",
-        "friday": "The surgeon was from South Africa.",
-        "saturday": "Dr. Christiaan Barnard led it."
+        "thursday": [
+          "This was in the 1960s.",
+          "The surgeon was from South Africa."
+        ],
+        "friday": [
+          "Dr. Christiaan Barnard led it.",
+          "It was in Cape Town."
+        ],
+        "saturday": [
+          "Dr. Christiaan Barnard led it."
+        ]
       },
       "context_card": "On December 3, 1967, Dr. Christiaan Barnard transplanted a human heart into 53-year-old Louis Washkansky. The operation was successful, but Washkansky died 18 days later from pneumonia — his immune system had been weakened by the anti-rejection drugs. Barnard's face was on magazine covers worldwide overnight. He had gone from obscurity to celebrity in a single operation."
     },
@@ -842,25 +1154,37 @@
       "image": "/images/puzzles/027.webp",
       "image_attribution": "Wikimedia Commons",
       "image_source_url": "https://commons.wikimedia.org/wiki/File:Jonas_Salk.jpg",
-      "headline": "A scientist announces a vaccine that would nearly eradicate a feared disease",
+      "headline": "The Salk Polio Vaccine Announced",
+      "description": "For years, parents had dreaded the summer, when polio could strike seemingly healthy children, leaving them paralyzed or dead. Jonas Salk spent years developing and testing a vaccine, conducting one of the largest medical trials in history with nearly two million schoolchildren. When the results were announced as safe and effective, church bells rang across America and factory whistles blew.",
       "tier": 1,
       "difficulty_rating": 5,
       "clues": {
         "monday": [
           "The vaccine was developed by Jonas Salk.",
-          "Parents feared this disease because it paralyzed children."
+          "Parents feared this disease because it paralyzed children.",
+          "Church bells rang across America when the news broke."
         ],
         "tuesday": [
-          "The announcement was made on April 12 — a Monday.",
-          "Church bells rang across America when the news broke."
+          "The announcement was made on April 12.",
+          "Nearly two million schoolchildren participated in the trial.",
+          "Cases dropped by 90% within months."
         ],
         "wednesday": [
           "This happened in the 1950s.",
-          "The disease especially affected children in summer."
+          "The disease especially affected children in summer.",
+          "The vaccine trial was one of the largest in history."
         ],
-        "thursday": "This was in the 1950s.",
-        "friday": "Jonas Salk developed it.",
-        "saturday": "It was announced on April 12."
+        "thursday": [
+          "This was in the 1950s.",
+          "Jonas Salk developed it."
+        ],
+        "friday": [
+          "It was announced on April 12.",
+          "Church bells rang across the country."
+        ],
+        "saturday": [
+          "It was announced on April 12."
+        ]
       },
       "context_card": "On April 12, 1955, Dr. Thomas Francis announced that Jonas Salk's polio vaccine was 'safe, effective, and potent.' Within hours, churches rang bells and factories blew whistles in celebration. One parent said: 'I have never experienced such a feeling of relief.' Within months, cases of polio in the US dropped by 90%. By 1979, polio was eliminated in the United States."
     },
@@ -874,25 +1198,37 @@
       "image": "/images/puzzles/028.webp",
       "image_attribution": "Wikipedia",
       "image_source_url": "https://en.wikipedia.org/wiki/Email",
-      "headline": "The first message travels between two computers on ARPANET",
+      "headline": "The First ARPANET Email",
+      "description": "Ray Tomlinson, a programmer working on the government-funded ARPANET network, devised a way to send messages between users on different machines. He chose the @ symbol — already on every keyboard — to separate the user name from the machine name, creating an addressing format that billions of people would eventually use. The first message was so mundane he couldn't recall what it said.",
       "tier": 2,
       "difficulty_rating": 7,
       "clues": {
         "monday": [
           "The message was sent from Cambridge, Massachusetts.",
-          "Ray Tomlinson chose the @ symbol for email addresses."
+          "Ray Tomlinson chose the @ symbol for email addresses.",
+          "The exact content of the message has been lost."
         ],
         "tuesday": [
-          "The exact content of the message has been lost.",
-          "It was sent over ARPANET, the precursor to the internet."
+          "It was sent over ARPANET, the precursor to the internet.",
+          "The sender was testing communication between two machines.",
+          "The @ symbol became the defining feature of the format."
         ],
         "wednesday": [
           "This was in the early 1970s.",
-          "The sender was a computer programmer."
+          "The sender was a computer programmer.",
+          "The network connected universities and research labs."
         ],
-        "thursday": "This was in the early 1970s.",
-        "friday": "Ray Tomlinson sent it.",
-        "saturday": "The @ symbol was used."
+        "thursday": [
+          "This was in the early 1970s.",
+          "Ray Tomlinson sent it."
+        ],
+        "friday": [
+          "The @ symbol was used.",
+          "The message traveled over ARPANET."
+        ],
+        "saturday": [
+          "The @ symbol was used."
+        ]
       },
       "context_card": "Ray Tomlinson sent the first networked email between two computers on ARPANET in 1971. The message itself was mundane — probably 'QWERTYUIOP' or something similar, used as a keyboard test. Tomlinson also chose the @ sign to separate user names from computer names, creating the format we still use today. The invention went from concept to global essential service in under three decades."
     },
@@ -906,25 +1242,37 @@
       "image": "/images/puzzles/029.webp",
       "image_attribution": "Jacques-Louis David, Wikimedia Commons",
       "image_source_url": "https://commons.wikimedia.org/wiki/File:Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg",
-      "headline": "A former revolutionary crowns himself Emperor in a ceremony at Notre-Dame",
+      "headline": "Napoleon Crowns Himself Emperor",
+      "description": "In an elaborate ceremony at Notre-Dame Cathedral in Paris, Napoleon Bonaparte crowned himself Emperor of France. The Pope had traveled from Rome for the occasion, but in a dramatic gesture of supreme confidence, Napoleon took the crown from the pontiff's hands and placed it on his own head. The message was unmistakable: he owed his power to no one.",
       "tier": 1,
       "difficulty_rating": 5,
       "clues": {
         "monday": [
           "The coronation took place at Notre-Dame Cathedral in Paris.",
-          "Napoleon famously took the crown from the Pope and placed it on his own head."
+          "He famously took the crown from the Pope and placed it on his own head.",
+          "The ceremony was painted by Jacques-Louis David."
         ],
         "tuesday": [
-          "The ceremony was painted by Jacques-Louis David.",
-          "This came after the French Revolution overthrew the monarchy."
+          "This came after the French Revolution overthrew the monarchy.",
+          "The Pope traveled from Rome for the ceremony.",
+          "The new emperor had risen from a military career."
         ],
         "wednesday": [
           "This was in the early 19th century.",
-          "The Pope was present but played a passive role."
+          "The Pope was present but played a passive role.",
+          "His empire would eventually span most of Europe."
         ],
-        "thursday": "This was in the early 19th century.",
-        "friday": "The ceremony was at Notre-Dame.",
-        "saturday": "Napoleon crowned himself."
+        "thursday": [
+          "This was in the early 19th century.",
+          "The ceremony was at Notre-Dame."
+        ],
+        "friday": [
+          "He crowned himself Emperor.",
+          "The ceremony was in Paris."
+        ],
+        "saturday": [
+          "He crowned himself."
+        ]
       },
       "context_card": "On December 2, 1804, Napoleon Bonaparte crowned himself Emperor of France in Notre-Dame. He famously seized the crown from Pope Pius VII and placed it on his own head before crowning his wife Josephine. The painter Jacques-Louis David immortalized the moment in a massive canvas. Napoleon's empire would eventually span most of Europe before his defeat at Waterloo in 1815."
     },
@@ -938,25 +1286,37 @@
       "image": "/images/puzzles/030.webp",
       "image_attribution": "Wikimedia Commons",
       "image_source_url": "https://commons.wikimedia.org/wiki/File:YouTube_logo.svg",
-      "headline": "Three former PayPal employees launch a video-sharing website that would change media forever",
+      "headline": "YouTube Is Founded",
+      "description": "Three former PayPal employees — Chad Hurley, Steve Chen, and Jawed Karim — were frustrated by how difficult it was to share video clips online. They built a simple website where anyone could upload and watch videos. The first video ever uploaded was Karim's 18-second clip 'Me at the zoo,' filmed at the San Diego Zoo. Within months, the site was serving millions of videos per day.",
       "tier": 2,
       "difficulty_rating": 7,
       "clues": {
         "monday": [
           "The first video was uploaded by a co-founder.",
-          "The site was sold to Google 18 months after launch."
+          "The site was sold to Google 18 months after launch.",
+          "The original name consideration was 'Tune In, Hook Up.'"
         ],
         "tuesday": [
-          "The original name consideration was 'Tune In, Hook Up.'",
-          "The first video was called 'Me at the zoo.'"
+          "The first video was called 'Me at the zoo.'",
+          "The co-founders previously worked at PayPal.",
+          "Within months, it was serving millions of videos per day."
         ],
         "wednesday": [
           "This was in the mid-2000s.",
-          "It transformed how media is created and consumed."
+          "It transformed how media is created and consumed.",
+          "Google paid $1.65 billion to acquire it."
         ],
-        "thursday": "This was in the mid-2000s.",
-        "friday": "The first video was 'Me at the zoo.'",
-        "saturday": "Google bought it for $1.65 billion."
+        "thursday": [
+          "This was in the mid-2000s.",
+          "The first video was 'Me at the zoo.'"
+        ],
+        "friday": [
+          "Google bought it for $1.65 billion.",
+          "The co-founders previously worked at a payments company."
+        ],
+        "saturday": [
+          "Google bought it for $1.65 billion."
+        ]
       },
       "context_card": "YouTube was founded in February 2005 and launched in November. The first video, 'Me at the zoo,' was uploaded by co-founder Jawed Karim on April 23, 2005, and is still online. Google acquired YouTube in October 2006 for $1.65 billion — at the time, an enormous sum for a company with no revenue and 25 employees. By 2023, YouTube had over 2 billion logged-in monthly users."
     }

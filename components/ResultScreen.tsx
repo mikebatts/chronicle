@@ -1,153 +1,144 @@
 "use client";
 
-import type { Puzzle, GameState, GamePhase } from "@/lib/types";
+import { useState } from "react";
+import type { Puzzle, GameState, GamePhase, DigitFeedback } from "@/lib/types";
+import StatsDisplay from "./StatsDisplay";
 
 interface ResultScreenProps {
   puzzle: Puzzle;
   puzzleNumber: number;
   guesses: number[];
+  digitFeedbackRows: DigitFeedback[][];
   phase: GamePhase;
-  score: number;
   shareText: string;
   gameState: GameState;
 }
+
+const COLOR_MAP = {
+  correct: "bg-[var(--digit-correct)] text-white border-[var(--digit-correct)]",
+  close: "bg-[var(--digit-close)] text-white border-[var(--digit-close)]",
+  miss: "bg-[var(--digit-miss)] text-white border-[var(--digit-miss)]",
+};
 
 export default function ResultScreen({
   puzzle,
   puzzleNumber,
   guesses,
+  digitFeedbackRows,
   phase,
-  score,
   shareText,
   gameState,
 }: ResultScreenProps) {
   const isWin = phase === "won";
+  const [copyLabel, setCopyLabel] = useState("Copy result");
+  const resultText = isWin ? `${guesses.length}/4` : "X/4";
 
   const copyToClipboard = async () => {
     try {
       await navigator.clipboard.writeText(shareText);
-      alert("Copied to clipboard!");
+      setCopyLabel("Copied!");
+      setTimeout(() => setCopyLabel("Copy result"), 2000);
     } catch {
       // Fallback
     }
   };
 
-  const avgDistance =
-    gameState.wins_with_distance > 0
-      ? Math.round(gameState.total_distance / gameState.wins_with_distance)
-      : 0;
+  const shareToX = () => {
+    const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}`;
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
+  const tryWebShare = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({ text: shareText });
+      } catch {
+        // User cancelled or not supported
+      }
+    } else {
+      await copyToClipboard();
+    }
+  };
 
   return (
-    <div className="flex-1 flex flex-col items-center justify-center p-4 max-w-lg mx-auto w-full">
-      {/* Result Header */}
-      <div className="text-center mb-6">
-        {isWin ? (
-          <>
-            <h2 className="text-3xl font-bold mb-2 text-[var(--correct)]">
-              Nailed it!
-            </h2>
-            <p className="text-[var(--text-secondary)]">
-              The year was {puzzle.year}
-            </p>
-          </>
-        ) : (
-          <>
-            <h2 className="text-3xl font-bold mb-2 text-[var(--cold)]">
-              Not quite
-            </h2>
-            <p className="text-[var(--text-secondary)]">
-              The year was {puzzle.year}
-            </p>
-          </>
-        )}
+    <div className="flex-1 flex flex-col items-center px-4 py-6 max-w-md mx-auto w-full overflow-y-auto result-fade-in">
+      {/* Year Reveal */}
+      <div className="text-center mt-2 mb-4">
+        <div
+          className="text-6xl sm:text-7xl font-bold mb-2 tracking-tight"
+          style={{ fontFamily: "var(--font-serif)" }}
+        >
+          {puzzle.year}
+        </div>
+        <p
+          className="text-xl text-[var(--text-secondary)] leading-relaxed"
+          style={{ fontFamily: "var(--font-serif)" }}
+        >
+          {puzzle.event_formal}
+        </p>
+      </div>
+
+      {/* Result */}
+      <div className="text-center mb-4">
+        <span className={`text-2xl font-bold ${isWin ? "text-[var(--digit-correct)]" : "text-[var(--text-secondary)]"}`}>
+          {resultText}
+        </span>
+      </div>
+
+      {/* Digit feedback grid */}
+      <div className="flex flex-col items-center gap-2 mb-6">
+        {digitFeedbackRows.map((row, rowIdx) => (
+          <div key={rowIdx} className="flex gap-2">
+            {row.map((df, colIdx) => (
+              <div
+                key={colIdx}
+                className={`w-12 h-12 flex items-center justify-center text-lg font-bold rounded-lg ${COLOR_MAP[df.color]}`}
+              >
+                {df.digit}
+              </div>
+            ))}
+          </div>
+        ))}
       </div>
 
       {/* Context Card */}
-      <div className="w-full p-4 bg-[var(--surface)] border border-[var(--border)] rounded-lg mb-6">
-        <p className="text-[var(--text-primary)] leading-relaxed">
+      <div className="w-full px-4 py-4 bg-[var(--surface)] rounded-lg mb-6">
+        <p className="text-[var(--text-primary)] leading-relaxed text-sm">
           {puzzle.context_card}
         </p>
-        {puzzle.image_attribution && (
-          <p className="text-xs text-[var(--text-secondary)] mt-2">
-            {puzzle.image_attribution}
-          </p>
-        )}
       </div>
 
-      {/* Share Button */}
-      <button
-        onClick={copyToClipboard}
-        className="w-full py-3 px-6 bg-[var(--accent)] text-[var(--bg)] font-semibold rounded-lg hover:opacity-90 transition-opacity mb-8"
-      >
-        Share Result
-      </button>
+      {/* Share Buttons — vertical stack */}
+      <div className="w-full flex flex-col gap-2 mb-6">
+        <button
+          onClick={tryWebShare}
+          className="w-full py-3 px-4 bg-[var(--text-primary)] text-[var(--bg)] font-semibold rounded-lg hover:opacity-90 transition-opacity min-h-[48px]"
+        >
+          Share
+        </button>
+        <button
+          onClick={copyToClipboard}
+          className="w-full py-3 px-4 bg-transparent border border-[var(--border)] text-[var(--text-primary)] font-semibold rounded-lg hover:bg-[var(--surface)] transition-colors min-h-[48px]"
+        >
+          {copyLabel}
+        </button>
+        <button
+          onClick={shareToX}
+          className="w-full py-3 px-4 bg-transparent border border-[var(--border)] text-[var(--text-primary)] font-semibold rounded-lg hover:bg-[var(--surface)] transition-colors min-h-[48px]"
+          aria-label="Share on X"
+        >
+          Share on 𝕏
+        </button>
+      </div>
 
       {/* Stats */}
-      <div className="w-full text-center">
-        <h3 className="text-lg font-semibold mb-4">Statistics</h3>
-
-        <div className="grid grid-cols-4 gap-4 mb-6">
-          <div className="text-center">
-            <div className="text-2xl font-bold">{gameState.played}</div>
-            <div className="text-xs text-[var(--text-secondary)]">Played</div>
-          </div>
-          <div className="text-center">
-            <div className="text-2xl font-bold">
-              {gameState.played > 0
-                ? Math.round((gameState.wins / gameState.played) * 100)
-                : 0}
-              %
-            </div>
-            <div className="text-xs text-[var(--text-secondary)]">Win %</div>
-          </div>
-          <div className="text-center">
-            <div className="text-2xl font-bold flex items-center justify-center gap-1">
-              {gameState.current_streak}
-              {gameState.current_streak > 0 && <span>🔥</span>}
-            </div>
-            <div className="text-xs text-[var(--text-secondary)]">Streak</div>
-          </div>
-          <div className="text-center">
-            <div className="text-2xl font-bold">{gameState.max_streak}</div>
-            <div className="text-xs text-[var(--text-secondary)]">Max</div>
-          </div>
-        </div>
-
-        {/* Avg Distance */}
-        {gameState.wins > 0 && (
-          <div className="text-center mb-4">
-            <div className="text-lg font-semibold">
-              {avgDistance} <span className="text-[var(--text-secondary)] text-sm">yrs avg</span>
-            </div>
-            <div className="text-xs text-[var(--text-secondary)]">Average Distance</div>
-          </div>
-        )}
-
-        {/* Guess Distribution */}
-        <div className="text-left">
-          <h4 className="text-sm font-semibold mb-2 text-center">Distribution</h4>
-          {(["1", "2", "3"] as const).map((n) => {
-            const count = gameState.guess_distribution[n] || 0;
-            const total = gameState.wins;
-            const pct = total > 0 ? (count / total) * 100 : 0;
-            return (
-              <div key={n} className="flex items-center gap-2 mb-1">
-                <span className="w-4 text-sm">{n}</span>
-                <div className="flex-1 h-5 bg-[var(--surface)] rounded overflow-hidden">
-                  <div
-                    className="h-full bg-[var(--accent)]"
-                    style={{ width: `${pct}%` }}
-                  />
-                </div>
-                <span className="w-8 text-sm text-right">{count}</span>
-              </div>
-            );
-          })}
-        </div>
+      <div className="w-full border-t border-[var(--border)] pt-6">
+        <h3 className="text-lg font-semibold mb-4 text-center">Statistics</h3>
+        <StatsDisplay gameState={gameState} />
       </div>
 
-      {/* Back to home hint */}
-      <p className="mt-8 text-sm text-[var(--text-secondary)]">
+      {/* Footer */}
+      <p className="mt-8 mb-4 text-sm text-[var(--text-secondary)]">
         Come back tomorrow for a new puzzle
       </p>
     </div>

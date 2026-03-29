@@ -1,9 +1,9 @@
 "use client";
 
-import { useState, useCallback } from "react";
-import type { Puzzle, GameState, GamePhase, AttemptPhase } from "@/lib/types";
-import { calculateScore, getDistanceCategory } from "@/lib/scoring";
-import { loadState, saveState } from "@/lib/storage";
+import { useState, useCallback, useEffect } from "react";
+import type { Puzzle, GameState, GamePhase, AttemptPhase, DigitFeedback } from "@/lib/types";
+import { getDigitFeedback } from "@/lib/scoring";
+import { loadState, saveState, loadSession, saveSession } from "@/lib/storage";
 import { getPuzzleNumber } from "@/lib/puzzles";
 import { generateShareText } from "@/lib/share";
 import YearInput from "./YearInput";
@@ -15,23 +15,48 @@ interface GameProps {
   puzzle: Puzzle;
 }
 
-const HEAT_EMOJI: Record<string, string> = {
-  exact: "✅",
-  very_close: "🟢",
-  close: "🟡",
-  warm: "🟠",
-  cold: "🔴",
-};
+function isConsecutiveDay(lastPlayed: string, today: string): boolean {
+  if (!lastPlayed) return false;
+  const last = new Date(lastPlayed + "T00:00:00");
+  const current = new Date(today + "T00:00:00");
+  const diffMs = current.getTime() - last.getTime();
+  const diffDays = Math.round(diffMs / (1000 * 60 * 60 * 24));
+  return diffDays === 1;
+}
 
 export default function Game({ puzzle }: GameProps) {
   const [phase, setPhase] = useState<GamePhase>("playing");
   const [attempt, setAttempt] = useState<AttemptPhase>(1);
   const [guesses, setGuesses] = useState<number[]>([]);
+  const [digitFeedbackRows, setDigitFeedbackRows] = useState<DigitFeedback[][]>([]);
   const [gameState, setGameState] = useState<GameState>(() => loadState());
-  const [showClues, setShowClues] = useState<boolean[]>([false, false]);
+  const [wrongGuessCount, setWrongGuessCount] = useState(0);
+  const [initialized, setInitialized] = useState(false);
 
   const puzzleNumber = getPuzzleNumber(puzzle.date);
   const today = new Date().toISOString().split("T")[0];
+
+  // Restore in-progress session on mount
+  useEffect(() => {
+    const session = loadSession();
+    if (session && session.puzzle_date === today) {
+      setGuesses(session.guesses);
+      setPhase(session.phase);
+      setDigitFeedbackRows(session.digitFeedback || []);
+      if (session.phase === "playing") {
+        const attemptNum = Math.min(session.guesses.length + 1, 4) as AttemptPhase;
+        setAttempt(attemptNum);
+        setWrongGuessCount(session.guesses.length);
+      } else {
+        // Won or lost — count wrong guesses
+        const wrongCount = session.phase === "won"
+          ? session.guesses.length - 1
+          : session.guesses.length;
+        setWrongGuessCount(Math.max(0, wrongCount));
+      }
+    }
+    setInitialized(true);
+  }, [today]);
 
   const handleGuess = useCallback(
     (yearStr: string) => {
@@ -39,35 +64,40 @@ export default function Game({ puzzle }: GameProps) {
       if (isNaN(year)) return;
 
       const newGuesses = [...guesses, year];
+      const newFeedback = getDigitFeedback(year, puzzle.year);
+      const newFeedbackRows = [...digitFeedbackRows, newFeedback];
       setGuesses(newGuesses);
+      setDigitFeedbackRows(newFeedbackRows);
+
+      const guessKey = newGuesses.length.toString() as "1" | "2" | "3" | "4";
 
       if (year === puzzle.year) {
         setPhase("won");
+        setWrongGuessCount(newGuesses.length - 1);
+        const streakBase = isConsecutiveDay(gameState.last_played, today)
+          ? gameState.current_streak
+          : 0;
+        const newStreak = streakBase + 1;
         const newState: GameState = {
           ...gameState,
           played: gameState.played + 1,
           wins: gameState.wins + 1,
-          current_streak: gameState.current_streak + 1,
-          max_streak: Math.max(
-            gameState.max_streak,
-            gameState.current_streak + 1
-          ),
-          total_distance: gameState.total_distance + Math.abs(year - puzzle.year),
-          wins_with_distance: gameState.wins_with_distance + 1,
+          current_streak: newStreak,
+          max_streak: Math.max(gameState.max_streak, newStreak),
           guess_distribution: {
             ...gameState.guess_distribution,
-            [newGuesses.length.toString()]:
-              (gameState.guess_distribution[newGuesses.length.toString()] || 0) + 1,
+            [guessKey]: (gameState.guess_distribution[guessKey] || 0) + 1,
           },
           last_played: today,
           last_result: "win",
           last_guess_count: newGuesses.length,
-          last_distance: Math.abs(year - puzzle.year),
         };
         setGameState(newState);
         saveState(newState);
-      } else if (newGuesses.length >= 3) {
+        saveSession({ puzzle_date: today, guesses: newGuesses, phase: "won", digitFeedback: newFeedbackRows });
+      } else if (newGuesses.length >= 4) {
         setPhase("lost");
+        setWrongGuessCount(newGuesses.length);
         const newState: GameState = {
           ...gameState,
           played: gameState.played + 1,
@@ -76,26 +106,27 @@ export default function Game({ puzzle }: GameProps) {
           last_played: today,
           last_result: "loss",
           last_guess_count: newGuesses.length,
-          last_distance: Math.abs(year - puzzle.year),
         };
         setGameState(newState);
         saveState(newState);
+        saveSession({ puzzle_date: today, guesses: newGuesses, phase: "lost", digitFeedback: newFeedbackRows });
       } else {
+        // Wrong guess, game continues
+        setWrongGuessCount(newGuesses.length);
         setAttempt((prev) => (prev + 1) as AttemptPhase);
-        setShowClues((prev) => {
-          const next = [...prev];
-          next[newGuesses.length - 1] = true;
-          return next;
-        });
+        saveSession({ puzzle_date: today, guesses: newGuesses, phase: "playing", digitFeedback: newFeedbackRows });
       }
     },
-    [guesses, puzzle.year, gameState, puzzle.date, today]
+    [guesses, digitFeedbackRows, puzzle.year, gameState, today]
   );
+
+  if (!initialized) {
+    return null;
+  }
 
   const shareText = generateShareText(
     puzzleNumber,
-    guesses,
-    puzzle.year,
+    digitFeedbackRows,
     phase === "won",
     gameState.current_streak
   );
@@ -106,8 +137,8 @@ export default function Game({ puzzle }: GameProps) {
         puzzle={puzzle}
         puzzleNumber={puzzleNumber}
         guesses={guesses}
+        digitFeedbackRows={digitFeedbackRows}
         phase={phase}
-        score={guesses.length > 0 ? calculateScore(guesses[guesses.length - 1], puzzle.year) : 0}
         shareText={shareText}
         gameState={gameState}
       />
@@ -115,34 +146,22 @@ export default function Game({ puzzle }: GameProps) {
   }
 
   return (
-    <div className="flex-1 flex flex-col items-center justify-center p-4 max-w-lg mx-auto w-full">
+    <div className="flex-1 flex flex-col items-center px-4 py-6 max-w-md mx-auto w-full">
       <PuzzleDisplay puzzle={puzzle} attempt={attempt} />
 
       <div className="mt-6 w-full">
-        {guesses.length > 0 && (
-          <div className="flex justify-center gap-2 mb-4">
-            {guesses.map((g, i) => {
-              const cat = getDistanceCategory(g, puzzle.year);
-              return (
-                <span
-                  key={i}
-                  className="text-2xl"
-                  title={`Guess ${i + 1}: ${g} (${cat})`}
-                >
-                  {HEAT_EMOJI[cat]}
-                </span>
-              );
-            })}
-          </div>
-        )}
-
         <ClueReveal
           puzzle={puzzle}
-          showClues={showClues}
-          attempt={attempt}
+          wrongGuessCount={wrongGuessCount}
         />
 
-        <YearInput onSubmit={handleGuess} disabled={phase !== "playing"} />
+        <div className="mt-6">
+          <YearInput
+            onSubmit={handleGuess}
+            disabled={phase !== "playing"}
+            previousGuesses={digitFeedbackRows}
+          />
+        </div>
       </div>
     </div>
   );

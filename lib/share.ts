@@ -1,46 +1,19 @@
-import { getDistanceCategory } from "./scoring";
+import type { DigitFeedback } from "./types";
+import { digitFeedbackToEmoji } from "./scoring";
 
 export function generateShareText(
   puzzleNumber: number,
-  guesses: number[],
-  correctYear: number,
+  digitFeedbackRows: DigitFeedback[][],
   isWin: boolean,
   streak: number
 ): string {
-  const emojiTrail = guesses
-    .map((g, i) => {
-      const cat = getDistanceCategory(g, correctYear);
-      switch (cat) {
-        case "exact":
-          return "✅";
-        case "very_close":
-          return "🟢";
-        case "close":
-          return "🟡";
-        case "warm":
-          return "🟠";
-        case "cold":
-          return "🔴";
-      }
-    })
-    .join(isWin ? " → " : " → ");
+  const guessCount = digitFeedbackRows.length;
+  const result = isWin ? `${guessCount}/4` : "X/4";
+  const streakPart = isWin && streak > 0 ? ` 🔥${streak}` : "";
 
-  if (isWin) {
-    const streakEmoji = streak > 0 ? ` 🔥${streak}` : "";
-    const firstTry = guesses.length === 1 && Math.abs(guesses[0] - correctYear) === 0;
+  const grid = digitFeedbackRows.map((row) => digitFeedbackToEmoji(row)).join("\n");
 
-    if (firstTry) {
-      return `Chronicle #${puzzleNumber} 📜${streakEmoji}
-✅ ⬜ ⬜
-thischronicle.com`;
-    }
-
-    return `Chronicle #${puzzleNumber} 📜${streakEmoji}
-${emojiTrail}
-thischronicle.com`;
-  }
-
-  return `Chronicle #${puzzleNumber} 📜 💔
-${emojiTrail}
+  return `Chronicle #${puzzleNumber} 🏛️ ${result}${streakPart}
+${grid}
 thischronicle.com`;
 }

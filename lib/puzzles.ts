@@ -1,9 +1,11 @@
 import puzzlesData from "@/data/puzzles.json";
 import type { Puzzle } from "./types";
 
+const puzzles = puzzlesData.puzzles as unknown as Puzzle[];
+
 export function getTodayPuzzle(): Puzzle {
   const today = new Date().toISOString().split("T")[0];
-  const puzzle = puzzlesData.puzzles.find((p: Puzzle) => p.date === today);
+  const puzzle = puzzles.find((p) => p.date === today);
   if (!puzzle) {
     throw new Error(`No puzzle found for today: ${today}`);
   }
@@ -11,11 +13,11 @@ export function getTodayPuzzle(): Puzzle {
 }
 
 export function getPuzzleByDate(date: string): Puzzle | undefined {
-  return puzzlesData.puzzles.find((p: Puzzle) => p.date === date);
+  return puzzles.find((p) => p.date === date);
 }
 
 export function getPuzzleNumber(puzzleDate: string): number {
-  const firstPuzzleDate = puzzlesData.puzzles[0]?.date;
+  const firstPuzzleDate = puzzles[0]?.date;
   if (!firstPuzzleDate) return 1;
 
   const first = new Date(firstPuzzleDate);
