@@ -32,3 +32,6 @@ next-env.d.ts
 
 # Vercel
 .vercel
+
+# Puzzle images — not rendered in UI, download via: npm run download-images
+public/images/
