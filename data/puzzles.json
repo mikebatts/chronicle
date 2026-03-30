@@ -2,14 +2,11 @@
   "puzzles": [
     {
       "id": 1,
-      "date": "2026-03-29",
-      "day_of_week": "sunday",
+      "date": "2026-03-30",
+      "day_of_week": "monday",
       "event": "The Berlin Wall Falls",
       "event_formal": "Fall of the Berlin Wall",
       "year": 1989,
-      "image": "/images/puzzles/001.webp",
-      "image_attribution": "Bundesarchiv, Wikimedia Commons",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:BerlinWall-BrandenburgGate.jpg",
       "headline": "The Fall of the Berlin Wall",
       "description": "After 28 years dividing East and West Berlin, the concrete barrier came down in a single chaotic night. Thousands of citizens surged to the checkpoints after a confused government spokesman seemed to announce the border was open. Within hours, people were dancing on the wall and chipping away at it with hammers.",
       "tier": 1,
@@ -45,15 +42,313 @@
       "context_card": "For 28 years, Checkpoint Charlie was the defining symbol of the Cold War. On November 9th, 1989, a confused bureaucrat announced that East Germans could cross freely — and thousands flooded through. No one had planned the announcement. The wall fell because the system was already crumbling."
     },
     {
+      "id": 31,
+      "date": "2026-03-31",
+      "day_of_week": "tuesday",
+      "event": "Nelson Mandela Released From Prison",
+      "event_formal": "Release of Nelson Mandela from Victor Verster Prison",
+      "year": 1990,
+      "headline": "After 27 years behind bars, the world held its breath",
+      "description": "He walked out of Victor Verster Prison outside Cape Town, raised his fist, and the crowd erupted. His release marked the beginning of the end of apartheid in South Africa — and one of the most watched moments in television history.",
+      "tier": 1,
+      "difficulty_rating": 5,
+      "clues": {
+        "monday": [
+          "This occurred near the end of the Cold War era.",
+          "It marked a turning point in a nation divided by racial segregation.",
+          "The man released would go on to lead his country within a few years."
+        ],
+        "tuesday": [
+          "This moment ended a nearly three-decade imprisonment.",
+          "The event took place in southern Africa.",
+          "The man freed had been convicted of sabotage and conspiracy."
+        ],
+        "wednesday": [
+          "This was a watershed moment in the struggle against apartheid.",
+          "The prisoner had been held since the early 1960s.",
+          "His release was broadcast live around the world."
+        ],
+        "thursday": [
+          "A political prisoner walked free after 27 years.",
+          "This happened in post-Cold War Africa."
+        ],
+        "friday": [
+          "A man imprisoned for over two decades emerged to lead a nation.",
+          "This was one of the most-watched moments of its decade."
+        ],
+        "saturday": [
+          "The long walk ended at a prison gate outside Cape Town."
+        ]
+      },
+      "context_card": "Nelson Mandela had spent 18 of his 27 years imprisoned on Robben Island, a bleak outcrop in Table Bay. By the time he walked free on February 11th, 1990, he had become the most famous political prisoner in the world. Within four years, he was president."
+    },
+    {
+      "id": 32,
+      "date": "2026-04-01",
+      "day_of_week": "wednesday",
+      "event": "JFK Assassinated in Dallas",
+      "event_formal": "Assassination of President John F. Kennedy",
+      "year": 1963,
+      "headline": "Shots rang out in Dealey Plaza, and everything changed",
+      "description": "President Kennedy was riding in a motorcade through downtown Dallas when shots were fired from the sixth floor of a nearby building. He was pronounced dead at Parkland Memorial Hospital thirty minutes later. Vice President Lyndon B. Johnson was sworn in aboard Air Force One, Jackie Kennedy standing beside him.",
+      "tier": 1,
+      "difficulty_rating": 6,
+      "clues": {
+        "monday": [
+          "This occurred during the Cold War, in a decade defined by tension and change.",
+          "A president was killed in a southern American city.",
+          "The assassin was himself killed two days later before he could stand trial."
+        ],
+        "tuesday": [
+          "This was a defining moment in American political history.",
+          "The event took place during a presidential motorcade.",
+          "The Warren Commission investigated what happened."
+        ],
+        "wednesday": [
+          "A US president was killed during a public appearance.",
+          "This happened in the early 1960s.",
+          "The event shocked a nation still living through the space race."
+        ],
+        "thursday": [
+          "A president was assassinated during a motorcade.",
+          "This occurred in early Cold War America."
+        ],
+        "friday": [
+          "Dallas, Texas was the site of a pivotal American tragedy.",
+          "The event happened before the mid-1960s."
+        ],
+        "saturday": [
+          "A motorcade, a plaza, and a moment the world could not unsee."
+        ]
+      },
+      "context_card": "Lee Harvey Oswald fired three shots from the sixth floor of the Texas School Book Depository on November 22nd, 1963. Kennedy was pronounced dead at 1:00 PM. Two days later, Oswald was shot by nightclub owner Jack Ruby in the Dallas Police Department basement — live on national television. The truth of what happened that day has never fully left public debate."
+    },
+    {
+      "id": 33,
+      "date": "2026-04-02",
+      "day_of_week": "thursday",
+      "event": "D-Day: Allied Forces Land at Normandy",
+      "event_formal": "Operation Overlord — D-Day Landings at Normandy",
+      "year": 1944,
+      "headline": "The largest seaborne invasion in history began before dawn",
+      "description": "Over 156,000 Allied troops crossed the English Channel and stormed five beaches along a 50-mile stretch of heavily fortified French coastline. The operation, code-named Overlord, marked the beginning of the liberation of Western Europe from Nazi occupation.",
+      "tier": 1,
+      "difficulty_rating": 6,
+      "clues": {
+        "monday": [
+          "This was a pivotal moment in a global conflict that defined the mid-20th century.",
+          "Allied forces from multiple nations participated.",
+          "The operation involved a massive naval and airborne component."
+        ],
+        "tuesday": [
+          "This was the largest amphibious military operation ever attempted.",
+          "It took place on the northern coast of France.",
+          "The date was kept secret from Nazi forces using an elaborate deception campaign."
+        ],
+        "wednesday": [
+          "Allied forces stormed fortified beaches in a surprise assault.",
+          "This happened during the Second World War.",
+          "Eisenhower commanded the overall operation."
+        ],
+        "thursday": [
+          "Thousands of Allied troops landed on French beaches at dawn.",
+          "This was a turning point in World War II."
+        ],
+        "friday": [
+          "Code-named Overlord, this was the largest seaborne invasion in history.",
+          "It opened the Western Front against Nazi Germany."
+        ],
+        "saturday": [
+          "Five beaches. One dawn. The fate of Europe."
+        ]
+      },
+      "context_card": "On June 6th, 1944, the Allies launched the most complex military operation in history. Paratroopers had already dropped behind enemy lines by the time the first landing craft hit the beaches at 6:30 AM. The cost was enormous — over 4,000 Allied soldiers died on D-Day alone — but within a year, Germany had surrendered."
+    },
+    {
+      "id": 34,
+      "date": "2026-04-03",
+      "day_of_week": "friday",
+      "event": "The Atomic Bomb Drops on Hiroshima",
+      "event_formal": "United States atomic bombing of Hiroshima, Japan",
+      "year": 1945,
+      "headline": "A single bomb flattened a city and changed warfare forever",
+      "description": "At 8:15 in the morning, a B-29 bomber called the Enola Gay released a uranium bomb nicknamed Little Boy over the Japanese city of Hiroshima. The explosion instantly killed tens of thousands and flattened nearly five square miles of the city.",
+      "tier": 1,
+      "difficulty_rating": 7,
+      "clues": {
+        "monday": [
+          "This occurred near the end of the Second World War.",
+          "A new and unprecedented weapon was used for the first time in warfare.",
+          "The target was a Japanese city chosen partly because it had not been heavily bombed before."
+        ],
+        "tuesday": [
+          "This was a decisive moment in the Pacific theater of World War II.",
+          "The weapon used had been developed in secret over several years.",
+          "It led directly to a major power's unconditional surrender."
+        ],
+        "wednesday": [
+          "An American aircraft dropped a new type of weapon on a major city.",
+          "This occurred in the 1940s, during a global war.",
+          "The event introduced the atomic age."
+        ],
+        "thursday": [
+          "A single bomb destroyed a Japanese city in seconds.",
+          "This occurred in the final months of World War II."
+        ],
+        "friday": [
+          "Little Boy fell from the Enola Gay at 8:15 AM.",
+          "This moment ended one era and began another."
+        ],
+        "saturday": [
+          "A flash of light over a city, and the world was never the same."
+        ]
+      },
+      "context_card": "The Manhattan Project had cost two billion dollars and employed hundreds of thousands of people — most of whom had no idea what they were building. On August 6th, 1945, the result was dropped on Hiroshima. Three days later, a second bomb fell on Nagasaki. Japan surrendered on August 15th. The atomic age had begun."
+    },
+    {
+      "id": 35,
+      "date": "2026-04-04",
+      "day_of_week": "saturday",
+      "event": "Lindbergh Completes First Solo Transatlantic Flight",
+      "event_formal": "Charles Lindbergh's solo nonstop transatlantic flight, New York to Paris",
+      "year": 1927,
+      "headline": "A 25-year-old flew alone across the Atlantic for 33 hours",
+      "description": "Charles Lindbergh took off from Roosevelt Field in New York and landed at Le Bourget Airfield outside Paris, completing the first solo nonstop transatlantic flight. He had no radio, limited instruments, and five sandwiches. A crowd of 100,000 awaited his landing.",
+      "tier": 1,
+      "difficulty_rating": 7,
+      "clues": {
+        "monday": [
+          "This occurred in the interwar period, between the two World Wars.",
+          "The achievement involved crossing the Atlantic Ocean.",
+          "A young American aviator became an overnight global celebrity."
+        ],
+        "tuesday": [
+          "This set a record that no one had broken before.",
+          "The pilot flew alone for more than 30 hours.",
+          "The journey ended in France."
+        ],
+        "wednesday": [
+          "An American pilot completed a solo flight from New York to Paris.",
+          "This happened in the 1920s.",
+          "The feat won a ,000 prize."
+        ],
+        "thursday": [
+          "A solo pilot crossed the Atlantic nonstop.",
+          "This happened before the Great Depression."
+        ],
+        "friday": [
+          "The Spirit of St. Louis touched down outside Paris.",
+          "This was the first solo nonstop transatlantic flight."
+        ],
+        "saturday": [
+          "Thirty-three hours, five sandwiches, and the sky between two continents."
+        ]
+      },
+      "context_card": "The Spirit of St. Louis was so loaded with fuel at takeoff that it barely cleared the telephone wires at the end of the runway. Charles Lindbergh landed at Le Bourget at 10:22 PM on May 21st, 1927, and was immediately mobbed by the crowd. He became the most famous man in the world overnight — and remained so for the rest of his life, for better and worse."
+    },
+    {
+      "id": 36,
+      "date": "2026-04-05",
+      "day_of_week": "sunday",
+      "event": "Cuban Missile Crisis Begins",
+      "event_formal": "Kennedy's address revealing Soviet missiles in Cuba",
+      "year": 1962,
+      "headline": "The president went on television and told the world how close it was",
+      "description": "President Kennedy addressed the nation to reveal that American spy planes had photographed Soviet nuclear missile sites under construction in Cuba. He announced a naval blockade of the island and demanded the Soviets remove the missiles — bringing the world to the edge of nuclear war.",
+      "tier": 1,
+      "difficulty_rating": 9,
+      "clues": {},
+      "context_card": "For thirteen days in October 1962, the world came closer to nuclear war than it ever has before or since. Soviet ships carrying additional missiles turned back at the US naval blockade. Soviet leader Khrushchev eventually agreed to remove the missiles in exchange for a US pledge not to invade Cuba and a secret agreement to remove American missiles from Turkey. The crisis was resolved — but only barely."
+    },
+    {
+      "id": 37,
+      "date": "2026-04-06",
+      "day_of_week": "monday",
+      "event": "Rosa Parks Refuses to Give Up Her Seat",
+      "event_formal": "Rosa Parks' arrest on the Montgomery, Alabama city bus",
+      "year": 1955,
+      "headline": "One woman stayed seated, and a movement stood up",
+      "description": "Rosa Parks, a seamstress and NAACP secretary, refused to give up her bus seat to a white passenger in Montgomery, Alabama. She was arrested and charged with violating segregation laws. Her arrest sparked the Montgomery Bus Boycott, a 381-day protest that became a defining moment of the Civil Rights Movement.",
+      "tier": 1,
+      "difficulty_rating": 4,
+      "clues": {
+        "monday": [
+          "This occurred during the early years of the Civil Rights Movement.",
+          "The act of defiance took place on public transportation in the American South.",
+          "The aftermath lasted over a year and led to a Supreme Court ruling."
+        ],
+        "tuesday": [
+          "A woman refused to comply with a segregation law.",
+          "This happened in Alabama in the mid-20th century.",
+          "Her arrest triggered a year-long boycott."
+        ],
+        "wednesday": [
+          "This act of civil disobedience occurred in Montgomery, Alabama.",
+          "It happened in the 1950s.",
+          "Martin Luther King Jr. led the protest that followed."
+        ],
+        "thursday": [
+          "A woman's refusal to move on a bus sparked a national movement.",
+          "This occurred in the mid-1950s American South."
+        ],
+        "friday": [
+          "Rosa Parks was arrested for not giving up her seat.",
+          "The event ignited the Montgomery Bus Boycott."
+        ],
+        "saturday": [
+          "She stayed seated. The movement stood up."
+        ]
+      },
+      "context_card": "Rosa Parks was not simply tired from work when she refused to move — she was tired of giving in. She had been trained at the Highlander Folk School, a center for civil rights activism. Her arrest on December 1st, 1955 was strategic: the NAACP had been looking for a test case. The resulting boycott lasted 381 days and ended with the Supreme Court ruling bus segregation unconstitutional."
+    },
+    {
+      "id": 38,
+      "date": "2026-04-07",
+      "day_of_week": "tuesday",
+      "event": "The Challenger Disaster",
+      "event_formal": "Space Shuttle Challenger disintegration on launch",
+      "year": 1986,
+      "headline": "Millions watching live saw it break apart 73 seconds after liftoff",
+      "description": "The Space Shuttle Challenger broke apart 73 seconds into its flight, killing all seven crew members including Christa McAuliffe, who would have been the first teacher in space. The disaster was caused by O-ring failure in the unusually cold temperatures at launch. President Reagan postponed his State of the Union address.",
+      "tier": 1,
+      "difficulty_rating": 5,
+      "clues": {
+        "monday": [
+          "This occurred during the Space Shuttle program era.",
+          "A catastrophic failure happened shortly after launch.",
+          "The crew included a civilian teacher selected through a public contest."
+        ],
+        "tuesday": [
+          "This was one of the most-watched disasters in American history.",
+          "A spacecraft failed 73 seconds into its mission.",
+          "The event led to a major suspension of the shuttle program."
+        ],
+        "wednesday": [
+          "A NASA launch ended in tragedy on a cold January morning.",
+          "This happened in the 1980s.",
+          "The crew of seven included the first teacher chosen for spaceflight."
+        ],
+        "thursday": [
+          "The Space Shuttle broke apart seconds after launch.",
+          "This occurred in the mid-1980s."
+        ],
+        "friday": [
+          "Challenger disintegrated 73 seconds into its flight.",
+          "The disaster was caused by cold temperatures affecting a rubber seal."
+        ],
+        "saturday": [
+          "It was cold that morning. No one had listened to the engineers who said wait."
+        ]
+      },
+      "context_card": "Engineers at Morton Thiokol had warned NASA the night before launch that O-rings could fail in temperatures below 53°F — and it was 28°F at Cape Canaveral that morning. Their objections were overruled. The Rogers Commission that investigated the disaster famously included physicist Richard Feynman, who demonstrated the O-ring failure with a glass of ice water at a press conference."
+    },
+    {
       "id": 2,
       "date": "2026-04-08",
       "day_of_week": "wednesday",
       "event": "The Wright Brothers' First Flight",
       "event_formal": "First powered airplane flight by the Wright Brothers",
       "year": 1903,
-      "image": "/images/puzzles/002.webp",
-      "image_attribution": "Orville Wright, Wikimedia Commons",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:First_flight2.jpg",
       "headline": "The Wright Brothers' First Flight",
       "description": "Two bicycle mechanics from Dayton, Ohio traveled to the windswept sand dunes of Kitty Hawk, North Carolina to test their latest flying machine. On a cold December morning, with only five witnesses present, Orville Wright lay prone on the lower wing, opened the throttle, and lifted off the ground for 12 seconds.",
       "tier": 1,
@@ -95,9 +390,6 @@
       "event": "Apollo 11 Moon Landing",
       "event_formal": "First human landing on the Moon",
       "year": 1969,
-      "image": "/images/puzzles/003.webp",
-      "image_attribution": "NASA, Wikimedia Commons",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:Apollo_11_first_step.jpg",
       "headline": "The Apollo 11 Moon Landing",
       "description": "Neil Armstrong and Buzz Aldrin descended in the lunar module Eagle while Michael Collins orbited above. Alarms blared and Armstrong had to manually guide the craft past a boulder field with only 30 seconds of fuel remaining. When the module touched down, Mission Control erupted. Six hundred million people watched the grainy footage on television.",
       "tier": 3,
@@ -139,9 +431,6 @@
       "event": "The Titanic Sinks",
       "event_formal": "RMS Titanic sinks on maiden voyage",
       "year": 1912,
-      "image": "/images/puzzles/004.webp",
-      "image_attribution": "Wikimedia Commons",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:RMS_Titanic_3.jpg",
       "headline": "The Sinking of the Titanic",
       "description": "The most luxurious ocean liner ever built was four days into its maiden voyage across the North Atlantic, carrying some of the wealthiest people in the world alongside hundreds of immigrants seeking new lives in America. A lookout spotted an iceberg dead ahead. Despite a hard turn, the ship's starboard side scraped along the ice, opening a fatal gash below the waterline. Over 1,500 people died.",
       "tier": 1,
@@ -183,9 +472,6 @@
       "event": "World War I Begins",
       "event_formal": "Beginning of World War I",
       "year": 1914,
-      "image": "/images/puzzles/005.webp",
-      "image_attribution": "Wikimedia Commons",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:Assassination_of_Archduke_Franz_Ferdinand_1914.jpg",
       "headline": "The Assassination of Archduke Franz Ferdinand",
       "description": "A young Bosnian Serb nationalist fired two shots at a royal motorcade in Sarajevo, killing Archduke Franz Ferdinand and his wife Sophie. Within weeks, a web of alliances and ultimatums dragged the great powers of Europe into World War I — a conflict that would last four years, destroy four empires, and kill 17 million people.",
       "tier": 1,
@@ -227,9 +513,6 @@
       "event": "September 11 Attacks",
       "event_formal": "September 11 terrorist attacks",
       "year": 2001,
-      "image": "/images/puzzles/006.webp",
-      "image_attribution": " Wikimedia Commons",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:UA_Flight_175_hits_WTC_south_tower_9-11_edit.jpeg",
       "headline": "The September 11 Attacks",
       "description": "On a clear Tuesday morning, al-Qaeda terrorists hijacked four commercial airplanes and carried out coordinated attacks on the United States. Two planes struck the Twin Towers of the World Trade Center in New York. A third hit the Pentagon. A fourth crashed in a Pennsylvania field after passengers fought back. Nearly 3,000 people were killed.",
       "tier": 1,
@@ -271,9 +554,6 @@
       "event": "The Beatles First US Tour",
       "event_formal": "The Beatles arrive in America",
       "year": 1964,
-      "image": "/images/puzzles/007.webp",
-      "image_attribution": "Mickey Crystal, Wikimedia Commons",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:The_Beatles_in_America.JPG",
       "headline": "The Beatles Arrive in America",
       "description": "The four-piece rock band from Liverpool landed at JFK Airport in New York to absolute pandemonium. Thousands of screaming teenagers packed the terminal. Within days, they appeared on the Ed Sullivan Show, watched by 73 million viewers — the largest TV audience in American history at that point. The British Invasion of pop music had begun.",
       "tier": 1,
@@ -315,9 +595,6 @@
       "event": "First iPhone Released",
       "event_formal": "First Apple iPhone released",
       "year": 2007,
-      "image": "/images/puzzles/008.webp",
-      "image_attribution": "Steve Jurvetson, Wikimedia Commons",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:Apple_iPhone_2G_8GB.jpg",
       "headline": "Apple Unveils the iPhone",
       "description": "Steve Jobs walked onto a stage in San Francisco wearing his signature black turtleneck and announced three new products: a widescreen iPod, a mobile phone, and an internet communicator. The crowd cheered each one. Then he revealed they were all the same device. No physical keyboard, no stylus — just a multi-touch glass screen that responded to your fingertips.",
       "tier": 1,
@@ -359,9 +636,6 @@
       "event": "Fall of the Soviet Union",
       "event_formal": "Dissolution of the Soviet Union",
       "year": 1991,
-      "image": "/images/puzzles/009.webp",
-      "image_attribution": "Wikimedia Commons",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:Soviet_Union_1989_election.svg",
       "headline": "The Dissolution of the Soviet Union",
       "description": "On a cold December evening, the red hammer-and-sickle flag was lowered from the Kremlin for the last time and replaced by the Russian tricolor. The USSR — a superpower that had shaped world politics for nearly seven decades — ceased to exist, fracturing into fifteen independent nations. Mikhail Gorbachev resigned and handed the nuclear codes to Boris Yeltsin.",
       "tier": 1,
@@ -403,9 +677,6 @@
       "event": "First Email Sent",
       "event_formal": "First ARPANET message sent",
       "year": 1971,
-      "image": "/images/puzzles/010.webp",
-      "image_attribution": "Wikimedia Commons",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:Arpanet_logo.svg",
       "headline": "The First Email Is Sent",
       "description": "Ray Tomlinson, a programmer at BBN Technologies in Cambridge, Massachusetts, devised a way to send messages between users on different machines connected by ARPANET. He chose the @ symbol to separate the user name from the machine name. The first test message was so unremarkable he couldn't remember what it said — probably just 'QWERTYUIOP.'",
       "tier": 2,
@@ -447,9 +718,6 @@
       "event": "The Great Wall of China Completed",
       "event_formal": "Completion of the Great Wall of China",
       "year": 1644,
-      "image": "/images/puzzles/011.webp",
-      "image_attribution": "Wikimedia Commons",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:Great_Wall_near_Mutianyu.jpg",
       "headline": "The Great Wall of China Completed",
       "description": "Over thousands of miles of mountains, deserts, and plains, generations of workers — soldiers, peasants, and prisoners — built and rebuilt a massive fortification to protect China from northern invaders. The final major phase of construction under the Ming Dynasty ended as the dynasty fell and the Qing rose to power, completing the 13,000-mile network of walls, watchtowers, and garrison stations.",
       "tier": 2,
@@ -491,9 +759,6 @@
       "event": "French Revolution Begins",
       "event_formal": "Storming of the Bastille",
       "year": 1789,
-      "image": "/images/puzzles/012.webp",
-      "image_attribution": "Wikimedia Commons",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:Prise_de_la_Bastille.jpg",
       "headline": "The Storming of the Bastille",
       "description": "Bread prices had skyrocketed and anger at King Louis XVI was boiling over. An armed crowd of Parisians marched on the Bastille — a medieval fortress and symbol of royal tyranny — demanding the weapons stored inside. When negotiations broke down, the crowd attacked. By evening, the fortress had fallen, its governor was killed, and the French Revolution had begun.",
       "tier": 1,
@@ -535,9 +800,6 @@
       "event": "First Atomic Bomb Test",
       "event_formal": "Trinity nuclear test",
       "year": 1945,
-      "image": "/images/puzzles/013.webp",
-      "image_attribution": "Wikimedia Commons",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:Trinity_shot_color.jpg",
       "headline": "The Trinity Nuclear Test",
       "description": "In the predawn darkness of the New Mexico desert, the Manhattan Project reached its climax. A team of scientists and military officials gathered around a steel tower holding the world's first atomic bomb. When the device detonated, the flash was visible for 200 miles and turned sand to glass. J. Robert Oppenheimer later recalled thinking of the Bhagavad Gita: 'Now I am become Death, the destroyer of worlds.'",
       "tier": 1,
@@ -579,9 +841,6 @@
       "event": "The Mona Lisa Stolen",
       "event_formal": "Theft of the Mona Lisa from the Louvre",
       "year": 1911,
-      "image": "/images/puzzles/014.webp",
-      "image_attribution": "Leonardo da Vinci, Wikimedia Commons",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:Mona_LLisa.jpg",
       "headline": "The Mona Lisa Is Stolen from the Louvre",
       "description": "On a Monday morning, a Louvre worker noticed something alarming: four iron pegs on a wall where the world's most famous painting should have been. Vincenzo Peruggia, a former employee, had hidden in a closet overnight and walked out the next morning with Leonardo da Vinci's masterpiece tucked under his coat. The painting was missing for two years.",
       "tier": 2,
@@ -623,9 +882,6 @@
       "event": "First Human in Space",
       "event_formal": "Yuri Gagarin becomes first human in space",
       "year": 1961,
-      "image": "/images/puzzles/015.webp",
-      "image_attribution": "Wikimedia Commons",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:Gagarin_1981_stamp.jpg",
       "headline": "Yuri Gagarin Becomes the First Human in Space",
       "description": "The 27-year-old Soviet cosmonaut was strapped into Vostok 1 and launched from a cosmodrome in the Kazakh steppe. For 108 minutes he orbited the Earth, becoming the first human to see our planet from space. He described the blue halo of the atmosphere with childlike wonder. Upon re-entry, he ejected from the capsule and parachuted into a farm field, startling a woman and her granddaughter.",
       "tier": 1,
@@ -667,9 +923,6 @@
       "event": "Google Founded",
       "event_formal": "Google incorporated",
       "year": 1998,
-      "image": "/images/puzzles/016.webp",
-      "image_attribution": "Wikipedia",
-      "image_source_url": "https://en.wikipedia.org/wiki/Google",
       "headline": "Google Is Founded",
       "description": "Stanford PhD students Larry Page and Sergey Brin had a simple but powerful insight: rank web pages by how many other pages link to them, not by counting keywords. They built a prototype search engine in a dorm room, running it on cheap hardware held together by Lego bricks. When they outgrew the university, they moved operations to a friend's garage in Menlo Park.",
       "tier": 2,
@@ -711,9 +964,6 @@
       "event": "HIV/AIDS Discovered",
       "event_formal": "First recognition of AIDS as a new disease",
       "year": 1981,
-      "image": "/images/puzzles/017.webp",
-      "image_attribution": "Wikimedia Commons",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:HIV_replication.png",
       "headline": "AIDS Is First Identified",
       "description": "Doctors in Los Angeles and New York began seeing something alarming: otherwise healthy young gay men developing rare cancers and pneumonias that only affected people with severely compromised immune systems. The CDC published a brief report describing five cases of a rare lung infection — a notice that marked the beginning of one of the deadliest pandemics in modern history.",
       "tier": 2,
@@ -755,9 +1005,6 @@
       "event": "Amazon Founded",
       "event_formal": "Amazon.com incorporated",
       "year": 1994,
-      "image": "/images/puzzles/018.webp",
-      "image_attribution": "Wikimedia Commons",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:Amazon_logo.svg",
       "headline": "Jeff Bezos Founds Amazon",
       "description": "A Wall Street analyst quit his lucrative hedge fund job, drove to Seattle, and wrote a business plan in the car. Jeff Bezos had determined that books were the perfect product for online retail — millions of titles, far more than any physical store could stock. Working out of his garage, he built a website called Amazon.com that would grow from selling books to selling everything.",
       "tier": 2,
@@ -799,9 +1046,6 @@
       "event": "DNA Structure Discovered",
       "event_formal": "Watson and Crick publish DNA double helix structure",
       "year": 1953,
-      "image": "/images/puzzles/019.webp",
-      "image_attribution": "Wikimedia Commons",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:DNA_replication_split.svg",
       "headline": "Watson and Crick Discover the Structure of DNA",
       "description": "At the University of Cambridge, James Watson and Francis Crick had been racing to solve the fundamental puzzle of biology: how does life replicate itself? Using X-ray crystallography data from Rosalind Franklin's Photo 51, they built a physical model of a molecule that twisted into an elegant double helix. When they saw the structure, they knew they had found the mechanism of heredity.",
       "tier": 1,
@@ -843,9 +1087,6 @@
       "event": "Chernobyl Nuclear Disaster",
       "event_formal": "Chernobyl nuclear disaster",
       "year": 1986,
-      "image": "/images/puzzles/020.webp",
-      "image_attribution": "Wikimedia Commons",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:Chernobyl_206.jpg",
       "headline": "The Chernobyl Disaster",
       "description": "During a late-night safety test at the Chernobyl Nuclear Power Plant in Soviet Ukraine, a series of operator errors and design flaws triggered a catastrophic explosion that ripped open Reactor 4. A plume of radioactive material shot into the atmosphere. The nearby city of Pripyat — population 49,000 — was not evacuated for over 36 hours. Within days, radiation was detected across Europe.",
       "tier": 1,
@@ -887,9 +1128,6 @@
       "event": "MP3 Player Invented",
       "event_formal": "First portable MP3 player created",
       "year": 1997,
-      "image": "/images/puzzles/021.webp",
-      "image_attribution": "Wikipedia",
-      "image_source_url": "https://en.wikipedia.org/wiki/MP3_player",
       "headline": "The First Portable MP3 Player",
       "description": "Saehan Information Systems, a small electronics company in South Korea, developed the MPMan — a pocket-sized device that could play music stored as compressed digital files. No moving parts, no CD, no tape. Just a small amount of flash memory that could hold about a dozen songs. The device was clunky and expensive, but music was becoming data — and data could be copied and shared endlessly.",
       "tier": 2,
@@ -931,9 +1169,6 @@
       "event": "Euro Currency Launched",
       "event_formal": "Euro currency introduced",
       "year": 1999,
-      "image": "/images/puzzles/022.webp",
-      "image_attribution": "Wikimedia Commons",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:Euro_Symbol.jpg",
       "headline": "The Euro Currency Is Introduced",
       "description": "Twelve European nations took the most dramatic step in continental integration yet: replacing their individual national currencies with a single shared one. The Deutsche Mark, French Franc, Italian Lira, and nine other currencies were retired in favor of the euro. Centuries of monetary sovereignty were exchanged for the promise of a more unified continent.",
       "tier": 2,
@@ -975,9 +1210,6 @@
       "event": "Instagram Launched",
       "event_formal": "Instagram app released",
       "year": 2010,
-      "image": "/images/puzzles/023.webp",
-      "image_attribution": "Wikipedia",
-      "image_source_url": "https://en.wikipedia.org/wiki/Instagram",
       "headline": "Instagram Launches",
       "description": "Stanford graduates Kevin Systrom and Mike Krieger built a simple mobile app that let people take photos, apply vintage-style filters, and share them in a feed. It launched exclusively on iPhone and reached one million users in just two months — no advertising, no marketing budget. The concept was deceptively simple: make everyone's photos look artistic with one tap.",
       "tier": 2,
@@ -1019,9 +1251,6 @@
       "event": "MP3 Format Created",
       "event_formal": "MP3 audio format standardized",
       "year": 1991,
-      "image": "/images/puzzles/024.webp",
-      "image_attribution": "Wikimedia Commons",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:Mp3_logo.svg",
       "headline": "The MP3 Format Is Created",
       "description": "Researchers at the Fraunhofer Institute in Germany developed a method to compress audio files by a factor of 10 or more, stripping out sounds the human ear can't perceive. The resulting files were small enough to transmit over early computer networks. Nobody believed people would want compressed music — the researchers struggled to find anyone interested. They had no idea they'd just created the technology that would upend the entire music industry.",
       "tier": 2,
@@ -1063,9 +1292,6 @@
       "event": "Black Tuesday Stock Crash",
       "event_formal": "Black Tuesday stock market crash",
       "year": 1929,
-      "image": "/images/puzzles/025.webp",
-      "image_attribution": "Wikimedia Commons",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:Wall_Street_Crash_of_1929.png",
       "headline": "The Wall Street Crash of 1929",
       "description": "For years, ordinary Americans had been pouring money into the stock market, often buying on margin. Shoeshine boys offered stock tips. Housewives traded shares. Then, on a single October day known as Black Tuesday, panic swept through Wall Street. The Dow fell 12% in one session. Billions of dollars in value evaporated. The Roaring Twenties were over, and the Great Depression had begun.",
       "tier": 1,
@@ -1107,9 +1333,6 @@
       "event": "First Heart Transplant",
       "event_formal": "First successful human heart transplant",
       "year": 1967,
-      "image": "/images/puzzles/026.webp",
-      "image_attribution": "Wikimedia Commons",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:Christiaan_Baan.jpg",
       "headline": "The First Human Heart Transplant",
       "description": "In Groote Schuur Hospital in Cape Town, South Africa, Dr. Christiaan Barnard and his surgical team worked through the night to transplant a human heart from a young woman killed in a car accident into 53-year-old Louis Washkansky. When the new heart began beating on its own inside the patient's chest, the operating room fell silent. Washkansky survived the surgery but died 18 days later from pneumonia.",
       "tier": 2,
@@ -1151,9 +1374,6 @@
       "event": "Polio Vaccine Announced",
       "event_formal": "Salk polio vaccine declared safe and effective",
       "year": 1955,
-      "image": "/images/puzzles/027.webp",
-      "image_attribution": "Wikimedia Commons",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:Jonas_Salk.jpg",
       "headline": "The Salk Polio Vaccine Announced",
       "description": "For years, parents had dreaded the summer, when polio could strike seemingly healthy children, leaving them paralyzed or dead. Jonas Salk spent years developing and testing a vaccine, conducting one of the largest medical trials in history with nearly two million schoolchildren. When the results were announced as safe and effective, church bells rang across America and factory whistles blew.",
       "tier": 1,
@@ -1195,9 +1415,6 @@
       "event": "First Email Sent Over Internet",
       "event_formal": "First email sent over ARPANET",
       "year": 1971,
-      "image": "/images/puzzles/028.webp",
-      "image_attribution": "Wikipedia",
-      "image_source_url": "https://en.wikipedia.org/wiki/Email",
       "headline": "The First ARPANET Email",
       "description": "Ray Tomlinson, a programmer working on the government-funded ARPANET network, devised a way to send messages between users on different machines. He chose the @ symbol — already on every keyboard — to separate the user name from the machine name, creating an addressing format that billions of people would eventually use. The first message was so mundane he couldn't recall what it said.",
       "tier": 2,
@@ -1239,9 +1456,6 @@
       "event": "Napoleon Crowned Emperor",
       "event_formal": "Napoleon Bonaparte crowned Emperor of France",
       "year": 1804,
-      "image": "/images/puzzles/029.webp",
-      "image_attribution": "Jacques-Louis David, Wikimedia Commons",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg",
       "headline": "Napoleon Crowns Himself Emperor",
       "description": "In an elaborate ceremony at Notre-Dame Cathedral in Paris, Napoleon Bonaparte crowned himself Emperor of France. The Pope had traveled from Rome for the occasion, but in a dramatic gesture of supreme confidence, Napoleon took the crown from the pontiff's hands and placed it on his own head. The message was unmistakable: he owed his power to no one.",
       "tier": 1,
@@ -1283,9 +1497,6 @@
       "event": "YouTube Founded",
       "event_formal": "YouTube incorporated",
       "year": 2005,
-      "image": "/images/puzzles/030.webp",
-      "image_attribution": "Wikimedia Commons",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:YouTube_logo.svg",
       "headline": "YouTube Is Founded",
       "description": "Three former PayPal employees — Chad Hurley, Steve Chen, and Jawed Karim — were frustrated by how difficult it was to share video clips online. They built a simple website where anyone could upload and watch videos. The first video ever uploaded was Karim's 18-second clip 'Me at the zoo,' filmed at the San Diego Zoo. Within months, the site was serving millions of videos per day.",
       "tier": 2,

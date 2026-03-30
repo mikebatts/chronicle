@@ -5,9 +5,6 @@ export interface Puzzle {
   event: string;
   event_formal: string;
   year: number;
-  image: string;
-  image_attribution: string;
-  image_source_url: string;
   headline: string;
   description: string;
   tier: 1 | 2 | 3;
