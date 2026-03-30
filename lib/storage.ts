@@ -1,4 +1,4 @@
-import type { GameState, TodaySession } from "./types";
+import type { GameState, TodaySession, SlotState, GamePhase } from "./types";
 
 const STORAGE_KEY = "chronicle_state";
 const SESSION_KEY = "chronicle_today";
@@ -19,6 +19,26 @@ export function getDefaultState(): GameState {
     last_played: "",
     last_result: "loss",
     last_guess_count: 0,
+  };
+}
+
+export function getDefaultSlotState(): SlotState {
+  return {
+    guesses: [],
+    phase: "playing",
+    digitFeedback: [],
+  };
+}
+
+export function getDefaultSession(): TodaySession {
+  return {
+    puzzle_date: "",
+    slots: {
+      0: getDefaultSlotState(),
+      1: getDefaultSlotState(),
+      2: getDefaultSlotState(),
+    },
+    highest_unlocked_slot: 0,
   };
 }
 
@@ -53,8 +73,22 @@ export function loadSession(): TodaySession | null {
     const stored = localStorage.getItem(SESSION_KEY);
     if (!stored) return null;
     const parsed = JSON.parse(stored);
-    if (!parsed.digitFeedback) {
-      parsed.digitFeedback = [];
+    // Handle legacy format (single puzzle)
+    if (!parsed.slots) {
+      // Migrate legacy session to new format
+      return {
+        puzzle_date: parsed.puzzle_date || "",
+        slots: {
+          0: {
+            guesses: parsed.guesses || [],
+            phase: parsed.phase || "playing",
+            digitFeedback: parsed.digitFeedback || [],
+          },
+          1: getDefaultSlotState(),
+          2: getDefaultSlotState(),
+        },
+        highest_unlocked_slot: 0,
+      };
     }
     return parsed as TodaySession;
   } catch {

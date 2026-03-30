@@ -12,6 +12,8 @@ interface ResultScreenProps {
   phase: GamePhase;
   shareText: string;
   gameState: GameState;
+  slotInfo?: { current: number; total: number };
+  onNextSlot?: () => void;
 }
 
 const COLOR_MAP = {
@@ -28,6 +30,8 @@ export default function ResultScreen({
   phase,
   shareText,
   gameState,
+  slotInfo,
+  onNextSlot,
 }: ResultScreenProps) {
   const isWin = phase === "won";
   const [copyLabel, setCopyLabel] = useState("Copy result");
@@ -138,9 +142,18 @@ export default function ResultScreen({
       </div>
 
       {/* Footer */}
-      <p className="mt-8 mb-4 text-sm text-[var(--text-secondary)]">
-        Come back tomorrow for a new puzzle
-      </p>
+      {slotInfo && slotInfo.current < slotInfo.total - 1 && onNextSlot ? (
+        <button
+          onClick={onNextSlot}
+          className="mt-6 mb-4 py-3 px-6 bg-amber-600 text-white font-semibold rounded-lg hover:bg-amber-500 transition-colors min-h-[48px] min-w-[200px]"
+        >
+          Next Puzzle →
+        </button>
+      ) : (
+        <p className="mt-8 mb-4 text-sm text-[var(--text-secondary)]">
+          Come back tomorrow for a new puzzle
+        </p>
+      )}
     </div>
   );
 }

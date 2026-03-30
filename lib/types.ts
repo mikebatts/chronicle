@@ -1,6 +1,7 @@
 export interface Puzzle {
   id: number;
   date: string;
+  slot: 0 | 1 | 2; // 0=morning, 1=afternoon, 2=evening
   day_of_week: "monday" | "tuesday" | "wednesday" | "thursday" | "friday" | "saturday" | "sunday";
   event: string;
   event_formal: string;
@@ -42,6 +43,15 @@ export type AttemptPhase = 1 | 2 | 3 | 4;
 
 export interface TodaySession {
   puzzle_date: string;
+  slots: {
+    0: SlotState;
+    1: SlotState;
+    2: SlotState;
+  };
+  highest_unlocked_slot: 0 | 1 | 2;
+}
+
+export interface SlotState {
   guesses: number[];
   phase: GamePhase;
   digitFeedback: DigitFeedback[][];

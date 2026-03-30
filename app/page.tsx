@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { getTodayPuzzle, getPuzzleNumber } from "@/lib/puzzles";
+import { getTodayPuzzles, getPuzzleNumber } from "@/lib/puzzles";
 import { loadState } from "@/lib/storage";
 import type { Puzzle, GameState } from "@/lib/types";
 import Game from "@/components/Game";
@@ -10,7 +10,7 @@ import StatsModal from "@/components/StatsModal";
 import SplashScreen from "@/components/SplashScreen";
 
 export default function Home() {
-  const [puzzle, setPuzzle] = useState<Puzzle | null>(null);
+  const [puzzles, setPuzzles] = useState<Puzzle[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [showStats, setShowStats] = useState(false);
   const [gameState, setGameState] = useState<GameState | null>(null);
@@ -18,8 +18,8 @@ export default function Home() {
 
   useEffect(() => {
     try {
-      const todaysPuzzle = getTodayPuzzle();
-      setPuzzle(todaysPuzzle);
+      const todaysPuzzles = getTodayPuzzles();
+      setPuzzles(todaysPuzzles);
     } catch (e) {
       setError(e instanceof Error ? e.message : "Failed to load puzzle");
     }
@@ -54,7 +54,7 @@ export default function Home() {
     );
   }
 
-  if (!puzzle) {
+  if (puzzles.length === 0) {
     return (
       <main className="min-h-screen flex items-center justify-center">
         <p className="text-[var(--text-secondary)]">Loading...</p>
@@ -62,8 +62,9 @@ export default function Home() {
     );
   }
 
-  const puzzleNumber = getPuzzleNumber(puzzle.date);
-  const dayName = puzzle.day_of_week.charAt(0).toUpperCase() + puzzle.day_of_week.slice(1);
+  const firstPuzzle = puzzles[0];
+  const puzzleNumber = getPuzzleNumber(firstPuzzle.date);
+  const dayName = firstPuzzle.day_of_week.charAt(0).toUpperCase() + firstPuzzle.day_of_week.slice(1);
 
   return (
     <>
@@ -76,7 +77,7 @@ export default function Home() {
       )}
       <main className="min-h-screen flex flex-col">
         <Header onStatsClick={handleStatsClick} />
-        <Game puzzle={puzzle} />
+        <Game puzzles={puzzles} />
         {showStats && gameState && (
           <StatsModal
             gameState={gameState}
