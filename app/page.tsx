@@ -15,8 +15,10 @@ export default function Home() {
   const [showStats, setShowStats] = useState(false);
   const [gameState, setGameState] = useState<GameState | null>(null);
   const [showSplash, setShowSplash] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     try {
       const todaysPuzzles = getTodayPuzzles();
       setPuzzles(todaysPuzzles);
@@ -37,6 +39,15 @@ export default function Home() {
     setGameState(loadState());
     setShowStats(true);
   };
+
+  // Don't render anything until mounted to avoid hydration mismatch
+  if (!mounted) {
+    return (
+      <main className="min-h-screen flex items-center justify-center">
+        <p className="text-[var(--text-secondary)]">Loading...</p>
+      </main>
+    );
+  }
 
   if (error) {
     return (
