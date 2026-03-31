@@ -1,0 +1,91 @@
+date,slot,event_name,year,headline,tier,difficulty_rating,day_of_week
+2026-03-31,0,Nelson Mandela Released From Prison,1990,After 27 years behind bars,1,3,monday
+2026-03-31,1,Apollo 11 Moon Landing,1969,One small step for man,1,3,monday
+2026-03-31,2,Titanic Sinks,1912,The unsinkable ship met its end,1,4,monday
+2026-04-01,0,JFK Assassination,1963,Shots rang out in Dallas,1,4,tuesday
+2026-04-01,1,World Wide Web Invented,1989,Tim Berners-Lee's proposal,1,4,tuesday
+2026-04-01,2,Chernobyl Disaster,1986,The world's worst nuclear accident,1,5,tuesday
+2026-04-02,0,D-Day Normandy Landing,1944,The largest seaborne invasion,1,5,wednesday
+2026-04-02,1,First iPhone Released,2007,Apple reinvented the phone,1,5,wednesday
+2026-04-02,2,Watergate Break-In,1972,A scandal that toppled a president,1,6,wednesday
+2026-04-03,0,Hiroshima Atomic Bomb,1945,The first atomic weapon used in war,1,6,thursday
+2026-04-03,1,Fall of the Soviet Union,1991,The Cold War ended,1,6,thursday
+2026-04-03,2,Wright Brothers First Flight,1903,First powered airplane flight,1,7,thursday
+2026-04-04,0,Lindbergh Atlantic Flight,1927,First solo transatlantic flight,1,7,friday
+2026-04-04,1,Cuban Missile Crisis,1962,The world held its breath,1,7,friday
+2026-04-04,2,Rosa Parks Bus Protest,1955,She refused to give up her seat,1,7,friday
+2026-04-05,0,Challenger Disaster,1986,Seven astronauts lost,1,8,saturday
+2026-04-05,1,September 11 Attacks,2001,The day that changed everything,1,8,saturday
+2026-04-05,2,Pearl Harbor Attack,1941,A date which will live in infamy,1,8,saturday
+2026-04-06,0,First Human in Space,1961,Yuri Gagarin orbited Earth,1,9,sunday
+2026-04-06,1,French Revolution Begins,1789,The Bastille fell,1,9,sunday
+2026-04-06,2,Declaration of Independence,1776,Thirteen colonies broke free,1,9,sunday
+2026-04-07,0,Martin Luther King I Have a Dream,1963,250000 gathered in Washington,1,3,monday
+2026-04-07,1,First Email Sent,1971,Ray Tomlinson's @ sign,1,3,monday
+2026-04-07,2,Google Founded,1998,Two Stanford students in a garage,1,4,monday
+2026-04-08,0,Amazon Founded,1994,An online bookstore in Seattle,1,4,tuesday
+2026-04-08,1,DNA Structure Discovered,1953,Watson and Crick's double helix,1,4,tuesday
+2026-04-08,2,HIV/AIDS Identified,1981,A mysterious immune disorder,1,5,tuesday
+2026-04-09,0,First Heart Transplant,1967,Dr. Christiaan Barnard's surgery,1,5,wednesday
+2026-04-09,1,Polio Vaccine Announced,1955,Jonas Salk's breakthrough,1,5,wednesday
+2026-04-09,2,Penicillin Discovered,1928,Alexander Fleming's accident,1,6,wednesday
+2026-04-10,0,Instagram Launched,2010,Photo sharing revolution,1,6,thursday
+2026-04-10,1,YouTube Founded,2005,Broadcast yourself,1,6,thursday
+2026-04-10,2,Wikipedia Launched,2001,The free encyclopedia,1,7,thursday
+2026-04-11,0,Euro Currency Launched,1999,Single European currency,1,7,friday
+2026-04-11,1,MP3 Format Created,1991,Audio compression revolution,1,7,friday
+2026-04-11,2,Nintendo Game Boy Released,1989,Portable gaming revolution,1,7,friday
+2026-04-12,0,Black Tuesday Stock Crash,1929,The Great Depression begins,1,8,saturday
+2026-04-12,1,First Photograph Taken,1826,Joseph Niepce's View,1,8,saturday
+2026-04-12,2,First Telegraph Message,1844,What hath God wrought,1,8,saturday
+2026-04-13,0,Printing Press Invented,1440,Gutenberg's revolution,1,9,sunday
+2026-04-13,1,American Civil War Begins,1861,Fort Sumter bombarded,1,9,sunday
+2026-04-13,2,Spanish Flu Pandemic,1918,Deadliest pandemic in history,1,9,sunday
+2026-04-14,0,Elvis Presley First TV Appearance,1956,Rock and roll went mainstream,1,3,monday
+2026-04-14,1,First McDonald's Opens,1955,Golden Arches appear,1,3,monday
+2026-04-14,2,Disneyland Opens,1955,The happiest place on Earth,1,4,monday
+2026-04-15,0,First Barbie Doll,1959,Mattel's iconic toy,1,4,tuesday
+2026-04-15,1,Pac-Man Released,1980,Arcade gaming phenomenon,1,4,tuesday
+2026-04-15,2,Super Mario Bros Released,1985,Nintendo's flagship game,1,5,tuesday
+2026-04-16,0,Tetris Released,1984,The falling blocks puzzle,1,5,wednesday
+2026-04-16,1,PlayStation Launched,1994,Sony enters gaming,1,5,wednesday
+2026-04-16,2,Xbox Announced,2001,Microsoft's console debut,1,6,wednesday
+2026-04-17,0,First iPod Released,2001,1000 songs in your pocket,1,6,thursday
+2026-04-17,1,Netflix Streaming Launches,2007,DVDs to instant streaming,1,6,thursday
+2026-04-17,2,Spotify Launches,2008,Music streaming revolution,1,7,thursday
+2026-04-18,0,Facebook Launched,2004,TheFacebook at Harvard,1,7,friday
+2026-04-18,1,Twitter Launched,2006,What are you doing?,1,7,friday
+2026-04-18,2,Snapchat Launched,2011,Disappearing photos,1,7,friday
+2026-04-19,0,Bitcoin White Paper,2008,Satoshi Nakamoto's proposal,1,8,saturday
+2026-04-19,1,Ethereum Launches,2015,Smart contracts platform,1,8,saturday
+2026-04-19,2,First NFT Minted,2014,Quantum on Namecoin,1,8,saturday
+2026-04-20,0,Columbus Reaches Americas,1492,New World discovered,1,9,sunday
+2026-04-20,1,Magna Carta Signed,1215,Foundation of rights,1,9,sunday
+2026-04-20,2,Shakespeare Born,1564,The greatest playwright,1,9,sunday
+2026-04-21,0,Star Wars Released,1977,A New Hope premiered,1,3,monday
+2026-04-21,1,Jaws Released,1975,The first summer blockbuster,1,3,monday
+2026-04-21,2,ET Released,1982,Phone home,1,4,monday
+2026-04-22,0,Jurassic Park Released,1993,Dinosaurs return,1,4,tuesday
+2026-04-22,1,The Matrix Released,1999,What is the Matrix?,1,4,tuesday
+2026-04-22,2,Avatar Released,2009,Highest-grossing film,1,5,tuesday
+2026-04-23,0,Sony Walkman Released,1979,Personal music revolution,1,5,wednesday
+2026-04-23,1,VHS Format Introduced,1976,Home video recording,1,5,wednesday
+2026-04-23,2,CD Player Released,1982,Digital audio arrives,1,6,wednesday
+2026-04-24,0,Kodak Founded,1888,You press the button,1,6,thursday
+2026-04-24,1,Polaroid Camera Released,1948,Instant photography,1,6,thursday
+2026-04-24,2,Digital Camera Invented,1975,Steven Sasson's prototype,1,7,thursday
+2026-04-25,0,Ford Model T Released,1908,Affordable automobiles,1,7,friday
+2026-04-25,1,First Commercial Airplane Flight,1914,St Petersburg to Tampa,1,7,friday
+2026-04-25,2,Wright Brothers Flight,1903,First powered flight,1,7,friday
+2026-04-26,0,Sputnik Launched,1957,Space race begins,1,8,saturday
+2026-04-26,1,Hubble Telescope Launched,1990,Deep space observation,1,8,saturday
+2026-04-26,2,Mars Pathfinder Landing,1997,Sojourner rover,1,8,saturday
+2026-04-27,0,Gutenberg Bible Printed,1455,First major book printed,1,9,sunday
+2026-04-27,1,Roman Empire Falls,476,Western Rome collapses,1,9,sunday
+2026-04-27,2,Great Fire of London,1666,City destroyed and rebuilt,1,9,sunday
+2026-04-28,0,Beatles First Ed Sullivan Show,1964,British Invasion begins,1,3,monday
+2026-04-28,1,Woodstock Festival,1969,Peace and music,1,3,monday
+2026-04-28,2,Live Aid Concert,1985,We are the world,1,4,monday
+2026-04-29,0,MTV Launches,1981,I want my MTV,1,4,tuesday
+2026-04-29,1,Napster Launches,1999,Music sharing revolution,1,4,tuesday
+2026-04-29,2,iTunes Store Opens,2003,99 cents per song,1,5,tuesday

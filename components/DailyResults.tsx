@@ -3,6 +3,7 @@
 import { useState } from "react";
 import type { Puzzle, GameState, TodaySession, DigitFeedback } from "@/lib/types";
 import { getPuzzleNumber } from "@/lib/puzzles";
+import { generateDailyShareText } from "@/lib/share";
 import StatsDisplay from "./StatsDisplay";
 
 interface DailyResultsProps {
@@ -10,52 +11,6 @@ interface DailyResultsProps {
   session: TodaySession;
   gameState: GameState;
   onClose: () => void;
-}
-
-function getColorForDistance(guess: number, actual: number): string {
-  const diff = Math.abs(guess - actual);
-  if (diff === 0) return "correct";
-  if (diff <= 5) return "close";
-  if (diff <= 15) return "yellow";
-  if (diff <= 30) return "orange";
-  return "miss";
-}
-
-function generateDailyShareText(
-  puzzles: Puzzle[],
-  session: TodaySession,
-  puzzleNumber: number,
-  streak: number
-): string {
-  const rows: string[] = [];
-
-  [0, 1, 2].forEach((slot) => {
-    const puzzle = puzzles[slot];
-    const slotState = session.slots[slot as 0 | 1 | 2];
-    const won = slotState.phase === "won";
-    const guesses = slotState.guesses;
-
-    if (won) {
-      const guessCount = guesses.length;
-      const arrows = Array(guessCount - 1).fill("→").join("");
-      rows.push(`${slot + 1}: ✅${guessCount > 1 ? arrows + " " + guessCount : ""}`);
-    } else {
-      // Show the trail of close colors
-      const colors: string[] = [];
-      guesses.forEach((guess) => {
-        const distance = Math.abs(guess - puzzle.year);
-        if (distance === 0) colors.push("✅");
-        else if (distance <= 5) colors.push("🟢");
-        else if (distance <= 15) colors.push("🟡");
-        else if (distance <= 30) colors.push("🟠");
-        else colors.push("🔴");
-      });
-      rows.push(`${slot + 1}: ${colors.join("→")}`);
-    }
-  });
-
-  const streakText = streak > 0 ? ` 🔥${streak}` : "";
-  return `Chronicle #${puzzleNumber} 📜${streakText}\n${rows.join("\n")}\nthischronicle.com`;
 }
 
 export default function DailyResults({ puzzles, session, gameState, onClose }: DailyResultsProps) {

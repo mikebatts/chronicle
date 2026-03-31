@@ -1,19 +1,59 @@
-import type { DigitFeedback } from "./types";
-import { digitFeedbackToEmoji } from "./scoring";
+import type { DigitFeedback, TodaySession, Puzzle } from "./types";
 
 export function generateShareText(
   puzzleNumber: number,
   digitFeedbackRows: DigitFeedback[][],
-  isWin: boolean,
+  won: boolean,
   streak: number
 ): string {
-  const guessCount = digitFeedbackRows.length;
-  const result = isWin ? `${guessCount}/4` : "X/4";
-  const streakPart = isWin && streak > 0 ? ` 🔥${streak}` : !isWin ? " 💔" : "";
+  const emojiMap = {
+    correct: "🟩",
+    close: "🟨",
+    miss: "⬜",
+  };
 
-  const grid = digitFeedbackRows.map((row) => digitFeedbackToEmoji(row)).join("\n");
+  const grid = digitFeedbackRows
+    .map((row) => row.map((df) => emojiMap[df.color] || "⬜").join(""))
+    .join("\n");
 
-  return `Chronicle #${puzzleNumber} 📜 ${result}${streakPart}
-${grid}
-thischronicle.com`;
+  const streakText = streak > 0 ? ` 🔥${streak}` : "";
+  return `Chronicle #${puzzleNumber} 📜${streakText}\n${grid}\nthischronicle.com`;
+}
+
+export function generateDailyShareText(
+  puzzles: Puzzle[],
+  session: TodaySession,
+  puzzleNumber: number,
+  streak: number
+): string {
+  const emojiMap = {
+    correct: "🟩",
+    close: "🟨",
+    miss: "⬜",
+  };
+
+  const lines: string[] = [`Chronicle #${puzzleNumber} 📜`, ""];
+
+  // Show all 3 puzzles
+  [0, 1, 2].forEach((slot) => {
+    const slotState = session.slots[slot as 0 | 1 | 2];
+    const digitRows = slotState.digitFeedback;
+
+    lines.push(`${slot + 1}️⃣`);
+    digitRows.forEach((row) => {
+      const digits = row.map((df) => emojiMap[df.color] || "⬜").join("");
+      lines.push(digits);
+    });
+    lines.push(""); // Blank line between puzzles
+  });
+
+  const slotsComplete = [0, 1, 2].filter(
+    (s) => session.slots[s as 0 | 1 | 2].phase !== "playing"
+  ).length;
+
+  const streakText = streak > 0 ? `🔥${streak}` : "";
+  lines.push(`${streakText} | ${slotsComplete}/3`);
+  lines.push("thischronicle.com");
+
+  return lines.join("\n");
 }

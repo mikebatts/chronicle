@@ -7,7 +7,6 @@ import { loadState, saveState, loadSession, saveSession, getDefaultSession, getD
 import { getPuzzleNumber } from "@/lib/puzzles";
 import YearInput from "./YearInput";
 import PuzzleDisplay from "./PuzzleDisplay";
-import ClueReveal from "./ClueReveal";
 import DailyResults from "./DailyResults";
 
 interface GameProps {
@@ -231,18 +230,11 @@ export default function Game({ puzzles }: GameProps) {
       <PuzzleDisplay puzzle={currentPuzzle} attempt={Math.min(currentSlotState.guesses.length + 1, 4) as AttemptPhase} />
 
       <div className="mt-6 w-full">
-        <ClueReveal
-          puzzle={currentPuzzle}
-          wrongGuessCount={currentSlotState.guesses.length}
+        <YearInput
+          onSubmit={handleGuess}
+          disabled={currentSlotState.phase !== "playing"}
+          previousGuesses={currentSlotState.digitFeedback}
         />
-
-        <div className="mt-6">
-          <YearInput
-            onSubmit={handleGuess}
-            disabled={currentSlotState.phase !== "playing"}
-            previousGuesses={currentSlotState.digitFeedback}
-          />
-        </div>
       </div>
     </div>
   );
