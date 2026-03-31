@@ -92,10 +92,10 @@ export default function DailyResults({ puzzles, session, gameState, onClose }: D
                           df.color === "correct"
                             ? "bg-green-500 text-white"
                             : df.color === "close"
-                            ? "bg-blue-500 text-white"
-                            : df.color === "miss"
-                            ? "bg-gray-600 text-white"
-                            : "bg-yellow-500 text-white"
+                            ? "bg-yellow-500 text-white"
+                            : df.color === "far"
+                            ? "bg-red-600 text-white"
+                            : "bg-gray-600 text-white"
                         }`}
                       >
                         {df.digit}

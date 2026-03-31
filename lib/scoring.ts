@@ -38,6 +38,17 @@ export function getDigitFeedback(guess: number, answer: number): DigitFeedback[]
     }
   }
 
+  // Third pass: mark "far" — miss digits that are > 3 away from the correct digit at that position
+  for (let i = 0; i < 4; i++) {
+    if (result[i].color === "miss") {
+      const guessDigit = parseInt(guessStr[i], 10);
+      const answerDigit = parseInt(answerStr[i], 10);
+      if (Math.abs(guessDigit - answerDigit) > 3) {
+        result[i].color = "far";
+      }
+    }
+  }
+
   return result;
 }
 
@@ -50,7 +61,8 @@ export function digitFeedbackToEmoji(feedback: DigitFeedback[]): string {
       switch (d.color) {
         case "correct": return "🟩";
         case "close": return "🟨";
-        case "miss": return "⬛";
+        case "miss": return "⬜";
+        case "far": return "🟥";
       }
     })
     .join("");

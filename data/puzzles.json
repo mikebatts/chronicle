@@ -43,7 +43,7 @@
       "slot": 0
     },
     {
-      "id": 31,
+      "id": 2,
       "date": "2026-03-31",
       "day_of_week": "tuesday",
       "event": "Nelson Mandela Released From Prison",
@@ -84,7 +84,7 @@
       "context_card": "Nelson Mandela had spent 18 of his 27 years imprisoned on Robben Island, a bleak outcrop in Table Bay. By the time he walked free on February 11th, 1990, he had become the most famous political prisoner in the world. Within four years, he was president."
     },
     {
-      "id": 32,
+      "id": 3,
       "date": "2026-04-01",
       "day_of_week": "wednesday",
       "event": "JFK Assassinated in Dallas",
@@ -125,7 +125,7 @@
       "context_card": "Lee Harvey Oswald fired three shots from the sixth floor of the Texas School Book Depository on November 22nd, 1963. Kennedy was pronounced dead at 1:00 PM. Two days later, Oswald was shot by nightclub owner Jack Ruby in the Dallas Police Department basement — live on national television. The truth of what happened that day has never fully left public debate."
     },
     {
-      "id": 33,
+      "id": 4,
       "date": "2026-04-02",
       "day_of_week": "thursday",
       "event": "D-Day: Allied Forces Land at Normandy",
@@ -166,7 +166,7 @@
       "context_card": "On June 6th, 1944, the Allies launched the most complex military operation in history. Paratroopers had already dropped behind enemy lines by the time the first landing craft hit the beaches at 6:30 AM. The cost was enormous — over 4,000 Allied soldiers died on D-Day alone — but within a year, Germany had surrendered."
     },
     {
-      "id": 34,
+      "id": 5,
       "date": "2026-04-03",
       "day_of_week": "friday",
       "event": "The Atomic Bomb Drops on Hiroshima",
@@ -207,7 +207,7 @@
       "context_card": "The Manhattan Project had cost two billion dollars and employed hundreds of thousands of people — most of whom had no idea what they were building. On August 6th, 1945, the result was dropped on Hiroshima. Three days later, a second bomb fell on Nagasaki. Japan surrendered on August 15th. The atomic age had begun."
     },
     {
-      "id": 35,
+      "id": 6,
       "date": "2026-04-04",
       "day_of_week": "saturday",
       "event": "Lindbergh Completes First Solo Transatlantic Flight",
@@ -248,7 +248,7 @@
       "context_card": "The Spirit of St. Louis was so loaded with fuel at takeoff that it barely cleared the telephone wires at the end of the runway. Charles Lindbergh landed at Le Bourget at 10:22 PM on May 21st, 1927, and was immediately mobbed by the crowd. He became the most famous man in the world overnight — and remained so for the rest of his life, for better and worse."
     },
     {
-      "id": 36,
+      "id": 7,
       "date": "2026-04-05",
       "day_of_week": "sunday",
       "event": "Cuban Missile Crisis Begins",
@@ -262,7 +262,7 @@
       "context_card": "For thirteen days in October 1962, the world came closer to nuclear war than it ever has before or since. Soviet ships carrying additional missiles turned back at the US naval blockade. Soviet leader Khrushchev eventually agreed to remove the missiles in exchange for a US pledge not to invade Cuba and a secret agreement to remove American missiles from Turkey. The crisis was resolved — but only barely."
     },
     {
-      "id": 37,
+      "id": 8,
       "date": "2026-04-06",
       "day_of_week": "monday",
       "event": "Rosa Parks Refuses to Give Up Her Seat",
@@ -303,7 +303,7 @@
       "context_card": "Rosa Parks was not simply tired from work when she refused to move — she was tired of giving in. She had been trained at the Highlander Folk School, a center for civil rights activism. Her arrest on December 1st, 1955 was strategic: the NAACP had been looking for a test case. The resulting boycott lasted 381 days and ended with the Supreme Court ruling bus segregation unconstitutional."
     },
     {
-      "id": 38,
+      "id": 9,
       "date": "2026-04-07",
       "day_of_week": "tuesday",
       "event": "The Challenger Disaster",
@@ -344,7 +344,7 @@
       "context_card": "Engineers at Morton Thiokol had warned NASA the night before launch that O-rings could fail in temperatures below 53°F — and it was 28°F at Cape Canaveral that morning. Their objections were overruled. The Rogers Commission that investigated the disaster famously included physicist Richard Feynman, who demonstrated the O-ring failure with a glass of ice water at a press conference."
     },
     {
-      "id": 2,
+      "id": 10,
       "date": "2026-04-08",
       "day_of_week": "wednesday",
       "event": "The Wright Brothers' First Flight",
@@ -385,7 +385,7 @@
       "context_card": "The Wright Brothers made four flights at Kitty Hawk on December 17th, 1903. The first lasted just 12 seconds and covered 120 feet. By the end of that day, they had flown a total of 59 seconds. Orville would later say that the sensation of flight never fully wore off on him — it just kept getting better."
     },
     {
-      "id": 3,
+      "id": 11,
       "date": "2026-04-09",
       "day_of_week": "thursday",
       "event": "Apollo 11 Moon Landing",
@@ -426,7 +426,7 @@
       "context_card": "Neil Armstrong's first steps on the Moon were watched by an estimated 600 million people — one-fifth of the world's population. The lunar module was called Eagle. Armstrong had only 30 seconds of fuel remaining when he found a landing spot. He called it 'magnificent desolation.'"
     },
     {
-      "id": 4,
+      "id": 12,
       "date": "2026-04-10",
       "day_of_week": "friday",
       "event": "The Titanic Sinks",
@@ -467,7 +467,7 @@
       "context_card": "The Titanic was carrying some of the world's wealthiest people and hundreds of immigrants seeking a new life in America. It struck the iceberg at 11:40 PM and sank in under three hours. The nearby RMS Carpathia rescued 705 survivors. The disaster led to major changes in maritime safety regulations."
     },
     {
-      "id": 5,
+      "id": 13,
       "date": "2026-04-11",
       "day_of_week": "saturday",
       "event": "World War I Begins",
@@ -508,7 +508,7 @@
       "context_card": "The assassination of Archduke Franz Ferdinand in Sarajevo on June 28, 1914, set off a chain reaction of alliance obligations. What was supposed to be a short war became a four-year conflict that killed 17 million people and destroyed four empires: the German, Austro-Hungarian, Ottoman, and Russian empires."
     },
     {
-      "id": 6,
+      "id": 14,
       "date": "2026-04-12",
       "day_of_week": "sunday",
       "event": "September 11 Attacks",
@@ -549,7 +549,7 @@
       "context_card": "On September 11, 2001, nearly 3,000 people were killed in a series of coordinated terrorist attacks. The FBI quickly opened an investigation called PENTTBOM. Within days, President George W. Bush had signed the USA PATRIOT Act. The attacks reshaped American foreign policy, airport security, and domestic surveillance in ways still felt today."
     },
     {
-      "id": 7,
+      "id": 15,
       "date": "2026-04-13",
       "day_of_week": "monday",
       "event": "The Beatles First US Tour",
@@ -590,7 +590,7 @@
       "context_card": "When The Beatles landed at JFK Airport on February 7, 1964, they were met by 3,000 screaming fans — the largest welcome in airport history to that point. They appeared on Ed Sullivan Show ten days later, watched by 73 million viewers. Within weeks, Beatlemania had completely reshaped American pop music and youth culture."
     },
     {
-      "id": 8,
+      "id": 16,
       "date": "2026-04-14",
       "day_of_week": "tuesday",
       "event": "First iPhone Released",
@@ -631,7 +631,7 @@
       "context_card": "Steve Jobs unveiled the iPhone on January 9, 2007, calling it 'a revolutionary product.' It didn't go on sale until June, but it immediately changed what people expected from mobile devices. The initial model had no App Store — that came in 2008. By 2011, the iPhone had made Apple the most valuable company in the world."
     },
     {
-      "id": 9,
+      "id": 17,
       "date": "2026-04-15",
       "day_of_week": "wednesday",
       "event": "Fall of the Soviet Union",
@@ -672,7 +672,7 @@
       "context_card": "On December 26, 1991, the Supreme Soviet of the USSR ratified the Belovezh Accords, formally ending the Soviet Union. What had been the world's largest country by area splintered into 15 independent nations. For 69 years, the Soviet experiment had shaped global politics. Its end brought both hope for a new world order and anxiety about nuclear weapons in unstable new states."
     },
     {
-      "id": 10,
+      "id": 18,
       "date": "2026-04-16",
       "day_of_week": "thursday",
       "event": "First Email Sent",
@@ -713,7 +713,7 @@
       "context_card": "Ray Tomlinson sent the first email in 1971, choosing the @ symbol to separate the user name from the computer name. The message itself was largely forgettable — something like 'QWERTYUIOP.' But the @ sign became Tomlinson's lasting contribution to digital communication, now used in billions of email addresses worldwide."
     },
     {
-      "id": 11,
+      "id": 19,
       "date": "2026-04-17",
       "day_of_week": "friday",
       "event": "The Great Wall of China Completed",
@@ -754,7 +754,7 @@
       "context_card": "The Great Wall was built, rebuilt, and maintained over centuries by millions of workers, many of whom died building it. The wall we see today was mostly built during the Ming Dynasty (1368-1644). The total length, including all branches, is over 13,000 miles. Contrary to popular myth, it's not visible from space with the naked eye."
     },
     {
-      "id": 12,
+      "id": 20,
       "date": "2026-04-18",
       "day_of_week": "saturday",
       "event": "French Revolution Begins",
@@ -795,7 +795,7 @@
       "context_card": "On July 14, 1789, several hundred Parisians stormed the Bastille, a medieval fortress that had become a symbol of royal tyranny. They freed the seven prisoners inside and killed the governor. The event became the defining moment of the French Revolution and is now commemorated annually as Bastille Day, France's national holiday."
     },
     {
-      "id": 13,
+      "id": 21,
       "date": "2026-04-19",
       "day_of_week": "sunday",
       "event": "First Atomic Bomb Test",
@@ -836,7 +836,7 @@
       "context_card": "At 5:29 AM on July 16, 1945, J. Robert Oppenheimer watched the Trinity test explode with the words of the Bhagavad Gita in his mind: 'Now I am become Death, the destroyer of worlds.' The blast was visible 200 miles away. Three weeks later, atomic bombs destroyed Hiroshima and Nagasaki, ending World War II."
     },
     {
-      "id": 14,
+      "id": 22,
       "date": "2026-04-20",
       "day_of_week": "monday",
       "event": "The Mona Lisa Stolen",
@@ -877,7 +877,7 @@
       "context_card": "Vincenzo Peruggia, a Louvre employee, stole the Mona Lisa by hiding in a broom closet overnight. He simply walked out with it under his coat the next morning. It was missing for two years and was found in Florence in 1913. Paradoxically, the theft transformed the Mona Lisa from a respected painting into a global celebrity."
     },
     {
-      "id": 15,
+      "id": 23,
       "date": "2026-04-21",
       "day_of_week": "tuesday",
       "event": "First Human in Space",
@@ -918,7 +918,7 @@
       "context_card": "Yuri Gagarin orbited Earth in Vostok 1 on April 12, 1961, completing one orbit in 108 minutes. At 27, he became the first human to see Earth from space. He parachuted from his capsule before it landed — ejection at 7km was standard procedure. A city in Kazakhstan was renamed Baikonur in his honor, and his face became a symbol of Soviet achievement."
     },
     {
-      "id": 16,
+      "id": 24,
       "date": "2026-04-22",
       "day_of_week": "wednesday",
       "event": "Google Founded",
@@ -959,7 +959,7 @@
       "context_card": "Larry Page and Sergey Brin met at Stanford in 1995 and initially didn't get along. Their search algorithm, PageRank, ranked websites by their links rather than keywords. Their first office was a garage rented from a friend. The name 'Google' came from 'googol,' a mathematical term for 1 followed by 100 zeros."
     },
     {
-      "id": 17,
+      "id": 25,
       "date": "2026-04-23",
       "day_of_week": "thursday",
       "event": "HIV/AIDS Discovered",
@@ -1000,7 +1000,7 @@
       "context_card": "The CDC's Morbidity and Mortality Weekly Report on June 5, 1981, documented five young gay men in Los Angeles with a rare pneumonia. By the end of 1981, there were 159 reported cases. The disease wouldn't be called AIDS until 1982, and the HIV virus wouldn't be identified until 1984. It would eventually kill 35 million people worldwide."
     },
     {
-      "id": 18,
+      "id": 26,
       "date": "2026-04-24",
       "day_of_week": "friday",
       "event": "Amazon Founded",
@@ -1041,7 +1041,7 @@
       "context_card": "Jeff Bezos left his hedge fund job in 1994 to start an online bookstore, originally called Cadabra. He chose the name Amazon because it sounded 'exotic and different,' and the Amazon River was the biggest river he could think of. He raised $1 million from his own parents — the minimum viable investment to start. By 2020, Amazon had a market cap of $1.7 trillion."
     },
     {
-      "id": 19,
+      "id": 27,
       "date": "2026-04-25",
       "day_of_week": "saturday",
       "event": "DNA Structure Discovered",
@@ -1082,7 +1082,7 @@
       "context_card": "Watson and Crick published their double helix model in Nature on April 25, 1953. Their famous line: 'It has not escaped our notice that the specific pairing we have postulated immediately suggests a possible copying mechanism for the genetic material.' Rosalind Franklin's Photo 51, which showed the helix structure, was critical — but she died in 1958 and never shared the Nobel Prize."
     },
     {
-      "id": 20,
+      "id": 28,
       "date": "2026-04-26",
       "day_of_week": "sunday",
       "event": "Chernobyl Nuclear Disaster",
@@ -1123,7 +1123,7 @@
       "context_card": "On April 26, 1986, Reactor 4 at Chernobyl exploded during a low-power test. The fire released radioactive material 9 kilometers into the atmosphere. Soviet authorities evacuated Pripyat (population 49,000) 36 hours later. The final death toll remains disputed — from 31 immediate deaths to estimates of thousands of cancer cases from radiation exposure. The destroyed reactor was finally enclosed in a giant steel sarcophagus in 2016."
     },
     {
-      "id": 21,
+      "id": 29,
       "date": "2026-04-27",
       "day_of_week": "monday",
       "event": "MP3 Player Invented",
@@ -1164,7 +1164,7 @@
       "context_card": "The Saehan MP-X, released in 1997, was the first portable MP3 player. It held about 12 songs using flash memory and cost around $250. It had no screen and required a PC to load music. The technology was made mainstream by the iPod in 2001, which Apple co-founder Steve Jobs dismissed as 'just a feature' — meaning a flash-based MP3 player — before reconsidering."
     },
     {
-      "id": 22,
+      "id": 30,
       "date": "2026-04-28",
       "day_of_week": "tuesday",
       "event": "Euro Currency Launched",
@@ -1205,7 +1205,7 @@
       "context_card": "The Euro was introduced as an accounting currency on January 1, 1999, with physical notes and coins following on January 1, 2002. Twelve countries abandoned their national currencies — including the Deutsche Mark, French Franc, and Italian Lira — for the first time in history. The transition was initially chaotic in some countries, with ATM glitches and confusion at stores."
     },
     {
-      "id": 23,
+      "id": 31,
       "date": "2026-04-29",
       "day_of_week": "wednesday",
       "event": "Instagram Launched",
@@ -1246,7 +1246,7 @@
       "context_card": "Kevin Systrom and Mike Krieger launched Instagram on October 6, 2010. It reached 1 million users in just two months. Systrom had 12 employees when Facebook acquired it for $1 billion in 2012 — an astonishing valuation for a company with 13 employees and no revenue. By 2018, Instagram had 1 billion users and was Facebook's most valuable asset."
     },
     {
-      "id": 24,
+      "id": 32,
       "date": "2026-04-30",
       "day_of_week": "thursday",
       "event": "MP3 Format Created",
@@ -1287,7 +1287,7 @@
       "context_card": "The MP3 format was developed by the Fraunhofer Institute in Germany and standardized in 1991. It could compress a 3.5-minute CD track from 30MB to about 3MB. The researchers initially struggled to find companies interested — nobody believed people would want CD-quality music compressed so much. They earned about $1 per licensed player. By 2000, MP3 had destroyed the CD singles market and would eventually help nearly destroy physical album sales."
     },
     {
-      "id": 25,
+      "id": 33,
       "date": "2026-05-01",
       "day_of_week": "friday",
       "event": "Black Tuesday Stock Crash",
@@ -1328,7 +1328,7 @@
       "context_card": "On October 29, 1929, investors traded 16 million shares in a panic. The Dow fell 12% in a single day. Over the next few weeks, $30 billion in stock value evaporated — equivalent to about $400 billion today. The crash ended the Roaring Twenties and triggered the Great Depression, which would last a decade and see 25% unemployment in the United States."
     },
     {
-      "id": 26,
+      "id": 34,
       "date": "2026-05-02",
       "day_of_week": "saturday",
       "event": "First Heart Transplant",
@@ -1369,7 +1369,7 @@
       "context_card": "On December 3, 1967, Dr. Christiaan Barnard transplanted a human heart into 53-year-old Louis Washkansky. The operation was successful, but Washkansky died 18 days later from pneumonia — his immune system had been weakened by the anti-rejection drugs. Barnard's face was on magazine covers worldwide overnight. He had gone from obscurity to celebrity in a single operation."
     },
     {
-      "id": 27,
+      "id": 35,
       "date": "2026-05-03",
       "day_of_week": "sunday",
       "event": "Polio Vaccine Announced",
@@ -1410,7 +1410,7 @@
       "context_card": "On April 12, 1955, Dr. Thomas Francis announced that Jonas Salk's polio vaccine was 'safe, effective, and potent.' Within hours, churches rang bells and factories blew whistles in celebration. One parent said: 'I have never experienced such a feeling of relief.' Within months, cases of polio in the US dropped by 90%. By 1979, polio was eliminated in the United States."
     },
     {
-      "id": 28,
+      "id": 36,
       "date": "2026-05-04",
       "day_of_week": "monday",
       "event": "First Email Sent Over Internet",
@@ -1451,7 +1451,7 @@
       "context_card": "Ray Tomlinson sent the first networked email between two computers on ARPANET in 1971. The message itself was mundane — probably 'QWERTYUIOP' or something similar, used as a keyboard test. Tomlinson also chose the @ sign to separate user names from computer names, creating the format we still use today. The invention went from concept to global essential service in under three decades."
     },
     {
-      "id": 29,
+      "id": 37,
       "date": "2026-05-05",
       "day_of_week": "tuesday",
       "event": "Napoleon Crowned Emperor",
@@ -1492,7 +1492,7 @@
       "context_card": "On December 2, 1804, Napoleon Bonaparte crowned himself Emperor of France in Notre-Dame. He famously seized the crown from Pope Pius VII and placed it on his own head before crowning his wife Josephine. The painter Jacques-Louis David immortalized the moment in a massive canvas. Napoleon's empire would eventually span most of Europe before his defeat at Waterloo in 1815."
     },
     {
-      "id": 30,
+      "id": 38,
       "date": "2026-05-06",
       "day_of_week": "wednesday",
       "event": "YouTube Founded",
@@ -1533,7 +1533,7 @@
       "context_card": "YouTube was founded in February 2005 and launched in November. The first video, 'Me at the zoo,' was uploaded by co-founder Jawed Karim on April 23, 2005, and is still online. Google acquired YouTube in October 2006 for $1.65 billion — at the time, an enormous sum for a company with no revenue and 25 employees. By 2023, YouTube had over 2 billion logged-in monthly users."
     },
     {
-      "id": 2,
+      "id": 39,
       "date": "2026-03-30",
       "slot": 1,
       "day_of_week": "monday",
@@ -1575,7 +1575,7 @@
       "context_card": "Neil Armstrong stepped onto the lunar surface at 10:56 PM EDT on July 20th, 1969. The words he spoke were improvised; NASA had approved a different version. The mission returned 47.5 pounds of moon rocks."
     },
     {
-      "id": 3,
+      "id": 40,
       "date": "2026-03-30",
       "slot": 2,
       "day_of_week": "monday",
@@ -1617,7 +1617,7 @@
       "context_card": "The Titanic struck the iceberg at 11:40 PM on April 14th, 1912. By 2:20 AM, the ship had completely submerged. The Carpathia rescued survivors at 4:10 AM. Of the 710 survivors, 74 percent were women and children."
     },
     {
-      "id": 100,
+      "id": 41,
       "date": "2026-03-31",
       "slot": 1,
       "day_of_week": "tuesday",
@@ -1659,7 +1659,7 @@
       "context_card": "Jobs unveiled iPhone Jan 9, 2007. Sold June 29. No App Store at launch."
     },
     {
-      "id": 101,
+      "id": 42,
       "date": "2026-03-31",
       "slot": 2,
       "day_of_week": "tuesday",
@@ -1701,7 +1701,7 @@
       "context_card": "Break-in June 17, 1972. Nixon resigned Aug 9, 1974."
     },
     {
-      "id": 102,
+      "id": 43,
       "date": "2026-04-01",
       "slot": 1,
       "day_of_week": "wednesday",
@@ -1743,7 +1743,7 @@
       "context_card": "Berners-Lee proposed WWW March 1989. First website went live 1991."
     },
     {
-      "id": 103,
+      "id": 44,
       "date": "2026-04-01",
       "slot": 2,
       "day_of_week": "wednesday",
@@ -1783,6 +1783,1677 @@
         ]
       },
       "context_card": "Explosion April 26, 1986. 350000 evacuated. Sarcophagus built to contain it."
+    },
+    {
+      "id": 45,
+      "date": "2026-03-31",
+      "slot": 0,
+      "day_of_week": "monday",
+      "event": "Nelson Mandela Released From Prison",
+      "event_formal": "Nelson Mandela Released From Prison",
+      "year": 1990,
+      "headline": "After 27 years behind bars",
+      "description": "After 27 years of imprisonment, Nelson Mandela walked free on February 11, 1990, becoming a symbol of the fight against apartheid in South Africa. His release sparked a movement that would eventually lead to the end of apartheid and his election as South Africa's first Black president in 1994.",
+      "tier": 1,
+      "difficulty_rating": 3,
+      "clues": [
+        "This event occurred in the 1990s decade.",
+        "The world was a different place back then.",
+        "This was watched by millions around the globe."
+      ],
+      "context_card": "Mandela was 71 years old when he was released. He had spent 27 years in prison, including 18 years on Robben Island where he performed hard labor in a quarry."
+    },
+    {
+      "id": 46,
+      "date": "2026-03-31",
+      "slot": 1,
+      "day_of_week": "monday",
+      "event": "Apollo 11 Moon Landing",
+      "event_formal": "Apollo 11 — First Humans Walk on the Moon",
+      "year": 1969,
+      "headline": "One small step for man",
+      "description": "On July 20, 1969, NASA astronauts Neil Armstrong and Buzz Aldrin became the first humans to walk on the Moon, fulfilling President Kennedy's ambitious goal set in 1961. Armstrong's famous words — \"That's one small step for man, one giant leap for mankind\" — echoed around the world as an estimated 600 million people watched on television.",
+      "tier": 1,
+      "difficulty_rating": 3,
+      "clues": [
+        "This event occurred in the 1960s decade.",
+        "The world was a different place back then.",
+        "This was watched by millions around the globe."
+      ],
+      "context_card": "The Apollo 11 mission returned 47.5 pounds of lunar samples to Earth. The entire Apollo program cost $25.4 billion (about $180 billion today)."
+    },
+    {
+      "id": 47,
+      "date": "2026-03-31",
+      "slot": 2,
+      "day_of_week": "monday",
+      "event": "Titanic Sinks",
+      "event_formal": "Sinking of the RMS Titanic",
+      "year": 1912,
+      "headline": "The unsinkable ship met its end",
+      "description": "The RMS Titanic, the largest ship afloat at the time, struck an iceberg on April 15, 1912, during its maiden voyage from Southampton to New York City. Over 1,500 passengers and crew perished in one of the deadliest peacetime maritime disasters. The tragedy led to major improvements in maritime safety regulations.",
+      "tier": 1,
+      "difficulty_rating": 4,
+      "clues": [
+        "This event occurred in the 1910s decade.",
+        "The world was a different place back then.",
+        "This was watched by millions around the globe."
+      ],
+      "context_card": "The Titanic was carrying some of the wealthiest people in the world. Only 710 of the 2,224 passengers and crew survived. Many of the lifeboats were launched partially empty."
+    },
+    {
+      "id": 48,
+      "date": "2026-04-01",
+      "slot": 0,
+      "day_of_week": "tuesday",
+      "event": "JFK Assassination",
+      "event_formal": "Assassination of President John F. Kennedy",
+      "year": 1963,
+      "headline": "Shots rang out in Dallas",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 4,
+      "clues": [
+        "This happened during the second half of the 20th century.",
+        "Technology was rapidly changing this era.",
+        "This event had worldwide implications."
+      ],
+      "context_card": "This event occurred in 1963 and remains significant in historical studies."
+    },
+    {
+      "id": 49,
+      "date": "2026-04-01",
+      "slot": 1,
+      "day_of_week": "tuesday",
+      "event": "World Wide Web Invented",
+      "event_formal": "World Wide Web Proposed by Tim Berners-Lee",
+      "year": 1989,
+      "headline": "Tim Berners-Lee's proposal",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 4,
+      "clues": [
+        "This happened during the second half of the 20th century.",
+        "Technology was rapidly changing this era.",
+        "This event had worldwide implications."
+      ],
+      "context_card": "This event occurred in 1989 and remains significant in historical studies."
+    },
+    {
+      "id": 50,
+      "date": "2026-04-01",
+      "slot": 2,
+      "day_of_week": "tuesday",
+      "event": "Chernobyl Disaster",
+      "event_formal": "Chernobyl Nuclear Disaster",
+      "year": 1986,
+      "headline": "The world's worst nuclear accident",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 5,
+      "clues": [
+        "This happened during the second half of the 20th century.",
+        "Technology was rapidly changing this era.",
+        "This event had worldwide implications."
+      ],
+      "context_card": "This event occurred in 1986 and remains significant in historical studies."
+    },
+    {
+      "id": 51,
+      "date": "2026-04-02",
+      "slot": 0,
+      "day_of_week": "wednesday",
+      "event": "D-Day Normandy Landing",
+      "event_formal": "D-Day — Allied Forces Land at Normandy",
+      "year": 1944,
+      "headline": "The largest seaborne invasion",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 5,
+      "clues": [
+        "The year was significant for this type of event.",
+        "Social changes were underway during this period.",
+        "This was a defining moment in its decade."
+      ],
+      "context_card": "This event occurred in 1944 and remains significant in historical studies."
+    },
+    {
+      "id": 52,
+      "date": "2026-04-02",
+      "slot": 1,
+      "day_of_week": "wednesday",
+      "event": "First iPhone Released",
+      "event_formal": "Apple iPhone — First Generation Released",
+      "year": 2007,
+      "headline": "Apple reinvented the phone",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 5,
+      "clues": [
+        "The year was significant for this type of event.",
+        "Social changes were underway during this period.",
+        "This was a defining moment in its decade."
+      ],
+      "context_card": "This event occurred in 2007 and remains significant in historical studies."
+    },
+    {
+      "id": 53,
+      "date": "2026-04-02",
+      "slot": 2,
+      "day_of_week": "wednesday",
+      "event": "Watergate Break-In",
+      "event_formal": "Watergate Scandal Begins",
+      "year": 1972,
+      "headline": "A scandal that toppled a president",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 6,
+      "clues": [
+        "The year was significant for this type of event.",
+        "Social changes were underway during this period.",
+        "This was a defining moment in its decade."
+      ],
+      "context_card": "This event occurred in 1972 and remains significant in historical studies."
+    },
+    {
+      "id": 54,
+      "date": "2026-04-03",
+      "slot": 0,
+      "day_of_week": "thursday",
+      "event": "Hiroshima Atomic Bomb",
+      "event_formal": "Atomic Bomb Dropped on Hiroshima",
+      "year": 1945,
+      "headline": "The first atomic weapon used in war",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 6,
+      "clues": [
+        "This occurred in the latter half of the 20th century.",
+        "The aftermath of this event is still felt today."
+      ],
+      "context_card": "This event occurred in 1945 and remains significant in historical studies."
+    },
+    {
+      "id": 55,
+      "date": "2026-04-03",
+      "slot": 1,
+      "day_of_week": "thursday",
+      "event": "Fall of the Soviet Union",
+      "event_formal": "Dissolution of the Soviet Union",
+      "year": 1991,
+      "headline": "The Cold War ended",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 6,
+      "clues": [
+        "This occurred in the latter half of the 20th century.",
+        "The aftermath of this event is still felt today."
+      ],
+      "context_card": "This event occurred in 1991 and remains significant in historical studies."
+    },
+    {
+      "id": 56,
+      "date": "2026-04-03",
+      "slot": 2,
+      "day_of_week": "thursday",
+      "event": "Wright Brothers First Flight",
+      "event_formal": "Wright Brothers — First Powered Flight",
+      "year": 1903,
+      "headline": "First powered airplane flight",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 7,
+      "clues": [
+        "This occurred in the latter half of the 20th century.",
+        "The aftermath of this event is still felt today."
+      ],
+      "context_card": "This event occurred in 1903 and remains significant in historical studies."
+    },
+    {
+      "id": 57,
+      "date": "2026-04-04",
+      "slot": 0,
+      "day_of_week": "friday",
+      "event": "Lindbergh Atlantic Flight",
+      "event_formal": "Lindbergh Completes First Solo Transatlantic Flight",
+      "year": 1927,
+      "headline": "First solo transatlantic flight",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 7,
+      "clues": [
+        "This happened during a period of rapid change.",
+        "This event is taught in schools worldwide."
+      ],
+      "context_card": "This event occurred in 1927 and remains significant in historical studies."
+    },
+    {
+      "id": 58,
+      "date": "2026-04-04",
+      "slot": 1,
+      "day_of_week": "friday",
+      "event": "Cuban Missile Crisis",
+      "event_formal": "Cuban Missile Crisis — World on Brink of War",
+      "year": 1962,
+      "headline": "The world held its breath",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 7,
+      "clues": [
+        "This happened during a period of rapid change.",
+        "This event is taught in schools worldwide."
+      ],
+      "context_card": "This event occurred in 1962 and remains significant in historical studies."
+    },
+    {
+      "id": 59,
+      "date": "2026-04-04",
+      "slot": 2,
+      "day_of_week": "friday",
+      "event": "Rosa Parks Bus Protest",
+      "event_formal": "Rosa Parks Sparks Montgomery Bus Boycott",
+      "year": 1955,
+      "headline": "She refused to give up her seat",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 7,
+      "clues": [
+        "This happened during a period of rapid change.",
+        "This event is taught in schools worldwide."
+      ],
+      "context_card": "This event occurred in 1955 and remains significant in historical studies."
+    },
+    {
+      "id": 60,
+      "date": "2026-04-05",
+      "slot": 0,
+      "day_of_week": "saturday",
+      "event": "Challenger Disaster",
+      "event_formal": "Space Shuttle Challenger Disaster",
+      "year": 1986,
+      "headline": "Seven astronauts lost",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 8,
+      "clues": [
+        "This marked a turning point in history."
+      ],
+      "context_card": "This event occurred in 1986 and remains significant in historical studies."
+    },
+    {
+      "id": 61,
+      "date": "2026-04-05",
+      "slot": 1,
+      "day_of_week": "saturday",
+      "event": "September 11 Attacks",
+      "event_formal": "September 11 Terrorist Attacks",
+      "year": 2001,
+      "headline": "The day that changed everything",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 8,
+      "clues": [
+        "This marked a turning point in history."
+      ],
+      "context_card": "This event occurred in 2001 and remains significant in historical studies."
+    },
+    {
+      "id": 62,
+      "date": "2026-04-05",
+      "slot": 2,
+      "day_of_week": "saturday",
+      "event": "Pearl Harbor Attack",
+      "event_formal": "Attack on Pearl Harbor",
+      "year": 1941,
+      "headline": "A date which will live in infamy",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 8,
+      "clues": [
+        "This marked a turning point in history."
+      ],
+      "context_card": "This event occurred in 1941 and remains significant in historical studies."
+    },
+    {
+      "id": 63,
+      "date": "2026-04-06",
+      "slot": 0,
+      "day_of_week": "sunday",
+      "event": "First Human in Space",
+      "event_formal": "Yuri Gagarin — First Human in Space",
+      "year": 1961,
+      "headline": "Yuri Gagarin orbited Earth",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 9,
+      "clues": [],
+      "context_card": "This event occurred in 1961 and remains significant in historical studies."
+    },
+    {
+      "id": 64,
+      "date": "2026-04-06",
+      "slot": 1,
+      "day_of_week": "sunday",
+      "event": "French Revolution Begins",
+      "event_formal": "Storming of the Bastille — French Revolution Begins",
+      "year": 1789,
+      "headline": "The Bastille fell",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 9,
+      "clues": [],
+      "context_card": "This event occurred in 1789 and remains significant in historical studies."
+    },
+    {
+      "id": 65,
+      "date": "2026-04-06",
+      "slot": 2,
+      "day_of_week": "sunday",
+      "event": "Declaration of Independence",
+      "event_formal": "Signing of the Declaration of Independence",
+      "year": 1776,
+      "headline": "Thirteen colonies broke free",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 9,
+      "clues": [],
+      "context_card": "This event occurred in 1776 and remains significant in historical studies."
+    },
+    {
+      "id": 66,
+      "date": "2026-04-07",
+      "slot": 0,
+      "day_of_week": "monday",
+      "event": "Martin Luther King I Have a Dream",
+      "event_formal": "Martin Luther King I Have A Dream",
+      "year": 1963,
+      "headline": "250000 gathered in Washington",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 3,
+      "clues": [
+        "This event occurred in the 1960s decade.",
+        "The world was a different place back then.",
+        "This was watched by millions around the globe."
+      ],
+      "context_card": "This event occurred in 1963 and remains significant in historical studies."
+    },
+    {
+      "id": 67,
+      "date": "2026-04-07",
+      "slot": 1,
+      "day_of_week": "monday",
+      "event": "First Email Sent",
+      "event_formal": "First Email Sent",
+      "year": 1971,
+      "headline": "Ray Tomlinson's @ sign",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 3,
+      "clues": [
+        "This event occurred in the 1970s decade.",
+        "The world was a different place back then.",
+        "This was watched by millions around the globe."
+      ],
+      "context_card": "This event occurred in 1971 and remains significant in historical studies."
+    },
+    {
+      "id": 68,
+      "date": "2026-04-07",
+      "slot": 2,
+      "day_of_week": "monday",
+      "event": "Google Founded",
+      "event_formal": "Google Founded",
+      "year": 1998,
+      "headline": "Two Stanford students in a garage",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 4,
+      "clues": [
+        "This event occurred in the 1990s decade.",
+        "The world was a different place back then.",
+        "This was watched by millions around the globe."
+      ],
+      "context_card": "This event occurred in 1998 and remains significant in historical studies."
+    },
+    {
+      "id": 69,
+      "date": "2026-04-08",
+      "slot": 0,
+      "day_of_week": "tuesday",
+      "event": "Amazon Founded",
+      "event_formal": "Amazon Founded",
+      "year": 1994,
+      "headline": "An online bookstore in Seattle",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 4,
+      "clues": [
+        "This happened during the second half of the 20th century.",
+        "Technology was rapidly changing this era.",
+        "This event had worldwide implications."
+      ],
+      "context_card": "This event occurred in 1994 and remains significant in historical studies."
+    },
+    {
+      "id": 70,
+      "date": "2026-04-08",
+      "slot": 1,
+      "day_of_week": "tuesday",
+      "event": "DNA Structure Discovered",
+      "event_formal": "Watson and Crick Discover DNA Structure",
+      "year": 1953,
+      "headline": "Watson and Crick's double helix",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 4,
+      "clues": [
+        "This happened during the second half of the 20th century.",
+        "Technology was rapidly changing this era.",
+        "This event had worldwide implications."
+      ],
+      "context_card": "This event occurred in 1953 and remains significant in historical studies."
+    },
+    {
+      "id": 71,
+      "date": "2026-04-08",
+      "slot": 2,
+      "day_of_week": "tuesday",
+      "event": "HIV/AIDS Identified",
+      "event_formal": "Hiv/aids Identified",
+      "year": 1981,
+      "headline": "A mysterious immune disorder",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 5,
+      "clues": [
+        "This happened during the second half of the 20th century.",
+        "Technology was rapidly changing this era.",
+        "This event had worldwide implications."
+      ],
+      "context_card": "This event occurred in 1981 and remains significant in historical studies."
+    },
+    {
+      "id": 72,
+      "date": "2026-04-09",
+      "slot": 0,
+      "day_of_week": "wednesday",
+      "event": "First Heart Transplant",
+      "event_formal": "First Heart Transplant",
+      "year": 1967,
+      "headline": "Dr. Christiaan Barnard's surgery",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 5,
+      "clues": [
+        "The year was significant for this type of event.",
+        "Social changes were underway during this period.",
+        "This was a defining moment in its decade."
+      ],
+      "context_card": "This event occurred in 1967 and remains significant in historical studies."
+    },
+    {
+      "id": 73,
+      "date": "2026-04-09",
+      "slot": 1,
+      "day_of_week": "wednesday",
+      "event": "Polio Vaccine Announced",
+      "event_formal": "Polio Vaccine Announced",
+      "year": 1955,
+      "headline": "Jonas Salk's breakthrough",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 5,
+      "clues": [
+        "The year was significant for this type of event.",
+        "Social changes were underway during this period.",
+        "This was a defining moment in its decade."
+      ],
+      "context_card": "This event occurred in 1955 and remains significant in historical studies."
+    },
+    {
+      "id": 74,
+      "date": "2026-04-09",
+      "slot": 2,
+      "day_of_week": "wednesday",
+      "event": "Penicillin Discovered",
+      "event_formal": "Penicillin Discovered",
+      "year": 1928,
+      "headline": "Alexander Fleming's accident",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 6,
+      "clues": [
+        "The year was significant for this type of event.",
+        "Social changes were underway during this period.",
+        "This was a defining moment in its decade."
+      ],
+      "context_card": "This event occurred in 1928 and remains significant in historical studies."
+    },
+    {
+      "id": 75,
+      "date": "2026-04-10",
+      "slot": 0,
+      "day_of_week": "thursday",
+      "event": "Instagram Launched",
+      "event_formal": "Instagram Launched",
+      "year": 2010,
+      "headline": "Photo sharing revolution",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 6,
+      "clues": [
+        "This occurred in the latter half of the 20th century.",
+        "The aftermath of this event is still felt today."
+      ],
+      "context_card": "This event occurred in 2010 and remains significant in historical studies."
+    },
+    {
+      "id": 76,
+      "date": "2026-04-10",
+      "slot": 1,
+      "day_of_week": "thursday",
+      "event": "YouTube Founded",
+      "event_formal": "Youtube Founded",
+      "year": 2005,
+      "headline": "Broadcast yourself",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 6,
+      "clues": [
+        "This occurred in the latter half of the 20th century.",
+        "The aftermath of this event is still felt today."
+      ],
+      "context_card": "This event occurred in 2005 and remains significant in historical studies."
+    },
+    {
+      "id": 77,
+      "date": "2026-04-10",
+      "slot": 2,
+      "day_of_week": "thursday",
+      "event": "Wikipedia Launched",
+      "event_formal": "Wikipedia Launched",
+      "year": 2001,
+      "headline": "The free encyclopedia",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 7,
+      "clues": [
+        "This occurred in the latter half of the 20th century.",
+        "The aftermath of this event is still felt today."
+      ],
+      "context_card": "This event occurred in 2001 and remains significant in historical studies."
+    },
+    {
+      "id": 78,
+      "date": "2026-04-11",
+      "slot": 0,
+      "day_of_week": "friday",
+      "event": "Euro Currency Launched",
+      "event_formal": "Euro Currency Launched",
+      "year": 1999,
+      "headline": "Single European currency",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 7,
+      "clues": [
+        "This happened during a period of rapid change.",
+        "This event is taught in schools worldwide."
+      ],
+      "context_card": "This event occurred in 1999 and remains significant in historical studies."
+    },
+    {
+      "id": 79,
+      "date": "2026-04-11",
+      "slot": 1,
+      "day_of_week": "friday",
+      "event": "MP3 Format Created",
+      "event_formal": "Mp3 Format Created",
+      "year": 1991,
+      "headline": "Audio compression revolution",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 7,
+      "clues": [
+        "This happened during a period of rapid change.",
+        "This event is taught in schools worldwide."
+      ],
+      "context_card": "This event occurred in 1991 and remains significant in historical studies."
+    },
+    {
+      "id": 80,
+      "date": "2026-04-11",
+      "slot": 2,
+      "day_of_week": "friday",
+      "event": "Nintendo Game Boy Released",
+      "event_formal": "Nintendo Game Boy Released",
+      "year": 1989,
+      "headline": "Portable gaming revolution",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 7,
+      "clues": [
+        "This happened during a period of rapid change.",
+        "This event is taught in schools worldwide."
+      ],
+      "context_card": "This event occurred in 1989 and remains significant in historical studies."
+    },
+    {
+      "id": 81,
+      "date": "2026-04-12",
+      "slot": 0,
+      "day_of_week": "saturday",
+      "event": "Black Tuesday Stock Crash",
+      "event_formal": "Black Tuesday Stock Crash",
+      "year": 1929,
+      "headline": "The Great Depression begins",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 8,
+      "clues": [
+        "This marked a turning point in history."
+      ],
+      "context_card": "This event occurred in 1929 and remains significant in historical studies."
+    },
+    {
+      "id": 82,
+      "date": "2026-04-12",
+      "slot": 1,
+      "day_of_week": "saturday",
+      "event": "First Photograph Taken",
+      "event_formal": "First Photograph Taken",
+      "year": 1826,
+      "headline": "Joseph Niepce's View",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 8,
+      "clues": [
+        "This marked a turning point in history."
+      ],
+      "context_card": "This event occurred in 1826 and remains significant in historical studies."
+    },
+    {
+      "id": 83,
+      "date": "2026-04-12",
+      "slot": 2,
+      "day_of_week": "saturday",
+      "event": "First Telegraph Message",
+      "event_formal": "First Telegraph Message",
+      "year": 1844,
+      "headline": "What hath God wrought",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 8,
+      "clues": [
+        "This marked a turning point in history."
+      ],
+      "context_card": "This event occurred in 1844 and remains significant in historical studies."
+    },
+    {
+      "id": 84,
+      "date": "2026-04-13",
+      "slot": 0,
+      "day_of_week": "sunday",
+      "event": "Printing Press Invented",
+      "event_formal": "Printing Press Invented",
+      "year": 1440,
+      "headline": "Gutenberg's revolution",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 9,
+      "clues": [],
+      "context_card": "This event occurred in 1440 and remains significant in historical studies."
+    },
+    {
+      "id": 85,
+      "date": "2026-04-13",
+      "slot": 1,
+      "day_of_week": "sunday",
+      "event": "American Civil War Begins",
+      "event_formal": "American Civil War Begins",
+      "year": 1861,
+      "headline": "Fort Sumter bombarded",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 9,
+      "clues": [],
+      "context_card": "This event occurred in 1861 and remains significant in historical studies."
+    },
+    {
+      "id": 86,
+      "date": "2026-04-13",
+      "slot": 2,
+      "day_of_week": "sunday",
+      "event": "Spanish Flu Pandemic",
+      "event_formal": "Spanish Flu Pandemic",
+      "year": 1918,
+      "headline": "Deadliest pandemic in history",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 9,
+      "clues": [],
+      "context_card": "This event occurred in 1918 and remains significant in historical studies."
+    },
+    {
+      "id": 87,
+      "date": "2026-04-14",
+      "slot": 0,
+      "day_of_week": "monday",
+      "event": "Elvis Presley First TV Appearance",
+      "event_formal": "Elvis Presley First Tv Appearance",
+      "year": 1956,
+      "headline": "Rock and roll went mainstream",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 3,
+      "clues": [
+        "This event occurred in the 1950s decade.",
+        "The world was a different place back then.",
+        "This was watched by millions around the globe."
+      ],
+      "context_card": "This event occurred in 1956 and remains significant in historical studies."
+    },
+    {
+      "id": 88,
+      "date": "2026-04-14",
+      "slot": 1,
+      "day_of_week": "monday",
+      "event": "First McDonald's Opens",
+      "event_formal": "First Mcdonald's Opens",
+      "year": 1955,
+      "headline": "Golden Arches appear",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 3,
+      "clues": [
+        "This event occurred in the 1950s decade.",
+        "The world was a different place back then.",
+        "This was watched by millions around the globe."
+      ],
+      "context_card": "This event occurred in 1955 and remains significant in historical studies."
+    },
+    {
+      "id": 89,
+      "date": "2026-04-14",
+      "slot": 2,
+      "day_of_week": "monday",
+      "event": "Disneyland Opens",
+      "event_formal": "Disneyland Opens",
+      "year": 1955,
+      "headline": "The happiest place on Earth",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 4,
+      "clues": [
+        "This event occurred in the 1950s decade.",
+        "The world was a different place back then.",
+        "This was watched by millions around the globe."
+      ],
+      "context_card": "This event occurred in 1955 and remains significant in historical studies."
+    },
+    {
+      "id": 90,
+      "date": "2026-04-15",
+      "slot": 0,
+      "day_of_week": "tuesday",
+      "event": "First Barbie Doll",
+      "event_formal": "First Barbie Doll",
+      "year": 1959,
+      "headline": "Mattel's iconic toy",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 4,
+      "clues": [
+        "This happened during the second half of the 20th century.",
+        "Technology was rapidly changing this era.",
+        "This event had worldwide implications."
+      ],
+      "context_card": "This event occurred in 1959 and remains significant in historical studies."
+    },
+    {
+      "id": 91,
+      "date": "2026-04-15",
+      "slot": 1,
+      "day_of_week": "tuesday",
+      "event": "Pac-Man Released",
+      "event_formal": "Pac-man Released",
+      "year": 1980,
+      "headline": "Arcade gaming phenomenon",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 4,
+      "clues": [
+        "This happened during the second half of the 20th century.",
+        "Technology was rapidly changing this era.",
+        "This event had worldwide implications."
+      ],
+      "context_card": "This event occurred in 1980 and remains significant in historical studies."
+    },
+    {
+      "id": 92,
+      "date": "2026-04-15",
+      "slot": 2,
+      "day_of_week": "tuesday",
+      "event": "Super Mario Bros Released",
+      "event_formal": "Super Mario Bros Released",
+      "year": 1985,
+      "headline": "Nintendo's flagship game",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 5,
+      "clues": [
+        "This happened during the second half of the 20th century.",
+        "Technology was rapidly changing this era.",
+        "This event had worldwide implications."
+      ],
+      "context_card": "This event occurred in 1985 and remains significant in historical studies."
+    },
+    {
+      "id": 93,
+      "date": "2026-04-16",
+      "slot": 0,
+      "day_of_week": "wednesday",
+      "event": "Tetris Released",
+      "event_formal": "Tetris Released",
+      "year": 1984,
+      "headline": "The falling blocks puzzle",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 5,
+      "clues": [
+        "The year was significant for this type of event.",
+        "Social changes were underway during this period.",
+        "This was a defining moment in its decade."
+      ],
+      "context_card": "This event occurred in 1984 and remains significant in historical studies."
+    },
+    {
+      "id": 94,
+      "date": "2026-04-16",
+      "slot": 1,
+      "day_of_week": "wednesday",
+      "event": "PlayStation Launched",
+      "event_formal": "Playstation Launched",
+      "year": 1994,
+      "headline": "Sony enters gaming",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 5,
+      "clues": [
+        "The year was significant for this type of event.",
+        "Social changes were underway during this period.",
+        "This was a defining moment in its decade."
+      ],
+      "context_card": "This event occurred in 1994 and remains significant in historical studies."
+    },
+    {
+      "id": 95,
+      "date": "2026-04-16",
+      "slot": 2,
+      "day_of_week": "wednesday",
+      "event": "Xbox Announced",
+      "event_formal": "Xbox Announced",
+      "year": 2001,
+      "headline": "Microsoft's console debut",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 6,
+      "clues": [
+        "The year was significant for this type of event.",
+        "Social changes were underway during this period.",
+        "This was a defining moment in its decade."
+      ],
+      "context_card": "This event occurred in 2001 and remains significant in historical studies."
+    },
+    {
+      "id": 96,
+      "date": "2026-04-17",
+      "slot": 0,
+      "day_of_week": "thursday",
+      "event": "First iPod Released",
+      "event_formal": "First Ipod Released",
+      "year": 2001,
+      "headline": "1000 songs in your pocket",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 6,
+      "clues": [
+        "This occurred in the latter half of the 20th century.",
+        "The aftermath of this event is still felt today."
+      ],
+      "context_card": "This event occurred in 2001 and remains significant in historical studies."
+    },
+    {
+      "id": 97,
+      "date": "2026-04-17",
+      "slot": 1,
+      "day_of_week": "thursday",
+      "event": "Netflix Streaming Launches",
+      "event_formal": "Netflix Streaming Launches",
+      "year": 2007,
+      "headline": "DVDs to instant streaming",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 6,
+      "clues": [
+        "This occurred in the latter half of the 20th century.",
+        "The aftermath of this event is still felt today."
+      ],
+      "context_card": "This event occurred in 2007 and remains significant in historical studies."
+    },
+    {
+      "id": 98,
+      "date": "2026-04-17",
+      "slot": 2,
+      "day_of_week": "thursday",
+      "event": "Spotify Launches",
+      "event_formal": "Spotify Launches",
+      "year": 2008,
+      "headline": "Music streaming revolution",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 7,
+      "clues": [
+        "This occurred in the latter half of the 20th century.",
+        "The aftermath of this event is still felt today."
+      ],
+      "context_card": "This event occurred in 2008 and remains significant in historical studies."
+    },
+    {
+      "id": 99,
+      "date": "2026-04-18",
+      "slot": 0,
+      "day_of_week": "friday",
+      "event": "Facebook Launched",
+      "event_formal": "Facebook Launched",
+      "year": 2004,
+      "headline": "TheFacebook at Harvard",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 7,
+      "clues": [
+        "This happened during a period of rapid change.",
+        "This event is taught in schools worldwide."
+      ],
+      "context_card": "This event occurred in 2004 and remains significant in historical studies."
+    },
+    {
+      "id": 100,
+      "date": "2026-04-18",
+      "slot": 1,
+      "day_of_week": "friday",
+      "event": "Twitter Launched",
+      "event_formal": "Twitter Launched",
+      "year": 2006,
+      "headline": "What are you doing?",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 7,
+      "clues": [
+        "This happened during a period of rapid change.",
+        "This event is taught in schools worldwide."
+      ],
+      "context_card": "This event occurred in 2006 and remains significant in historical studies."
+    },
+    {
+      "id": 101,
+      "date": "2026-04-18",
+      "slot": 2,
+      "day_of_week": "friday",
+      "event": "Snapchat Launched",
+      "event_formal": "Snapchat Launched",
+      "year": 2011,
+      "headline": "Disappearing photos",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 7,
+      "clues": [
+        "This happened during a period of rapid change.",
+        "This event is taught in schools worldwide."
+      ],
+      "context_card": "This event occurred in 2011 and remains significant in historical studies."
+    },
+    {
+      "id": 102,
+      "date": "2026-04-19",
+      "slot": 0,
+      "day_of_week": "saturday",
+      "event": "Bitcoin White Paper",
+      "event_formal": "Bitcoin White Paper",
+      "year": 2008,
+      "headline": "Satoshi Nakamoto's proposal",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 8,
+      "clues": [
+        "This marked a turning point in history."
+      ],
+      "context_card": "This event occurred in 2008 and remains significant in historical studies."
+    },
+    {
+      "id": 103,
+      "date": "2026-04-19",
+      "slot": 1,
+      "day_of_week": "saturday",
+      "event": "Ethereum Launches",
+      "event_formal": "Ethereum Launches",
+      "year": 2015,
+      "headline": "Smart contracts platform",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 8,
+      "clues": [
+        "This marked a turning point in history."
+      ],
+      "context_card": "This event occurred in 2015 and remains significant in historical studies."
+    },
+    {
+      "id": 104,
+      "date": "2026-04-19",
+      "slot": 2,
+      "day_of_week": "saturday",
+      "event": "First NFT Minted",
+      "event_formal": "First Nft Minted",
+      "year": 2014,
+      "headline": "Quantum on Namecoin",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 8,
+      "clues": [
+        "This marked a turning point in history."
+      ],
+      "context_card": "This event occurred in 2014 and remains significant in historical studies."
+    },
+    {
+      "id": 105,
+      "date": "2026-04-20",
+      "slot": 0,
+      "day_of_week": "sunday",
+      "event": "Columbus Reaches Americas",
+      "event_formal": "Columbus Reaches Americas",
+      "year": 1492,
+      "headline": "New World discovered",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 9,
+      "clues": [],
+      "context_card": "This event occurred in 1492 and remains significant in historical studies."
+    },
+    {
+      "id": 106,
+      "date": "2026-04-20",
+      "slot": 1,
+      "day_of_week": "sunday",
+      "event": "Magna Carta Signed",
+      "event_formal": "Magna Carta Signed",
+      "year": 1215,
+      "headline": "Foundation of rights",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 9,
+      "clues": [],
+      "context_card": "This event occurred in 1215 and remains significant in historical studies."
+    },
+    {
+      "id": 107,
+      "date": "2026-04-20",
+      "slot": 2,
+      "day_of_week": "sunday",
+      "event": "Shakespeare Born",
+      "event_formal": "Shakespeare Born",
+      "year": 1564,
+      "headline": "The greatest playwright",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 9,
+      "clues": [],
+      "context_card": "This event occurred in 1564 and remains significant in historical studies."
+    },
+    {
+      "id": 108,
+      "date": "2026-04-21",
+      "slot": 0,
+      "day_of_week": "monday",
+      "event": "Star Wars Released",
+      "event_formal": "Star Wars Released",
+      "year": 1977,
+      "headline": "A New Hope premiered",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 3,
+      "clues": [
+        "This event occurred in the 1970s decade.",
+        "The world was a different place back then.",
+        "This was watched by millions around the globe."
+      ],
+      "context_card": "This event occurred in 1977 and remains significant in historical studies."
+    },
+    {
+      "id": 109,
+      "date": "2026-04-21",
+      "slot": 1,
+      "day_of_week": "monday",
+      "event": "Jaws Released",
+      "event_formal": "Jaws Released",
+      "year": 1975,
+      "headline": "The first summer blockbuster",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 3,
+      "clues": [
+        "This event occurred in the 1970s decade.",
+        "The world was a different place back then.",
+        "This was watched by millions around the globe."
+      ],
+      "context_card": "This event occurred in 1975 and remains significant in historical studies."
+    },
+    {
+      "id": 110,
+      "date": "2026-04-21",
+      "slot": 2,
+      "day_of_week": "monday",
+      "event": "ET Released",
+      "event_formal": "Et Released",
+      "year": 1982,
+      "headline": "Phone home",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 4,
+      "clues": [
+        "This event occurred in the 1980s decade.",
+        "The world was a different place back then.",
+        "This was watched by millions around the globe."
+      ],
+      "context_card": "This event occurred in 1982 and remains significant in historical studies."
+    },
+    {
+      "id": 111,
+      "date": "2026-04-22",
+      "slot": 0,
+      "day_of_week": "tuesday",
+      "event": "Jurassic Park Released",
+      "event_formal": "Jurassic Park Released",
+      "year": 1993,
+      "headline": "Dinosaurs return",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 4,
+      "clues": [
+        "This happened during the second half of the 20th century.",
+        "Technology was rapidly changing this era.",
+        "This event had worldwide implications."
+      ],
+      "context_card": "This event occurred in 1993 and remains significant in historical studies."
+    },
+    {
+      "id": 112,
+      "date": "2026-04-22",
+      "slot": 1,
+      "day_of_week": "tuesday",
+      "event": "The Matrix Released",
+      "event_formal": "The Matrix Released",
+      "year": 1999,
+      "headline": "What is the Matrix?",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 4,
+      "clues": [
+        "This happened during the second half of the 20th century.",
+        "Technology was rapidly changing this era.",
+        "This event had worldwide implications."
+      ],
+      "context_card": "This event occurred in 1999 and remains significant in historical studies."
+    },
+    {
+      "id": 113,
+      "date": "2026-04-22",
+      "slot": 2,
+      "day_of_week": "tuesday",
+      "event": "Avatar Released",
+      "event_formal": "Avatar Released",
+      "year": 2009,
+      "headline": "Highest-grossing film",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 5,
+      "clues": [
+        "This happened during the second half of the 20th century.",
+        "Technology was rapidly changing this era.",
+        "This event had worldwide implications."
+      ],
+      "context_card": "This event occurred in 2009 and remains significant in historical studies."
+    },
+    {
+      "id": 114,
+      "date": "2026-04-23",
+      "slot": 0,
+      "day_of_week": "wednesday",
+      "event": "Sony Walkman Released",
+      "event_formal": "Sony Walkman Released",
+      "year": 1979,
+      "headline": "Personal music revolution",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 5,
+      "clues": [
+        "The year was significant for this type of event.",
+        "Social changes were underway during this period.",
+        "This was a defining moment in its decade."
+      ],
+      "context_card": "This event occurred in 1979 and remains significant in historical studies."
+    },
+    {
+      "id": 115,
+      "date": "2026-04-23",
+      "slot": 1,
+      "day_of_week": "wednesday",
+      "event": "VHS Format Introduced",
+      "event_formal": "Vhs Format Introduced",
+      "year": 1976,
+      "headline": "Home video recording",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 5,
+      "clues": [
+        "The year was significant for this type of event.",
+        "Social changes were underway during this period.",
+        "This was a defining moment in its decade."
+      ],
+      "context_card": "This event occurred in 1976 and remains significant in historical studies."
+    },
+    {
+      "id": 116,
+      "date": "2026-04-23",
+      "slot": 2,
+      "day_of_week": "wednesday",
+      "event": "CD Player Released",
+      "event_formal": "Cd Player Released",
+      "year": 1982,
+      "headline": "Digital audio arrives",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 6,
+      "clues": [
+        "The year was significant for this type of event.",
+        "Social changes were underway during this period.",
+        "This was a defining moment in its decade."
+      ],
+      "context_card": "This event occurred in 1982 and remains significant in historical studies."
+    },
+    {
+      "id": 117,
+      "date": "2026-04-24",
+      "slot": 0,
+      "day_of_week": "thursday",
+      "event": "Kodak Founded",
+      "event_formal": "Kodak Founded",
+      "year": 1888,
+      "headline": "You press the button",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 6,
+      "clues": [
+        "This occurred in the latter half of the 20th century.",
+        "The aftermath of this event is still felt today."
+      ],
+      "context_card": "This event occurred in 1888 and remains significant in historical studies."
+    },
+    {
+      "id": 118,
+      "date": "2026-04-24",
+      "slot": 1,
+      "day_of_week": "thursday",
+      "event": "Polaroid Camera Released",
+      "event_formal": "Polaroid Camera Released",
+      "year": 1948,
+      "headline": "Instant photography",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 6,
+      "clues": [
+        "This occurred in the latter half of the 20th century.",
+        "The aftermath of this event is still felt today."
+      ],
+      "context_card": "This event occurred in 1948 and remains significant in historical studies."
+    },
+    {
+      "id": 119,
+      "date": "2026-04-24",
+      "slot": 2,
+      "day_of_week": "thursday",
+      "event": "Digital Camera Invented",
+      "event_formal": "Digital Camera Invented",
+      "year": 1975,
+      "headline": "Steven Sasson's prototype",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 7,
+      "clues": [
+        "This occurred in the latter half of the 20th century.",
+        "The aftermath of this event is still felt today."
+      ],
+      "context_card": "This event occurred in 1975 and remains significant in historical studies."
+    },
+    {
+      "id": 120,
+      "date": "2026-04-25",
+      "slot": 0,
+      "day_of_week": "friday",
+      "event": "Ford Model T Released",
+      "event_formal": "Ford Model T Released",
+      "year": 1908,
+      "headline": "Affordable automobiles",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 7,
+      "clues": [
+        "This happened during a period of rapid change.",
+        "This event is taught in schools worldwide."
+      ],
+      "context_card": "This event occurred in 1908 and remains significant in historical studies."
+    },
+    {
+      "id": 121,
+      "date": "2026-04-25",
+      "slot": 1,
+      "day_of_week": "friday",
+      "event": "First Commercial Airplane Flight",
+      "event_formal": "First Commercial Airplane Flight",
+      "year": 1914,
+      "headline": "St Petersburg to Tampa",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 7,
+      "clues": [
+        "This happened during a period of rapid change.",
+        "This event is taught in schools worldwide."
+      ],
+      "context_card": "This event occurred in 1914 and remains significant in historical studies."
+    },
+    {
+      "id": 122,
+      "date": "2026-04-25",
+      "slot": 2,
+      "day_of_week": "friday",
+      "event": "Wright Brothers Flight",
+      "event_formal": "Wright Brothers Flight",
+      "year": 1903,
+      "headline": "First powered flight",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 7,
+      "clues": [
+        "This happened during a period of rapid change.",
+        "This event is taught in schools worldwide."
+      ],
+      "context_card": "This event occurred in 1903 and remains significant in historical studies."
+    },
+    {
+      "id": 123,
+      "date": "2026-04-26",
+      "slot": 0,
+      "day_of_week": "saturday",
+      "event": "Sputnik Launched",
+      "event_formal": "Sputnik Launched",
+      "year": 1957,
+      "headline": "Space race begins",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 8,
+      "clues": [
+        "This marked a turning point in history."
+      ],
+      "context_card": "This event occurred in 1957 and remains significant in historical studies."
+    },
+    {
+      "id": 124,
+      "date": "2026-04-26",
+      "slot": 1,
+      "day_of_week": "saturday",
+      "event": "Hubble Telescope Launched",
+      "event_formal": "Hubble Telescope Launched",
+      "year": 1990,
+      "headline": "Deep space observation",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 8,
+      "clues": [
+        "This marked a turning point in history."
+      ],
+      "context_card": "This event occurred in 1990 and remains significant in historical studies."
+    },
+    {
+      "id": 125,
+      "date": "2026-04-26",
+      "slot": 2,
+      "day_of_week": "saturday",
+      "event": "Mars Pathfinder Landing",
+      "event_formal": "Mars Pathfinder Landing",
+      "year": 1997,
+      "headline": "Sojourner rover",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 8,
+      "clues": [
+        "This marked a turning point in history."
+      ],
+      "context_card": "This event occurred in 1997 and remains significant in historical studies."
+    },
+    {
+      "id": 126,
+      "date": "2026-04-27",
+      "slot": 0,
+      "day_of_week": "sunday",
+      "event": "Gutenberg Bible Printed",
+      "event_formal": "Gutenberg Bible Printed",
+      "year": 1455,
+      "headline": "First major book printed",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 9,
+      "clues": [],
+      "context_card": "This event occurred in 1455 and remains significant in historical studies."
+    },
+    {
+      "id": 127,
+      "date": "2026-04-27",
+      "slot": 1,
+      "day_of_week": "sunday",
+      "event": "Roman Empire Falls",
+      "event_formal": "Roman Empire Falls",
+      "year": 476,
+      "headline": "Western Rome collapses",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 9,
+      "clues": [],
+      "context_card": "This event occurred in 476 and remains significant in historical studies."
+    },
+    {
+      "id": 128,
+      "date": "2026-04-27",
+      "slot": 2,
+      "day_of_week": "sunday",
+      "event": "Great Fire of London",
+      "event_formal": "Great Fire Of London",
+      "year": 1666,
+      "headline": "City destroyed and rebuilt",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 9,
+      "clues": [],
+      "context_card": "This event occurred in 1666 and remains significant in historical studies."
+    },
+    {
+      "id": 129,
+      "date": "2026-04-28",
+      "slot": 0,
+      "day_of_week": "monday",
+      "event": "Beatles First Ed Sullivan Show",
+      "event_formal": "Beatles First Ed Sullivan Show",
+      "year": 1964,
+      "headline": "British Invasion begins",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 3,
+      "clues": [
+        "This event occurred in the 1960s decade.",
+        "The world was a different place back then.",
+        "This was watched by millions around the globe."
+      ],
+      "context_card": "This event occurred in 1964 and remains significant in historical studies."
+    },
+    {
+      "id": 130,
+      "date": "2026-04-28",
+      "slot": 1,
+      "day_of_week": "monday",
+      "event": "Woodstock Festival",
+      "event_formal": "Woodstock Festival",
+      "year": 1969,
+      "headline": "Peace and music",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 3,
+      "clues": [
+        "This event occurred in the 1960s decade.",
+        "The world was a different place back then.",
+        "This was watched by millions around the globe."
+      ],
+      "context_card": "This event occurred in 1969 and remains significant in historical studies."
+    },
+    {
+      "id": 131,
+      "date": "2026-04-28",
+      "slot": 2,
+      "day_of_week": "monday",
+      "event": "Live Aid Concert",
+      "event_formal": "Live Aid Concert",
+      "year": 1985,
+      "headline": "We are the world",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 4,
+      "clues": [
+        "This event occurred in the 1980s decade.",
+        "The world was a different place back then.",
+        "This was watched by millions around the globe."
+      ],
+      "context_card": "This event occurred in 1985 and remains significant in historical studies."
+    },
+    {
+      "id": 132,
+      "date": "2026-04-29",
+      "slot": 0,
+      "day_of_week": "tuesday",
+      "event": "MTV Launches",
+      "event_formal": "Mtv Launches",
+      "year": 1981,
+      "headline": "I want my MTV",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 4,
+      "clues": [
+        "This happened during the second half of the 20th century.",
+        "Technology was rapidly changing this era.",
+        "This event had worldwide implications."
+      ],
+      "context_card": "This event occurred in 1981 and remains significant in historical studies."
+    },
+    {
+      "id": 133,
+      "date": "2026-04-29",
+      "slot": 1,
+      "day_of_week": "tuesday",
+      "event": "Napster Launches",
+      "event_formal": "Napster Launches",
+      "year": 1999,
+      "headline": "Music sharing revolution",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 4,
+      "clues": [
+        "This happened during the second half of the 20th century.",
+        "Technology was rapidly changing this era.",
+        "This event had worldwide implications."
+      ],
+      "context_card": "This event occurred in 1999 and remains significant in historical studies."
+    },
+    {
+      "id": 134,
+      "date": "2026-04-29",
+      "slot": 2,
+      "day_of_week": "tuesday",
+      "event": "iTunes Store Opens",
+      "event_formal": "Itunes Store Opens",
+      "year": 2003,
+      "headline": "99 cents per song",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 5,
+      "clues": [
+        "This happened during the second half of the 20th century.",
+        "Technology was rapidly changing this era.",
+        "This event had worldwide implications."
+      ],
+      "context_card": "This event occurred in 2003 and remains significant in historical studies."
+    },
+    {
+      "id": 135,
+      "date": "2026-04-30",
+      "slot": 0,
+      "day_of_week": "wednesday",
+      "event": "First Kodak Camera",
+      "event_formal": "Kodak Camera — First User-Friendly Camera",
+      "year": 1888,
+      "headline": "You press the button we do the rest",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 5,
+      "clues": [
+        "The year was significant for this type of event.",
+        "Social changes were underway during this period.",
+        "This was a defining moment in its decade."
+      ],
+      "context_card": "This event occurred in 1888 and remains significant in historical studies."
+    },
+    {
+      "id": 136,
+      "date": "2026-04-30",
+      "slot": 1,
+      "day_of_week": "wednesday",
+      "event": "First Nobel Prizes Awarded",
+      "event_formal": "First Nobel Prizes Awarded in Stockholm",
+      "year": 1901,
+      "headline": "Alfred Nobel's legacy begins",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 5,
+      "clues": [
+        "The year was significant for this type of event.",
+        "Social changes were underway during this period.",
+        "This was a defining moment in its decade."
+      ],
+      "context_card": "This event occurred in 1901 and remains significant in historical studies."
+    },
+    {
+      "id": 137,
+      "date": "2026-04-30",
+      "slot": 2,
+      "day_of_week": "wednesday",
+      "event": "DNA Structure Discovered",
+      "event_formal": "Watson and Crick Discover DNA Structure",
+      "year": 1953,
+      "headline": "Watson and Crick's breakthrough",
+      "description": "This event marked a significant moment in history, shaping the course of events in the years that followed. It remains an important date remembered for its impact on society and culture.",
+      "tier": 1,
+      "difficulty_rating": 6,
+      "clues": [
+        "The year was significant for this type of event.",
+        "Social changes were underway during this period.",
+        "This was a defining moment in its decade."
+      ],
+      "context_card": "This event occurred in 1953 and remains significant in historical studies."
     }
   ]
 }

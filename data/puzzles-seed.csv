@@ -89,3 +89,6 @@ date,slot,event_name,year,headline,tier,difficulty_rating,day_of_week
 2026-04-29,0,MTV Launches,1981,I want my MTV,1,4,tuesday
 2026-04-29,1,Napster Launches,1999,Music sharing revolution,1,4,tuesday
 2026-04-29,2,iTunes Store Opens,2003,99 cents per song,1,5,tuesday
+2026-04-30,0,First Kodak Camera,1888,You press the button we do the rest,1,5,wednesday
+2026-04-30,1,First Nobel Prizes Awarded,1901,Alfred Nobel's legacy begins,1,5,wednesday
+2026-04-30,2,DNA Structure Discovered,1953,Watson and Crick's breakthrough,1,6,wednesday

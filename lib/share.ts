@@ -10,6 +10,7 @@ export function generateShareText(
     correct: "🟩",
     close: "🟨",
     miss: "⬜",
+    far: "🟥",
   };
 
   const grid = digitFeedbackRows
@@ -30,6 +31,7 @@ export function generateDailyShareText(
     correct: "🟩",
     close: "🟨",
     miss: "⬜",
+    far: "🟥",
   };
 
   const lines: string[] = [`Chronicle #${puzzleNumber} 📜`, ""];
