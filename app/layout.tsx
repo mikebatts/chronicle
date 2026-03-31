@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import Script from "next/script";
 import "./globals.css";
 
 const inter = Inter({
@@ -24,27 +25,23 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Time-based theme: dark between 7 PM and 7 AM
-  // Also re-checks on visibility change (e.g. user opens tab after sunset)
-  const themeScript = `
-    (function() {
-      function getTheme() {
-        var h = new Date().getHours();
-        return (h >= 19 || h < 7) ? 'dark' : 'light';
-      }
-      document.documentElement.setAttribute('data-theme', getTheme());
-      document.addEventListener('visibilitychange', function() {
-        if (!document.hidden) {
-          document.documentElement.setAttribute('data-theme', getTheme());
-        }
-      });
-    })();
-  `;
-
   return (
     <html lang="en" className={inter.variable} suppressHydrationWarning>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        <Script id="theme-script" strategy="beforeInteractive">{`
+          (function() {
+            function getTheme() {
+              var h = new Date().getHours();
+              return (h >= 19 || h < 7) ? 'dark' : 'light';
+            }
+            document.documentElement.setAttribute('data-theme', getTheme());
+            document.addEventListener('visibilitychange', function() {
+              if (!document.hidden) {
+                document.documentElement.setAttribute('data-theme', getTheme());
+              }
+            });
+          })();
+        `}</Script>
       </head>
       <body className="antialiased">
         {children}
