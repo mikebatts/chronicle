@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { track } from "@vercel/analytics";
 import type { Puzzle, GameState, TodaySession, DigitFeedback } from "@/lib/types";
 import { getPuzzleNumber } from "@/lib/puzzles";
 import { generateDailyShareText } from "@/lib/share";
@@ -30,6 +31,9 @@ export default function DailyResults({ puzzles, session, gameState, onClose }: D
   const allWon = ([0, 1, 2] as const).every((i) => session.slots[i].phase === "won");
 
   const copyToClipboard = async () => {
+    // Track share clicked (copy fallback)
+    track("share_clicked", { method: "copy" });
+    
     try {
       await navigator.clipboard.writeText(shareText);
       setCopyLabel("Copied!");
@@ -40,6 +44,9 @@ export default function DailyResults({ puzzles, session, gameState, onClose }: D
   };
 
   const shareScore = async () => {
+    // Track share clicked
+    track("share_clicked", { method: "native" });
+    
     if (navigator.share) {
       try {
         await navigator.share({ text: shareText });

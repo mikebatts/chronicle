@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback, useEffect } from "react";
+import { track } from "@vercel/analytics";
 import type { Puzzle, GameState, GamePhase, AttemptPhase, DigitFeedback, TodaySession, SlotState } from "@/lib/types";
 import { getDigitFeedback } from "@/lib/scoring";
 import { loadState, saveState, loadSession, saveSession, getDefaultSession, getDefaultSlotState } from "@/lib/storage";
@@ -72,6 +73,8 @@ export default function Game({ puzzles }: GameProps) {
       setUnlockedSlot(0);
       setShowDailyResults(false);
       saveSession(newSession);
+      // Track game started
+      track("game_started", { date: today });
     }
     setInitialized(true);
   }, [today]);
@@ -146,6 +149,13 @@ export default function Game({ puzzles }: GameProps) {
 
       // If slot is complete
       if (slotComplete) {
+        // Track question completed
+        track("question_completed", { 
+          slot: currentSlot,
+          won: newSlotState.phase === "won",
+          guesses: newSlotState.guesses.length
+        });
+        
         if (currentSlot < 2) {
           // Unlock next slot
           newUnlockedSlot = (currentSlot + 1) as 0 | 1 | 2;
@@ -157,6 +167,10 @@ export default function Game({ puzzles }: GameProps) {
           // All 3 complete - show daily results
           newShowDailyResults = true;
           setShowDailyResults(true);
+          // Track daily completed
+          track("daily_completed", { 
+            won: newSlotState.phase === "won"
+          });
         }
       }
 
