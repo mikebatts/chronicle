@@ -41,6 +41,13 @@ export default function RootLayout({
             });
           })();
         `}</Script>
+        {/* Vercel Analytics - loads the tracking script */}
+        <Script
+          src="/_vercel/insights/script.js"
+          strategy="afterInteractive"
+          data-sdkn="@vercel/analytics"
+          data-sdkv="2.0.1"
+        />
       </head>
       <body className="antialiased">
         {children}

@@ -5,6 +5,7 @@ import type { Puzzle, GameState, GamePhase, AttemptPhase, DigitFeedback, TodaySe
 import { getDigitFeedback } from "@/lib/scoring";
 import { loadState, saveState, loadSession, saveSession, getDefaultSession, getDefaultSlotState } from "@/lib/storage";
 import { getPuzzleNumber } from "@/lib/puzzles";
+import { track } from "@/lib/analytics";
 import YearInput from "./YearInput";
 import PuzzleDisplay from "./PuzzleDisplay";
 import DailyResults from "./DailyResults";
@@ -104,7 +105,7 @@ export default function Game({ puzzles }: GameProps) {
       // Track time to first guess (only for first guess of each slot)
       if (currentSlotState.guesses.length === 0 && slotShownTime.current[currentSlot]) {
         const timeToGuess = Date.now() - slotShownTime.current[currentSlot];
-        // Analytics: track("time_to_first_guess", { slot: currentSlot, milliseconds: timeToGuess });
+        track("time_to_first_guess", { slot: currentSlot, milliseconds: timeToGuess });
       }
 
       const newGuesses = [...currentSlotState.guesses, year];
@@ -169,7 +170,7 @@ export default function Game({ puzzles }: GameProps) {
 
       // If slot is complete
       if (slotComplete) {
-        // Analytics: track("question_completed", { slot: currentSlot, won: newSlotState.phase === "won", guesses: newSlotState.guesses.length });
+        track("question_completed", { slot: currentSlot, won: newSlotState.phase === "won", guesses: newSlotState.guesses.length });
         
         if (currentSlot < 2) {
           // Unlock next slot
@@ -182,7 +183,7 @@ export default function Game({ puzzles }: GameProps) {
           // All 3 complete - show daily results
           newShowDailyResults = true;
           setShowDailyResults(true);
-          // Analytics: track("daily_completed", { won: newSlotState.phase === "won" });
+          track("daily_completed", { won: newSlotState.phase === "won" });
         }
       }
 
@@ -202,7 +203,7 @@ export default function Game({ puzzles }: GameProps) {
         (s) => session.slots[s as 0 | 1 | 2].phase === "playing"
       );
       if (incompleteSlots.length > 0) {
-        // Analytics: track("dropoff_slot", { incomplete_count: incompleteSlots.length });
+        track("dropoff_slot", { incomplete_count: incompleteSlots.length });
       }
     };
 

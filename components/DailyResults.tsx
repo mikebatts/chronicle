@@ -4,6 +4,7 @@ import { useState } from "react";
 import type { Puzzle, GameState, TodaySession, DigitFeedback } from "@/lib/types";
 import { getPuzzleNumber } from "@/lib/puzzles";
 import { generateDailyShareText } from "@/lib/share";
+import { track } from "@/lib/analytics";
 import StatsDisplay from "./StatsDisplay";
 
 const SPARKLE_CONFIG = [
@@ -31,7 +32,7 @@ export default function DailyResults({ puzzles, session, gameState, onClose }: D
 
   const copyToClipboard = async () => {
     // Track share clicked (copy fallback)
-    // track("share_clicked", { method: "copy" });
+    track("share_clicked", { method: "copy" });
     
     try {
       await navigator.clipboard.writeText(shareText);
@@ -44,7 +45,7 @@ export default function DailyResults({ puzzles, session, gameState, onClose }: D
 
   const shareScore = async () => {
     // Track share clicked
-    // track("share_clicked", { method: "native" });
+    track("share_clicked", { method: "native" });
     
     if (navigator.share) {
       try {
