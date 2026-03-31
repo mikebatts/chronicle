@@ -1,15 +1,9 @@
-// Simple analytics helper that wraps Vercel Analytics
-// This avoids importing the Analytics component which caused hydration issues
+import { track as vercelTrack } from '@vercel/analytics';
 
-declare global {
-  interface Window {
-    va?: (...args: unknown[]) => void;
-    vaq?: unknown[][];
-  }
-}
+type AllowedPropertyValues = string | number | boolean | null | undefined;
 
-export function track(event: string, properties?: Record<string, unknown>) {
-  if (typeof window !== 'undefined' && window.va) {
-    window.va(event, properties);
+export function track(event: string, properties?: Record<string, AllowedPropertyValues>) {
+  if (typeof window !== 'undefined') {
+    vercelTrack(event, properties);
   }
 }
