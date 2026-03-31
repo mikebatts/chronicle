@@ -6,6 +6,15 @@ import { getPuzzleNumber } from "@/lib/puzzles";
 import { generateDailyShareText } from "@/lib/share";
 import StatsDisplay from "./StatsDisplay";
 
+const SPARKLE_CONFIG = [
+  { style: { left: "10%", top: "-10px" }, tx: "-18px", ty: "-28px", delay: 0 },
+  { style: { left: "50%", top: "-10px" }, tx: "0px", ty: "-32px", delay: 60 },
+  { style: { right: "10%", top: "-10px" }, tx: "18px", ty: "-28px", delay: 120 },
+  { style: { left: "10%", bottom: "-10px" }, tx: "-18px", ty: "28px", delay: 80 },
+  { style: { left: "50%", bottom: "-10px" }, tx: "0px", ty: "32px", delay: 40 },
+  { style: { right: "10%", bottom: "-10px" }, tx: "18px", ty: "28px", delay: 100 },
+] as const;
+
 interface DailyResultsProps {
   puzzles: Puzzle[];
   session: TodaySession;
@@ -67,13 +76,27 @@ export default function DailyResults({ puzzles, session, gameState, onClose }: D
           return (
             <div
               key={slot}
-              className={`question-card-reveal p-4 rounded-lg border ${
+              className={`question-card-reveal relative p-4 rounded-lg border ${
                 won
                   ? "border-[var(--digit-correct)] bg-[var(--digit-correct)]/10"
                   : "border-[var(--border)] bg-[var(--surface)]"
               }`}
               style={{ animationDelay: `${slot * 150}ms` }}
             >
+              {won && SPARKLE_CONFIG.map((sp, i) => (
+                <span
+                  key={i}
+                  className="sparkle"
+                  style={{
+                    ...sp.style,
+                    "--tx": sp.tx,
+                    "--ty": sp.ty,
+                    animationDelay: `${slot * 150 + 380 + sp.delay}ms`,
+                  } as unknown as React.CSSProperties}
+                >
+                  ⭐
+                </span>
+              ))}
               <div className="flex items-start justify-between mb-3">
                 <div className="flex-1 min-w-0 pr-3">
                   <span className="text-xs text-[var(--text-secondary)]">Question {slot + 1}</span>
