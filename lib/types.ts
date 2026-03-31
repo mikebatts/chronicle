@@ -57,7 +57,7 @@ export interface SlotState {
   digitFeedback: DigitFeedback[][];
 }
 
-export type DigitColor = "correct" | "close" | "miss" | "far";
+export type DigitColor = "correct" | "close" | "miss";
 
 export interface DigitFeedback {
   digit: string;

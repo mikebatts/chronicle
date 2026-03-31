@@ -107,8 +107,6 @@ export default function DailyResults({ puzzles, session, gameState, onClose }: D
                             ? "bg-green-500 text-white"
                             : df.color === "close"
                             ? "bg-yellow-500 text-white"
-                            : df.color === "far"
-                            ? "bg-red-600 text-white"
                             : "bg-gray-600 text-white"
                         }`}
                       >

@@ -13,7 +13,6 @@ const COLOR_MAP = {
   correct: "bg-[var(--digit-correct)] text-white border-[var(--digit-correct)]",
   close: "bg-[var(--digit-close)] text-white border-[var(--digit-close)]",
   miss: "bg-[var(--digit-miss)] text-white border-[var(--digit-miss)]",
-  far: "bg-red-600 text-white border-red-600",
 };
 
 export default function YearInput({ onSubmit, disabled, previousGuesses }: YearInputProps) {
