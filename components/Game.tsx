@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useCallback, useEffect, useRef } from "react";
-import { track } from "@vercel/analytics";
 import type { Puzzle, GameState, GamePhase, AttemptPhase, DigitFeedback, TodaySession, SlotState } from "@/lib/types";
 import { getDigitFeedback } from "@/lib/scoring";
 import { loadState, saveState, loadSession, saveSession, getDefaultSession, getDefaultSlotState } from "@/lib/storage";
@@ -40,13 +39,6 @@ export default function Game({ puzzles }: GameProps) {
   useEffect(() => {
     const stored = loadSession();
     if (stored && stored.puzzle_date === today) {
-      // Returning user - track if they played yesterday
-      if (stored.puzzle_date && isConsecutiveDay(gameState.last_played, today)) {
-        track("return_next_day", { 
-          streak: gameState.current_streak,
-          last_played: gameState.last_played 
-        });
-      }
       setSession(stored);
       setUnlockedSlot(stored.highest_unlocked_slot);
       
@@ -87,15 +79,6 @@ export default function Game({ puzzles }: GameProps) {
       setUnlockedSlot(0);
       setShowDailyResults(false);
       saveSession(newSession);
-      // Track game started
-      track("game_started", { date: today });
-      // Track return visitor
-      if (gameState.last_played && isConsecutiveDay(gameState.last_played, today)) {
-        track("return_next_day", { 
-          streak: gameState.current_streak,
-          last_played: gameState.last_played 
-        });
-      }
     }
     // Mark current slot as shown
     slotShownTime.current[currentSlot] = Date.now();
@@ -120,10 +103,7 @@ export default function Game({ puzzles }: GameProps) {
       // Track time to first guess (only for first guess of each slot)
       if (currentSlotState.guesses.length === 0 && slotShownTime.current[currentSlot]) {
         const timeToGuess = Date.now() - slotShownTime.current[currentSlot];
-        track("time_to_first_guess", { 
-          slot: currentSlot,
-          milliseconds: timeToGuess
-        });
+        // Analytics: track("time_to_first_guess", { slot: currentSlot, milliseconds: timeToGuess });
       }
 
       const newGuesses = [...currentSlotState.guesses, year];
@@ -188,12 +168,7 @@ export default function Game({ puzzles }: GameProps) {
 
       // If slot is complete
       if (slotComplete) {
-        // Track question completed
-        track("question_completed", { 
-          slot: currentSlot,
-          won: newSlotState.phase === "won",
-          guesses: newSlotState.guesses.length
-        });
+        // Analytics: track("question_completed", { slot: currentSlot, won: newSlotState.phase === "won", guesses: newSlotState.guesses.length });
         
         if (currentSlot < 2) {
           // Unlock next slot
@@ -206,10 +181,7 @@ export default function Game({ puzzles }: GameProps) {
           // All 3 complete - show daily results
           newShowDailyResults = true;
           setShowDailyResults(true);
-          // Track daily completed
-          track("daily_completed", { 
-            won: newSlotState.phase === "won"
-          });
+          // Analytics: track("daily_completed", { won: newSlotState.phase === "won" });
         }
       }
 
@@ -233,13 +205,7 @@ export default function Game({ puzzles }: GameProps) {
         (s) => session.slots[s as 0 | 1 | 2].phase === "playing"
       );
       if (incompleteSlots.length > 0) {
-        const completedSlots = [0, 1, 2].filter(
-          (s) => session.slots[s as 0 | 1 | 2].phase !== "playing"
-        );
-        track("dropoff_slot", { 
-          incomplete_count: incompleteSlots.length,
-          last_completed: completedSlots.length > 0 ? Math.max(...completedSlots) : -1
-        });
+        // Analytics: track("dropoff_slot", { incomplete_count: incompleteSlots.length });
       }
     };
     
