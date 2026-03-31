@@ -76,7 +76,7 @@ export default function Home() {
         />
       )}
       <main className="min-h-screen flex flex-col">
-        <Header onStatsClick={handleStatsClick} />
+        <Header onStatsClick={handleStatsClick} onLogoClick={() => setShowSplash(true)} />
         <Game puzzles={puzzles} />
         {showStats && gameState && (
           <StatsModal

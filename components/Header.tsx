@@ -2,19 +2,20 @@
 
 interface HeaderProps {
   onStatsClick: () => void;
+  onLogoClick: () => void;
 }
 
-export default function Header({ onStatsClick }: HeaderProps) {
+export default function Header({ onStatsClick, onLogoClick }: HeaderProps) {
   return (
     <header className="py-4 px-4 border-b border-[var(--border)]">
       <div className="max-w-md mx-auto flex items-center justify-between">
-        <div className="w-10" />
-        <h1
-          className="text-2xl font-semibold tracking-[-0.02em]"
+        <button
+          onClick={onLogoClick}
+          className="text-2xl font-semibold tracking-[-0.02em] hover:opacity-70 transition-opacity"
           style={{ fontFamily: "var(--font-serif)" }}
         >
           Chronicle
-        </h1>
+        </button>
         <button
           onClick={onStatsClick}
           className="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-[var(--surface)] transition-colors"
