@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect, useRef } from "react";
 import { track } from "@vercel/analytics";
 import type { Puzzle, GameState, GamePhase, AttemptPhase, DigitFeedback, TodaySession, SlotState } from "@/lib/types";
 import { getDigitFeedback } from "@/lib/scoring";
@@ -30,6 +30,9 @@ export default function Game({ puzzles }: GameProps) {
   const [gameState, setGameState] = useState<GameState>(() => loadState());
   const [initialized, setInitialized] = useState(false);
   const [showDailyResults, setShowDailyResults] = useState(false);
+  
+  // Track when each slot was shown (for time-to-guess analytics)
+  const slotShownTime = useRef<Record<number, number>>({});
 
   const today = new Date().toISOString().split("T")[0];
 
@@ -37,19 +40,30 @@ export default function Game({ puzzles }: GameProps) {
   useEffect(() => {
     const stored = loadSession();
     if (stored && stored.puzzle_date === today) {
+      // Returning user - track if they played yesterday
+      if (stored.puzzle_date && isConsecutiveDay(gameState.last_played, today)) {
+        track("return_next_day", { 
+          streak: gameState.current_streak,
+          last_played: gameState.last_played 
+        });
+      }
       setSession(stored);
       setUnlockedSlot(stored.highest_unlocked_slot);
+      
+      // Track time to first guess for resumed sessions
+      [0, 1, 2].forEach((s) => {
+        const slotState = stored.slots[s as 0 | 1 | 2];
+        if (slotState && slotState.phase === "playing" && slotShownTime.current[s] === undefined) {
+          slotShownTime.current[s] = Date.now();
+        }
+      });
+      
       // Check if all slots are complete
       const allComplete = [0, 1, 2].every(
         (s) => stored.slots[s as 0 | 1 | 2].phase !== "playing"
       );
       if (allComplete) {
         setShowDailyResults(true);
-        // Find first incomplete slot to resume
-        const firstIncomplete = [0, 1, 2].find(
-          (s) => stored.slots[s as 0 | 1 | 2].phase === "playing"
-        ) as 0 | 1 | 2 | undefined;
-        setCurrentSlot(firstIncomplete ?? stored.highest_unlocked_slot);
       } else {
         // Find first incomplete slot to resume
         const firstIncomplete = [0, 1, 2].find(
@@ -75,9 +89,25 @@ export default function Game({ puzzles }: GameProps) {
       saveSession(newSession);
       // Track game started
       track("game_started", { date: today });
+      // Track return visitor
+      if (gameState.last_played && isConsecutiveDay(gameState.last_played, today)) {
+        track("return_next_day", { 
+          streak: gameState.current_streak,
+          last_played: gameState.last_played 
+        });
+      }
     }
+    // Mark current slot as shown
+    slotShownTime.current[currentSlot] = Date.now();
     setInitialized(true);
   }, [today]);
+
+  // Track when user moves to a new slot
+  useEffect(() => {
+    if (initialized) {
+      slotShownTime.current[currentSlot] = Date.now();
+    }
+  }, [currentSlot, initialized]);
 
   const currentPuzzle = puzzles[currentSlot];
   const currentSlotState = session.slots[currentSlot];
@@ -86,6 +116,15 @@ export default function Game({ puzzles }: GameProps) {
     (yearStr: string) => {
       const year = parseInt(yearStr, 10);
       if (isNaN(year) || !currentPuzzle) return;
+
+      // Track time to first guess (only for first guess of each slot)
+      if (currentSlotState.guesses.length === 0 && slotShownTime.current[currentSlot]) {
+        const timeToGuess = Date.now() - slotShownTime.current[currentSlot];
+        track("time_to_first_guess", { 
+          slot: currentSlot,
+          milliseconds: timeToGuess
+        });
+      }
 
       const newGuesses = [...currentSlotState.guesses, year];
       const newFeedback = getDigitFeedback(year, currentPuzzle.year);
@@ -186,6 +225,27 @@ export default function Game({ puzzles }: GameProps) {
   if (!initialized || !currentPuzzle) {
     return null;
   }
+
+  // Track dropoff if user leaves without completing all slots
+  useEffect(() => {
+    const handleBeforeUnload = () => {
+      const incompleteSlots = [0, 1, 2].filter(
+        (s) => session.slots[s as 0 | 1 | 2].phase === "playing"
+      );
+      if (incompleteSlots.length > 0) {
+        const completedSlots = [0, 1, 2].filter(
+          (s) => session.slots[s as 0 | 1 | 2].phase !== "playing"
+        );
+        track("dropoff_slot", { 
+          incomplete_count: incompleteSlots.length,
+          last_completed: completedSlots.length > 0 ? Math.max(...completedSlots) : -1
+        });
+      }
+    };
+    
+    window.addEventListener("beforeunload", handleBeforeUnload);
+    return () => window.removeEventListener("beforeunload", handleBeforeUnload);
+  }, [session]);
 
   // Show daily results when all 3 are complete
   if (showDailyResults) {
