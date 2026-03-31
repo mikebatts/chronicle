@@ -53,8 +53,8 @@ export function generateDailyShareText(
     (s) => session.slots[s as 0 | 1 | 2].phase !== "playing"
   ).length;
 
-  const streakText = streak > 0 ? `🔥${streak}` : "";
-  lines.push(`${streakText} | ${slotsComplete}/3`);
+  const streakText = streak > 0 ? `🔥${streak} | ` : "";
+  lines.push(`${streakText}${slotsComplete}/3`);
   lines.push("thischronicle.com");
 
   return lines.join("\n");

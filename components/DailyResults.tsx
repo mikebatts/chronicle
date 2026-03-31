@@ -14,7 +14,7 @@ interface DailyResultsProps {
 }
 
 export default function DailyResults({ puzzles, session, gameState, onClose }: DailyResultsProps) {
-  const [copyLabel, setCopyLabel] = useState("Copy result");
+  const [copyLabel, setCopyLabel] = useState("Copy");
   const puzzleNumber = getPuzzleNumber(puzzles[0]?.date || "");
 
   const shareText = generateDailyShareText(puzzles, session, puzzleNumber, gameState.current_streak);
@@ -23,15 +23,29 @@ export default function DailyResults({ puzzles, session, gameState, onClose }: D
     try {
       await navigator.clipboard.writeText(shareText);
       setCopyLabel("Copied!");
-      setTimeout(() => setCopyLabel("Copy result"), 2000);
+      setTimeout(() => setCopyLabel("Copy"), 2000);
     } catch {
       // Fallback
     }
   };
 
-  const shareToX = () => {
-    const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}`;
-    window.open(url, "_blank", "noopener,noreferrer");
+  const shareScore = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({ text: shareText });
+      } catch {
+        // User cancelled or share failed — fall through silently
+      }
+    } else {
+      // Fallback to clipboard on browsers without Web Share API
+      try {
+        await navigator.clipboard.writeText(shareText);
+        setCopyLabel("Copied!");
+        setTimeout(() => setCopyLabel("Copy"), 2000);
+      } catch {
+        // ignore
+      }
+    }
   };
 
   return (
@@ -112,10 +126,10 @@ export default function DailyResults({ puzzles, session, gameState, onClose }: D
       {/* Share Buttons */}
       <div className="w-full flex flex-col gap-2 mb-6">
         <button
-          onClick={shareToX}
+          onClick={shareScore}
           className="w-full py-3 px-4 bg-[var(--text-primary)] text-[var(--bg)] font-semibold rounded-lg hover:opacity-90 transition-opacity min-h-[48px]"
         >
-          Share on 𝕏
+          Share Score
         </button>
         <button
           onClick={copyToClipboard}
