@@ -18,6 +18,7 @@ export default function DailyResults({ puzzles, session, gameState, onClose }: D
   const puzzleNumber = getPuzzleNumber(puzzles[0]?.date || "");
 
   const shareText = generateDailyShareText(puzzles, session, puzzleNumber, gameState.current_streak);
+  const allWon = ([0, 1, 2] as const).every((i) => session.slots[i].phase === "won");
 
   const copyToClipboard = async () => {
     try {
@@ -66,11 +67,12 @@ export default function DailyResults({ puzzles, session, gameState, onClose }: D
           return (
             <div
               key={slot}
-              className={`p-4 rounded-lg border ${
+              className={`question-card-reveal p-4 rounded-lg border ${
                 won
                   ? "border-[var(--digit-correct)] bg-[var(--digit-correct)]/10"
                   : "border-[var(--border)] bg-[var(--surface)]"
               }`}
+              style={{ animationDelay: `${slot * 150}ms` }}
             >
               <div className="flex items-start justify-between mb-3">
                 <div className="flex-1 min-w-0 pr-3">
@@ -124,7 +126,7 @@ export default function DailyResults({ puzzles, session, gameState, onClose }: D
       <div className="w-full flex flex-col gap-2 mb-6">
         <button
           onClick={shareScore}
-          className="w-full py-3 px-4 bg-[var(--text-primary)] text-[var(--bg)] font-semibold rounded-lg hover:opacity-90 transition-opacity min-h-[48px]"
+          className={`w-full py-3 px-4 bg-[var(--text-primary)] text-[var(--bg)] font-semibold rounded-lg hover:opacity-90 transition-opacity min-h-[48px]${allWon ? " share-pulse" : ""}`}
         >
           Share Score
         </button>
