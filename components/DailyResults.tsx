@@ -59,7 +59,7 @@ export default function DailyResults({ puzzles, session, gameState, onClose }: D
   };
 
   return (
-    <div className="flex-1 flex flex-col items-center px-4 py-6 max-w-md mx-auto w-full overflow-y-auto result-fade-in">
+    <div className={`flex-1 flex flex-col items-center px-4 py-6 max-w-md mx-auto w-full overflow-y-auto result-fade-in${allWon ? " celebration-bg" : ""}`}>
       {/* Daily Complete Banner */}
       <div className="text-center mb-6">
         <h2 className="text-2xl font-bold text-amber-500 mb-2">Daily Complete!</h2>

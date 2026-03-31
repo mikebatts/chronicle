@@ -185,6 +185,20 @@ body {
   line-height: 1;
 }
 
+/* Celebratory background pulse for all-won results */
+@keyframes celebrationPulse {
+  0%, 100% {
+    background-color: var(--bg);
+  }
+  50% {
+    background-color: color-mix(in srgb, var(--digit-correct) 6%, var(--bg));
+  }
+}
+
+.celebration-bg {
+  animation: celebrationPulse 4s ease-in-out infinite;
+}
+
 /* Smooth transitions on interactive elements */
 button {
   transition: opacity 0.15s ease, background-color 0.15s ease;
