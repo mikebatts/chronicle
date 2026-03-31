@@ -33,7 +33,8 @@ export default function Game({ puzzles }: GameProps) {
   // Track when each slot was shown (for time-to-guess analytics)
   const slotShownTime = useRef<Record<number, number>>({});
 
-  const today = new Date().toISOString().split("T")[0];
+  // Use a stable date that doesn't change between server/client renders
+  const [today] = useState(() => new Date().toISOString().split("T")[0]);
 
   // Initialize session on mount
   useEffect(() => {
@@ -194,10 +195,6 @@ export default function Game({ puzzles }: GameProps) {
     [currentPuzzle, currentSlotState, session, gameState, unlockedSlot, today, currentSlot, showDailyResults]
   );
 
-  if (!initialized || !currentPuzzle) {
-    return null;
-  }
-
   // Track dropoff if user leaves without completing all slots
   useEffect(() => {
     const handleBeforeUnload = () => {
@@ -208,10 +205,14 @@ export default function Game({ puzzles }: GameProps) {
         // Analytics: track("dropoff_slot", { incomplete_count: incompleteSlots.length });
       }
     };
-    
+
     window.addEventListener("beforeunload", handleBeforeUnload);
     return () => window.removeEventListener("beforeunload", handleBeforeUnload);
   }, [session]);
+
+  if (!initialized || !currentPuzzle) {
+    return null;
+  }
 
   // Show daily results when all 3 are complete
   if (showDailyResults) {
