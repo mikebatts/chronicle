@@ -53,11 +53,11 @@ export default function DailyResults({ puzzles, session, gameState, onClose }: D
       {/* Daily Complete Banner */}
       <div className="text-center mb-6">
         <h2 className="text-2xl font-bold text-amber-500 mb-2">Daily Complete!</h2>
-        <p className="text-gray-400 text-sm">Chronicle #{puzzleNumber}</p>
+        <p className="text-[var(--text-secondary)] text-sm">Chronicle #{puzzleNumber}</p>
       </div>
 
       {/* All 3 Results */}
-      <div className="w-full space-y-4 mb-6">
+      <div className="w-full space-y-3 mb-6">
         {[0, 1, 2].map((slot) => {
           const puzzle = puzzles[slot];
           const slotState = session.slots[slot as 0 | 1 | 2];
@@ -68,46 +68,45 @@ export default function DailyResults({ puzzles, session, gameState, onClose }: D
               key={slot}
               className={`p-4 rounded-lg border ${
                 won
-                  ? "border-green-600 bg-green-900/20"
-                  : "border-gray-700 bg-gray-800/20"
+                  ? "border-[var(--digit-correct)] bg-[var(--digit-correct)]/10"
+                  : "border-[var(--border)] bg-[var(--surface)]"
               }`}
             >
-              <div className="flex items-start justify-between mb-2">
-                <div>
-                  <span className="text-xs text-gray-500">Puzzle {slot + 1}</span>
-                  <h3 className="font-semibold text-white">{puzzle.event}</h3>
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex-1 min-w-0 pr-3">
+                  <span className="text-xs text-[var(--text-secondary)]">Question {slot + 1}</span>
+                  <h3 className="font-semibold text-[var(--text-primary)] leading-snug">{puzzle.event}</h3>
                 </div>
-                <div className="text-right">
+                <div className="text-right shrink-0">
                   <span
-                    className="text-2xl font-bold"
+                    className="text-2xl font-bold text-[var(--text-primary)]"
                     style={{ fontFamily: "var(--font-serif)" }}
                   >
                     {puzzle.year}
                   </span>
-                  {won && (
-                    <span className="ml-2 text-green-400 text-sm">
-                      {slotState.guesses.length}/4
-                    </span>
-                  )}
-                  {!won && (
-                    <span className="ml-2 text-red-400 text-sm">X/4</span>
-                  )}
+                  <div className="text-sm mt-0.5">
+                    {won ? (
+                      <span className="text-[var(--digit-correct)]">{slotState.guesses.length}/4</span>
+                    ) : (
+                      <span className="text-red-500">✗/4</span>
+                    )}
+                  </div>
                 </div>
               </div>
 
-              {/* Mini digit feedback */}
-              <div className="flex gap-1 flex-wrap">
+              {/* Digit feedback rows */}
+              <div className="flex flex-col gap-1">
                 {slotState.digitFeedback.map((row, rowIdx) => (
-                  <div key={rowIdx} className="flex gap-0.5">
+                  <div key={rowIdx} className="flex gap-1">
                     {row.map((df, colIdx) => (
                       <div
                         key={colIdx}
-                        className={`w-6 h-6 flex items-center justify-center text-xs font-bold rounded ${
+                        className={`w-7 h-7 flex items-center justify-center text-xs font-bold rounded text-white ${
                           df.color === "correct"
-                            ? "bg-green-500 text-white"
+                            ? "bg-[var(--digit-correct)]"
                             : df.color === "close"
-                            ? "bg-yellow-500 text-white"
-                            : "bg-gray-600 text-white"
+                            ? "bg-[var(--digit-close)]"
+                            : "bg-[var(--digit-miss)]"
                         }`}
                       >
                         {df.digit}

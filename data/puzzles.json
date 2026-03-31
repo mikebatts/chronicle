@@ -2,1788 +2,2073 @@
   "puzzles": [
     {
       "id": 1,
-      "date": "2026-03-30",
-      "day_of_week": "monday",
-      "event": "The Berlin Wall Falls",
-      "event_formal": "Fall of the Berlin Wall",
-      "year": 1989,
-      "headline": "The Berlin Wall fell, reuniting East and West Berlin",
-      "description": "What year did this happen?",
-      "tier": 1,
-      "difficulty_rating": 4,
-      "clues": {
-        "monday": [
-          "This happened during the final chapter of a decades-long geopolitical standoff.",
-          "The leader of the Soviet Union had recently introduced sweeping reforms.",
-          "The city had been divided since a wall was built in 1961."
-        ],
-        "tuesday": [
-          "This occurred in a year of significant upheaval across Eastern Europe.",
-          "A confused bureaucrat accidentally triggered the events.",
-          "The wall had divided the same city for 28 years."
-        ],
-        "wednesday": [
-          "This was a major geopolitical event in the latter half of the 20th century.",
-          "The year saw significant changes in European governance.",
-          "Mikhail Gorbachev's reforms helped make this possible."
-        ],
-        "thursday": [
-          "This occurred in the second half of the 20th century.",
-          "A Cold War milestone fell in this year."
-        ],
-        "friday": [
-          "This happened during the Cold War era.",
-          "The event took place in a divided European capital."
-        ],
-        "saturday": [
-          "The world was watching something else unfold that day."
-        ]
-      },
-      "context_card": "For 28 years, Checkpoint Charlie was the defining symbol of the Cold War. On November 9th, 1989, a confused bureaucrat announced that East Germans could cross freely — and thousands flooded through. No one had planned the announcement. The wall fell because the system was already crumbling.",
-      "slot": 0
-    },
-    {
-      "id": 2,
       "date": "2026-03-31",
-      "day_of_week": "tuesday",
+      "slot": 0,
+      "day_of_week": "monday",
       "event": "Nelson Mandela Released From Prison",
-      "event_formal": "Release of Nelson Mandela from Victor Verster Prison",
+      "event_formal": "Nelson Mandela Released From Prison",
       "year": 1990,
       "headline": "Nelson Mandela was released from prison after 27 years",
       "description": "What year did this happen?",
       "tier": 1,
-      "difficulty_rating": 5,
+      "difficulty_rating": 3,
       "clues": {
-        "monday": [
-          "This occurred near the end of the Cold War era.",
-          "It marked a turning point in a nation divided by racial segregation.",
-          "The man released would go on to lead his country within a few years."
-        ],
-        "tuesday": [
-          "This moment ended a nearly three-decade imprisonment.",
-          "The event took place in southern Africa.",
-          "The man freed had been convicted of sabotage and conspiracy."
-        ],
-        "wednesday": [
-          "This was a watershed moment in the struggle against apartheid.",
-          "The prisoner had been held since the early 1960s.",
-          "His release was broadcast live around the world."
-        ],
-        "thursday": [
-          "A political prisoner walked free after 27 years.",
-          "This happened in post-Cold War Africa."
-        ],
-        "friday": [
-          "A man imprisoned for over two decades emerged to lead a nation.",
-          "This was one of the most-watched moments of its decade."
-        ],
-        "saturday": [
-          "The long walk ended at a prison gate outside Cape Town."
-        ]
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
       },
-      "context_card": "Nelson Mandela had spent 18 of his 27 years imprisoned on Robben Island, a bleak outcrop in Table Bay. By the time he walked free on February 11th, 1990, he had become the most famous political prisoner in the world. Within four years, he was president.",
-      "slot": 0
+      "context_card": "This event occurred in 1990."
+    },
+    {
+      "id": 2,
+      "date": "2026-03-31",
+      "slot": 1,
+      "day_of_week": "monday",
+      "event": "Apollo 11 Moon Landing",
+      "event_formal": "Apollo 11 Moon Landing",
+      "year": 1969,
+      "headline": "Neil Armstrong and Buzz Aldrin walked on the Moon",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 3,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1969."
     },
     {
       "id": 3,
-      "date": "2026-04-01",
-      "day_of_week": "wednesday",
-      "event": "JFK Assassinated in Dallas",
-      "event_formal": "Assassination of President John F. Kennedy",
-      "year": 1963,
-      "headline": "President John F. Kennedy was assassinated in a motorcade in Dallas, Texas",
+      "date": "2026-03-31",
+      "slot": 2,
+      "day_of_week": "monday",
+      "event": "Titanic Sinks",
+      "event_formal": "Titanic Sinks",
+      "year": 1912,
+      "headline": "The RMS Titanic sank in the North Atlantic",
       "description": "What year did this happen?",
       "tier": 1,
-      "difficulty_rating": 6,
+      "difficulty_rating": 4,
       "clues": {
-        "monday": [
-          "This occurred during the Cold War, in a decade defined by tension and change.",
-          "A president was killed in a southern American city.",
-          "The assassin was himself killed two days later before he could stand trial."
-        ],
-        "tuesday": [
-          "This was a defining moment in American political history.",
-          "The event took place during a presidential motorcade.",
-          "The Warren Commission investigated what happened."
-        ],
-        "wednesday": [
-          "A US president was killed during a public appearance.",
-          "This happened in the early 1960s.",
-          "The event shocked a nation still living through the space race."
-        ],
-        "thursday": [
-          "A president was assassinated during a motorcade.",
-          "This occurred in early Cold War America."
-        ],
-        "friday": [
-          "Dallas, Texas was the site of a pivotal American tragedy.",
-          "The event happened before the mid-1960s."
-        ],
-        "saturday": [
-          "A motorcade, a plaza, and a moment the world could not unsee."
-        ]
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
       },
-      "context_card": "Lee Harvey Oswald fired three shots from the sixth floor of the Texas School Book Depository on November 22nd, 1963. Kennedy was pronounced dead at 1:00 PM. Two days later, Oswald was shot by nightclub owner Jack Ruby in the Dallas Police Department basement — live on national television. The truth of what happened that day has never fully left public debate."
+      "context_card": "This event occurred in 1912."
     },
     {
       "id": 4,
+      "date": "2026-04-01",
+      "slot": 0,
+      "day_of_week": "tuesday",
+      "event": "JFK Assassination",
+      "event_formal": "JFK Assassination",
+      "year": 1963,
+      "headline": "President John F. Kennedy was assassinated in Dallas",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 4,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1963."
+    },
+    {
+      "id": 5,
+      "date": "2026-04-01",
+      "slot": 1,
+      "day_of_week": "tuesday",
+      "event": "World Wide Web Invented",
+      "event_formal": "World Wide Web Invented",
+      "year": 1989,
+      "headline": "Tim Berners-Lee proposed the World Wide Web",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 4,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1989."
+    },
+    {
+      "id": 6,
+      "date": "2026-04-01",
+      "slot": 2,
+      "day_of_week": "tuesday",
+      "event": "Chernobyl Disaster",
+      "event_formal": "Chernobyl Disaster",
+      "year": 1986,
+      "headline": "A nuclear reactor exploded at Chernobyl in Ukraine",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 5,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1986."
+    },
+    {
+      "id": 7,
       "date": "2026-04-02",
-      "day_of_week": "thursday",
-      "event": "D-Day: Allied Forces Land at Normandy",
-      "event_formal": "Operation Overlord — D-Day Landings at Normandy",
+      "slot": 0,
+      "day_of_week": "wednesday",
+      "event": "D-Day Normandy Landing",
+      "event_formal": "D-Day Normandy Landing",
       "year": 1944,
       "headline": "Allied forces landed at Normandy beaches in France",
       "description": "What year did this happen?",
       "tier": 1,
-      "difficulty_rating": 6,
+      "difficulty_rating": 5,
       "clues": {
-        "monday": [
-          "This was a pivotal moment in a global conflict that defined the mid-20th century.",
-          "Allied forces from multiple nations participated.",
-          "The operation involved a massive naval and airborne component."
-        ],
-        "tuesday": [
-          "This was the largest amphibious military operation ever attempted.",
-          "It took place on the northern coast of France.",
-          "The date was kept secret from Nazi forces using an elaborate deception campaign."
-        ],
-        "wednesday": [
-          "Allied forces stormed fortified beaches in a surprise assault.",
-          "This happened during the Second World War.",
-          "Eisenhower commanded the overall operation."
-        ],
-        "thursday": [
-          "Thousands of Allied troops landed on French beaches at dawn.",
-          "This was a turning point in World War II."
-        ],
-        "friday": [
-          "Code-named Overlord, this was the largest seaborne invasion in history.",
-          "It opened the Western Front against Nazi Germany."
-        ],
-        "saturday": [
-          "Five beaches. One dawn. The fate of Europe."
-        ]
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
       },
-      "context_card": "On June 6th, 1944, the Allies launched the most complex military operation in history. Paratroopers had already dropped behind enemy lines by the time the first landing craft hit the beaches at 6:30 AM. The cost was enormous — over 4,000 Allied soldiers died on D-Day alone — but within a year, Germany had surrendered."
+      "context_card": "This event occurred in 1944."
     },
     {
-      "id": 5,
+      "id": 8,
+      "date": "2026-04-02",
+      "slot": 1,
+      "day_of_week": "wednesday",
+      "event": "First iPhone Released",
+      "event_formal": "First iPhone Released",
+      "year": 2007,
+      "headline": "Apple released the first iPhone",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 5,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 2007."
+    },
+    {
+      "id": 9,
+      "date": "2026-04-02",
+      "slot": 2,
+      "day_of_week": "wednesday",
+      "event": "Watergate Break-In",
+      "event_formal": "Watergate Break-In",
+      "year": 1972,
+      "headline": "The Watergate break-in occurred at the DNC headquarters",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 6,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1972."
+    },
+    {
+      "id": 10,
       "date": "2026-04-03",
-      "day_of_week": "friday",
-      "event": "The Atomic Bomb Drops on Hiroshima",
-      "event_formal": "United States atomic bombing of Hiroshima, Japan",
+      "slot": 0,
+      "day_of_week": "thursday",
+      "event": "Hiroshima Atomic Bomb",
+      "event_formal": "Hiroshima Atomic Bomb",
       "year": 1945,
-      "headline": "The United States dropped an atomic bomb on the Japanese city of Hiroshima",
+      "headline": "The United States dropped an atomic bomb on Hiroshima",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 6,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1945."
+    },
+    {
+      "id": 11,
+      "date": "2026-04-03",
+      "slot": 1,
+      "day_of_week": "thursday",
+      "event": "Fall of the Soviet Union",
+      "event_formal": "Fall of the Soviet Union",
+      "year": 1991,
+      "headline": "The Soviet Union dissolved into independent states",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 6,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1991."
+    },
+    {
+      "id": 12,
+      "date": "2026-04-03",
+      "slot": 2,
+      "day_of_week": "thursday",
+      "event": "Wright Brothers First Flight",
+      "event_formal": "Wright Brothers First Flight",
+      "year": 1903,
+      "headline": "The Wright Brothers flew the first powered airplane",
       "description": "What year did this happen?",
       "tier": 1,
       "difficulty_rating": 7,
       "clues": {
-        "monday": [
-          "This occurred near the end of the Second World War.",
-          "A new and unprecedented weapon was used for the first time in warfare.",
-          "The target was a Japanese city chosen partly because it had not been heavily bombed before."
-        ],
-        "tuesday": [
-          "This was a decisive moment in the Pacific theater of World War II.",
-          "The weapon used had been developed in secret over several years.",
-          "It led directly to a major power's unconditional surrender."
-        ],
-        "wednesday": [
-          "An American aircraft dropped a new type of weapon on a major city.",
-          "This occurred in the 1940s, during a global war.",
-          "The event introduced the atomic age."
-        ],
-        "thursday": [
-          "A single bomb destroyed a Japanese city in seconds.",
-          "This occurred in the final months of World War II."
-        ],
-        "friday": [
-          "Little Boy fell from the Enola Gay at 8:15 AM.",
-          "This moment ended one era and began another."
-        ],
-        "saturday": [
-          "A flash of light over a city, and the world was never the same."
-        ]
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
       },
-      "context_card": "The Manhattan Project had cost two billion dollars and employed hundreds of thousands of people — most of whom had no idea what they were building. On August 6th, 1945, the result was dropped on Hiroshima. Three days later, a second bomb fell on Nagasaki. Japan surrendered on August 15th. The atomic age had begun."
+      "context_card": "This event occurred in 1903."
     },
     {
-      "id": 6,
+      "id": 13,
       "date": "2026-04-04",
-      "day_of_week": "saturday",
-      "event": "Lindbergh Completes First Solo Transatlantic Flight",
-      "event_formal": "Charles Lindbergh's solo nonstop transatlantic flight, New York to Paris",
+      "slot": 0,
+      "day_of_week": "friday",
+      "event": "Lindbergh Atlantic Flight",
+      "event_formal": "Lindbergh Atlantic Flight",
       "year": 1927,
       "headline": "Charles Lindbergh made the first solo transatlantic flight",
       "description": "What year did this happen?",
       "tier": 1,
       "difficulty_rating": 7,
       "clues": {
-        "monday": [
-          "This occurred in the interwar period, between the two World Wars.",
-          "The achievement involved crossing the Atlantic Ocean.",
-          "A young American aviator became an overnight global celebrity."
-        ],
-        "tuesday": [
-          "This set a record that no one had broken before.",
-          "The pilot flew alone for more than 30 hours.",
-          "The journey ended in France."
-        ],
-        "wednesday": [
-          "An American pilot completed a solo flight from New York to Paris.",
-          "This happened in the 1920s.",
-          "The feat won a ,000 prize."
-        ],
-        "thursday": [
-          "A solo pilot crossed the Atlantic nonstop.",
-          "This happened before the Great Depression."
-        ],
-        "friday": [
-          "The Spirit of St. Louis touched down outside Paris.",
-          "This was the first solo nonstop transatlantic flight."
-        ],
-        "saturday": [
-          "Thirty-three hours, five sandwiches, and the sky between two continents."
-        ]
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
       },
-      "context_card": "The Spirit of St. Louis was so loaded with fuel at takeoff that it barely cleared the telephone wires at the end of the runway. Charles Lindbergh landed at Le Bourget at 10:22 PM on May 21st, 1927, and was immediately mobbed by the crowd. He became the most famous man in the world overnight — and remained so for the rest of his life, for better and worse."
+      "context_card": "This event occurred in 1927."
     },
     {
-      "id": 7,
-      "date": "2026-04-05",
-      "day_of_week": "sunday",
-      "event": "Cuban Missile Crisis Begins",
-      "event_formal": "Kennedy's address revealing Soviet missiles in Cuba",
+      "id": 14,
+      "date": "2026-04-04",
+      "slot": 1,
+      "day_of_week": "friday",
+      "event": "Cuban Missile Crisis",
+      "event_formal": "Cuban Missile Crisis",
       "year": 1962,
       "headline": "The Cuban Missile Crisis brought the world to the brink of nuclear war",
       "description": "What year did this happen?",
       "tier": 1,
-      "difficulty_rating": 9,
-      "clues": {},
-      "context_card": "For thirteen days in October 1962, the world came closer to nuclear war than it ever has before or since. Soviet ships carrying additional missiles turned back at the US naval blockade. Soviet leader Khrushchev eventually agreed to remove the missiles in exchange for a US pledge not to invade Cuba and a secret agreement to remove American missiles from Turkey. The crisis was resolved — but only barely."
+      "difficulty_rating": 7,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1962."
     },
     {
-      "id": 8,
-      "date": "2026-04-06",
-      "day_of_week": "monday",
-      "event": "Rosa Parks Refuses to Give Up Her Seat",
-      "event_formal": "Rosa Parks' arrest on the Montgomery, Alabama city bus",
+      "id": 15,
+      "date": "2026-04-04",
+      "slot": 2,
+      "day_of_week": "friday",
+      "event": "Rosa Parks Bus Protest",
+      "event_formal": "Rosa Parks Bus Protest",
       "year": 1955,
       "headline": "Rosa Parks refused to give up her bus seat in Montgomery",
       "description": "What year did this happen?",
       "tier": 1,
-      "difficulty_rating": 4,
+      "difficulty_rating": 7,
       "clues": {
-        "monday": [
-          "This occurred during the early years of the Civil Rights Movement.",
-          "The act of defiance took place on public transportation in the American South.",
-          "The aftermath lasted over a year and led to a Supreme Court ruling."
-        ],
-        "tuesday": [
-          "A woman refused to comply with a segregation law.",
-          "This happened in Alabama in the mid-20th century.",
-          "Her arrest triggered a year-long boycott."
-        ],
-        "wednesday": [
-          "This act of civil disobedience occurred in Montgomery, Alabama.",
-          "It happened in the 1950s.",
-          "Martin Luther King Jr. led the protest that followed."
-        ],
-        "thursday": [
-          "A woman's refusal to move on a bus sparked a national movement.",
-          "This occurred in the mid-1950s American South."
-        ],
-        "friday": [
-          "Rosa Parks was arrested for not giving up her seat.",
-          "The event ignited the Montgomery Bus Boycott."
-        ],
-        "saturday": [
-          "She stayed seated. The movement stood up."
-        ]
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
       },
-      "context_card": "Rosa Parks was not simply tired from work when she refused to move — she was tired of giving in. She had been trained at the Highlander Folk School, a center for civil rights activism. Her arrest on December 1st, 1955 was strategic: the NAACP had been looking for a test case. The resulting boycott lasted 381 days and ended with the Supreme Court ruling bus segregation unconstitutional."
+      "context_card": "This event occurred in 1955."
     },
     {
-      "id": 9,
-      "date": "2026-04-07",
-      "day_of_week": "tuesday",
-      "event": "The Challenger Disaster",
-      "event_formal": "Space Shuttle Challenger disintegration on launch",
-      "year": 1986,
-      "headline": "Millions watching live saw it break apart 73 seconds after liftoff",
-      "description": "What year did this happen?",
-      "tier": 1,
-      "difficulty_rating": 5,
-      "clues": {
-        "monday": [
-          "This occurred during the Space Shuttle program era.",
-          "A catastrophic failure happened shortly after launch.",
-          "The crew included a civilian teacher selected through a public contest."
-        ],
-        "tuesday": [
-          "This was one of the most-watched disasters in American history.",
-          "A spacecraft failed 73 seconds into its mission.",
-          "The event led to a major suspension of the shuttle program."
-        ],
-        "wednesday": [
-          "A NASA launch ended in tragedy on a cold January morning.",
-          "This happened in the 1980s.",
-          "The crew of seven included the first teacher chosen for spaceflight."
-        ],
-        "thursday": [
-          "The Space Shuttle broke apart seconds after launch.",
-          "This occurred in the mid-1980s."
-        ],
-        "friday": [
-          "Challenger disintegrated 73 seconds into its flight.",
-          "The disaster was caused by cold temperatures affecting a rubber seal."
-        ],
-        "saturday": [
-          "It was cold that morning. No one had listened to the engineers who said wait."
-        ]
-      },
-      "context_card": "Engineers at Morton Thiokol had warned NASA the night before launch that O-rings could fail in temperatures below 53°F — and it was 28°F at Cape Canaveral that morning. Their objections were overruled. The Rogers Commission that investigated the disaster famously included physicist Richard Feynman, who demonstrated the O-ring failure with a glass of ice water at a press conference."
-    },
-    {
-      "id": 10,
-      "date": "2026-04-08",
-      "day_of_week": "wednesday",
-      "event": "The Wright Brothers' First Flight",
-      "event_formal": "First powered airplane flight by the Wright Brothers",
-      "year": 1903,
-      "headline": "The Wright Brothers' First Flight",
-      "description": "What year did this happen?",
-      "tier": 1,
-      "difficulty_rating": 3,
-      "clues": {
-        "monday": [
-          "This happened in the early years of a new century.",
-          "The inventors were two brothers who ran a bicycle shop.",
-          "The event took place on a beach known for its constant winds."
-        ],
-        "tuesday": [
-          "The flight lasted less than a minute.",
-          "They had been studying bird flight to solve the problem.",
-          "The event happened in North Carolina."
-        ],
-        "wednesday": [
-          "This occurred in the first decade of the 20th century.",
-          "The event happened in North America.",
-          "Only five people witnessed it."
-        ],
-        "thursday": [
-          "This was an American invention that changed the world.",
-          "The first flight lasted under 60 seconds."
-        ],
-        "friday": [
-          "This happened in the early 1900s.",
-          "Two brothers achieved what many thought impossible."
-        ],
-        "saturday": [
-          "The inventors were brothers from Ohio."
-        ]
-      },
-      "context_card": "The Wright Brothers made four flights at Kitty Hawk on December 17th, 1903. The first lasted just 12 seconds and covered 120 feet. By the end of that day, they had flown a total of 59 seconds. Orville would later say that the sensation of flight never fully wore off on him — it just kept getting better."
-    },
-    {
-      "id": 11,
-      "date": "2026-04-09",
-      "day_of_week": "thursday",
-      "event": "Apollo 11 Moon Landing",
-      "event_formal": "First human landing on the Moon",
-      "year": 1969,
-      "headline": "Neil Armstrong and Buzz Aldrin walked on the Moon",
-      "description": "What year did this happen?",
-      "tier": 3,
-      "difficulty_rating": 2,
-      "clues": {
-        "monday": [
-          "This happened in the year humans first walked on another world.",
-          "The mission was part of the space race between two superpowers.",
-          "The event fulfilled a president's promise earlier in the decade."
-        ],
-        "tuesday": [
-          "The event happened in the summer and was watched by millions worldwide.",
-          "The commander was from Ohio.",
-          "The year also saw Woodstock and a famous music festival."
-        ],
-        "wednesday": [
-          "This was a major achievement of the 1960s.",
-          "The mission launched from Cape Canaveral, Florida.",
-          "The famous first words were about 'one small step.'"
-        ],
-        "thursday": [
-          "This was in the 1960s.",
-          "The first words spoken on the surface were about this being one small step."
-        ],
-        "friday": [
-          "This happened during the Space Race.",
-          "The mission was called Apollo."
-        ],
-        "saturday": [
-          "This changed how we see our place in the universe."
-        ]
-      },
-      "context_card": "Neil Armstrong's first steps on the Moon were watched by an estimated 600 million people — one-fifth of the world's population. The lunar module was called Eagle. Armstrong had only 30 seconds of fuel remaining when he found a landing spot. He called it 'magnificent desolation.'"
-    },
-    {
-      "id": 12,
-      "date": "2026-04-10",
-      "day_of_week": "friday",
-      "event": "The Titanic Sinks",
-      "event_formal": "RMS Titanic sinks on maiden voyage",
-      "year": 1912,
-      "headline": "The Sinking of the Titanic",
-      "description": "What year did this happen?",
-      "tier": 1,
-      "difficulty_rating": 3,
-      "clues": {
-        "monday": [
-          "This was a maritime disaster that shocked the world.",
-          "The ship was called 'unsinkable' before its maiden voyage.",
-          "Fewer lifeboats were aboard than needed for all passengers."
-        ],
-        "tuesday": [
-          "The ship was bound for New York when it struck an iceberg.",
-          "A famous film about it was released in 1997.",
-          "The ship sank in under three hours."
-        ],
-        "wednesday": [
-          "This was an Edwardian-era tragedy.",
-          "It led to major changes in maritime safety regulations.",
-          "The ship carried both millionaires and immigrants."
-        ],
-        "thursday": [
-          "The ship was the largest in the world at the time.",
-          "This was in the early 20th century."
-        ],
-        "friday": [
-          "The ship struck an iceberg in the North Atlantic.",
-          "It was called 'unsinkable.'"
-        ],
-        "saturday": [
-          "It sank on its maiden voyage."
-        ]
-      },
-      "context_card": "The Titanic was carrying some of the world's wealthiest people and hundreds of immigrants seeking a new life in America. It struck the iceberg at 11:40 PM and sank in under three hours. The nearby RMS Carpathia rescued 705 survivors. The disaster led to major changes in maritime safety regulations."
-    },
-    {
-      "id": 13,
-      "date": "2026-04-11",
+      "id": 16,
+      "date": "2026-04-05",
+      "slot": 0,
       "day_of_week": "saturday",
-      "event": "World War I Begins",
-      "event_formal": "Beginning of World War I",
-      "year": 1914,
-      "headline": "The Assassination of Archduke Franz Ferdinand",
+      "event": "Challenger Disaster",
+      "event_formal": "Challenger Disaster",
+      "year": 1986,
+      "headline": "The Space Shuttle Challenger broke apart 73 seconds after launch",
       "description": "What year did this happen?",
       "tier": 1,
-      "difficulty_rating": 4,
+      "difficulty_rating": 8,
       "clues": {
-        "monday": [
-          "A political assassination in the Balkans sparked this conflict.",
-          "The war involved most of the great powers of the era.",
-          "The conflict lasted four years and destroyed four empires."
-        ],
-        "tuesday": [
-          "The war introduced trench warfare and new weapons of destruction.",
-          "It was triggered by an event in Sarajevo.",
-          "The assassinated leader was heir to the Austro-Hungarian throne."
-        ],
-        "wednesday": [
-          "This began in the decade before the Great Depression.",
-          "The conflict involved four empires and lasted four years.",
-          "It was supposed to be 'the war to end all wars.'"
-        ],
-        "thursday": [
-          "A Balkan assassination triggered this war.",
-          "The conflict ended four empires."
-        ],
-        "friday": [
-          "This happened in the early 20th century.",
-          "The assassination was in Sarajevo."
-        ],
-        "saturday": [
-          "The assassination was in Sarajevo."
-        ]
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
       },
-      "context_card": "The assassination of Archduke Franz Ferdinand in Sarajevo on June 28, 1914, set off a chain reaction of alliance obligations. What was supposed to be a short war became a four-year conflict that killed 17 million people and destroyed four empires: the German, Austro-Hungarian, Ottoman, and Russian empires."
+      "context_card": "This event occurred in 1986."
     },
     {
-      "id": 14,
-      "date": "2026-04-12",
-      "day_of_week": "sunday",
+      "id": 17,
+      "date": "2026-04-05",
+      "slot": 1,
+      "day_of_week": "saturday",
       "event": "September 11 Attacks",
-      "event_formal": "September 11 terrorist attacks",
+      "event_formal": "September 11 Attacks",
       "year": 2001,
       "headline": "Terrorists attacked the World Trade Center and Pentagon",
       "description": "What year did this happen?",
       "tier": 1,
-      "difficulty_rating": 2,
+      "difficulty_rating": 8,
       "clues": {
-        "monday": [
-          "This happened in the early 21st century.",
-          "Terrorists hijacked four commercial airplanes.",
-          "It led to the creation of the Department of Homeland Security."
-        ],
-        "tuesday": [
-          "Two planes struck the tallest buildings in New York City.",
-          "This led to the 'War on Terror.'",
-          "The attacks were by al-Qaeda terrorists."
-        ],
-        "wednesday": [
-          "This happened on a Tuesday morning in September.",
-          "Nearly 3,000 people were killed.",
-          "It fundamentally changed American foreign policy."
-        ],
-        "thursday": [
-          "This happened in the 21st century.",
-          "Two planes hit the World Trade Center."
-        ],
-        "friday": [
-          "Terrorists hijacked four planes.",
-          "It changed airport security forever."
-        ],
-        "saturday": [
-          "Nearly 3,000 people died that day."
-        ]
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
       },
-      "context_card": "On September 11, 2001, nearly 3,000 people were killed in a series of coordinated terrorist attacks. The FBI quickly opened an investigation called PENTTBOM. Within days, President George W. Bush had signed the USA PATRIOT Act. The attacks reshaped American foreign policy, airport security, and domestic surveillance in ways still felt today."
-    },
-    {
-      "id": 15,
-      "date": "2026-04-13",
-      "day_of_week": "monday",
-      "event": "The Beatles First US Tour",
-      "event_formal": "The Beatles arrive in America",
-      "year": 1964,
-      "headline": "The Beatles Arrive in America",
-      "description": "What year did this happen?",
-      "tier": 1,
-      "difficulty_rating": 5,
-      "clues": {
-        "monday": [
-          "A British Invasion began with this event.",
-          "The band appeared on a major American TV show shortly after arriving.",
-          "73 million viewers watched their TV appearance."
-        ],
-        "tuesday": [
-          "They landed at a New York airport to screaming fans.",
-          "This occurred at the height of youth cultural revolution.",
-          "The same year, a major civil rights act was signed."
-        ],
-        "wednesday": [
-          "This happened the same year a landmark civil rights law passed.",
-          "The Fab Four's arrival triggered mass hysteria.",
-          "The band was from Liverpool."
-        ],
-        "thursday": [
-          "This was in the 1960s.",
-          "This year saw a British musical invasion."
-        ],
-        "friday": [
-          "The band arrived from England.",
-          "It changed American pop music overnight."
-        ],
-        "saturday": [
-          "The band was from Liverpool."
-        ]
-      },
-      "context_card": "When The Beatles landed at JFK Airport on February 7, 1964, they were met by 3,000 screaming fans — the largest welcome in airport history to that point. They appeared on Ed Sullivan Show ten days later, watched by 73 million viewers. Within weeks, Beatlemania had completely reshaped American pop music and youth culture."
-    },
-    {
-      "id": 16,
-      "date": "2026-04-14",
-      "day_of_week": "tuesday",
-      "event": "First iPhone Released",
-      "event_formal": "First Apple iPhone released",
-      "year": 2007,
-      "headline": "Apple released the first iPhone",
-      "description": "What year did this happen?",
-      "tier": 1,
-      "difficulty_rating": 4,
-      "clues": {
-        "monday": [
-          "This was unveiled by the CEO of a computer company in a keynote.",
-          "The announcement promised to revolutionize mobile phones.",
-          "The device had no physical keyboard."
-        ],
-        "tuesday": [
-          "The year also saw the start of a global financial crisis.",
-          "The CEO wore his signature black turtleneck on stage.",
-          "The device used a multi-touch glass screen."
-        ],
-        "wednesday": [
-          "This was in the first decade of the 21st century.",
-          "The company was founded in a garage in California.",
-          "It was unveiled in San Francisco."
-        ],
-        "thursday": [
-          "This was a product announcement that changed an industry.",
-          "The device was a smartphone."
-        ],
-        "friday": [
-          "It was unveiled by Steve Jobs.",
-          "The device had no physical keyboard."
-        ],
-        "saturday": [
-          "It was unveiled by Steve Jobs."
-        ]
-      },
-      "context_card": "Steve Jobs unveiled the iPhone on January 9, 2007, calling it 'a revolutionary product.' It didn't go on sale until June, but it immediately changed what people expected from mobile devices. The initial model had no App Store — that came in 2008. By 2011, the iPhone had made Apple the most valuable company in the world."
-    },
-    {
-      "id": 17,
-      "date": "2026-04-15",
-      "day_of_week": "wednesday",
-      "event": "Fall of the Soviet Union",
-      "event_formal": "Dissolution of the Soviet Union",
-      "year": 1991,
-      "headline": "The Soviet Union dissolved into independent states",
-      "description": "What year did this happen?",
-      "tier": 1,
-      "difficulty_rating": 4,
-      "clues": {
-        "monday": [
-          "This happened during a period of rapid political change.",
-          "The superpower was led by Mikhail Gorbachev before this happened.",
-          "The country fractured into 15 independent nations."
-        ],
-        "tuesday": [
-          "The event happened around Christmas time.",
-          "The country had been a superpower since after World War II.",
-          "Reforms called 'glasnost' and 'perestroika' preceded this."
-        ],
-        "wednesday": [
-          "This occurred at the end of the Cold War.",
-          "The USSR was dissolved into 15 independent states.",
-          "The hammer-and-sickle flag was lowered for the last time."
-        ],
-        "thursday": [
-          "This happened in the early 1990s.",
-          "Mikhail Gorbachev resigned as the leader."
-        ],
-        "friday": [
-          "The Cold War ended with this event.",
-          "It happened around Christmas."
-        ],
-        "saturday": [
-          "The Cold War ended with this event."
-        ]
-      },
-      "context_card": "On December 26, 1991, the Supreme Soviet of the USSR ratified the Belovezh Accords, formally ending the Soviet Union. What had been the world's largest country by area splintered into 15 independent nations. For 69 years, the Soviet experiment had shaped global politics. Its end brought both hope for a new world order and anxiety about nuclear weapons in unstable new states."
+      "context_card": "This event occurred in 2001."
     },
     {
       "id": 18,
-      "date": "2026-04-16",
-      "day_of_week": "thursday",
-      "event": "First Email Sent",
-      "event_formal": "First ARPANET message sent",
-      "year": 1971,
-      "headline": "Ray Tomlinson sent the first network email",
+      "date": "2026-04-05",
+      "slot": 2,
+      "day_of_week": "saturday",
+      "event": "Pearl Harbor Attack",
+      "event_formal": "Pearl Harbor Attack",
+      "year": 1941,
+      "headline": "Japan attacked the US naval base at Pearl Harbor",
       "description": "What year did this happen?",
-      "tier": 2,
-      "difficulty_rating": 7,
+      "tier": 1,
+      "difficulty_rating": 8,
       "clues": {
-        "monday": [
-          "This happened at a US defense research institution.",
-          "The network would eventually evolve into the internet.",
-          "The sender chose the @ symbol for the address format."
-        ],
-        "tuesday": [
-          "The first message was sent between two computers in different locations.",
-          "This predates the personal computer revolution.",
-          "The message content was something like 'QWERTYUIOP.'"
-        ],
-        "wednesday": [
-          "This was in the early 1970s.",
-          "The sender worked on ARPANET, a precursor to the internet.",
-          "Ray Tomlinson was the programmer."
-        ],
-        "thursday": [
-          "This was at a defense research institution.",
-          "It was in the early 1970s."
-        ],
-        "friday": [
-          "The network became the internet.",
-          "Ray Tomlinson sent it."
-        ],
-        "saturday": [
-          "The @ symbol was born from this."
-        ]
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
       },
-      "context_card": "Ray Tomlinson sent the first email in 1971, choosing the @ symbol to separate the user name from the computer name. The message itself was largely forgettable — something like 'QWERTYUIOP.' But the @ sign became Tomlinson's lasting contribution to digital communication, now used in billions of email addresses worldwide."
+      "context_card": "This event occurred in 1941."
     },
     {
       "id": 19,
-      "date": "2026-04-17",
-      "day_of_week": "friday",
-      "event": "The Great Wall of China Completed",
-      "event_formal": "Completion of the Great Wall of China",
-      "year": 1644,
-      "headline": "The Great Wall of China Completed",
-      "description": "What year did this happen?",
-      "tier": 2,
-      "difficulty_rating": 6,
-      "clues": {
-        "monday": [
-          "This is one of the most recognizable structures in human history.",
-          "It was built to protect against invasions from the north.",
-          "Construction took place over many dynasties."
-        ],
-        "tuesday": [
-          "The wall is often said to be visible from space — a popular myth.",
-          "The structure spans over 13,000 miles.",
-          "The final phase was completed as a dynasty fell."
-        ],
-        "wednesday": [
-          "This happened in the 17th century.",
-          "The Ming Dynasty had recently ended when it was completed.",
-          "Millions of workers built and rebuilt it over centuries."
-        ],
-        "thursday": [
-          "This was in the 17th century.",
-          "It was built over many dynasties."
-        ],
-        "friday": [
-          "The Ming Dynasty oversaw the most famous sections.",
-          "It protected against invasions from the north."
-        ],
-        "saturday": [
-          "It's visible from space — or so they say."
-        ]
-      },
-      "context_card": "The Great Wall was built, rebuilt, and maintained over centuries by millions of workers, many of whom died building it. The wall we see today was mostly built during the Ming Dynasty (1368-1644). The total length, including all branches, is over 13,000 miles. Contrary to popular myth, it's not visible from space with the naked eye."
-    },
-    {
-      "id": 20,
-      "date": "2026-04-18",
-      "day_of_week": "saturday",
-      "event": "French Revolution Begins",
-      "event_formal": "Storming of the Bastille",
-      "year": 1789,
-      "headline": "French revolutionaries stormed the Bastille in Paris",
-      "description": "What year did this happen?",
-      "tier": 1,
-      "difficulty_rating": 4,
-      "clues": {
-        "monday": [
-          "This happened during the Enlightenment era.",
-          "A medieval fortress in Paris was attacked.",
-          "The event led to the end of absolute monarchy in France."
-        ],
-        "tuesday": [
-          "The event happened in the summer.",
-          "France was ruled by King Louis XVI at the time.",
-          "The fortress had become a symbol of royal tyranny."
-        ],
-        "wednesday": [
-          "This occurred in the late 18th century.",
-          "Rising bread prices fueled the anger.",
-          "A major revolution began with this event."
-        ],
-        "thursday": [
-          "This was in the 18th century.",
-          "The Bastille was a prison in Paris."
-        ],
-        "friday": [
-          "It happened in Paris.",
-          "A medieval fortress was stormed."
-        ],
-        "saturday": [
-          "Bread prices helped start a revolution."
-        ]
-      },
-      "context_card": "On July 14, 1789, several hundred Parisians stormed the Bastille, a medieval fortress that had become a symbol of royal tyranny. They freed the seven prisoners inside and killed the governor. The event became the defining moment of the French Revolution and is now commemorated annually as Bastille Day, France's national holiday."
-    },
-    {
-      "id": 21,
-      "date": "2026-04-19",
+      "date": "2026-04-06",
+      "slot": 0,
       "day_of_week": "sunday",
-      "event": "First Atomic Bomb Test",
-      "event_formal": "Trinity nuclear test",
-      "year": 1945,
-      "headline": "The Trinity Nuclear Test",
-      "description": "What year did this happen?",
-      "tier": 1,
-      "difficulty_rating": 5,
-      "clues": {
-        "monday": [
-          "This happened in the American Southwest.",
-          "The project was called the Manhattan Project.",
-          "Robert Oppenheimer was the scientific director."
-        ],
-        "tuesday": [
-          "The test was conducted before the end of World War II.",
-          "The desert landscape glowed brighter than any light ever seen.",
-          "Weeks later, similar devices were used on two Japanese cities."
-        ],
-        "wednesday": [
-          "This happened in the 1940s.",
-          "The flash was visible 200 miles away.",
-          "It was a top-secret military project."
-        ],
-        "thursday": [
-          "Robert Oppenheimer led the project.",
-          "It was in the 1940s."
-        ],
-        "friday": [
-          "The test took place in the New Mexico desert.",
-          "The project had been top secret."
-        ],
-        "saturday": [
-          "The desert lit up brighter than daylight."
-        ]
-      },
-      "context_card": "At 5:29 AM on July 16, 1945, J. Robert Oppenheimer watched the Trinity test explode with the words of the Bhagavad Gita in his mind: 'Now I am become Death, the destroyer of worlds.' The blast was visible 200 miles away. Three weeks later, atomic bombs destroyed Hiroshima and Nagasaki, ending World War II."
-    },
-    {
-      "id": 22,
-      "date": "2026-04-20",
-      "day_of_week": "monday",
-      "event": "The Mona Lisa Stolen",
-      "event_formal": "Theft of the Mona Lisa from the Louvre",
-      "year": 1911,
-      "headline": "The Mona Lisa Is Stolen from the Louvre",
-      "description": "What year did this happen?",
-      "tier": 2,
-      "difficulty_rating": 6,
-      "clues": {
-        "monday": [
-          "The theft made the painting more famous than ever.",
-          "The thief was a handyman who worked at the museum.",
-          "The painting was missing for two years before being recovered."
-        ],
-        "tuesday": [
-          "The artist was an Italian Renaissance master.",
-          "The theft was discovered when a worker noticed empty pegs on the wall.",
-          "The thief hid in a closet overnight."
-        ],
-        "wednesday": [
-          "This happened in the 1910s.",
-          "The theft occurred in a famous Paris museum.",
-          "The painting was recovered in Florence, Italy."
-        ],
-        "thursday": [
-          "This was in the 1910s.",
-          "The painting was missing for two years."
-        ],
-        "friday": [
-          "The thief was a museum employee.",
-          "The painting was found in Italy."
-        ],
-        "saturday": [
-          "The thief was a handyman at the Louvre."
-        ]
-      },
-      "context_card": "Vincenzo Peruggia, a Louvre employee, stole the Mona Lisa by hiding in a broom closet overnight. He simply walked out with it under his coat the next morning. It was missing for two years and was found in Florence in 1913. Paradoxically, the theft transformed the Mona Lisa from a respected painting into a global celebrity."
-    },
-    {
-      "id": 23,
-      "date": "2026-04-21",
-      "day_of_week": "tuesday",
       "event": "First Human in Space",
-      "event_formal": "Yuri Gagarin becomes first human in space",
+      "event_formal": "First Human in Space",
       "year": 1961,
       "headline": "Yuri Gagarin became the first human in space",
       "description": "What year did this happen?",
       "tier": 1,
+      "difficulty_rating": 9,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1961."
+    },
+    {
+      "id": 20,
+      "date": "2026-04-06",
+      "slot": 1,
+      "day_of_week": "sunday",
+      "event": "French Revolution Begins",
+      "event_formal": "French Revolution Begins",
+      "year": 1789,
+      "headline": "French revolutionaries stormed the Bastille in Paris",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 9,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1789."
+    },
+    {
+      "id": 21,
+      "date": "2026-04-06",
+      "slot": 2,
+      "day_of_week": "sunday",
+      "event": "Declaration of Independence",
+      "event_formal": "Declaration of Independence",
+      "year": 1776,
+      "headline": "The United States declared independence from Britain",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 9,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1776."
+    },
+    {
+      "id": 22,
+      "date": "2026-04-07",
+      "slot": 0,
+      "day_of_week": "monday",
+      "event": "MLK I Have a Dream",
+      "event_formal": "MLK I Have a Dream",
+      "year": 1963,
+      "headline": "MLK gave his I Have a Dream speech in Washington",
+      "description": "What year did this happen?",
+      "tier": 1,
       "difficulty_rating": 3,
       "clues": {
-        "monday": [
-          "This was a major victory in the Space Race.",
-          "The cosmonaut was from the Soviet Union.",
-          "His flight lasted 108 minutes."
-        ],
-        "tuesday": [
-          "His spacecraft made one orbit around Earth.",
-          "He said 'Earth is blue' when he saw it from space.",
-          "He was only 27 years old at the time."
-        ],
-        "wednesday": [
-          "This happened in the 1960s.",
-          "The flight launched from a cosmodrome in Kazakhstan.",
-          "He parachuted to Earth upon re-entry."
-        ],
-        "thursday": [
-          "This was in the 1960s.",
-          "He was a Soviet cosmonaut."
-        ],
-        "friday": [
-          "The flight lasted 108 minutes.",
-          "He orbited the Earth once."
-        ],
-        "saturday": [
-          "His famous words were about Earth being blue."
-        ]
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
       },
-      "context_card": "Yuri Gagarin orbited Earth in Vostok 1 on April 12, 1961, completing one orbit in 108 minutes. At 27, he became the first human to see Earth from space. He parachuted from his capsule before it landed — ejection at 7km was standard procedure. A city in Kazakhstan was renamed Baikonur in his honor, and his face became a symbol of Soviet achievement."
+      "context_card": "This event occurred in 1963."
+    },
+    {
+      "id": 23,
+      "date": "2026-04-07",
+      "slot": 1,
+      "day_of_week": "monday",
+      "event": "First Email Sent",
+      "event_formal": "First Email Sent",
+      "year": 1971,
+      "headline": "Ray Tomlinson sent the first network email",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 3,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1971."
     },
     {
       "id": 24,
-      "date": "2026-04-22",
-      "day_of_week": "wednesday",
+      "date": "2026-04-07",
+      "slot": 2,
+      "day_of_week": "monday",
       "event": "Google Founded",
-      "event_formal": "Google incorporated",
+      "event_formal": "Google Founded",
       "year": 1998,
       "headline": "Larry Page and Sergey Brin founded Google",
-      "description": "What year did this happen?",
-      "tier": 2,
-      "difficulty_rating": 6,
-      "clues": {
-        "monday": [
-          "The company started in a garage — actually, a friend's garage.",
-          "The name comes from a misspelling of a mathematical term.",
-          "The founders were computer science PhD students."
-        ],
-        "tuesday": [
-          "The first investment was $100,000 from an angel investor.",
-          "The company began in Menlo Park, California.",
-          "Their ranking algorithm was based on links, not keywords."
-        ],
-        "wednesday": [
-          "This happened in the late 1990s.",
-          "The prototype was built with hardware held together by Lego bricks.",
-          "The founders met at Stanford University."
-        ],
-        "thursday": [
-          "This was in the late 1990s.",
-          "The founders were Stanford students."
-        ],
-        "friday": [
-          "The name was a misspelling.",
-          "It started in a garage."
-        ],
-        "saturday": [
-          "The name was a misspelling of a math term."
-        ]
-      },
-      "context_card": "Larry Page and Sergey Brin met at Stanford in 1995 and initially didn't get along. Their search algorithm, PageRank, ranked websites by their links rather than keywords. Their first office was a garage rented from a friend. The name 'Google' came from 'googol,' a mathematical term for 1 followed by 100 zeros."
-    },
-    {
-      "id": 25,
-      "date": "2026-04-23",
-      "day_of_week": "thursday",
-      "event": "HIV/AIDS Discovered",
-      "event_formal": "First recognition of AIDS as a new disease",
-      "year": 1981,
-      "headline": "Doctors identified a new disease called AIDS in New York",
-      "description": "What year did this happen?",
-      "tier": 2,
-      "difficulty_rating": 7,
-      "clues": {
-        "monday": [
-          "This was first reported in Los Angeles and New York.",
-          "Early cases appeared in otherwise healthy young men.",
-          "Scientists later identified the virus causing it."
-        ],
-        "tuesday": [
-          "The disease was initially called 'GRID' (Gay-Related Immune Deficiency).",
-          "A government health bulletin first documented the cases.",
-          "By year's end, there were 159 reported cases."
-        ],
-        "wednesday": [
-          "This was in the early 1980s.",
-          "It would become one of the deadliest pandemics in history.",
-          "The virus wouldn't be identified until three years later."
-        ],
-        "thursday": [
-          "This was in the early 1980s.",
-          "It was first noticed in Los Angeles."
-        ],
-        "friday": [
-          "Early cases involved rare pneumonias.",
-          "It was initially called GRID."
-        ],
-        "saturday": [
-          "It was initially called GRID."
-        ]
-      },
-      "context_card": "The CDC's Morbidity and Mortality Weekly Report on June 5, 1981, documented five young gay men in Los Angeles with a rare pneumonia. By the end of 1981, there were 159 reported cases. The disease wouldn't be called AIDS until 1982, and the HIV virus wouldn't be identified until 1984. It would eventually kill 35 million people worldwide."
-    },
-    {
-      "id": 26,
-      "date": "2026-04-24",
-      "day_of_week": "friday",
-      "event": "Amazon Founded",
-      "event_formal": "Amazon.com incorporated",
-      "year": 1994,
-      "headline": "Jeff Bezos founded Amazon as an online bookstore",
-      "description": "What year did this happen?",
-      "tier": 2,
-      "difficulty_rating": 6,
-      "clues": {
-        "monday": [
-          "The founder started this in his garage in Seattle.",
-          "He originally named it Cadabra.com.",
-          "The company went public three years after being founded."
-        ],
-        "tuesday": [
-          "Initially, the founder warned investors it would take 5-7 years to profit.",
-          "The name was changed because it sounded 'exotic and different.'",
-          "The founder left a Wall Street job to start it."
-        ],
-        "wednesday": [
-          "This happened in the mid-1990s.",
-          "The name was easier to remember than the original choice.",
-          "It started as an online bookstore."
-        ],
-        "thursday": [
-          "This was in the mid-1990s.",
-          "The founder started in his garage."
-        ],
-        "friday": [
-          "It was originally named Cadabra.",
-          "It started by selling books online."
-        ],
-        "saturday": [
-          "It was originally named Cadabra."
-        ]
-      },
-      "context_card": "Jeff Bezos left his hedge fund job in 1994 to start an online bookstore, originally called Cadabra. He chose the name Amazon because it sounded 'exotic and different,' and the Amazon River was the biggest river he could think of. He raised $1 million from his own parents — the minimum viable investment to start. By 2020, Amazon had a market cap of $1.7 trillion."
-    },
-    {
-      "id": 27,
-      "date": "2026-04-25",
-      "day_of_week": "saturday",
-      "event": "DNA Structure Discovered",
-      "event_formal": "Watson and Crick publish DNA double helix structure",
-      "year": 1953,
-      "headline": "Watson and Crick discovered the structure of DNA",
-      "description": "What year did this happen?",
-      "tier": 1,
-      "difficulty_rating": 5,
-      "clues": {
-        "monday": [
-          "This discovery was made in England.",
-          "The scientists used X-ray crystallography data from Rosalind Franklin.",
-          "The finding was published in the journal Nature."
-        ],
-        "tuesday": [
-          "It revolutionized biology and medicine.",
-          "The discovery explained how genetic information is passed on.",
-          "One scientist was American, the other British."
-        ],
-        "wednesday": [
-          "This was in the 1950s.",
-          "The molecule has a famous twisted shape.",
-          "Rosalind Franklin's Photo 51 was critical to the discovery."
-        ],
-        "thursday": [
-          "This was in the 1950s.",
-          "The discovery was in England."
-        ],
-        "friday": [
-          "Rosalind Franklin's data was key.",
-          "The discovery was at Cambridge University."
-        ],
-        "saturday": [
-          "Rosalind Franklin's data was key."
-        ]
-      },
-      "context_card": "Watson and Crick published their double helix model in Nature on April 25, 1953. Their famous line: 'It has not escaped our notice that the specific pairing we have postulated immediately suggests a possible copying mechanism for the genetic material.' Rosalind Franklin's Photo 51, which showed the helix structure, was critical — but she died in 1958 and never shared the Nobel Prize."
-    },
-    {
-      "id": 28,
-      "date": "2026-04-26",
-      "day_of_week": "sunday",
-      "event": "Chernobyl Nuclear Disaster",
-      "event_formal": "Chernobyl nuclear disaster",
-      "year": 1986,
-      "headline": "The Chernobyl Disaster",
-      "description": "What year did this happen?",
-      "tier": 1,
-      "difficulty_rating": 5,
-      "clues": {
-        "monday": [
-          "This happened during a safety test at a Ukrainian power plant.",
-          "The Soviet government initially tried to cover up the disaster.",
-          "The town of Pripyat was evacuated."
-        ],
-        "tuesday": [
-          "The explosion sent a plume of radioactive material across Europe.",
-          "Firefighters were among the first responders.",
-          "The nearby city had a population of nearly 50,000."
-        ],
-        "wednesday": [
-          "This occurred in the 1980s.",
-          "Ukraine was part of the Soviet Union at the time.",
-          "Radiation was detected as far away as Scandinavia."
-        ],
-        "thursday": [
-          "This was in the 1980s.",
-          "The town of Pripyat was evacuated."
-        ],
-        "friday": [
-          "A safety test went wrong.",
-          "The disaster was in Ukraine."
-        ],
-        "saturday": [
-          "A safety test went wrong."
-        ]
-      },
-      "context_card": "On April 26, 1986, Reactor 4 at Chernobyl exploded during a low-power test. The fire released radioactive material 9 kilometers into the atmosphere. Soviet authorities evacuated Pripyat (population 49,000) 36 hours later. The final death toll remains disputed — from 31 immediate deaths to estimates of thousands of cancer cases from radiation exposure. The destroyed reactor was finally enclosed in a giant steel sarcophagus in 2016."
-    },
-    {
-      "id": 29,
-      "date": "2026-04-27",
-      "day_of_week": "monday",
-      "event": "MP3 Player Invented",
-      "event_formal": "First portable MP3 player created",
-      "year": 1997,
-      "headline": "Saehan Electronics sold the first portable MP3 player",
-      "description": "What year did this happen?",
-      "tier": 2,
-      "difficulty_rating": 8,
-      "clues": {
-        "monday": [
-          "This invention came from South Korea.",
-          "The technology compressed audio files without major quality loss.",
-          "The first model held only about 12 songs."
-        ],
-        "tuesday": [
-          "It would take the iPod to make this technology mainstream.",
-          "The device had no moving parts.",
-          "It used flash memory to store music."
-        ],
-        "wednesday": [
-          "This was in the late 1990s.",
-          "It was developed by Saehan Information Systems.",
-          "The device cost about $250."
-        ],
-        "thursday": [
-          "This was in the late 1990s.",
-          "It was from South Korea."
-        ],
-        "friday": [
-          "It held only about 12 songs.",
-          "The iPod later made this mainstream."
-        ],
-        "saturday": [
-          "It held only about 12 songs."
-        ]
-      },
-      "context_card": "The Saehan MP-X, released in 1997, was the first portable MP3 player. It held about 12 songs using flash memory and cost around $250. It had no screen and required a PC to load music. The technology was made mainstream by the iPod in 2001, which Apple co-founder Steve Jobs dismissed as 'just a feature' — meaning a flash-based MP3 player — before reconsidering."
-    },
-    {
-      "id": 30,
-      "date": "2026-04-28",
-      "day_of_week": "tuesday",
-      "event": "Euro Currency Launched",
-      "event_formal": "Euro currency introduced",
-      "year": 1999,
-      "headline": "The Euro became the official currency of European Union members",
-      "description": "What year did this happen?",
-      "tier": 2,
-      "difficulty_rating": 6,
-      "clues": {
-        "monday": [
-          "This currency replaced multiple national currencies in Europe.",
-          "It was first introduced electronically before physical notes appeared.",
-          "Germany, France, and Italy were among the original members."
-        ],
-        "tuesday": [
-          "Twelve European countries initially adopted it.",
-          "Physical notes and coins came a few years after the electronic launch.",
-          "The Deutsche Mark and French Franc were among those replaced."
-        ],
-        "wednesday": [
-          "This happened at the turn of the millennium.",
-          "The currency was designed to unify European markets.",
-          "It involved twelve countries giving up their national currencies."
-        ],
-        "thursday": [
-          "This was at the turn of the millennium.",
-          "Twelve countries first adopted it."
-        ],
-        "friday": [
-          "It replaced multiple national currencies.",
-          "Germany, France, and Italy were founding members."
-        ],
-        "saturday": [
-          "It replaced multiple national currencies."
-        ]
-      },
-      "context_card": "The Euro was introduced as an accounting currency on January 1, 1999, with physical notes and coins following on January 1, 2002. Twelve countries abandoned their national currencies — including the Deutsche Mark, French Franc, and Italian Lira — for the first time in history. The transition was initially chaotic in some countries, with ATM glitches and confusion at stores."
-    },
-    {
-      "id": 31,
-      "date": "2026-04-29",
-      "day_of_week": "wednesday",
-      "event": "Instagram Launched",
-      "event_formal": "Instagram app released",
-      "year": 2010,
-      "headline": "Kevin Systrom launched the photo-sharing app Instagram",
-      "description": "What year did this happen?",
-      "tier": 2,
-      "difficulty_rating": 7,
-      "clues": {
-        "monday": [
-          "The app was created by two people who sold it to Facebook for $1 billion.",
-          "The name combines 'instant camera' and 'telegram.'",
-          "Only iPhone users could use it at first."
-        ],
-        "tuesday": [
-          "It popularized square photo filters.",
-          "The company had just 13 employees when acquired.",
-          "It reached 1 million users in just two months."
-        ],
-        "wednesday": [
-          "This was in the early 2010s.",
-          "It was acquired by Facebook just 18 months after launch.",
-          "The founders met at Stanford University."
-        ],
-        "thursday": [
-          "This was in the early 2010s.",
-          "It was founded by two people."
-        ],
-        "friday": [
-          "It reached 1 million users quickly.",
-          "It was acquired for $1 billion."
-        ],
-        "saturday": [
-          "It reached 1 million users in just two months."
-        ]
-      },
-      "context_card": "Kevin Systrom and Mike Krieger launched Instagram on October 6, 2010. It reached 1 million users in just two months. Systrom had 12 employees when Facebook acquired it for $1 billion in 2012 — an astonishing valuation for a company with 13 employees and no revenue. By 2018, Instagram had 1 billion users and was Facebook's most valuable asset."
-    },
-    {
-      "id": 32,
-      "date": "2026-04-30",
-      "day_of_week": "thursday",
-      "event": "MP3 Format Created",
-      "event_formal": "MP3 audio format standardized",
-      "year": 1991,
-      "headline": "The MP3 Format Is Created",
-      "description": "What year did this happen?",
-      "tier": 2,
-      "difficulty_rating": 8,
-      "clues": {
-        "monday": [
-          "This format compressed audio files by removing sounds humans can't hear.",
-          "The researchers worked at the Fraunhofer Institute in Germany.",
-          "It made music piracy explode by enabling fast downloads."
-        ],
-        "tuesday": [
-          "Napster was built around this format.",
-          "A 3.5-minute track could be compressed from 30MB to about 3MB.",
-          "The researchers initially couldn't find interested companies."
-        ],
-        "wednesday": [
-          "This was in the early 1990s.",
-          "It compressed audio roughly 10-12 times without major quality loss.",
-          "The format eventually helped destroy physical album sales."
-        ],
-        "thursday": [
-          "This was in the early 1990s.",
-          "The researchers were from Germany."
-        ],
-        "friday": [
-          "Napster used this format.",
-          "It compressed audio by removing inaudible frequencies."
-        ],
-        "saturday": [
-          "Napster used this format."
-        ]
-      },
-      "context_card": "The MP3 format was developed by the Fraunhofer Institute in Germany and standardized in 1991. It could compress a 3.5-minute CD track from 30MB to about 3MB. The researchers initially struggled to find companies interested — nobody believed people would want CD-quality music compressed so much. They earned about $1 per licensed player. By 2000, MP3 had destroyed the CD singles market and would eventually help nearly destroy physical album sales."
-    },
-    {
-      "id": 33,
-      "date": "2026-05-01",
-      "day_of_week": "friday",
-      "event": "Black Tuesday Stock Crash",
-      "event_formal": "Black Tuesday stock market crash",
-      "year": 1929,
-      "headline": "The stock market crashed, starting the Great Depression",
       "description": "What year did this happen?",
       "tier": 1,
       "difficulty_rating": 4,
       "clues": {
-        "monday": [
-          "This happened in October.",
-          "Billions of dollars in stock value vanished in days.",
-          "The crash ended a decade of reckless speculation."
-        ],
-        "tuesday": [
-          "It led to the Great Depression.",
-          "Ordinary Americans had been buying stocks on credit.",
-          "The Dow fell 12% in a single day."
-        ],
-        "wednesday": [
-          "This was in the 1920s.",
-          "It was the worst stock market crash in American history at the time.",
-          "The Depression that followed saw 25% unemployment."
-        ],
-        "thursday": [
-          "This was in the 1920s.",
-          "It happened in October."
-        ],
-        "friday": [
-          "Billions vanished in days.",
-          "It ended the Roaring Twenties."
-        ],
-        "saturday": [
-          "Billions vanished in a single day."
-        ]
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
       },
-      "context_card": "On October 29, 1929, investors traded 16 million shares in a panic. The Dow fell 12% in a single day. Over the next few weeks, $30 billion in stock value evaporated — equivalent to about $400 billion today. The crash ended the Roaring Twenties and triggered the Great Depression, which would last a decade and see 25% unemployment in the United States."
+      "context_card": "This event occurred in 1998."
     },
     {
-      "id": 34,
-      "date": "2026-05-02",
-      "day_of_week": "saturday",
+      "id": 25,
+      "date": "2026-04-08",
+      "slot": 0,
+      "day_of_week": "tuesday",
+      "event": "Amazon Founded",
+      "event_formal": "Amazon Founded",
+      "year": 1994,
+      "headline": "Jeff Bezos founded Amazon as an online bookstore",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 4,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1994."
+    },
+    {
+      "id": 26,
+      "date": "2026-04-08",
+      "slot": 1,
+      "day_of_week": "tuesday",
+      "event": "DNA Structure Discovered",
+      "event_formal": "DNA Structure Discovered",
+      "year": 1953,
+      "headline": "Watson and Crick discovered the structure of DNA",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 4,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1953."
+    },
+    {
+      "id": 27,
+      "date": "2026-04-08",
+      "slot": 2,
+      "day_of_week": "tuesday",
+      "event": "HIV/AIDS Discovered",
+      "event_formal": "HIV/AIDS Discovered",
+      "year": 1981,
+      "headline": "Doctors identified a new disease called AIDS in New York",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 5,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1981."
+    },
+    {
+      "id": 28,
+      "date": "2026-04-09",
+      "slot": 0,
+      "day_of_week": "wednesday",
       "event": "First Heart Transplant",
-      "event_formal": "First successful human heart transplant",
+      "event_formal": "First Heart Transplant",
       "year": 1967,
       "headline": "Christiaan Barnard performed the first heart transplant",
       "description": "What year did this happen?",
-      "tier": 2,
-      "difficulty_rating": 6,
+      "tier": 1,
+      "difficulty_rating": 5,
       "clues": {
-        "monday": [
-          "The surgeon was from South Africa.",
-          "The operation lasted about 5 hours.",
-          "The recipient survived the operation but died 18 days later."
-        ],
-        "tuesday": [
-          "The recipient was a 53-year-old with heart disease.",
-          "The donor was a woman who died in a car accident.",
-          "The surgeon became an overnight celebrity."
-        ],
-        "wednesday": [
-          "This was in the 1960s.",
-          "The surgeon was Dr. Christiaan Barnard.",
-          "The operation took place in Cape Town."
-        ],
-        "thursday": [
-          "This was in the 1960s.",
-          "The surgeon was from South Africa."
-        ],
-        "friday": [
-          "Dr. Christiaan Barnard led it.",
-          "It was in Cape Town."
-        ],
-        "saturday": [
-          "Dr. Christiaan Barnard led it."
-        ]
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
       },
-      "context_card": "On December 3, 1967, Dr. Christiaan Barnard transplanted a human heart into 53-year-old Louis Washkansky. The operation was successful, but Washkansky died 18 days later from pneumonia — his immune system had been weakened by the anti-rejection drugs. Barnard's face was on magazine covers worldwide overnight. He had gone from obscurity to celebrity in a single operation."
+      "context_card": "This event occurred in 1967."
     },
     {
-      "id": 35,
-      "date": "2026-05-03",
-      "day_of_week": "sunday",
+      "id": 29,
+      "date": "2026-04-09",
+      "slot": 1,
+      "day_of_week": "wednesday",
       "event": "Polio Vaccine Announced",
-      "event_formal": "Salk polio vaccine declared safe and effective",
+      "event_formal": "Polio Vaccine Announced",
       "year": 1955,
       "headline": "Jonas Salk announced his polio vaccine worked",
       "description": "What year did this happen?",
       "tier": 1,
       "difficulty_rating": 5,
       "clues": {
-        "monday": [
-          "The vaccine was developed by Jonas Salk.",
-          "Parents feared this disease because it paralyzed children.",
-          "Church bells rang across America when the news broke."
-        ],
-        "tuesday": [
-          "The announcement was made on April 12.",
-          "Nearly two million schoolchildren participated in the trial.",
-          "Cases dropped by 90% within months."
-        ],
-        "wednesday": [
-          "This happened in the 1950s.",
-          "The disease especially affected children in summer.",
-          "The vaccine trial was one of the largest in history."
-        ],
-        "thursday": [
-          "This was in the 1950s.",
-          "Jonas Salk developed it."
-        ],
-        "friday": [
-          "It was announced on April 12.",
-          "Church bells rang across the country."
-        ],
-        "saturday": [
-          "It was announced on April 12."
-        ]
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
       },
-      "context_card": "On April 12, 1955, Dr. Thomas Francis announced that Jonas Salk's polio vaccine was 'safe, effective, and potent.' Within hours, churches rang bells and factories blew whistles in celebration. One parent said: 'I have never experienced such a feeling of relief.' Within months, cases of polio in the US dropped by 90%. By 1979, polio was eliminated in the United States."
+      "context_card": "This event occurred in 1955."
     },
     {
-      "id": 36,
-      "date": "2026-05-04",
-      "day_of_week": "monday",
-      "event": "First Email Sent Over Internet",
-      "event_formal": "First email sent over ARPANET",
-      "year": 1971,
-      "headline": "The First ARPANET Email",
-      "description": "What year did this happen?",
-      "tier": 2,
-      "difficulty_rating": 7,
-      "clues": {
-        "monday": [
-          "The message was sent from Cambridge, Massachusetts.",
-          "Ray Tomlinson chose the @ symbol for email addresses.",
-          "The exact content of the message has been lost."
-        ],
-        "tuesday": [
-          "It was sent over ARPANET, the precursor to the internet.",
-          "The sender was testing communication between two machines.",
-          "The @ symbol became the defining feature of the format."
-        ],
-        "wednesday": [
-          "This was in the early 1970s.",
-          "The sender was a computer programmer.",
-          "The network connected universities and research labs."
-        ],
-        "thursday": [
-          "This was in the early 1970s.",
-          "Ray Tomlinson sent it."
-        ],
-        "friday": [
-          "The @ symbol was used.",
-          "The message traveled over ARPANET."
-        ],
-        "saturday": [
-          "The @ symbol was used."
-        ]
-      },
-      "context_card": "Ray Tomlinson sent the first networked email between two computers on ARPANET in 1971. The message itself was mundane — probably 'QWERTYUIOP' or something similar, used as a keyboard test. Tomlinson also chose the @ sign to separate user names from computer names, creating the format we still use today. The invention went from concept to global essential service in under three decades."
-    },
-    {
-      "id": 37,
-      "date": "2026-05-05",
-      "day_of_week": "tuesday",
-      "event": "Napoleon Crowned Emperor",
-      "event_formal": "Napoleon Bonaparte crowned Emperor of France",
-      "year": 1804,
-      "headline": "Napoleon Crowns Himself Emperor",
+      "id": 30,
+      "date": "2026-04-09",
+      "slot": 2,
+      "day_of_week": "wednesday",
+      "event": "Penicillin Discovered",
+      "event_formal": "Penicillin Discovered",
+      "year": 1928,
+      "headline": "Alexander Fleming discovered penicillin",
       "description": "What year did this happen?",
       "tier": 1,
-      "difficulty_rating": 5,
+      "difficulty_rating": 6,
       "clues": {
-        "monday": [
-          "The coronation took place at Notre-Dame Cathedral in Paris.",
-          "He famously took the crown from the Pope and placed it on his own head.",
-          "The ceremony was painted by Jacques-Louis David."
-        ],
-        "tuesday": [
-          "This came after the French Revolution overthrew the monarchy.",
-          "The Pope traveled from Rome for the ceremony.",
-          "The new emperor had risen from a military career."
-        ],
-        "wednesday": [
-          "This was in the early 19th century.",
-          "The Pope was present but played a passive role.",
-          "His empire would eventually span most of Europe."
-        ],
-        "thursday": [
-          "This was in the early 19th century.",
-          "The ceremony was at Notre-Dame."
-        ],
-        "friday": [
-          "He crowned himself Emperor.",
-          "The ceremony was in Paris."
-        ],
-        "saturday": [
-          "He crowned himself."
-        ]
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
       },
-      "context_card": "On December 2, 1804, Napoleon Bonaparte crowned himself Emperor of France in Notre-Dame. He famously seized the crown from Pope Pius VII and placed it on his own head before crowning his wife Josephine. The painter Jacques-Louis David immortalized the moment in a massive canvas. Napoleon's empire would eventually span most of Europe before his defeat at Waterloo in 1815."
+      "context_card": "This event occurred in 1928."
     },
     {
-      "id": 38,
-      "date": "2026-05-06",
-      "day_of_week": "wednesday",
+      "id": 31,
+      "date": "2026-04-10",
+      "slot": 0,
+      "day_of_week": "thursday",
+      "event": "Instagram Launched",
+      "event_formal": "Instagram Launched",
+      "year": 2010,
+      "headline": "Kevin Systrom launched the photo-sharing app Instagram",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 6,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 2010."
+    },
+    {
+      "id": 32,
+      "date": "2026-04-10",
+      "slot": 1,
+      "day_of_week": "thursday",
       "event": "YouTube Founded",
-      "event_formal": "YouTube incorporated",
+      "event_formal": "YouTube Founded",
       "year": 2005,
       "headline": "Steve Chen and Chad Hurley launched YouTube",
       "description": "What year did this happen?",
-      "tier": 2,
+      "tier": 1,
+      "difficulty_rating": 6,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 2005."
+    },
+    {
+      "id": 33,
+      "date": "2026-04-10",
+      "slot": 2,
+      "day_of_week": "thursday",
+      "event": "Wikipedia Launched",
+      "event_formal": "Wikipedia Launched",
+      "year": 2001,
+      "headline": "Jimmy Wales launched the free online encyclopedia Wikipedia",
+      "description": "What year did this happen?",
+      "tier": 1,
       "difficulty_rating": 7,
       "clues": {
-        "monday": [
-          "The first video was uploaded by a co-founder.",
-          "The site was sold to Google 18 months after launch.",
-          "The original name consideration was 'Tune In, Hook Up.'"
-        ],
-        "tuesday": [
-          "The first video was called 'Me at the zoo.'",
-          "The co-founders previously worked at PayPal.",
-          "Within months, it was serving millions of videos per day."
-        ],
-        "wednesday": [
-          "This was in the mid-2000s.",
-          "It transformed how media is created and consumed.",
-          "Google paid $1.65 billion to acquire it."
-        ],
-        "thursday": [
-          "This was in the mid-2000s.",
-          "The first video was 'Me at the zoo.'"
-        ],
-        "friday": [
-          "Google bought it for $1.65 billion.",
-          "The co-founders previously worked at a payments company."
-        ],
-        "saturday": [
-          "Google bought it for $1.65 billion."
-        ]
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
       },
-      "context_card": "YouTube was founded in February 2005 and launched in November. The first video, 'Me at the zoo,' was uploaded by co-founder Jawed Karim on April 23, 2005, and is still online. Google acquired YouTube in October 2006 for $1.65 billion — at the time, an enormous sum for a company with no revenue and 25 employees. By 2023, YouTube had over 2 billion logged-in monthly users."
+      "context_card": "This event occurred in 2001."
+    },
+    {
+      "id": 34,
+      "date": "2026-04-11",
+      "slot": 0,
+      "day_of_week": "friday",
+      "event": "Euro Currency Launched",
+      "event_formal": "Euro Currency Launched",
+      "year": 1999,
+      "headline": "The Euro became the official currency of European Union members",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 7,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1999."
+    },
+    {
+      "id": 35,
+      "date": "2026-04-11",
+      "slot": 1,
+      "day_of_week": "friday",
+      "event": "Nintendo Game Boy Released",
+      "event_formal": "Nintendo Game Boy Released",
+      "year": 1989,
+      "headline": "Nintendo released the Game Boy handheld console",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 7,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1989."
+    },
+    {
+      "id": 36,
+      "date": "2026-04-11",
+      "slot": 2,
+      "day_of_week": "friday",
+      "event": "Black Tuesday Stock Crash",
+      "event_formal": "Black Tuesday Stock Crash",
+      "year": 1929,
+      "headline": "The stock market crashed, starting the Great Depression",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 8,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1929."
+    },
+    {
+      "id": 37,
+      "date": "2026-04-12",
+      "slot": 0,
+      "day_of_week": "saturday",
+      "event": "First Photograph Taken",
+      "event_formal": "First Photograph Taken",
+      "year": 1826,
+      "headline": "Joseph Niepce took the first permanent photograph",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 8,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1826."
+    },
+    {
+      "id": 38,
+      "date": "2026-04-12",
+      "slot": 1,
+      "day_of_week": "saturday",
+      "event": "First Telegraph Message",
+      "event_formal": "First Telegraph Message",
+      "year": 1844,
+      "headline": "Samuel Morse sent the first telegraph message",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 8,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1844."
     },
     {
       "id": 39,
-      "date": "2026-03-30",
+      "date": "2026-04-12",
+      "slot": 2,
+      "day_of_week": "saturday",
+      "event": "Printing Press Invented",
+      "event_formal": "Printing Press Invented",
+      "year": 1440,
+      "headline": "Johannes Gutenberg printed the first Bible with movable type",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 9,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1440."
+    },
+    {
+      "id": 40,
+      "date": "2026-04-13",
+      "slot": 0,
+      "day_of_week": "sunday",
+      "event": "American Civil War Begins",
+      "event_formal": "American Civil War Begins",
+      "year": 1861,
+      "headline": "Confederate forces attacked Fort Sumter, starting the Civil War",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 9,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1861."
+    },
+    {
+      "id": 41,
+      "date": "2026-04-13",
+      "slot": 1,
+      "day_of_week": "sunday",
+      "event": "Spanish Flu Pandemic",
+      "event_formal": "Spanish Flu Pandemic",
+      "year": 1918,
+      "headline": "A deadly flu pandemic began spreading worldwide",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 9,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1918."
+    },
+    {
+      "id": 42,
+      "date": "2026-04-13",
+      "slot": 2,
+      "day_of_week": "sunday",
+      "event": "Elvis Presley First TV Appearance",
+      "event_formal": "Elvis Presley First TV Appearance",
+      "year": 1956,
+      "headline": "Elvis Presley appeared on television for the first time",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 3,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1956."
+    },
+    {
+      "id": 43,
+      "date": "2026-04-14",
+      "slot": 0,
+      "day_of_week": "monday",
+      "event": "First McDonalds Opens",
+      "event_formal": "First McDonalds Opens",
+      "year": 1955,
+      "headline": "Ray Kroc opened the first franchised McDonalds restaurant",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 3,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1955."
+    },
+    {
+      "id": 44,
+      "date": "2026-04-14",
       "slot": 1,
       "day_of_week": "monday",
-      "event": "Apollo 11 Moon Landing",
-      "event_formal": "Apollo 11 — First Humans Walk on the Moon",
-      "year": 1969,
-      "headline": "Neil Armstrong and Buzz Aldrin walked on the Moon",
+      "event": "Disneyland Opens",
+      "event_formal": "Disneyland Opens",
+      "year": 1955,
+      "headline": "Walt Disney opened Disneyland in California",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 4,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1955."
+    },
+    {
+      "id": 45,
+      "date": "2026-04-14",
+      "slot": 2,
+      "day_of_week": "monday",
+      "event": "First Barbie Doll",
+      "event_formal": "First Barbie Doll",
+      "year": 1959,
+      "headline": "Ruth Handler debuted the Barbie doll at the New York Toy Fair",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 4,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1959."
+    },
+    {
+      "id": 46,
+      "date": "2026-04-15",
+      "slot": 0,
+      "day_of_week": "tuesday",
+      "event": "Pac-Man Released",
+      "event_formal": "Pac-Man Released",
+      "year": 1980,
+      "headline": "Namco released the arcade game Pac-Man",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 4,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1980."
+    },
+    {
+      "id": 47,
+      "date": "2026-04-15",
+      "slot": 1,
+      "day_of_week": "tuesday",
+      "event": "Super Mario Bros Released",
+      "event_formal": "Super Mario Bros Released",
+      "year": 1985,
+      "headline": "Nintendo released Super Mario Bros for the NES",
       "description": "What year did this happen?",
       "tier": 1,
       "difficulty_rating": 5,
       "clues": {
-        "monday": [
-          "This achievement fulfilled a decade-old national pledge.",
-          "The mission originated from Florida and traveled nearly a quarter million miles.",
-          "The world watched on grainy black-and-white television screens."
-        ],
-        "tuesday": [
-          "The first humans to touch lunar soil came from the same country that sent Lindbergh across the Atlantic.",
-          "The voyage took about a week from launch to landing.",
-          "Television cameras captured every moment for an estimated 600 million viewers."
-        ],
-        "wednesday": [
-          "A Saturn V rocket carried the crew beyond Earth orbit.",
-          "The site of landing was called the Sea of Tranquility.",
-          "The event was broadcast to the largest television audience in history at that time."
-        ],
-        "thursday": [
-          "Two astronauts walked on an extraterrestrial surface.",
-          "This occurred in the latter half of the 1960s."
-        ],
-        "friday": [
-          "A historic space mission took place in the Space Race era.",
-          "The landing site was a flat plain on the Moon."
-        ],
-        "saturday": [
-          "Armstrong and Aldrin spent part of their time on a surface that had never been touched by human feet."
-        ]
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
       },
-      "context_card": "Neil Armstrong stepped onto the lunar surface at 10:56 PM EDT on July 20th, 1969. The words he spoke were improvised; NASA had approved a different version. The mission returned 47.5 pounds of moon rocks."
+      "context_card": "This event occurred in 1985."
     },
     {
-      "id": 40,
-      "date": "2026-03-30",
+      "id": 48,
+      "date": "2026-04-15",
       "slot": 2,
-      "day_of_week": "monday",
-      "event": "Titanic Sinks",
-      "event_formal": "Sinking of the RMS Titanic",
-      "year": 1912,
-      "headline": "The RMS Titanic sank in the North Atlantic",
+      "day_of_week": "tuesday",
+      "event": "Tetris Released",
+      "event_formal": "Tetris Released",
+      "year": 1984,
+      "headline": "Alexey Pajitnov released the puzzle game Tetris",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 5,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1984."
+    },
+    {
+      "id": 49,
+      "date": "2026-04-16",
+      "slot": 0,
+      "day_of_week": "wednesday",
+      "event": "PlayStation Launched",
+      "event_formal": "PlayStation Launched",
+      "year": 1994,
+      "headline": "Sony launched the PlayStation video game console",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 5,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1994."
+    },
+    {
+      "id": 50,
+      "date": "2026-04-16",
+      "slot": 1,
+      "day_of_week": "wednesday",
+      "event": "Xbox Announced",
+      "event_formal": "Xbox Announced",
+      "year": 2001,
+      "headline": "Microsoft announced the Xbox gaming system",
       "description": "What year did this happen?",
       "tier": 1,
       "difficulty_rating": 6,
       "clues": {
-        "monday": [
-          "A ship that claimed to be unsinkable met its end in frigid waters.",
-          "The disaster led to major reforms in maritime safety standards.",
-          "The vessel was the largest ship afloat at the time."
-        ],
-        "tuesday": [
-          "Over 1,500 lives were lost due to insufficient lifeboats.",
-          "The ship was traveling from Southampton to New York City.",
-          "An iceberg was spotted too late to avoid a catastrophic collision."
-        ],
-        "wednesday": [
-          "The ship had four funnels but only three were functional.",
-          "This occurred in the North Atlantic in the early 20th century.",
-          "Survivors were rescued by another ship several hours later."
-        ],
-        "thursday": [
-          "A maritime disaster occurred in the early 20th century.",
-          "The ship had enough lifeboats for only half the passengers."
-        ],
-        "friday": [
-          "The tragedy occurred on a ship known as the largest afloat.",
-          "This happened in the second decade of the 20th century."
-        ],
-        "saturday": [
-          "The wreck was not discovered until 1985, resting two miles below the surface."
-        ]
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
       },
-      "context_card": "The Titanic struck the iceberg at 11:40 PM on April 14th, 1912. By 2:20 AM, the ship had completely submerged. The Carpathia rescued survivors at 4:10 AM. Of the 710 survivors, 74 percent were women and children."
+      "context_card": "This event occurred in 2001."
     },
     {
-      "id": 41,
-      "date": "2026-03-31",
-      "slot": 1,
-      "day_of_week": "tuesday",
-      "event": "iPhone Introduced",
-      "event_formal": "First iPhone Announcement by Apple",
-      "year": 2007,
-      "headline": "Apple reinvented the phone",
+      "id": 51,
+      "date": "2026-04-16",
+      "slot": 2,
+      "day_of_week": "wednesday",
+      "event": "First iPod Released",
+      "event_formal": "First iPod Released",
+      "year": 2001,
+      "headline": "Steve Jobs introduced the iPod",
       "description": "What year did this happen?",
       "tier": 1,
-      "difficulty_rating": 5,
+      "difficulty_rating": 6,
       "clues": {
-        "monday": [
-          "Steve Jobs presented this",
-          "replaced the iPod",
-          "touch screen interface"
-        ],
-        "tuesday": [
-          "Apple product launch",
-          "first released in June",
-          "no physical keyboard"
-        ],
-        "wednesday": [
-          "changed mobile computing",
-          "App Store came later",
-          "multi-touch display"
-        ],
-        "thursday": [
-          "digital era landmark",
-          "smartphone revolution"
-        ],
-        "friday": [
-          "late 2000s tech",
-          "revolutionary interface"
-        ],
-        "saturday": [
-          "one more thing"
-        ]
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
       },
-      "context_card": "Jobs unveiled iPhone Jan 9, 2007. Sold June 29. No App Store at launch."
+      "context_card": "This event occurred in 2001."
     },
     {
-      "id": 42,
-      "date": "2026-03-31",
-      "slot": 2,
-      "day_of_week": "tuesday",
-      "event": "Watergate Break-In",
-      "event_formal": "Watergate Scandal Begins",
-      "year": 1972,
-      "headline": "The Watergate break-in occurred at the DNC headquarters",
+      "id": 52,
+      "date": "2026-04-17",
+      "slot": 0,
+      "day_of_week": "thursday",
+      "event": "Netflix Streaming Launches",
+      "event_formal": "Netflix Streaming Launches",
+      "year": 2007,
+      "headline": "Netflix began streaming movies over the internet",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 6,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 2007."
+    },
+    {
+      "id": 53,
+      "date": "2026-04-17",
+      "slot": 1,
+      "day_of_week": "thursday",
+      "event": "Spotify Launches",
+      "event_formal": "Spotify Launches",
+      "year": 2008,
+      "headline": "Daniel Ek launched the music streaming service Spotify",
       "description": "What year did this happen?",
       "tier": 1,
       "difficulty_rating": 7,
       "clues": {
-        "monday": [
-          "Democratic headquarters",
-          "Nixon administration",
-          "1970s Washington"
-        ],
-        "tuesday": [
-          "burglars caught",
-          "Connected to CREEP",
-          "journalists investigated"
-        ],
-        "wednesday": [
-          "led to resignation",
-          "Cover-up worse than crime",
-          "Congressional hearings"
-        ],
-        "thursday": [
-          "1970s scandal",
-          "Supreme Court case"
-        ],
-        "friday": [
-          "June 1972",
-          "Washington DC"
-        ],
-        "saturday": [
-          "Deep Throat clues"
-        ]
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
       },
-      "context_card": "Break-in June 17, 1972. Nixon resigned Aug 9, 1974."
+      "context_card": "This event occurred in 2008."
     },
     {
-      "id": 43,
-      "date": "2026-04-01",
+      "id": 54,
+      "date": "2026-04-17",
+      "slot": 2,
+      "day_of_week": "thursday",
+      "event": "Facebook Launched",
+      "event_formal": "Facebook Launched",
+      "year": 2004,
+      "headline": "Mark Zuckerberg launched Facebook from his Harvard dorm",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 7,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 2004."
+    },
+    {
+      "id": 55,
+      "date": "2026-04-18",
+      "slot": 0,
+      "day_of_week": "friday",
+      "event": "Twitter Launched",
+      "event_formal": "Twitter Launched",
+      "year": 2006,
+      "headline": "Jack Dorsey sent the first Twitter message",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 7,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 2006."
+    },
+    {
+      "id": 56,
+      "date": "2026-04-18",
+      "slot": 1,
+      "day_of_week": "friday",
+      "event": "Snapchat Launched",
+      "event_formal": "Snapchat Launched",
+      "year": 2011,
+      "headline": "Evan Spiegel launched the disappearing photo app Snapchat",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 7,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 2011."
+    },
+    {
+      "id": 57,
+      "date": "2026-04-18",
+      "slot": 2,
+      "day_of_week": "friday",
+      "event": "Bitcoin White Paper",
+      "event_formal": "Bitcoin White Paper",
+      "year": 2008,
+      "headline": "Satoshi Nakamoto published the Bitcoin white paper",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 8,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 2008."
+    },
+    {
+      "id": 58,
+      "date": "2026-04-19",
+      "slot": 0,
+      "day_of_week": "saturday",
+      "event": "Ethereum Launches",
+      "event_formal": "Ethereum Launches",
+      "year": 2015,
+      "headline": "Vitalik Buterin launched the Ethereum blockchain",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 8,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 2015."
+    },
+    {
+      "id": 59,
+      "date": "2026-04-19",
+      "slot": 1,
+      "day_of_week": "saturday",
+      "event": "First NFT Minted",
+      "event_formal": "First NFT Minted",
+      "year": 2014,
+      "headline": "Kevin McCoy minted the first NFT on the Namecoin blockchain",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 8,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 2014."
+    },
+    {
+      "id": 60,
+      "date": "2026-04-19",
+      "slot": 2,
+      "day_of_week": "saturday",
+      "event": "Columbus Reaches Americas",
+      "event_formal": "Columbus Reaches Americas",
+      "year": 1492,
+      "headline": "Christopher Columbus reached the Caribbean islands",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 9,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1492."
+    },
+    {
+      "id": 61,
+      "date": "2026-04-20",
+      "slot": 0,
+      "day_of_week": "sunday",
+      "event": "Magna Carta Signed",
+      "event_formal": "Magna Carta Signed",
+      "year": 1215,
+      "headline": "King John signed the Magna Carta in England",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 9,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1215."
+    },
+    {
+      "id": 62,
+      "date": "2026-04-20",
+      "slot": 1,
+      "day_of_week": "sunday",
+      "event": "Shakespeare Born",
+      "event_formal": "Shakespeare Born",
+      "year": 1564,
+      "headline": "William Shakespeare was born in Stratford-upon-Avon",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 9,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1564."
+    },
+    {
+      "id": 63,
+      "date": "2026-04-20",
+      "slot": 2,
+      "day_of_week": "sunday",
+      "event": "Star Wars Released",
+      "event_formal": "Star Wars Released",
+      "year": 1977,
+      "headline": "George Lucas released Star Wars: A New Hope",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 3,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1977."
+    },
+    {
+      "id": 64,
+      "date": "2026-04-21",
+      "slot": 0,
+      "day_of_week": "monday",
+      "event": "Jaws Released",
+      "event_formal": "Jaws Released",
+      "year": 1975,
+      "headline": "Steven Spielberg released the thriller Jaws",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 3,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1975."
+    },
+    {
+      "id": 65,
+      "date": "2026-04-21",
+      "slot": 1,
+      "day_of_week": "monday",
+      "event": "ET Released",
+      "event_formal": "ET Released",
+      "year": 1982,
+      "headline": "Steven Spielberg released the film E.T.",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 4,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1982."
+    },
+    {
+      "id": 66,
+      "date": "2026-04-21",
+      "slot": 2,
+      "day_of_week": "monday",
+      "event": "Jurassic Park Released",
+      "event_formal": "Jurassic Park Released",
+      "year": 1993,
+      "headline": "Steven Spielberg released Jurassic Park in theaters",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 4,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1993."
+    },
+    {
+      "id": 67,
+      "date": "2026-04-22",
+      "slot": 0,
+      "day_of_week": "tuesday",
+      "event": "The Matrix Released",
+      "event_formal": "The Matrix Released",
+      "year": 1999,
+      "headline": "The Wachowskis released the film The Matrix",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 4,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1999."
+    },
+    {
+      "id": 68,
+      "date": "2026-04-22",
+      "slot": 1,
+      "day_of_week": "tuesday",
+      "event": "Avatar Released",
+      "event_formal": "Avatar Released",
+      "year": 2009,
+      "headline": "James Cameron released the highest-grossing film Avatar",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 5,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 2009."
+    },
+    {
+      "id": 69,
+      "date": "2026-04-22",
+      "slot": 2,
+      "day_of_week": "tuesday",
+      "event": "Sony Walkman Released",
+      "event_formal": "Sony Walkman Released",
+      "year": 1979,
+      "headline": "Sony released the Walkman portable cassette player",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 5,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1979."
+    },
+    {
+      "id": 70,
+      "date": "2026-04-23",
+      "slot": 0,
+      "day_of_week": "wednesday",
+      "event": "VHS Format Introduced",
+      "event_formal": "VHS Format Introduced",
+      "year": 1976,
+      "headline": "The first VCR system used Sonys Umatic format",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 5,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1976."
+    },
+    {
+      "id": 71,
+      "date": "2026-04-23",
       "slot": 1,
       "day_of_week": "wednesday",
-      "event": "World Wide Web Invented",
-      "event_formal": "Tim Berners-Lee Creates the World Wide Web",
-      "year": 1989,
-      "headline": "Tim Berners-Lee proposed the World Wide Web",
+      "event": "CD Player Released",
+      "event_formal": "CD Player Released",
+      "year": 1982,
+      "headline": "The first compact disc player was demonstrated in Japan",
       "description": "What year did this happen?",
       "tier": 1,
       "difficulty_rating": 6,
       "clues": {
-        "monday": [
-          "CERN Switzerland",
-          "hypertext proposal",
-          "late 1980s"
-        ],
-        "tuesday": [
-          "information sharing system",
-          "British scientist",
-          "HTTP and HTML"
-        ],
-        "wednesday": [
-          "inventor refused to patent it",
-          "made it free",
-          "changed communication"
-        ],
-        "thursday": [
-          "pre-internet era",
-          "information age"
-        ],
-        "friday": [
-          "late 20th century",
-          "European science"
-        ],
-        "saturday": [
-          "browser invented later"
-        ]
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
       },
-      "context_card": "Berners-Lee proposed WWW March 1989. First website went live 1991."
+      "context_card": "This event occurred in 1982."
     },
     {
-      "id": 44,
-      "date": "2026-04-01",
+      "id": 72,
+      "date": "2026-04-23",
       "slot": 2,
       "day_of_week": "wednesday",
-      "event": "Chernobyl Disaster",
-      "event_formal": "Chernobyl Nuclear Meltdown",
-      "year": 1986,
-      "headline": "A nuclear reactor exploded at Chernobyl in Ukraine",
+      "event": "Kodak Founded",
+      "event_formal": "Kodak Founded",
+      "year": 1888,
+      "headline": "George Eastman founded the Kodak camera company",
       "description": "What year did this happen?",
       "tier": 1,
       "difficulty_rating": 6,
       "clues": {
-        "monday": [
-          "nuclear disaster",
-          "Soviet Union",
-          "April 1986"
-        ],
-        "tuesday": [
-          "reactor exploded",
-          "Pripyat evacuation",
-          "cover-up initially"
-        ],
-        "wednesday": [
-          "radiation spread across Europe",
-          "new sarcophagus built",
-          "worst nuclear accident"
-        ],
-        "thursday": [
-          "20th century disaster",
-          "Soviet era"
-        ],
-        "friday": [
-          "Ukraine",
-          "nuclear meltdown"
-        ],
-        "saturday": [
-          "mutant imagery"
-        ]
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
       },
-      "context_card": "Explosion April 26, 1986. 350000 evacuated. Sarcophagus built to contain it."
+      "context_card": "This event occurred in 1888."
+    },
+    {
+      "id": 73,
+      "date": "2026-04-24",
+      "slot": 0,
+      "day_of_week": "thursday",
+      "event": "Polaroid Camera Released",
+      "event_formal": "Polaroid Camera Released",
+      "year": 1948,
+      "headline": "Edwin Land demonstrated the first Polaroid camera",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 6,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1948."
+    },
+    {
+      "id": 74,
+      "date": "2026-04-24",
+      "slot": 1,
+      "day_of_week": "thursday",
+      "event": "Digital Camera Invented",
+      "event_formal": "Digital Camera Invented",
+      "year": 1975,
+      "headline": "Steven Sasson invented the first digital camera",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 7,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1975."
+    },
+    {
+      "id": 75,
+      "date": "2026-04-24",
+      "slot": 2,
+      "day_of_week": "thursday",
+      "event": "Ford Model T Released",
+      "event_formal": "Ford Model T Released",
+      "year": 1908,
+      "headline": "Henry Ford began producing the Model T automobile",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 7,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1908."
+    },
+    {
+      "id": 76,
+      "date": "2026-04-25",
+      "slot": 0,
+      "day_of_week": "friday",
+      "event": "First Commercial Airplane Flight",
+      "event_formal": "First Commercial Airplane Flight",
+      "year": 1914,
+      "headline": "Tony Jannus flew the first commercial airline flight",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 7,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1914."
+    },
+    {
+      "id": 77,
+      "date": "2026-04-25",
+      "slot": 1,
+      "day_of_week": "friday",
+      "event": "Sputnik Launched",
+      "event_formal": "Sputnik Launched",
+      "year": 1957,
+      "headline": "The Soviet Union launched the first artificial satellite",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 8,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1957."
+    },
+    {
+      "id": 78,
+      "date": "2026-04-25",
+      "slot": 2,
+      "day_of_week": "friday",
+      "event": "Hubble Telescope Launched",
+      "event_formal": "Hubble Telescope Launched",
+      "year": 1990,
+      "headline": "NASA launched the Hubble Space Telescope into orbit",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 8,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1990."
+    },
+    {
+      "id": 79,
+      "date": "2026-04-26",
+      "slot": 0,
+      "day_of_week": "saturday",
+      "event": "Mars Pathfinder Landing",
+      "event_formal": "Mars Pathfinder Landing",
+      "year": 1997,
+      "headline": "NASAs Sojourner rover landed on Mars",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 8,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1997."
+    },
+    {
+      "id": 80,
+      "date": "2026-04-26",
+      "slot": 1,
+      "day_of_week": "saturday",
+      "event": "Gutenberg Bible Printed",
+      "event_formal": "Gutenberg Bible Printed",
+      "year": 1455,
+      "headline": "Johannes Gutenberg printed the first Bible with movable type",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 9,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1455."
+    },
+    {
+      "id": 81,
+      "date": "2026-04-26",
+      "slot": 2,
+      "day_of_week": "saturday",
+      "event": "Roman Empire Falls",
+      "event_formal": "Roman Empire Falls",
+      "year": 476,
+      "headline": "The last Roman emperor was deposed, ending the Western Roman Empire",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 9,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 476."
+    },
+    {
+      "id": 82,
+      "date": "2026-04-27",
+      "slot": 0,
+      "day_of_week": "sunday",
+      "event": "Great Fire of London",
+      "event_formal": "Great Fire of London",
+      "year": 1666,
+      "headline": "A massive fire destroyed most of medieval London",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 9,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1666."
+    },
+    {
+      "id": 83,
+      "date": "2026-04-27",
+      "slot": 1,
+      "day_of_week": "sunday",
+      "event": "Beatles First Ed Sullivan Show",
+      "event_formal": "Beatles First Ed Sullivan Show",
+      "year": 1964,
+      "headline": "The Beatles made their historic US debut on TV",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 3,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1964."
+    },
+    {
+      "id": 84,
+      "date": "2026-04-27",
+      "slot": 2,
+      "day_of_week": "sunday",
+      "event": "Woodstock Festival",
+      "event_formal": "Woodstock Festival",
+      "year": 1969,
+      "headline": "400,000 people attended the Woodstock music festival",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 3,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1969."
+    },
+    {
+      "id": 85,
+      "date": "2026-04-28",
+      "slot": 0,
+      "day_of_week": "monday",
+      "event": "Live Aid Concert",
+      "event_formal": "Live Aid Concert",
+      "year": 1985,
+      "headline": "Bob Geldof organized Live Aid concerts in London and Philadelphia",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 4,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1985."
+    },
+    {
+      "id": 86,
+      "date": "2026-04-28",
+      "slot": 1,
+      "day_of_week": "monday",
+      "event": "MTV Launches",
+      "event_formal": "MTV Launches",
+      "year": 1981,
+      "headline": "MTV launched as the first 24-hour music video channel",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 4,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1981."
+    },
+    {
+      "id": 87,
+      "date": "2026-04-28",
+      "slot": 2,
+      "day_of_week": "monday",
+      "event": "Napster Launches",
+      "event_formal": "Napster Launches",
+      "year": 1999,
+      "headline": "Shawn Fning created the Napster file-sharing service",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 4,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 1999."
+    },
+    {
+      "id": 88,
+      "date": "2026-04-29",
+      "slot": 0,
+      "day_of_week": "tuesday",
+      "event": "iTunes Store Opens",
+      "event_formal": "iTunes Store Opens",
+      "year": 2003,
+      "headline": "Steve Jobs opened the iTunes Store with 200,000 songs",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 4,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 2003."
+    },
+    {
+      "id": 89,
+      "date": "2026-04-29",
+      "slot": 1,
+      "day_of_week": "tuesday",
+      "event": "Spotify Launches",
+      "event_formal": "Spotify Launches",
+      "year": 2008,
+      "headline": "Daniel Ek launched the music streaming service Spotify",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 4,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 2008."
+    },
+    {
+      "id": 90,
+      "date": "2026-04-29",
+      "slot": 2,
+      "day_of_week": "tuesday",
+      "event": "First iPhone Released",
+      "event_formal": "First iPhone Released",
+      "year": 2007,
+      "headline": "Apple released the first iPhone",
+      "description": "What year did this happen?",
+      "tier": 1,
+      "difficulty_rating": 5,
+      "clues": {
+        "monday": [],
+        "tuesday": [],
+        "wednesday": [],
+        "thursday": [],
+        "friday": [],
+        "saturday": [],
+        "sunday": []
+      },
+      "context_card": "This event occurred in 2007."
     }
   ]
 }
