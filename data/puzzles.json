@@ -8,20 +8,23 @@
       "event": "Nelson Mandela Released From Prison",
       "event_formal": "Nelson Mandela Released From Prison",
       "year": 1990,
-      "headline": "Nelson Mandela was released from prison after 27 years",
-      "description": "What year did this happen?",
+      "headline": "Nelson Mandela Released From Prison",
+      "description": "After 27 years behind bars, the world's most famous political prisoner walked free — electrifying a nation on the brink of transformation.",
       "tier": 1,
-      "difficulty_rating": 3,
+      "difficulty_rating": 4,
       "clues": {
         "monday": [],
-        "tuesday": [],
+        "tuesday": [
+          "The Berlin Wall had fallen just months before",
+          "South Africa was still three years from its first democratic election"
+        ],
         "wednesday": [],
         "thursday": [],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1990."
+      "context_card": "Nelson Mandela had spent 18 of his 27 years imprisoned on Robben Island, a bleak outcrop in Table Bay. By the time he walked free on February 11th, 1990, he had become the most famous political prisoner in the world. Within four years, he was president."
     },
     {
       "id": 2,
@@ -31,66 +34,75 @@
       "event": "Apollo 11 Moon Landing",
       "event_formal": "Apollo 11 Moon Landing",
       "year": 1969,
-      "headline": "Neil Armstrong and Buzz Aldrin walked on the Moon",
-      "description": "What year did this happen?",
+      "headline": "The Apollo 11 Moon Landing",
+      "description": "Two astronauts left bootprints in lunar dust while 600 million people watched on flickering television screens back home.",
       "tier": 1,
       "difficulty_rating": 3,
       "clues": {
         "monday": [],
-        "tuesday": [],
+        "tuesday": [
+          "Woodstock was just weeks away",
+          "The Boeing 747 had not yet carried a single passenger"
+        ],
         "wednesday": [],
         "thursday": [],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1969."
+      "context_card": "Neil Armstrong's first steps on the Moon were watched by an estimated 600 million people — one-fifth of the world's population. The lunar module was called Eagle. Armstrong had only 30 seconds of fuel remaining when he found a landing spot. He called it 'magnificent desolation.'"
     },
     {
       "id": 3,
       "date": "2026-03-31",
       "slot": 2,
       "day_of_week": "tuesday",
-      "event": "Titanic Sinks",
-      "event_formal": "Titanic Sinks",
+      "event": "The Titanic Sinks",
+      "event_formal": "The Titanic Sinks",
       "year": 1912,
-      "headline": "The RMS Titanic sank in the North Atlantic",
-      "description": "What year did this happen?",
+      "headline": "The Titanic Sinks on Maiden Voyage",
+      "description": "The \"unsinkable\" ocean liner struck an iceberg in the North Atlantic, taking more than 1,500 souls with her to the bottom.",
       "tier": 1,
-      "difficulty_rating": 4,
+      "difficulty_rating": 3,
       "clues": {
         "monday": [],
-        "tuesday": [],
+        "tuesday": [
+          "The Panama Canal was still under construction",
+          "Fenway Park opened the same week"
+        ],
         "wednesday": [],
         "thursday": [],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1912."
+      "context_card": "The Titanic was carrying some of the world's wealthiest people and hundreds of immigrants seeking a new life in America. It struck the iceberg at 11:40 PM and sank in under three hours. The nearby RMS Carpathia rescued 705 survivors. The disaster led to major changes in maritime safety regulations."
     },
     {
       "id": 4,
       "date": "2026-04-01",
       "slot": 0,
       "day_of_week": "wednesday",
-      "event": "JFK Assassination",
-      "event_formal": "JFK Assassination",
+      "event": "JFK Assassinated in Dallas",
+      "event_formal": "Assassination of President John F. Kennedy",
       "year": 1963,
-      "headline": "President John F. Kennedy was assassinated in Dallas",
-      "description": "What year did this happen?",
+      "headline": "JFK Assassinated in Dallas",
+      "description": "A motorcade through Dealey Plaza ended the presidency and fractured a nation's sense of innocence in a matter of seconds.",
       "tier": 1,
       "difficulty_rating": 4,
       "clues": {
         "monday": [],
         "tuesday": [],
-        "wednesday": [],
+        "wednesday": [
+          "Martin Luther King Jr. had just delivered his most famous speech that summer",
+          "The Beatles would land in America for the first time within three months"
+        ],
         "thursday": [],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1963."
+      "context_card": "Lee Harvey Oswald fired three shots from the sixth floor of the Texas School Book Depository on November 22nd, 1963. Kennedy was pronounced dead at 1:00 PM. Two days later, Oswald was shot by nightclub owner Jack Ruby in the Dallas Police Department basement — live on national television. The truth of what happened that day has never fully left public debate."
     },
     {
       "id": 5,
@@ -100,66 +112,74 @@
       "event": "World Wide Web Invented",
       "event_formal": "World Wide Web Invented",
       "year": 1989,
-      "headline": "Tim Berners-Lee proposed the World Wide Web",
-      "description": "What year did this happen?",
+      "headline": "World Wide Web Invented",
+      "description": "A British physicist at CERN proposed a system of interlinked hypertext documents — and quietly set the stage for the modern internet.",
       "tier": 1,
-      "difficulty_rating": 4,
+      "difficulty_rating": 5,
       "clues": {
         "monday": [],
         "tuesday": [],
-        "wednesday": [],
+        "wednesday": [
+          "The Exxon Valdez had just run aground in Alaska",
+          "Nintendo's Game Boy went on sale that same spring"
+        ],
         "thursday": [],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1989."
+      "context_card": "Tim Berners-Lee's original proposal at CERN was returned with the note: 'Vague, but exciting.' He wanted a way for physicists to share documents across different computers. The first web page went live in 1991, and Berners-Lee never patented his invention — he gave it away for free, insisting the web should belong to everyone."
     },
     {
       "id": 6,
       "date": "2026-04-01",
       "slot": 2,
       "day_of_week": "wednesday",
-      "event": "Chernobyl Disaster",
-      "event_formal": "Chernobyl Disaster",
+      "event": "Chernobyl Nuclear Disaster",
+      "event_formal": "Chernobyl Nuclear Disaster",
       "year": 1986,
-      "headline": "A nuclear reactor exploded at Chernobyl in Ukraine",
-      "description": "What year did this happen?",
+      "headline": "Chernobyl Nuclear Disaster",
+      "description": "A botched safety test at a Soviet power plant in Ukraine triggered the worst nuclear accident in history, spreading fallout across Europe.",
       "tier": 1,
       "difficulty_rating": 5,
       "clues": {
         "monday": [],
         "tuesday": [],
-        "wednesday": [],
+        "wednesday": [
+          "The Space Shuttle Challenger had been lost earlier that same year",
+          "Maradona's 'Hand of God' goal happened weeks later at the World Cup"
+        ],
         "thursday": [],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1986."
+      "context_card": "On April 26, 1986, Reactor 4 at Chernobyl exploded during a low-power test. The fire released radioactive material 9 kilometers into the atmosphere. Soviet authorities evacuated Pripyat (population 49,000) 36 hours later. The final death toll remains disputed — from 31 immediate deaths to estimates of thousands of cancer cases from radiation exposure. The destroyed reactor was finally enclosed in a giant steel sarcophagus in 2016."
     },
     {
       "id": 7,
       "date": "2026-04-02",
       "slot": 0,
       "day_of_week": "thursday",
-      "event": "D-Day Normandy Landing",
-      "event_formal": "D-Day Normandy Landing",
+      "event": "D-Day: Allied Forces Land at Normandy",
+      "event_formal": "D-Day: Allied Invasion of Normandy",
       "year": 1944,
-      "headline": "Allied forces landed at Normandy beaches in France",
-      "description": "What year did this happen?",
+      "headline": "D-Day: Allied Invasion of Normandy",
+      "description": "More than 150,000 troops crossed the English Channel in the largest amphibious assault ever attempted, storming five beaches at dawn.",
       "tier": 1,
-      "difficulty_rating": 5,
+      "difficulty_rating": 6,
       "clues": {
         "monday": [],
         "tuesday": [],
         "wednesday": [],
-        "thursday": [],
+        "thursday": [
+          "Roosevelt was serving an unprecedented third term as US president"
+        ],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1944."
+      "context_card": "On June 6th, 1944, the Allies launched the most complex military operation in history. Paratroopers had already dropped behind enemy lines by the time the first landing craft hit the beaches at 6:30 AM. The cost was enormous — over 4,000 Allied soldiers died on D-Day alone — but within a year, Germany had surrendered."
     },
     {
       "id": 8,
@@ -167,22 +187,24 @@
       "slot": 1,
       "day_of_week": "thursday",
       "event": "First iPhone Released",
-      "event_formal": "First iPhone Released",
+      "event_formal": "Apple iPhone Launch",
       "year": 2007,
-      "headline": "Apple released the first iPhone",
-      "description": "What year did this happen?",
+      "headline": "First iPhone Released",
+      "description": "Steve Jobs pulled a sleek rectangle from his pocket onstage in San Francisco and casually redefined what a phone could be.",
       "tier": 1,
       "difficulty_rating": 5,
       "clues": {
         "monday": [],
         "tuesday": [],
         "wednesday": [],
-        "thursday": [],
+        "thursday": [
+          "The final Harry Potter book was published that same summer"
+        ],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 2007."
+      "context_card": "Steve Jobs unveiled the iPhone on January 9, 2007, calling it 'a revolutionary product.' It didn't go on sale until June, but it immediately changed what people expected from mobile devices. The initial model had no App Store — that came in 2008. By 2011, the iPhone had made Apple the most valuable company in the world."
     },
     {
       "id": 9,
@@ -192,31 +214,33 @@
       "event": "Watergate Break-In",
       "event_formal": "Watergate Break-In",
       "year": 1972,
-      "headline": "The Watergate break-in occurred at the DNC headquarters",
-      "description": "What year did this happen?",
+      "headline": "The Watergate Break-In",
+      "description": "Five men were caught burglarizing the Democratic National Committee headquarters, setting off a scandal that would consume the presidency.",
       "tier": 1,
-      "difficulty_rating": 6,
+      "difficulty_rating": 7,
       "clues": {
         "monday": [],
         "tuesday": [],
         "wednesday": [],
-        "thursday": [],
+        "thursday": [
+          "Nixon had just returned from his historic visit to China that same year"
+        ],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1972."
+      "context_card": "The five men arrested inside the Democratic National Committee headquarters at 2:30 AM were carrying wiretapping equipment and $2,300 in sequential hundred-dollar bills. A security guard named Frank Wills noticed tape on a door lock and called the police. What began as a third-rate burglary unraveled into the greatest political scandal in American history, ending a presidency two years later."
     },
     {
       "id": 10,
       "date": "2026-04-03",
       "slot": 0,
       "day_of_week": "friday",
-      "event": "Hiroshima Atomic Bomb",
-      "event_formal": "Hiroshima Atomic Bomb",
+      "event": "The Atomic Bomb Drops on Hiroshima",
+      "event_formal": "Atomic Bombing of Hiroshima",
       "year": 1945,
-      "headline": "The United States dropped an atomic bomb on Hiroshima",
-      "description": "What year did this happen?",
+      "headline": "Atomic Bomb Dropped on Hiroshima",
+      "description": "A single bomb obliterated a Japanese city in seconds, ushering humanity into the nuclear age with a blinding flash visible for miles.",
       "tier": 1,
       "difficulty_rating": 6,
       "clues": {
@@ -224,11 +248,13 @@
         "tuesday": [],
         "wednesday": [],
         "thursday": [],
-        "friday": [],
+        "friday": [
+          "Mussolini had been executed by partisans just months earlier"
+        ],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1945."
+      "context_card": "The Manhattan Project had cost two billion dollars and employed hundreds of thousands of people — most of whom had no idea what they were building. On August 6th, 1945, the result was dropped on Hiroshima. Three days later, a second bomb fell on Nagasaki. Japan surrendered on August 15th. The atomic age had begun."
     },
     {
       "id": 11,
@@ -236,10 +262,10 @@
       "slot": 1,
       "day_of_week": "friday",
       "event": "Fall of the Soviet Union",
-      "event_formal": "Fall of the Soviet Union",
+      "event_formal": "Dissolution of the Soviet Union",
       "year": 1991,
-      "headline": "The Soviet Union dissolved into independent states",
-      "description": "What year did this happen?",
+      "headline": "Fall of the Soviet Union",
+      "description": "The red flag came down over the Kremlin for the last time, ending a superpower and redrawing the map of Eurasia overnight.",
       "tier": 1,
       "difficulty_rating": 6,
       "clues": {
@@ -247,45 +273,49 @@
         "tuesday": [],
         "wednesday": [],
         "thursday": [],
-        "friday": [],
+        "friday": [
+          "The World Wide Web had just become publicly available that August"
+        ],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1991."
+      "context_card": "On December 26, 1991, the Supreme Soviet of the USSR ratified the Belovezh Accords, formally ending the Soviet Union. What had been the world's largest country by area splintered into 15 independent nations. For 69 years, the Soviet experiment had shaped global politics. Its end brought both hope for a new world order and anxiety about nuclear weapons in unstable new states."
     },
     {
       "id": 12,
       "date": "2026-04-03",
       "slot": 2,
       "day_of_week": "friday",
-      "event": "Wright Brothers First Flight",
-      "event_formal": "Wright Brothers First Flight",
+      "event": "The Wright Brothers' First Flight",
+      "event_formal": "Wright Brothers' First Powered Flight at Kitty Hawk",
       "year": 1903,
-      "headline": "The Wright Brothers flew the first powered airplane",
-      "description": "What year did this happen?",
+      "headline": "The Wright Brothers' First Flight",
+      "description": "On a windy stretch of North Carolina sand, two bicycle mechanics from Ohio kept a powered aircraft aloft for twelve glorious seconds.",
       "tier": 1,
-      "difficulty_rating": 7,
+      "difficulty_rating": 6,
       "clues": {
         "monday": [],
         "tuesday": [],
         "wednesday": [],
         "thursday": [],
-        "friday": [],
+        "friday": [
+          "The first Tour de France was held that same summer"
+        ],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1903."
+      "context_card": "The Wright Brothers made four flights at Kitty Hawk on December 17th, 1903. The first lasted just 12 seconds and covered 120 feet. By the end of that day, they had flown a total of 59 seconds. Orville would later say that the sensation of flight never fully wore off on him — it just kept getting better."
     },
     {
       "id": 13,
       "date": "2026-04-04",
       "slot": 0,
       "day_of_week": "saturday",
-      "event": "Lindbergh Atlantic Flight",
-      "event_formal": "Lindbergh Atlantic Flight",
+      "event": "Lindbergh's First Solo Transatlantic Flight",
+      "event_formal": "Charles Lindbergh's Transatlantic Flight",
       "year": 1927,
-      "headline": "Charles Lindbergh made the first solo transatlantic flight",
-      "description": "What year did this happen?",
+      "headline": "Lindbergh Flies Solo Across the Atlantic",
+      "description": "A lanky 25-year-old from Minnesota landed in Paris after 33 hours alone in a single-engine monoplane, becoming the most famous person on Earth.",
       "tier": 1,
       "difficulty_rating": 7,
       "clues": {
@@ -294,10 +324,12 @@
         "wednesday": [],
         "thursday": [],
         "friday": [],
-        "saturday": [],
+        "saturday": [
+          "Jazz ruled the speakeasies and hemlines were rising"
+        ],
         "sunday": []
       },
-      "context_card": "This event occurred in 1927."
+      "context_card": "The Spirit of St. Louis was so loaded with fuel at takeoff that it barely cleared the telephone wires at the end of the runway. Charles Lindbergh landed at Le Bourget at 10:22 PM on May 21st, 1927, and was immediately mobbed by the crowd. He became the most famous man in the world overnight — and remained so for the rest of his life, for better and worse."
     },
     {
       "id": 14,
@@ -307,31 +339,33 @@
       "event": "Cuban Missile Crisis",
       "event_formal": "Cuban Missile Crisis",
       "year": 1962,
-      "headline": "The Cuban Missile Crisis brought the world to the brink of nuclear war",
-      "description": "What year did this happen?",
+      "headline": "The Cuban Missile Crisis",
+      "description": "For thirteen days the world held its breath as Washington and Moscow edged toward nuclear war over Soviet weapons stationed 90 miles from Florida.",
       "tier": 1,
-      "difficulty_rating": 7,
+      "difficulty_rating": 8,
       "clues": {
         "monday": [],
         "tuesday": [],
         "wednesday": [],
         "thursday": [],
         "friday": [],
-        "saturday": [],
+        "saturday": [
+          "Marilyn Monroe had sung 'Happy Birthday' to the president that summer"
+        ],
         "sunday": []
       },
-      "context_card": "This event occurred in 1962."
+      "context_card": "For thirteen days in October 1962, the world came closer to nuclear war than it ever has before or since. Soviet ships carrying additional missiles turned back at the US naval blockade. Soviet leader Khrushchev eventually agreed to remove the missiles in exchange for a US pledge not to invade Cuba and a secret agreement to remove American missiles from Turkey. The crisis was resolved — but only barely."
     },
     {
       "id": 15,
       "date": "2026-04-04",
       "slot": 2,
       "day_of_week": "saturday",
-      "event": "Rosa Parks Bus Protest",
-      "event_formal": "Rosa Parks Bus Protest",
+      "event": "Rosa Parks Refuses to Give Up Her Seat",
+      "event_formal": "Rosa Parks' Bus Protest, Montgomery, Alabama",
       "year": 1955,
-      "headline": "Rosa Parks refused to give up her bus seat in Montgomery",
-      "description": "What year did this happen?",
+      "headline": "Rosa Parks Refuses to Give Up Her Seat",
+      "description": "A seamstress in Montgomery, Alabama declined to move to the back of a city bus, igniting a 381-day boycott that changed the nation.",
       "tier": 1,
       "difficulty_rating": 7,
       "clues": {
@@ -340,21 +374,23 @@
         "wednesday": [],
         "thursday": [],
         "friday": [],
-        "saturday": [],
+        "saturday": [
+          "Rock and roll was new, Disneyland had just opened its gates"
+        ],
         "sunday": []
       },
-      "context_card": "This event occurred in 1955."
+      "context_card": "Rosa Parks was not simply tired from work when she refused to move — she was tired of giving in. She had been trained at the Highlander Folk School, a center for civil rights activism. Her arrest on December 1st, 1955 was strategic: the NAACP had been looking for a test case. The resulting boycott lasted 381 days and ended with the Supreme Court ruling bus segregation unconstitutional."
     },
     {
       "id": 16,
       "date": "2026-04-05",
       "slot": 0,
       "day_of_week": "sunday",
-      "event": "Challenger Disaster",
-      "event_formal": "Challenger Disaster",
+      "event": "The Challenger Disaster",
+      "event_formal": "Space Shuttle Challenger Disaster",
       "year": 1986,
-      "headline": "The Space Shuttle Challenger broke apart 73 seconds after launch",
-      "description": "What year did this happen?",
+      "headline": "The Challenger Disaster",
+      "description": "A space shuttle broke apart 73 seconds after launch as millions — including schoolchildren watching live — looked on in horror.",
       "tier": 1,
       "difficulty_rating": 8,
       "clues": {
@@ -366,7 +402,7 @@
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1986."
+      "context_card": "Engineers at Morton Thiokol had warned NASA the night before launch that O-rings could fail in temperatures below 53°F — and it was 28°F at Cape Canaveral that morning. Their objections were overruled. The Rogers Commission that investigated the disaster famously included physicist Richard Feynman, who demonstrated the O-ring failure with a glass of ice water at a press conference."
     },
     {
       "id": 17,
@@ -374,10 +410,10 @@
       "slot": 1,
       "day_of_week": "sunday",
       "event": "September 11 Attacks",
-      "event_formal": "September 11 Attacks",
+      "event_formal": "September 11, 2001 Terrorist Attacks",
       "year": 2001,
-      "headline": "Terrorists attacked the World Trade Center and Pentagon",
-      "description": "What year did this happen?",
+      "headline": "The September 11 Attacks",
+      "description": "Hijacked airliners struck the World Trade Center and the Pentagon on a clear Tuesday morning, reshaping American life and global politics.",
       "tier": 1,
       "difficulty_rating": 8,
       "clues": {
@@ -389,7 +425,7 @@
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 2001."
+      "context_card": "On September 11, 2001, nearly 3,000 people were killed in a series of coordinated terrorist attacks. The FBI quickly opened an investigation called PENTTBOM. Within days, President George W. Bush had signed the USA PATRIOT Act. The attacks reshaped American foreign policy, airport security, and domestic surveillance in ways still felt today."
     },
     {
       "id": 18,
@@ -399,8 +435,8 @@
       "event": "Pearl Harbor Attack",
       "event_formal": "Pearl Harbor Attack",
       "year": 1941,
-      "headline": "Japan attacked the US naval base at Pearl Harbor",
-      "description": "What year did this happen?",
+      "headline": "Attack on Pearl Harbor",
+      "description": "Japanese aircraft swarmed a naval base in Hawaii early on a Sunday morning, sinking battleships and pulling a reluctant nation into world war.",
       "tier": 1,
       "difficulty_rating": 8,
       "clues": {
@@ -412,7 +448,7 @@
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1941."
+      "context_card": "The attack on Pearl Harbor lasted just under two hours but destroyed or damaged 19 Navy ships and 328 aircraft. Of the 2,403 Americans killed, nearly half died aboard the USS Arizona, which sank in nine minutes. Japan had intended to deliver a formal declaration of war before the attack, but the message arrived late — turning a military strike into something Americans would never forgive."
     },
     {
       "id": 19,
@@ -420,14 +456,17 @@
       "slot": 0,
       "day_of_week": "monday",
       "event": "First Human in Space",
-      "event_formal": "First Human in Space",
+      "event_formal": "Yuri Gagarin's First Human Spaceflight",
       "year": 1961,
-      "headline": "Yuri Gagarin became the first human in space",
-      "description": "What year did this happen?",
+      "headline": "First Human in Space",
+      "description": "A Soviet cosmonaut orbited the Earth in 108 minutes, beating the Americans to the ultimate Cold War trophy and becoming an instant global celebrity.",
       "tier": 1,
-      "difficulty_rating": 9,
+      "difficulty_rating": 3,
       "clues": {
-        "monday": [],
+        "monday": [
+          "The Berlin Wall went up later that same summer",
+          "A new American president had just taken office promising a New Frontier"
+        ],
         "tuesday": [],
         "wednesday": [],
         "thursday": [],
@@ -435,7 +474,7 @@
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1961."
+      "context_card": "Yuri Gagarin orbited Earth in Vostok 1 on April 12, 1961, completing one orbit in 108 minutes. At 27, he became the first human to see Earth from space. He parachuted from his capsule before it landed — ejection at 7km was standard procedure. A city in Kazakhstan was renamed Baikonur in his honor, and his face became a symbol of Soviet achievement."
     },
     {
       "id": 20,
@@ -443,14 +482,17 @@
       "slot": 1,
       "day_of_week": "monday",
       "event": "French Revolution Begins",
-      "event_formal": "French Revolution Begins",
+      "event_formal": "Storming of the Bastille, French Revolution",
       "year": 1789,
-      "headline": "French revolutionaries stormed the Bastille in Paris",
-      "description": "What year did this happen?",
+      "headline": "French Revolution Begins",
+      "description": "A Parisian mob stormed a medieval fortress-prison, toppling a symbol of royal tyranny and launching a decade of radical upheaval across Europe.",
       "tier": 1,
-      "difficulty_rating": 9,
+      "difficulty_rating": 3,
       "clues": {
-        "monday": [],
+        "monday": [
+          "George Washington had just been inaugurated as the first US president",
+          "Mozart was composing his last operas in Vienna"
+        ],
         "tuesday": [],
         "wednesday": [],
         "thursday": [],
@@ -458,7 +500,7 @@
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1789."
+      "context_card": "On July 14, 1789, several hundred Parisians stormed the Bastille, a medieval fortress that had become a symbol of royal tyranny. They freed the seven prisoners inside and killed the governor. The event became the defining moment of the French Revolution and is now commemorated annually as Bastille Day, France's national holiday."
     },
     {
       "id": 21,
@@ -468,12 +510,15 @@
       "event": "Declaration of Independence",
       "event_formal": "Declaration of Independence",
       "year": 1776,
-      "headline": "The United States declared independence from Britain",
-      "description": "What year did this happen?",
+      "headline": "Declaration of Independence Signed",
+      "description": "Delegates from thirteen colonies affixed their names to a document declaring self-governance — committing what the Crown would call treason.",
       "tier": 1,
-      "difficulty_rating": 9,
+      "difficulty_rating": 2,
       "clues": {
-        "monday": [],
+        "monday": [
+          "Adam Smith published The Wealth of Nations the same year",
+          "Captain Cook was on his third and final voyage"
+        ],
         "tuesday": [],
         "wednesday": [],
         "thursday": [],
@@ -481,7 +526,7 @@
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1776."
+      "context_card": "Thomas Jefferson drafted the Declaration of Independence in seventeen days. Congress made 86 changes to his draft, cutting roughly a quarter of the text — including a passage condemning the slave trade. The final document was signed by 56 men, many of whom knew they were signing what could become their death warrant."
     },
     {
       "id": 22,
@@ -491,20 +536,23 @@
       "event": "MLK I Have a Dream",
       "event_formal": "MLK I Have a Dream",
       "year": 1963,
-      "headline": "MLK gave his I Have a Dream speech in Washington",
-      "description": "What year did this happen?",
+      "headline": "MLK's \"I Have a Dream\" Speech",
+      "description": "Before a quarter-million people gathered at the Lincoln Memorial, a Baptist preacher from Atlanta delivered the defining oration of the civil rights movement.",
       "tier": 1,
-      "difficulty_rating": 3,
+      "difficulty_rating": 4,
       "clues": {
         "monday": [],
-        "tuesday": [],
+        "tuesday": [
+          "The Beatles released 'Please Please Me' earlier that year",
+          "A nuclear test ban treaty was signed that same summer"
+        ],
         "wednesday": [],
         "thursday": [],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1963."
+      "context_card": "The March on Washington was organized in just two months. King's most famous lines — 'I have a dream' — were partly improvised; gospel singer Mahalia Jackson shouted 'Tell them about the dream, Martin!' from behind him on the stage. The prepared text had no mention of dreams."
     },
     {
       "id": 23,
@@ -512,22 +560,25 @@
       "slot": 1,
       "day_of_week": "tuesday",
       "event": "First Email Sent",
-      "event_formal": "First Email Sent",
+      "event_formal": "First Electronic Mail Message",
       "year": 1971,
-      "headline": "Ray Tomlinson sent the first network email",
-      "description": "What year did this happen?",
+      "headline": "First Email Sent",
+      "description": "An engineer in Cambridge, Massachusetts transmitted a short test message between two computers sitting ten feet apart — and invented a new way for humanity to communicate.",
       "tier": 1,
-      "difficulty_rating": 3,
+      "difficulty_rating": 5,
       "clues": {
         "monday": [],
-        "tuesday": [],
+        "tuesday": [
+          "Intel had just released its first microprocessor",
+          "The Pentagon Papers were published in The New York Times that same year"
+        ],
         "wednesday": [],
         "thursday": [],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1971."
+      "context_card": "Ray Tomlinson sent the first email in 1971, choosing the @ symbol to separate the user name from the computer name. The message itself was largely forgettable — something like 'QWERTYUIOP.' But the @ sign became Tomlinson's lasting contribution to digital communication, now used in billions of email addresses worldwide."
     },
     {
       "id": 24,
@@ -537,20 +588,23 @@
       "event": "Google Founded",
       "event_formal": "Google Founded",
       "year": 1998,
-      "headline": "Larry Page and Sergey Brin founded Google",
-      "description": "What year did this happen?",
+      "headline": "Google Founded",
+      "description": "Two Stanford PhD students launched a search engine from a rented garage in Menlo Park, convinced they could organize all the world's information.",
       "tier": 1,
-      "difficulty_rating": 4,
+      "difficulty_rating": 5,
       "clues": {
         "monday": [],
-        "tuesday": [],
+        "tuesday": [
+          "The Lewinsky scandal dominated American headlines",
+          "Titanic was the year's biggest film at the box office"
+        ],
         "wednesday": [],
         "thursday": [],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1998."
+      "context_card": "Larry Page and Sergey Brin met at Stanford in 1995 and initially didn't get along. Their search algorithm, PageRank, ranked websites by their links rather than keywords. Their first office was a garage rented from a friend. The name 'Google' came from 'googol,' a mathematical term for 1 followed by 100 zeros."
     },
     {
       "id": 25,
@@ -558,22 +612,25 @@
       "slot": 0,
       "day_of_week": "wednesday",
       "event": "Amazon Founded",
-      "event_formal": "Amazon Founded",
+      "event_formal": "Amazon.com Founded",
       "year": 1994,
-      "headline": "Jeff Bezos founded Amazon as an online bookstore",
-      "description": "What year did this happen?",
+      "headline": "Amazon Founded",
+      "description": "A former Wall Street hedge fund VP started an online bookstore out of his garage in Bellevue, Washington, betting big on the nascent internet.",
       "tier": 1,
-      "difficulty_rating": 4,
+      "difficulty_rating": 6,
       "clues": {
         "monday": [],
         "tuesday": [],
-        "wednesday": [],
+        "wednesday": [
+          "Nelson Mandela had just been elected president of South Africa",
+          "The first PlayStation launched in Japan that December"
+        ],
         "thursday": [],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1994."
+      "context_card": "Jeff Bezos left his hedge fund job in 1994 to start an online bookstore, originally called Cadabra. He chose the name Amazon because it sounded 'exotic and different,' and the Amazon River was the biggest river he could think of. He raised $1 million from his own parents — the minimum viable investment to start. By 2020, Amazon had a market cap of $1.7 trillion."
     },
     {
       "id": 26,
@@ -581,45 +638,51 @@
       "slot": 1,
       "day_of_week": "wednesday",
       "event": "DNA Structure Discovered",
-      "event_formal": "DNA Structure Discovered",
+      "event_formal": "Discovery of the DNA Double Helix",
       "year": 1953,
-      "headline": "Watson and Crick discovered the structure of DNA",
-      "description": "What year did this happen?",
+      "headline": "DNA Double Helix Discovered",
+      "description": "Two scientists at Cambridge University pieced together the twisted-ladder architecture of life itself, working from a crucial X-ray photograph they didn't take.",
       "tier": 1,
-      "difficulty_rating": 4,
+      "difficulty_rating": 5,
       "clues": {
         "monday": [],
         "tuesday": [],
-        "wednesday": [],
+        "wednesday": [
+          "Edmund Hillary and Tenzing Norgay summited Everest weeks later",
+          "Elizabeth II had just been crowned Queen of England"
+        ],
         "thursday": [],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1953."
+      "context_card": "Watson and Crick published their double helix model in Nature on April 25, 1953. Their famous line: 'It has not escaped our notice that the specific pairing we have postulated immediately suggests a possible copying mechanism for the genetic material.' Rosalind Franklin's Photo 51, which showed the helix structure, was critical — but she died in 1958 and never shared the Nobel Prize."
     },
     {
       "id": 27,
       "date": "2026-04-08",
       "slot": 2,
       "day_of_week": "wednesday",
-      "event": "HIV/AIDS Discovered",
-      "event_formal": "HIV/AIDS Discovered",
+      "event": "HIV/AIDS First Identified",
+      "event_formal": "First Identification of HIV/AIDS",
       "year": 1981,
-      "headline": "Doctors identified a new disease called AIDS in New York",
-      "description": "What year did this happen?",
+      "headline": "HIV/AIDS First Identified",
+      "description": "The CDC reported a mysterious cluster of pneumonia cases among young men in Los Angeles, the first public signal of an epidemic that would reshape medicine and culture.",
       "tier": 1,
-      "difficulty_rating": 5,
+      "difficulty_rating": 6,
       "clues": {
         "monday": [],
         "tuesday": [],
-        "wednesday": [],
+        "wednesday": [
+          "MTV broadcast its first music video that August",
+          "The IBM personal computer went on sale for the first time"
+        ],
         "thursday": [],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1981."
+      "context_card": "The CDC's Morbidity and Mortality Weekly Report on June 5, 1981, documented five young gay men in Los Angeles with a rare pneumonia. By the end of 1981, there were 159 reported cases. The disease wouldn't be called AIDS until 1982, and the HIV virus wouldn't be identified until 1984. It would eventually kill 35 million people worldwide."
     },
     {
       "id": 28,
@@ -629,20 +692,22 @@
       "event": "First Heart Transplant",
       "event_formal": "First Heart Transplant",
       "year": 1967,
-      "headline": "Christiaan Barnard performed the first heart transplant",
-      "description": "What year did this happen?",
+      "headline": "First Human Heart Transplant",
+      "description": "A South African surgeon in Cape Town replaced a dying man's heart with a donor's — a three-hour operation that captivated the world.",
       "tier": 1,
-      "difficulty_rating": 5,
+      "difficulty_rating": 6,
       "clues": {
         "monday": [],
         "tuesday": [],
         "wednesday": [],
-        "thursday": [],
+        "thursday": [
+          "The Summer of Love had just swept through San Francisco"
+        ],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1967."
+      "context_card": "Christiaan Barnard performed the first human heart transplant in Cape Town on December 3, 1967, replacing the heart of Louis Washkansky with that of a young woman killed in a car accident. The operation took nine hours. Washkansky survived just eighteen days before dying of pneumonia — but Barnard had proved it could be done, and within a year, more than a hundred transplants followed worldwide."
     },
     {
       "id": 29,
@@ -652,20 +717,22 @@
       "event": "Polio Vaccine Announced",
       "event_formal": "Polio Vaccine Announced",
       "year": 1955,
-      "headline": "Jonas Salk announced his polio vaccine worked",
-      "description": "What year did this happen?",
+      "headline": "Polio Vaccine Announced",
+      "description": "A University of Pittsburgh researcher declared his vaccine \"safe, effective, and potent,\" ending years of summertime dread for parents across America.",
       "tier": 1,
-      "difficulty_rating": 5,
+      "difficulty_rating": 6,
       "clues": {
         "monday": [],
         "tuesday": [],
         "wednesday": [],
-        "thursday": [],
+        "thursday": [
+          "Disneyland opened its gates in Anaheim that same summer"
+        ],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1955."
+      "context_card": "When Jonas Salk's polio vaccine was declared 'safe, effective, and potent' on April 12, 1955, church bells rang across America. Polio had paralyzed an average of 35,000 people each year during the early 1950s. Salk famously refused to patent the vaccine — when asked who owned it, he replied, 'The people. Could you patent the sun?'"
     },
     {
       "id": 30,
@@ -675,20 +742,22 @@
       "event": "Penicillin Discovered",
       "event_formal": "Penicillin Discovered",
       "year": 1928,
-      "headline": "Alexander Fleming discovered penicillin",
-      "description": "What year did this happen?",
+      "headline": "Penicillin Discovered",
+      "description": "A Scottish bacteriologist returned from holiday to find mold killing bacteria in a petri dish he'd left by an open window — a lucky accident that would save millions of lives.",
       "tier": 1,
       "difficulty_rating": 6,
       "clues": {
         "monday": [],
         "tuesday": [],
         "wednesday": [],
-        "thursday": [],
+        "thursday": [
+          "Mickey Mouse made his first appearance on screen that same year"
+        ],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1928."
+      "context_card": "Alexander Fleming returned from holiday to find a petri dish contaminated by a mold that had killed the surrounding bacteria. He nearly threw it away. It took another decade and two other scientists — Florey and Chain — to turn his observation into a usable drug. By D-Day, there was enough penicillin to treat every wounded Allied soldier on the beaches of Normandy."
     },
     {
       "id": 31,
@@ -698,20 +767,22 @@
       "event": "Instagram Launched",
       "event_formal": "Instagram Launched",
       "year": 2010,
-      "headline": "Kevin Systrom launched the photo-sharing app Instagram",
-      "description": "What year did this happen?",
+      "headline": "Instagram Launched",
+      "description": "A photo-sharing app with retro filters launched to an iPhone-only audience and gained 25,000 users on its first day, turning square-cropped snapshots into a cultural language.",
       "tier": 1,
-      "difficulty_rating": 6,
+      "difficulty_rating": 7,
       "clues": {
         "monday": [],
         "tuesday": [],
         "wednesday": [],
         "thursday": [],
-        "friday": [],
+        "friday": [
+          "The iPad had just debuted earlier that same year"
+        ],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 2010."
+      "context_card": "The app gained 25,000 users on its first day — before it even existed on Android. Built in eight weeks, it nearly launched under the name 'Burbn' before a pivot stripped everything except photo filters and sharing. Within two years, a billion-dollar acquisition made it the most expensive purchase-per-employee in tech history."
     },
     {
       "id": 32,
@@ -721,20 +792,22 @@
       "event": "YouTube Founded",
       "event_formal": "YouTube Founded",
       "year": 2005,
-      "headline": "Steve Chen and Chad Hurley launched YouTube",
-      "description": "What year did this happen?",
+      "headline": "YouTube Founded",
+      "description": "Three former PayPal employees registered a domain for sharing video clips online. The first upload — a 19-second clip filmed at the San Diego Zoo — hardly hinted at what was coming.",
       "tier": 1,
-      "difficulty_rating": 6,
+      "difficulty_rating": 7,
       "clues": {
         "monday": [],
         "tuesday": [],
         "wednesday": [],
         "thursday": [],
-        "friday": [],
+        "friday": [
+          "Hurricane Katrina footage flooded the platform months after launch"
+        ],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 2005."
+      "context_card": "The first video ever uploaded — 18 seconds of a man at the San Diego Zoo — set the tone for what would become the world's second-largest search engine. Three former payment-company employees built it above a pizzeria, and within 18 months sold it for $1.65 billion. The site now serves over a billion hours of video daily, more than broadcast television and Netflix combined."
     },
     {
       "id": 33,
@@ -744,8 +817,8 @@
       "event": "Wikipedia Launched",
       "event_formal": "Wikipedia Launched",
       "year": 2001,
-      "headline": "Jimmy Wales launched the free online encyclopedia Wikipedia",
-      "description": "What year did this happen?",
+      "headline": "Wikipedia Launched",
+      "description": "A free online encyclopedia invited anyone with an internet connection to write and edit its articles, betting that collective knowledge could rival centuries-old reference institutions.",
       "tier": 1,
       "difficulty_rating": 7,
       "clues": {
@@ -753,11 +826,13 @@
         "tuesday": [],
         "wednesday": [],
         "thursday": [],
-        "friday": [],
+        "friday": [
+          "The dot-com bubble had just burst, leaving server space cheap"
+        ],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 2001."
+      "context_card": "Its founder originally envisioned an expert-written encyclopedia called Nupedia, which produced exactly 12 articles in its first year. The pivot to open editing was meant as a feeder project, but within weeks the wiki had outpaced its parent. A 2005 Nature study found its science articles contained roughly the same error rate as Encyclopædia Britannica."
     },
     {
       "id": 34,
@@ -767,8 +842,8 @@
       "event": "Euro Currency Launched",
       "event_formal": "Euro Currency Launched",
       "year": 1999,
-      "headline": "The Euro became the official currency of European Union members",
-      "description": "What year did this happen?",
+      "headline": "Euro Currency Introduced",
+      "description": "Twelve European nations abandoned centuries of national currencies for a shared coin — the most ambitious monetary experiment since Bretton Woods.",
       "tier": 1,
       "difficulty_rating": 7,
       "clues": {
@@ -777,10 +852,12 @@
         "wednesday": [],
         "thursday": [],
         "friday": [],
-        "saturday": [],
+        "saturday": [
+          "A millennium's last quiet revolution, sealed before the champagne corks flew"
+        ],
         "sunday": []
       },
-      "context_card": "This event occurred in 1999."
+      "context_card": "The Euro was introduced as an accounting currency on January 1, 1999, with physical notes and coins following on January 1, 2002. Twelve countries abandoned their national currencies — including the Deutsche Mark, French Franc, and Italian Lira — for the first time in history. The transition was initially chaotic in some countries, with ATM glitches and confusion at stores."
     },
     {
       "id": 35,
@@ -790,8 +867,8 @@
       "event": "Nintendo Game Boy Released",
       "event_formal": "Nintendo Game Boy Released",
       "year": 1989,
-      "headline": "Nintendo released the Game Boy handheld console",
-      "description": "What year did this happen?",
+      "headline": "Nintendo Game Boy Released",
+      "description": "A handheld console with a pea-green monochrome screen and a bundled puzzle game outsold every technologically superior rival, proving that portability trumped pixel count.",
       "tier": 1,
       "difficulty_rating": 7,
       "clues": {
@@ -800,10 +877,12 @@
         "wednesday": [],
         "thursday": [],
         "friday": [],
-        "saturday": [],
+        "saturday": [
+          "Cold War concrete was crumbling in Europe while children everywhere stared down at their palms"
+        ],
         "sunday": []
       },
-      "context_card": "This event occurred in 1989."
+      "context_card": "Competitors offered color screens, backlighting, and superior processors — and lost. The device's designer deliberately chose outdated screen technology because it consumed so little power that four AA batteries lasted 30 hours. Bundled with a puzzle game from the Soviet Union, it sold 118 million units and proved that portability mattered more than performance."
     },
     {
       "id": 36,
@@ -813,8 +892,8 @@
       "event": "Black Tuesday Stock Crash",
       "event_formal": "Black Tuesday Stock Crash",
       "year": 1929,
-      "headline": "The stock market crashed, starting the Great Depression",
-      "description": "What year did this happen?",
+      "headline": "Black Tuesday Stock Crash",
+      "description": "The New York Stock Exchange lost roughly 12% of its value in a single session, accelerating a financial collapse that would define a generation's relationship with money.",
       "tier": 1,
       "difficulty_rating": 8,
       "clues": {
@@ -823,10 +902,12 @@
         "wednesday": [],
         "thursday": [],
         "friday": [],
-        "saturday": [],
+        "saturday": [
+          "Talkies had just killed the silent film star; now silence fell on the trading floor"
+        ],
         "sunday": []
       },
-      "context_card": "This event occurred in 1929."
+      "context_card": "The ticker tape ran so far behind actual trades that brokers were selling stocks without knowing their real price. Sixteen million shares changed hands that day — a volume record that stood for nearly 40 years. The market wouldn't return to its pre-crash peak until 1954, a full quarter-century later."
     },
     {
       "id": 37,
@@ -836,10 +917,10 @@
       "event": "First Photograph Taken",
       "event_formal": "First Photograph Taken",
       "year": 1826,
-      "headline": "Joseph Niepce took the first permanent photograph",
-      "description": "What year did this happen?",
+      "headline": "First Photograph Taken",
+      "description": "A French inventor exposed a pewter plate coated in bitumen to light from his workshop window. The exposure took hours, capturing rooftops in a ghostly, revolutionary image.",
       "tier": 1,
-      "difficulty_rating": 8,
+      "difficulty_rating": 9,
       "clues": {
         "monday": [],
         "tuesday": [],
@@ -849,7 +930,7 @@
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1826."
+      "context_card": "The exposure required roughly eight hours of direct sunlight, producing a grainy view of rooftops and a courtyard from an upstairs window in Burgundy. The inventor had been experimenting with light-sensitive bitumen for nearly a decade, failing repeatedly before this single surviving image. It now lives in a climate-controlled case at the University of Texas, so faded it can only be seen when lit at a precise angle."
     },
     {
       "id": 38,
@@ -859,10 +940,10 @@
       "event": "First Telegraph Message",
       "event_formal": "First Telegraph Message",
       "year": 1844,
-      "headline": "Samuel Morse sent the first telegraph message",
-      "description": "What year did this happen?",
+      "headline": "First Telegraph Message Sent",
+      "description": "A message traveled instantaneously along a wire strung between Washington and Baltimore, compressing distance in a way humanity had never experienced. The words chosen were biblical.",
       "tier": 1,
-      "difficulty_rating": 8,
+      "difficulty_rating": 9,
       "clues": {
         "monday": [],
         "tuesday": [],
@@ -872,7 +953,7 @@
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1844."
+      "context_card": "The message traveled 40 miles from the Capitol in Washington to a railroad depot in Baltimore in less than a second — a speed that made newspaper editors openly anxious about the future of their profession. Within a decade, wire stretched across the continent; within two, it crossed the Atlantic Ocean floor."
     },
     {
       "id": 39,
@@ -882,8 +963,8 @@
       "event": "Printing Press Invented",
       "event_formal": "Printing Press Invented",
       "year": 1440,
-      "headline": "Johannes Gutenberg printed the first Bible with movable type",
-      "description": "What year did this happen?",
+      "headline": "Printing Press Invented",
+      "description": "A German goldsmith in Mainz combined movable metal type, oil-based ink, and a wooden screw press, producing books at a pace that would dismantle the medieval monopoly on knowledge.",
       "tier": 1,
       "difficulty_rating": 9,
       "clues": {
@@ -895,7 +976,7 @@
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1440."
+      "context_card": "The technology itself wasn't new — China had movable type four centuries earlier — but the innovation was combining it with a converted wine press, oil-based ink, and a metal alloy that could survive thousands of impressions. Within 50 years, an estimated 20 million volumes had been produced across Europe, more than all the scribes of the previous millennium combined."
     },
     {
       "id": 40,
@@ -905,12 +986,15 @@
       "event": "American Civil War Begins",
       "event_formal": "American Civil War Begins",
       "year": 1861,
-      "headline": "Confederate forces attacked Fort Sumter, starting the Civil War",
-      "description": "What year did this happen?",
+      "headline": "American Civil War Begins",
+      "description": "Confederate batteries opened fire on a federal fort in Charleston Harbor before dawn, igniting the bloodiest conflict in American history after decades of sectional tension over slavery.",
       "tier": 1,
-      "difficulty_rating": 9,
+      "difficulty_rating": 2,
       "clues": {
-        "monday": [],
+        "monday": [
+          "Abraham Lincoln had been inaugurated just weeks before the first shots",
+          "The Pony Express was still carrying mail across the western frontier"
+        ],
         "tuesday": [],
         "wednesday": [],
         "thursday": [],
@@ -918,7 +1002,7 @@
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1861."
+      "context_card": "The 34-hour bombardment killed no one on either side — the only fatality came during the surrender ceremony, when a cannon exploded. The fort's commander had personally trained several of the Confederate officers now firing on him. Four years and 620,000 deaths later, he returned to raise the same flag he'd been forced to lower."
     },
     {
       "id": 41,
@@ -928,12 +1012,15 @@
       "event": "Spanish Flu Pandemic",
       "event_formal": "Spanish Flu Pandemic",
       "year": 1918,
-      "headline": "A deadly flu pandemic began spreading worldwide",
-      "description": "What year did this happen?",
+      "headline": "Spanish Flu Pandemic Begins",
+      "description": "A devastating influenza strain swept across a world still entangled in the Great War, eventually killing more people than the conflict itself.",
       "tier": 1,
-      "difficulty_rating": 9,
+      "difficulty_rating": 3,
       "clues": {
-        "monday": [],
+        "monday": [
+          "The Great War was grinding through its final year in Europe",
+          "Ragtime was giving way to early jazz in American dance halls"
+        ],
         "tuesday": [],
         "wednesday": [],
         "thursday": [],
@@ -941,7 +1028,7 @@
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1918."
+      "context_card": "It killed more people in 24 weeks than HIV/AIDS killed in 24 years, yet wartime censorship kept it out of headlines in combatant nations — only neutral Spain reported freely, which is how a Kansas-origin virus got a Spanish name. The second wave struck healthy adults aged 20-40 hardest. Global death estimates range from 50 to 100 million, making the true toll permanently unknowable."
     },
     {
       "id": 42,
@@ -951,12 +1038,15 @@
       "event": "Elvis Presley First TV Appearance",
       "event_formal": "Elvis Presley First TV Appearance",
       "year": 1956,
-      "headline": "Elvis Presley appeared on television for the first time",
-      "description": "What year did this happen?",
+      "headline": "Elvis Presley's First TV Appearance",
+      "description": "A young truck driver from Memphis performed on national television, and his swiveling hips scandalized parents while sending teenage viewership through the roof.",
       "tier": 1,
       "difficulty_rating": 3,
       "clues": {
-        "monday": [],
+        "monday": [
+          "The Interstate Highway System had just been authorized by Congress",
+          "The Hungarian Revolution was making front-page news that autumn"
+        ],
         "tuesday": [],
         "wednesday": [],
         "thursday": [],
@@ -964,7 +1054,7 @@
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1956."
+      "context_card": "CBS cameras were ordered to film from the waist up, but the damage was already done — his appearance weeks earlier had drawn the largest television audience in history. He earned $50,000 for three appearances, a staggering sum for a 21-year-old truck driver from Mississippi. The host privately called him 'a decent, fine boy' while publicly declaring the performance unsuitable for family television."
     },
     {
       "id": 43,
@@ -974,20 +1064,23 @@
       "event": "First McDonalds Opens",
       "event_formal": "First McDonalds Opens",
       "year": 1955,
-      "headline": "Ray Kroc opened the first franchised McDonalds restaurant",
-      "description": "What year did this happen?",
+      "headline": "First McDonald's Franchise Opens",
+      "description": "A milkshake machine salesman opened a franchised hamburger stand in suburban Illinois, applying assembly-line efficiency to the American lunch counter.",
       "tier": 1,
-      "difficulty_rating": 3,
+      "difficulty_rating": 4,
       "clues": {
         "monday": [],
-        "tuesday": [],
+        "tuesday": [
+          "Disneyland opened its gates in Anaheim that same summer",
+          "Rosa Parks refused to give up her bus seat in Montgomery months later"
+        ],
         "wednesday": [],
         "thursday": [],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1955."
+      "context_card": "The franchising salesman who built the empire wasn't the founder — he was a 52-year-old milkshake machine vendor who walked into a San Bernardino hamburger stand and saw the future. The original brothers had already perfected their 'Speedee Service System,' serving a burger in 30 seconds. He bought them out for $2.7 million; their handshake deal for ongoing royalties was never honored."
     },
     {
       "id": 44,
@@ -997,20 +1090,23 @@
       "event": "Disneyland Opens",
       "event_formal": "Disneyland Opens",
       "year": 1955,
-      "headline": "Walt Disney opened Disneyland in California",
-      "description": "What year did this happen?",
+      "headline": "Disneyland Opens",
+      "description": "An animator-turned-mogul converted 160 acres of Anaheim orange groves into a themed amusement park, inviting television cameras to broadcast opening day to millions.",
       "tier": 1,
       "difficulty_rating": 4,
       "clues": {
         "monday": [],
-        "tuesday": [],
+        "tuesday": [
+          "James Dean's final film was released that same year",
+          "The Salk polio vaccine had just been declared safe months earlier"
+        ],
         "wednesday": [],
         "thursday": [],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1955."
+      "context_card": "Opening day was such a disaster that insiders still call it 'Black Sunday' — temperatures hit 100°F, asphalt softened under women's heels, and counterfeit tickets doubled the crowd. A plumbers' strike forced a choice between working toilets and working water fountains; the creator chose toilets. The park recouped its entire $17 million construction cost within seven weeks."
     },
     {
       "id": 45,
@@ -1020,20 +1116,23 @@
       "event": "First Barbie Doll",
       "event_formal": "First Barbie Doll",
       "year": 1959,
-      "headline": "Ruth Handler debuted the Barbie doll at the New York Toy Fair",
-      "description": "What year did this happen?",
+      "headline": "First Barbie Doll Released",
+      "description": "A toy company executive introduced an 11.5-inch fashion doll at the American Toy Fair in New York, giving girls a plaything modeled on adult aspiration rather than infant care.",
       "tier": 1,
-      "difficulty_rating": 4,
+      "difficulty_rating": 5,
       "clues": {
         "monday": [],
-        "tuesday": [],
+        "tuesday": [
+          "Alaska and Hawaii became states that same year",
+          "Fidel Castro had just seized power in Havana weeks earlier"
+        ],
         "wednesday": [],
         "thursday": [],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1959."
+      "context_card": "She was inspired by a German novelty doll originally marketed to adult men as a gag gift. The creator's male business partners all argued that mothers would never buy their daughters a doll with breasts; 300,000 sold in the first year. Her full name — Barbara Millicent Roberts — was never printed on a box."
     },
     {
       "id": 46,
@@ -1043,20 +1142,23 @@
       "event": "Pac-Man Released",
       "event_formal": "Pac-Man Released",
       "year": 1980,
-      "headline": "Namco released the arcade game Pac-Man",
-      "description": "What year did this happen?",
+      "headline": "Pac-Man Released",
+      "description": "A Japanese arcade game starring a yellow disc that devoured dots in a maze became a global phenomenon, attracting players who had never touched a joystick.",
       "tier": 1,
-      "difficulty_rating": 4,
+      "difficulty_rating": 5,
       "clues": {
         "monday": [],
         "tuesday": [],
-        "wednesday": [],
+        "wednesday": [
+          "The designer wanted to create something women and couples would play on dates",
+          "The US boycotted that summer's Olympics in the host city"
+        ],
         "thursday": [],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1980."
+      "context_card": "The original Japanese name was changed for Western markets because distributors feared vandals would alter the first letter. It earned $2.5 billion in quarters within its first 15 months. The kill screen on level 256, caused by an integer overflow, was not beaten legitimately until 1999."
     },
     {
       "id": 47,
@@ -1066,20 +1168,23 @@
       "event": "Super Mario Bros Released",
       "event_formal": "Super Mario Bros Released",
       "year": 1985,
-      "headline": "Nintendo released Super Mario Bros for the NES",
-      "description": "What year did this happen?",
+      "headline": "Super Mario Bros Released",
+      "description": "A mustachioed plumber sprinted across side-scrolling worlds on a home console, reviving a crashed video game industry and defining platforming for a generation.",
       "tier": 1,
       "difficulty_rating": 5,
       "clues": {
         "monday": [],
         "tuesday": [],
-        "wednesday": [],
+        "wednesday": [
+          "The North American console market had collapsed two years prior and retailers refused to stock games",
+          "Live Aid concerts raised millions for Ethiopian famine relief that same summer"
+        ],
         "thursday": [],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1985."
+      "context_card": "The game was designed as the pack-in title for a console that retailers initially refused to carry. Its creator had no formal programming training and composed the music himself. The game sold 40 million copies — without internet distribution — and single-handedly resurrected a home entertainment industry that analysts had declared permanently dead."
     },
     {
       "id": 48,
@@ -1089,20 +1194,23 @@
       "event": "Tetris Released",
       "event_formal": "Tetris Released",
       "year": 1984,
-      "headline": "Alexey Pajitnov released the puzzle game Tetris",
-      "description": "What year did this happen?",
+      "headline": "Tetris Released",
+      "description": "A Soviet computer scientist created a deceptively simple puzzle game involving falling geometric shapes. It escaped the Iron Curtain to become one of the most addictive programs ever written.",
       "tier": 1,
-      "difficulty_rating": 5,
+      "difficulty_rating": 6,
       "clues": {
         "monday": [],
         "tuesday": [],
-        "wednesday": [],
+        "wednesday": [
+          "Its creator worked at the Soviet Academy of Sciences and initially received no royalties",
+          "George Orwell's dystopian year had just passed with surprising calm"
+        ],
         "thursday": [],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1984."
+      "context_card": "The licensing rights became the subject of the most byzantine legal battle in gaming history — the Soviet government, a British software company, and multiple American publishers all claimed ownership simultaneously. Its designer earned nothing from the game's first decade of global sales. Cognitive scientists later discovered it literally changes brain structure, thickening the cortex in regions governing spatial reasoning."
     },
     {
       "id": 49,
@@ -1112,20 +1220,22 @@
       "event": "PlayStation Launched",
       "event_formal": "PlayStation Launched",
       "year": 1994,
-      "headline": "Sony launched the PlayStation video game console",
-      "description": "What year did this happen?",
+      "headline": "PlayStation Launched",
+      "description": "A Japanese electronics giant — better known for Walkmans and televisions — entered the console market with a CD-based system that lured developers away from cartridge rivals.",
       "tier": 1,
-      "difficulty_rating": 5,
+      "difficulty_rating": 6,
       "clues": {
         "monday": [],
         "tuesday": [],
         "wednesday": [],
-        "thursday": [],
+        "thursday": [
+          "The console was born from a failed partnership with its future rival's cartridge-based system"
+        ],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1994."
+      "context_card": "It began as a CD-ROM add-on for a competitor's console, but the partnership collapsed in a public betrayal at a trade show. The jilted partner channeled that anger into a standalone machine that used cheaper disc media, undercut the competition by $100, and sold over 100 million units — inaugurating a new era of 3D gaming that made sprites feel instantly obsolete."
     },
     {
       "id": 50,
@@ -1135,20 +1245,22 @@
       "event": "Xbox Announced",
       "event_formal": "Xbox Announced",
       "year": 2001,
-      "headline": "Microsoft announced the Xbox gaming system",
-      "description": "What year did this happen?",
+      "headline": "Xbox Announced",
+      "description": "A software company best known for office productivity and operating systems revealed its first video game console, challenging two entrenched Japanese competitors.",
       "tier": 1,
       "difficulty_rating": 6,
       "clues": {
         "monday": [],
         "tuesday": [],
         "wednesday": [],
-        "thursday": [],
+        "thursday": [
+          "The September 11 attacks delayed the console's European launch by months"
+        ],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 2001."
+      "context_card": "The machine was essentially a stripped-down PC running a custom operating system, which horrified gaming purists. Internal memos reveal the company lost an estimated $125 on every unit sold, treating the entire venture as a $4 billion bet to control the living room. Its online service, bundled with an Ethernet port when competitors still used dial-up, would eventually reshape how the entire industry thought about multiplayer gaming."
     },
     {
       "id": 51,
@@ -1158,20 +1270,22 @@
       "event": "First iPod Released",
       "event_formal": "First iPod Released",
       "year": 2001,
-      "headline": "Steve Jobs introduced the iPod",
-      "description": "What year did this happen?",
+      "headline": "First iPod Released",
+      "description": "A computer company unveiled a pocket-sized device promising a thousand songs in your pocket, pairing a tiny hard drive with a satisfying click wheel.",
       "tier": 1,
       "difficulty_rating": 6,
       "clues": {
         "monday": [],
         "tuesday": [],
         "wednesday": [],
-        "thursday": [],
+        "thursday": [
+          "Portable MP3 players already existed, but this one used a tiny hard drive from a Japanese manufacturer"
+        ],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 2001."
+      "context_card": "Critics mocked the $399 price tag — 'no wireless, less space than a Nomad, lame,' read the most famous review. The device accounted for less than 2% of the company's revenue in its first year. Within six years it would generate half the company's income and lead directly to the product that would make it the world's most valuable corporation."
     },
     {
       "id": 52,
@@ -1181,20 +1295,22 @@
       "event": "Netflix Streaming Launches",
       "event_formal": "Netflix Streaming Launches",
       "year": 2007,
-      "headline": "Netflix began streaming movies over the internet",
-      "description": "What year did this happen?",
+      "headline": "Netflix Streaming Launches",
+      "description": "A DVD-by-mail company began letting subscribers watch movies directly through their web browsers, betting that broadband speeds had finally caught up to the idea.",
       "tier": 1,
-      "difficulty_rating": 6,
+      "difficulty_rating": 7,
       "clues": {
         "monday": [],
         "tuesday": [],
         "wednesday": [],
         "thursday": [],
-        "friday": [],
+        "friday": [
+          "The first iPhone shipped that same summer, giving streaming a mobile future"
+        ],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 2007."
+      "context_card": "The streaming library at launch contained just 1,000 titles — less than a single Blockbuster store. The company had offered to sell itself to its brick-and-mortar rival for $50 million three years earlier and been laughed out of the room. That rival filed for bankruptcy three years after streaming launched; the streamer is now worth more than $150 billion."
     },
     {
       "id": 53,
@@ -1204,8 +1320,8 @@
       "event": "Spotify Launches",
       "event_formal": "Spotify Launches",
       "year": 2008,
-      "headline": "Daniel Ek launched the music streaming service Spotify",
-      "description": "What year did this happen?",
+      "headline": "Spotify Launches",
+      "description": "A Swedish startup offered millions of songs on demand for free — legally — funded by advertising, challenging the decade-long piracy crisis that had gutted the music industry.",
       "tier": 1,
       "difficulty_rating": 7,
       "clues": {
@@ -1213,11 +1329,13 @@
         "tuesday": [],
         "wednesday": [],
         "thursday": [],
-        "friday": [],
+        "friday": [
+          "The global financial crisis was unfolding as the service launched in Sweden"
+        ],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 2008."
+      "context_card": "It launched in invitation-only mode in a single European country, paying fractions of a cent per stream while the music industry was still prosecuting teenagers for illegal downloads. Major labels initially licensed their catalogs only because they were desperate — CD sales had fallen by half in a decade. The model musicians mocked as 'paying in pennies' now generates more revenue for the recording industry than CDs ever did at their peak."
     },
     {
       "id": 54,
@@ -1227,8 +1345,8 @@
       "event": "Facebook Launched",
       "event_formal": "Facebook Launched",
       "year": 2004,
-      "headline": "Mark Zuckerberg launched Facebook from his Harvard dorm",
-      "description": "What year did this happen?",
+      "headline": "Facebook Launched",
+      "description": "A Harvard sophomore opened a social networking site restricted to college students with .edu email addresses. Within weeks, it had spread to dozens of campuses.",
       "tier": 1,
       "difficulty_rating": 7,
       "clues": {
@@ -1236,11 +1354,13 @@
         "tuesday": [],
         "wednesday": [],
         "thursday": [],
-        "friday": [],
+        "friday": [
+          "Gmail launched in invitation-only beta that same year"
+        ],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 2004."
+      "context_card": "Registration required a valid university email address, and the site spread campus by campus — a deliberate scarcity strategy that created desperate demand at schools not yet invited. Within 24 hours of launching at each new university, more than half the student body had signed up. The founder was 19 years old, running the servers from his dormitory room."
     },
     {
       "id": 55,
@@ -1250,8 +1370,8 @@
       "event": "Twitter Launched",
       "event_formal": "Twitter Launched",
       "year": 2006,
-      "headline": "Jack Dorsey sent the first Twitter message",
-      "description": "What year did this happen?",
+      "headline": "Twitter Launched",
+      "description": "A microblogging platform limited posts to 140 characters, distilling the internet's chatter into a real-time stream that would reshape journalism and political communication.",
       "tier": 1,
       "difficulty_rating": 7,
       "clues": {
@@ -1260,10 +1380,12 @@
         "wednesday": [],
         "thursday": [],
         "friday": [],
-        "saturday": [],
+        "saturday": [
+          "A 140-character whisper that turned every phone into a printing press"
+        ],
         "sunday": []
       },
-      "context_card": "This event occurred in 2006."
+      "context_card": "The original prototype was built in two weeks as a side project at a podcasting startup, and the first message — 'just setting up my twttr' — had all the grandeur of a throat-clearing cough. The 140-character limit was dictated by SMS technology, not philosophy. It would take an earthquake in Haiti, an uprising in Tehran, and an Arab Spring to reveal what a short-message platform could actually become."
     },
     {
       "id": 56,
@@ -1273,20 +1395,22 @@
       "event": "Snapchat Launched",
       "event_formal": "Snapchat Launched",
       "year": 2011,
-      "headline": "Evan Spiegel launched the disappearing photo app Snapchat",
-      "description": "What year did this happen?",
+      "headline": "Snapchat Launched",
+      "description": "A messaging app built around photos that disappeared after viewing launched from a Stanford dorm room, inverting social media's assumption that everything should be permanent.",
       "tier": 1,
-      "difficulty_rating": 7,
+      "difficulty_rating": 8,
       "clues": {
         "monday": [],
         "tuesday": [],
         "wednesday": [],
         "thursday": [],
         "friday": [],
-        "saturday": [],
+        "saturday": [
+          "Born in a world where every photo was forever, promising that nothing had to be"
+        ],
         "sunday": []
       },
-      "context_card": "This event occurred in 2011."
+      "context_card": "Every investor said an app built on impermanence was fundamentally worthless. A major social network offered $3 billion in cash to acquire it; the 23-year-old CEO declined. The feature everyone assumed was designed for sexting turned out to be what teenagers actually wanted: a way to communicate without building a permanent, searchable archive of their adolescence."
     },
     {
       "id": 57,
@@ -1296,8 +1420,8 @@
       "event": "Bitcoin White Paper",
       "event_formal": "Bitcoin White Paper",
       "year": 2008,
-      "headline": "Satoshi Nakamoto published the Bitcoin white paper",
-      "description": "What year did this happen?",
+      "headline": "Bitcoin White Paper Published",
+      "description": "A pseudonymous author posted a nine-page paper to a cryptography mailing list describing a peer-to-peer electronic cash system that required no trusted third party.",
       "tier": 1,
       "difficulty_rating": 8,
       "clues": {
@@ -1306,10 +1430,12 @@
         "wednesday": [],
         "thursday": [],
         "friday": [],
-        "saturday": [],
+        "saturday": [
+          "Lehman Brothers had collapsed weeks before, and trust in banks was at a generational low"
+        ],
         "sunday": []
       },
-      "context_card": "This event occurred in 2008."
+      "context_card": "The nine-page paper was posted to an obscure cryptography mailing list and received almost no attention. Embedded in the code of the first-ever block was a headline from The Times of London about bank bailouts — a quiet political statement disguised as a timestamp. The author vanished completely in 2011, leaving behind roughly one million tokens now worth tens of billions, never moved from their original addresses."
     },
     {
       "id": 58,
@@ -1319,10 +1445,10 @@
       "event": "Ethereum Launches",
       "event_formal": "Ethereum Launches",
       "year": 2015,
-      "headline": "Vitalik Buterin launched the Ethereum blockchain",
-      "description": "What year did this happen?",
+      "headline": "Ethereum Launches",
+      "description": "A blockchain network went live promising not just digital currency but programmable smart contracts — a world computer that anyone could build on without permission.",
       "tier": 1,
-      "difficulty_rating": 8,
+      "difficulty_rating": 9,
       "clues": {
         "monday": [],
         "tuesday": [],
@@ -1332,7 +1458,7 @@
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 2015."
+      "context_card": "Its creator was a 21-year-old college dropout who decided the original digital currency was too limited — like a calculator when the world needed a computer. He funded the project through a public token sale that raised $18 million in digital currency. The platform's name was chosen from a list of science fiction concepts found on Wikipedia."
     },
     {
       "id": 59,
@@ -1342,10 +1468,10 @@
       "event": "First NFT Minted",
       "event_formal": "First NFT Minted",
       "year": 2014,
-      "headline": "Kevin McCoy minted the first NFT on the Namecoin blockchain",
-      "description": "What year did this happen?",
+      "headline": "First NFT Minted",
+      "description": "An artist created a unique digital token on a blockchain, attaching verifiable ownership to a piece of digital media in a way that had never been possible before.",
       "tier": 1,
-      "difficulty_rating": 8,
+      "difficulty_rating": 9,
       "clues": {
         "monday": [],
         "tuesday": [],
@@ -1355,7 +1481,7 @@
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 2014."
+      "context_card": "The first known experiment linked a short animation to a blockchain entry and declared it a unique, ownable digital object — a concept that sounded absurd to anyone who understood how copying a file works. The technology languished in obscurity for years before a $69 million auction made the art world pay attention in 2021. The inevitable crash wiped out 95% of values within two years."
     },
     {
       "id": 60,
@@ -1365,10 +1491,10 @@
       "event": "Columbus Reaches Americas",
       "event_formal": "Columbus Reaches Americas",
       "year": 1492,
-      "headline": "Christopher Columbus reached the Caribbean islands",
-      "description": "What year did this happen?",
+      "headline": "Columbus Reaches the Americas",
+      "description": "A Genoese navigator sailing under the Spanish crown made landfall on a Caribbean island, believing he had reached Asia. The miscalculation changed the course of two hemispheres.",
       "tier": 1,
-      "difficulty_rating": 9,
+      "difficulty_rating": 10,
       "clues": {
         "monday": [],
         "tuesday": [],
@@ -1378,7 +1504,7 @@
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1492."
+      "context_card": "The navigator died believing he had reached Asia, never acknowledging the continental landmass his voyages had revealed to European mapmakers. The Taíno people he encountered had inhabited the Caribbean for at least 1,500 years. Within 50 years of first contact, disease, enslavement, and violence had reduced the Taíno population from an estimated 250,000 to fewer than 500."
     },
     {
       "id": 61,
@@ -1388,12 +1514,15 @@
       "event": "Magna Carta Signed",
       "event_formal": "Magna Carta Signed",
       "year": 1215,
-      "headline": "King John signed the Magna Carta in England",
-      "description": "What year did this happen?",
+      "headline": "Magna Carta Signed",
+      "description": "English barons forced King John to seal a charter at Runnymede, limiting royal power for the first time — a document that would outlive every monarch who tried to ignore it.",
       "tier": 1,
-      "difficulty_rating": 9,
+      "difficulty_rating": 4,
       "clues": {
-        "monday": [],
+        "monday": [
+          "The Crusades were still being fought in the Holy Land",
+          "Oxford University had already been teaching for decades"
+        ],
         "tuesday": [],
         "wednesday": [],
         "thursday": [],
@@ -1401,7 +1530,7 @@
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1215."
+      "context_card": "The meadow at Runnymede was chosen because neither side trusted the other enough to meet indoors. King John sealed the charter under duress, then immediately asked the Pope to annul it — which he did within ten weeks. The document failed as a peace treaty but survived as the foundation of constitutional law across the English-speaking world."
     },
     {
       "id": 62,
@@ -1411,12 +1540,15 @@
       "event": "Shakespeare Born",
       "event_formal": "Shakespeare Born",
       "year": 1564,
-      "headline": "William Shakespeare was born in Stratford-upon-Avon",
-      "description": "What year did this happen?",
+      "headline": "Shakespeare Born",
+      "description": "A glover's son arrived in Stratford-upon-Avon during a plague year, destined to give the English language more new words than any other writer before or since.",
       "tier": 1,
-      "difficulty_rating": 9,
+      "difficulty_rating": 4,
       "clues": {
-        "monday": [],
+        "monday": [
+          "Elizabeth I had recently been crowned queen",
+          "Galileo was a newborn in Pisa"
+        ],
         "tuesday": [],
         "wednesday": [],
         "thursday": [],
@@ -1424,7 +1556,7 @@
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1564."
+      "context_card": "Born in a market town best known for its wool trade, the playwright received a solid grammar school education but never attended university — a fact his rivals never let him forget. He would go on to invent over 1,700 English words, from 'assassination' to 'lonely.' His father made gloves; his son died at eleven."
     },
     {
       "id": 63,
@@ -1434,12 +1566,15 @@
       "event": "Star Wars Released",
       "event_formal": "Star Wars Released",
       "year": 1977,
-      "headline": "George Lucas released Star Wars: A New Hope",
-      "description": "What year did this happen?",
+      "headline": "Star Wars Released",
+      "description": "A space opera that every studio in Hollywood had rejected finally reached theaters, and nothing about the movie business was ever quite the same.",
       "tier": 1,
       "difficulty_rating": 3,
       "clues": {
-        "monday": [],
+        "monday": [
+          "Jimmy Carter was in his first year as US president",
+          "The Apple II personal computer went on sale that same year"
+        ],
         "tuesday": [],
         "wednesday": [],
         "thursday": [],
@@ -1447,7 +1582,7 @@
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1977."
+      "context_card": "Twentieth Century Fox was so certain the film would fail that it let the director keep merchandising rights — a decision that would cost the studio billions. Shot partly in the Tunisian desert, where a nearby Libyan military operation nearly shut down production, it earned $461 million worldwide and redefined what a movie could sell."
     },
     {
       "id": 64,
@@ -1457,20 +1592,23 @@
       "event": "Jaws Released",
       "event_formal": "Jaws Released",
       "year": 1975,
-      "headline": "Steven Spielberg released the thriller Jaws",
-      "description": "What year did this happen?",
+      "headline": "Jaws Released",
+      "description": "A mechanical shark that barely worked turned a young director's nightmare production into the first true summer blockbuster, and beach attendance dropped nationwide.",
       "tier": 1,
       "difficulty_rating": 3,
       "clues": {
         "monday": [],
-        "tuesday": [],
+        "tuesday": [
+          "The Watergate scandal had just forced a president to resign",
+          "Saturday Night Live premiered on NBC that same fall"
+        ],
         "wednesday": [],
         "thursday": [],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1975."
+      "context_card": "The mechanical shark malfunctioned so often that the young director was forced to hide it, showing only glimpses — a constraint that accidentally invented modern suspense filmmaking. Beaches across America emptied that summer despite record heat. The film's success created the template every studio still follows: wide release, massive marketing, summer launch."
     },
     {
       "id": 65,
@@ -1480,20 +1618,23 @@
       "event": "ET Released",
       "event_formal": "ET Released",
       "year": 1982,
-      "headline": "Steven Spielberg released the film E.T.",
-      "description": "What year did this happen?",
+      "headline": "E.T. the Extra-Terrestrial Released",
+      "description": "Spielberg's gentle alien stranded in suburban California became the highest-grossing film of its era, proving that a puppet and a child actor could outperform any special effect.",
       "tier": 1,
       "difficulty_rating": 4,
       "clues": {
         "monday": [],
-        "tuesday": [],
+        "tuesday": [
+          "The Falklands War was being fought that same spring",
+          "Michael Jackson's Thriller album was released later that year"
+        ],
         "wednesday": [],
         "thursday": [],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1982."
+      "context_card": "The film was born from loneliness — the director conceived it while imagining an imaginary friend after his parents' divorce. M&M's famously declined a product placement deal, so the production used Reese's Pieces instead, tripling the candy's sales overnight. It became the highest-grossing film in history, a record it held for eleven years."
     },
     {
       "id": 66,
@@ -1503,20 +1644,23 @@
       "event": "Jurassic Park Released",
       "event_formal": "Jurassic Park Released",
       "year": 1993,
-      "headline": "Steven Spielberg released Jurassic Park in theaters",
-      "description": "What year did this happen?",
+      "headline": "Jurassic Park Released",
+      "description": "Computer-generated dinosaurs sprinted across the screen for the first time, and practical effects artists everywhere felt a tremor that had nothing to do with a T. rex.",
       "tier": 1,
       "difficulty_rating": 4,
       "clues": {
         "monday": [],
-        "tuesday": [],
+        "tuesday": [
+          "The European Union was formally established that same year",
+          "Nirvana's In Utero album was released weeks later"
+        ],
         "wednesday": [],
         "thursday": [],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1993."
+      "context_card": "The novel's team pivoted from animatronics to an untested technique — computer-generated imagery for living creatures. The result — six minutes of CGI dinosaurs in a two-hour film — convinced every studio in Hollywood that practical effects were finished. The paleontology department at many universities saw enrollment double within a year."
     },
     {
       "id": 67,
@@ -1526,20 +1670,23 @@
       "event": "The Matrix Released",
       "event_formal": "The Matrix Released",
       "year": 1999,
-      "headline": "The Wachowskis released the film The Matrix",
-      "description": "What year did this happen?",
+      "headline": "The Matrix Released",
+      "description": "Bullet time, leather trenchcoats, and a red pill entered the cultural lexicon overnight, as two sibling directors reimagined what an action film could look like.",
       "tier": 1,
       "difficulty_rating": 4,
       "clues": {
         "monday": [],
         "tuesday": [],
-        "wednesday": [],
+        "wednesday": [
+          "The Y2K bug had the world bracing for digital collapse",
+          "The euro currency was introduced to financial markets that January"
+        ],
         "thursday": [],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1999."
+      "context_card": "The directors pitched the film with a comic book because no studio could visualize what they were describing. Every lead actor in Hollywood turned down the role before it was offered to a star best known for action comedies. The 'bullet time' effect required 120 still cameras firing in sequence — borrowed from a 19th-century photographer who used it to study galloping horses."
     },
     {
       "id": 68,
@@ -1549,20 +1696,23 @@
       "event": "Avatar Released",
       "event_formal": "Avatar Released",
       "year": 2009,
-      "headline": "James Cameron released the highest-grossing film Avatar",
-      "description": "What year did this happen?",
+      "headline": "Avatar Released",
+      "description": "James Cameron bet everything on a film set on an alien moon, shot in 3D with technology that didn't exist when he started — and it became the highest-grossing movie in history.",
       "tier": 1,
       "difficulty_rating": 5,
       "clues": {
         "monday": [],
         "tuesday": [],
-        "wednesday": [],
+        "wednesday": [
+          "Barack Obama had just been inaugurated as US president",
+          "The world was deep in the worst financial crisis since the Great Depression"
+        ],
         "thursday": [],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 2009."
+      "context_card": "The director waited fourteen years to make the film because the technology he needed did not exist yet. When it finally opened, it earned a billion dollars in just seventeen days. Its pioneering 3D technology was supposed to transform cinema forever; within five years, audiences had largely abandoned the format."
     },
     {
       "id": 69,
@@ -1572,20 +1722,23 @@
       "event": "Sony Walkman Released",
       "event_formal": "Sony Walkman Released",
       "year": 1979,
-      "headline": "Sony released the Walkman portable cassette player",
-      "description": "What year did this happen?",
+      "headline": "Sony Walkman Released",
+      "description": "A portable cassette player small enough to clip to your belt arrived from Tokyo, and for the first time, music became a truly private experience in public space.",
       "tier": 1,
       "difficulty_rating": 5,
       "clues": {
         "monday": [],
         "tuesday": [],
-        "wednesday": [],
+        "wednesday": [
+          "Margaret Thatcher had just become Britain's first female prime minister",
+          "The Soviet Union had recently invaded Afghanistan"
+        ],
         "thursday": [],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1979."
+      "context_card": "The device was rejected by every division inside the company before one engineer championed it. Its co-creator was so impatient with the prototype that he dunked it in an aquarium — when bubbles rose, he declared there was still space inside to make it smaller. It sold 200 million units and turned headphones from studio equipment into street fashion."
     },
     {
       "id": 70,
@@ -1595,20 +1748,22 @@
       "event": "VHS Format Introduced",
       "event_formal": "VHS Format Introduced",
       "year": 1976,
-      "headline": "The first VCR system used Sonys Umatic format",
-      "description": "What year did this happen?",
+      "headline": "VHS Format Introduced",
+      "description": "A Japanese electronics company introduced a home video cassette format that would win a brutal standards war and turn every living room into a private cinema.",
       "tier": 1,
       "difficulty_rating": 5,
       "clues": {
         "monday": [],
         "tuesday": [],
         "wednesday": [],
-        "thursday": [],
+        "thursday": [
+          "The United States was celebrating its bicentennial"
+        ],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1976."
+      "context_card": "The format war between VHS and its rival Betamax had nothing to do with quality — Betamax was technically superior. VHS won because its tapes could record for two hours, long enough to capture a full movie, while Betamax initially maxed out at one. The adult film industry's early adoption of VHS may have tipped the balance, though the companies involved have always denied it."
     },
     {
       "id": 71,
@@ -1618,20 +1773,22 @@
       "event": "CD Player Released",
       "event_formal": "CD Player Released",
       "year": 1982,
-      "headline": "The first compact disc player was demonstrated in Japan",
-      "description": "What year did this happen?",
+      "headline": "CD Player Released",
+      "description": "A silver disc promising perfect sound forever went on sale, and vinyl purists immediately began an argument that still hasn't ended.",
       "tier": 1,
       "difficulty_rating": 6,
       "clues": {
         "monday": [],
         "tuesday": [],
         "wednesday": [],
-        "thursday": [],
+        "thursday": [
+          "The Falklands War dominated the news that spring"
+        ],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1982."
+      "context_card": "The disc's diameter — 12 centimeters — was allegedly chosen so it could hold all of Beethoven's Ninth Symphony without interruption. Early players cost more than $700, and only about fifty albums were available at launch. The format would eventually kill the vinyl record, then be killed itself by the MP3."
     },
     {
       "id": 72,
@@ -1641,20 +1798,22 @@
       "event": "Kodak Founded",
       "event_formal": "Kodak Founded",
       "year": 1888,
-      "headline": "George Eastman founded the Kodak camera company",
-      "description": "What year did this happen?",
+      "headline": "Kodak Camera Introduced",
+      "description": "George Eastman unveiled a simple box camera with the slogan 'You press the button, we do the rest' — photography was no longer reserved for professionals with darkrooms.",
       "tier": 1,
       "difficulty_rating": 6,
       "clues": {
         "monday": [],
         "tuesday": [],
         "wednesday": [],
-        "thursday": [],
+        "thursday": [
+          "Jack the Ripper was terrorizing London's East End"
+        ],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1888."
+      "context_card": "The founder's slogan was 'You press the button, we do the rest' — and he meant it literally. The camera came preloaded with a 100-exposure roll; when finished, customers mailed the entire device back to the factory. It democratized photography by removing every technical barrier, turning a specialist craft into a household habit."
     },
     {
       "id": 73,
@@ -1664,8 +1823,8 @@
       "event": "Polaroid Camera Released",
       "event_formal": "Polaroid Camera Released",
       "year": 1948,
-      "headline": "Edwin Land demonstrated the first Polaroid camera",
-      "description": "What year did this happen?",
+      "headline": "Polaroid Camera Released",
+      "description": "Edwin Land's instant camera produced a finished photograph in sixty seconds, a trick so astonishing that people gathered in crowds to watch the image appear.",
       "tier": 1,
       "difficulty_rating": 6,
       "clues": {
@@ -1673,11 +1832,13 @@
         "tuesday": [],
         "wednesday": [],
         "thursday": [],
-        "friday": [],
+        "friday": [
+          "The Berlin Airlift was keeping a city alive that same year"
+        ],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1948."
+      "context_card": "The inventor's three-year-old daughter asked why she couldn't see the photo he had just taken of her — and that question launched a billion-dollar company. The first camera weighed nearly four pounds and produced sepia-toned prints that had to be coated with fixative by hand. Andy Warhol would later make the instant photograph an art form, carrying one everywhere he went."
     },
     {
       "id": 74,
@@ -1687,8 +1848,8 @@
       "event": "Digital Camera Invented",
       "event_formal": "Digital Camera Invented",
       "year": 1975,
-      "headline": "Steven Sasson invented the first digital camera",
-      "description": "What year did this happen?",
+      "headline": "Digital Camera Invented",
+      "description": "An engineer at Kodak cobbled together a toaster-sized device that captured an image on a digital sensor — his employer buried the invention, sensing it would destroy their film business.",
       "tier": 1,
       "difficulty_rating": 7,
       "clues": {
@@ -1696,11 +1857,13 @@
         "tuesday": [],
         "wednesday": [],
         "thursday": [],
-        "friday": [],
+        "friday": [
+          "The Vietnam War had just ended with the fall of Saigon"
+        ],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1975."
+      "context_card": "The prototype weighed eight pounds, took 23 seconds to record an image, and produced a 0.01 megapixel black-and-white photograph. The engineer who built it presented his invention to corporate leadership, who told him to bury it: the company's entire business was built on selling film. Three decades later, that same company filed for bankruptcy because digital photography had destroyed its market."
     },
     {
       "id": 75,
@@ -1710,8 +1873,8 @@
       "event": "Ford Model T Released",
       "event_formal": "Ford Model T Released",
       "year": 1908,
-      "headline": "Henry Ford began producing the Model T automobile",
-      "description": "What year did this happen?",
+      "headline": "Ford Model T Released",
+      "description": "Henry Ford's affordable automobile rolled off the line in Detroit, and within a decade the horse-drawn carriage became a quaint relic of another century.",
       "tier": 1,
       "difficulty_rating": 7,
       "clues": {
@@ -1719,11 +1882,13 @@
         "tuesday": [],
         "wednesday": [],
         "thursday": [],
-        "friday": [],
+        "friday": [
+          "The Wright brothers' first flight was still recent memory"
+        ],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1908."
+      "context_card": "The assembly line did not start with the car — it started with the price. The founder was obsessed with making a car cheap enough for his own factory workers to buy, and the moving assembly line was simply the method that got the price from $850 down to $260. By the time production ended, half of all cars on American roads were the same model."
     },
     {
       "id": 76,
@@ -1733,8 +1898,8 @@
       "event": "First Commercial Airplane Flight",
       "event_formal": "First Commercial Airplane Flight",
       "year": 1914,
-      "headline": "Tony Jannus flew the first commercial airline flight",
-      "description": "What year did this happen?",
+      "headline": "First Commercial Airplane Flight",
+      "description": "A paying passenger climbed aboard a Benoist flying boat in St. Petersburg, Florida, for a twenty-three-minute trip across Tampa Bay — the airline industry's very first ticket.",
       "tier": 1,
       "difficulty_rating": 7,
       "clues": {
@@ -1743,10 +1908,12 @@
         "wednesday": [],
         "thursday": [],
         "friday": [],
-        "saturday": [],
+        "saturday": [
+          "The old world was about to tear itself apart"
+        ],
         "sunday": []
       },
-      "context_card": "This event occurred in 1914."
+      "context_card": "The flight lasted 23 minutes, covered 21 miles across a bay, and the only passenger was the mayor of the destination city, who had won the seat at auction. The pilot made the trip twice daily for four months before the airline folded — there simply were not enough passengers. It would take another decade before commercial aviation became a real industry."
     },
     {
       "id": 77,
@@ -1756,8 +1923,8 @@
       "event": "Sputnik Launched",
       "event_formal": "Sputnik Launched",
       "year": 1957,
-      "headline": "The Soviet Union launched the first artificial satellite",
-      "description": "What year did this happen?",
+      "headline": "Sputnik Launched",
+      "description": "A polished metal sphere the size of a beach ball began circling the Earth, its steady beep audible on ham radios worldwide — and the space race was on.",
       "tier": 1,
       "difficulty_rating": 8,
       "clues": {
@@ -1766,10 +1933,12 @@
         "wednesday": [],
         "thursday": [],
         "friday": [],
-        "saturday": [],
+        "saturday": [
+          "Leave It to Beaver was America's picture of itself"
+        ],
         "sunday": []
       },
-      "context_card": "This event occurred in 1957."
+      "context_card": "The satellite was the size of a beach ball and carried no scientific instruments — it could only transmit a simple radio pulse. But that beep, picked up by amateur radio operators worldwide, proved that the rival superpower had rockets powerful enough to reach any city on Earth. Within a year, the stunned response produced NASA, a new science curriculum for American schools, and the modern concept of the technology race."
     },
     {
       "id": 78,
@@ -1779,8 +1948,8 @@
       "event": "Hubble Telescope Launched",
       "event_formal": "Hubble Telescope Launched",
       "year": 1990,
-      "headline": "NASA launched the Hubble Space Telescope into orbit",
-      "description": "What year did this happen?",
+      "headline": "Hubble Space Telescope Launched",
+      "description": "NASA placed a school-bus-sized telescope in orbit, only to discover its primary mirror had been ground to the wrong shape — a flaw that would require the most ambitious repair in space history.",
       "tier": 1,
       "difficulty_rating": 8,
       "clues": {
@@ -1789,10 +1958,12 @@
         "wednesday": [],
         "thursday": [],
         "friday": [],
-        "saturday": [],
+        "saturday": [
+          "The wall between East and West had just crumbled"
+        ],
         "sunday": []
       },
-      "context_card": "This event occurred in 1990."
+      "context_card": "The telescope was delivered to orbit with a flaw in its primary mirror — a manufacturing error of just 2.2 micrometers, about one-fiftieth the width of a human hair. For three years it sent back blurry images. Astronauts installed corrective optics during a spacewalk, and the telescope went on to fundamentally change humanity's understanding of the age and size of the universe."
     },
     {
       "id": 79,
@@ -1802,8 +1973,8 @@
       "event": "Mars Pathfinder Landing",
       "event_formal": "Mars Pathfinder Landing",
       "year": 1997,
-      "headline": "NASAs Sojourner rover landed on Mars",
-      "description": "What year did this happen?",
+      "headline": "Mars Pathfinder Landing",
+      "description": "A small rover named Sojourner rolled off a landing platform onto Martian soil, beaming back photographs of a rust-colored landscape no wheel had ever touched.",
       "tier": 1,
       "difficulty_rating": 8,
       "clues": {
@@ -1815,7 +1986,7 @@
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1997."
+      "context_card": "The rover was the size of a microwave oven and was designed to last seven days. It lasted eighty-three. Named through a student essay contest, the little machine analyzed rocks and sent back 2.3 billion bits of data, proving Mars had once been warm and wet. The mission cost less than the production budget of a Hollywood blockbuster released that same summer."
     },
     {
       "id": 80,
@@ -1825,8 +1996,8 @@
       "event": "Gutenberg Bible Printed",
       "event_formal": "Gutenberg Bible Printed",
       "year": 1455,
-      "headline": "Johannes Gutenberg printed the first Bible with movable type",
-      "description": "What year did this happen?",
+      "headline": "Gutenberg Bible Printed",
+      "description": "A goldsmith in Mainz produced the first major book printed with movable metal type, a technical feat that would dismantle the Church's monopoly on knowledge within a generation.",
       "tier": 1,
       "difficulty_rating": 9,
       "clues": {
@@ -1838,7 +2009,7 @@
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1455."
+      "context_card": "The printer was nearly bankrupt before the first Bible rolled off his press — he had borrowed heavily and his investor eventually sued him, seizing the equipment. The original print run was about 180 copies, of which 49 survive today, each worth tens of millions of dollars. Within fifty years, an estimated twenty million volumes had been printed across Europe, ending the Church's monopoly on knowledge."
     },
     {
       "id": 81,
@@ -1848,8 +2019,8 @@
       "event": "Roman Empire Falls",
       "event_formal": "Roman Empire Falls",
       "year": 476,
-      "headline": "The last Roman emperor was deposed, ending the Western Roman Empire",
-      "description": "What year did this happen?",
+      "headline": "Fall of the Western Roman Empire",
+      "description": "A teenage emperor was deposed by a Germanic chieftain, and the political entity that had governed western Europe for centuries quietly ceased to exist.",
       "tier": 1,
       "difficulty_rating": 9,
       "clues": {
@@ -1861,7 +2032,7 @@
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 476."
+      "context_card": "The final emperor was a teenager, installed as a puppet by his father, a Germanic general who actually held the power. The barbarian king who deposed him did not even bother to claim the title — he simply sent the imperial regalia to Constantinople and declared the western office unnecessary. The eastern half of the empire would continue for nearly another thousand years."
     },
     {
       "id": 82,
@@ -1871,12 +2042,15 @@
       "event": "Great Fire of London",
       "event_formal": "Great Fire of London",
       "year": 1666,
-      "headline": "A massive fire destroyed most of medieval London",
-      "description": "What year did this happen?",
+      "headline": "Great Fire of London",
+      "description": "A bakery fire on Pudding Lane spread through timber-framed streets for four days, leveling most of the medieval city — and inadvertently ending the plague that had ravaged it the year before.",
       "tier": 1,
-      "difficulty_rating": 9,
+      "difficulty_rating": 4,
       "clues": {
-        "monday": [],
+        "monday": [
+          "The Great Plague had devastated the same city just a year before",
+          "Isaac Newton was a young student developing his theory of gravity"
+        ],
         "tuesday": [],
         "wednesday": [],
         "thursday": [],
@@ -1884,22 +2058,25 @@
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1666."
+      "context_card": "The fire began in a bakery on Pudding Lane shortly after midnight and burned for four days, destroying 13,200 houses, 87 churches, and old St Paul's Cathedral. Remarkably, only six verified deaths were recorded. The architect appointed to rebuild the city designed 51 new churches, including a cathedral that took 35 years to complete."
     },
     {
       "id": 83,
       "date": "2026-04-27",
       "slot": 1,
       "day_of_week": "monday",
-      "event": "Beatles First Ed Sullivan Show",
-      "event_formal": "Beatles First Ed Sullivan Show",
+      "event": "The Beatles' First US TV Appearance",
+      "event_formal": "The Beatles on The Ed Sullivan Show",
       "year": 1964,
-      "headline": "The Beatles made their historic US debut on TV",
-      "description": "What year did this happen?",
+      "headline": "The Beatles on Ed Sullivan",
+      "description": "Four young men from Liverpool performed on American television to a studio audience of screaming teenagers, and seventy-three million viewers at home watched the culture shift in real time.",
       "tier": 1,
       "difficulty_rating": 3,
       "clues": {
-        "monday": [],
+        "monday": [
+          "The president had been assassinated just weeks before",
+          "Martin Luther King Jr. would receive the Nobel Peace Prize later that year"
+        ],
         "tuesday": [],
         "wednesday": [],
         "thursday": [],
@@ -1907,7 +2084,7 @@
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1964."
+      "context_card": "When The Beatles landed at JFK Airport on February 7, 1964, they were met by 3,000 screaming fans — the largest welcome in airport history to that point. They appeared on The Ed Sullivan Show ten days later, watched by 73 million viewers. Within weeks, Beatlemania had completely reshaped American pop music and youth culture."
     },
     {
       "id": 84,
@@ -1917,12 +2094,15 @@
       "event": "Woodstock Festival",
       "event_formal": "Woodstock Festival",
       "year": 1969,
-      "headline": "400,000 people attended the Woodstock music festival",
-      "description": "What year did this happen?",
+      "headline": "Woodstock Festival",
+      "description": "Half a million people descended on a dairy farm in upstate New York for three days of music and mud, creating the defining gathering of the counterculture era.",
       "tier": 1,
       "difficulty_rating": 3,
       "clues": {
-        "monday": [],
+        "monday": [
+          "Humans had walked on the moon just weeks earlier",
+          "Richard Nixon was in his first year as president"
+        ],
         "tuesday": [],
         "wednesday": [],
         "thursday": [],
@@ -1930,7 +2110,7 @@
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1969."
+      "context_card": "The festival was supposed to happen in a different town entirely — the original site pulled the permit a month before the event. A dairy farmer agreed to lease his land, and within weeks his alfalfa field became a temporary city with no fences and no way to collect tickets. The promoters lost over a million dollars. The farmer said he would do it again."
     },
     {
       "id": 85,
@@ -1940,20 +2120,23 @@
       "event": "Live Aid Concert",
       "event_formal": "Live Aid Concert",
       "year": 1985,
-      "headline": "Bob Geldof organized Live Aid concerts in London and Philadelphia",
-      "description": "What year did this happen?",
+      "headline": "Live Aid Concert",
+      "description": "Bob Geldof organized a simultaneous rock concert in London and Philadelphia, broadcast to nearly two billion viewers, turning stadium music into a vehicle for global famine relief.",
       "tier": 1,
       "difficulty_rating": 4,
       "clues": {
         "monday": [],
-        "tuesday": [],
+        "tuesday": [
+          "A hole in the ozone layer was discovered that same year",
+          "Nintendo released its first home console in North America that October"
+        ],
         "wednesday": [],
         "thursday": [],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1985."
+      "context_card": "The concert was organized in ten weeks — an impossibly short timeline for an event broadcast live to 1.9 billion people across 150 countries. The London and Philadelphia stages ran simultaneously, connected by satellite. It raised $127 million for famine relief, but its lasting impact was proving that television could turn a concert into a global event and shame governments into action."
     },
     {
       "id": 86,
@@ -1963,20 +2146,23 @@
       "event": "MTV Launches",
       "event_formal": "MTV Launches",
       "year": 1981,
-      "headline": "MTV launched as the first 24-hour music video channel",
-      "description": "What year did this happen?",
+      "headline": "MTV Launches",
+      "description": "A new cable channel began broadcasting music videos around the clock, opening with a Buggles clip whose title turned out to be prophetic — 'Video Killed the Radio Star.'",
       "tier": 1,
       "difficulty_rating": 4,
       "clues": {
         "monday": [],
-        "tuesday": [],
+        "tuesday": [
+          "The first Space Shuttle mission launched that same spring",
+          "Prince Charles married Lady Diana that summer"
+        ],
         "wednesday": [],
         "thursday": [],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1981."
+      "context_card": "The first video ever played was a deliberate joke — a song about how television had disrupted an earlier medium. At launch, the channel could only be received in a few thousand homes in New Jersey. Record labels initially refused to provide videos, so the same handful of clips ran on heavy rotation for months. Within three years, an artist's visual image had become as important as their sound."
     },
     {
       "id": 87,
@@ -1986,20 +2172,23 @@
       "event": "Napster Launches",
       "event_formal": "Napster Launches",
       "year": 1999,
-      "headline": "Shawn Fning created the Napster file-sharing service",
-      "description": "What year did this happen?",
+      "headline": "Napster Launches",
+      "description": "A college dropout's file-sharing program let anyone with an internet connection download almost any song for free, and the music industry's business model collapsed virtually overnight.",
       "tier": 1,
       "difficulty_rating": 4,
       "clues": {
         "monday": [],
-        "tuesday": [],
+        "tuesday": [
+          "The Y2K bug dominated headlines that December",
+          "The Sopranos had just premiered on HBO"
+        ],
         "wednesday": [],
         "thursday": [],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 1999."
+      "context_card": "Two college freshmen built the service in a dorm room, and within a year it had more users than most countries have people. The recording industry sued, calling it the biggest threat to copyright since the photocopier. The legal battle shut it down, but the damage was done — an entire generation had learned that music could be free, and the industry spent the next decade trying to unlearn that lesson."
     },
     {
       "id": 88,
@@ -2009,66 +2198,75 @@
       "event": "iTunes Store Opens",
       "event_formal": "iTunes Store Opens",
       "year": 2003,
-      "headline": "Steve Jobs opened the iTunes Store with 200,000 songs",
-      "description": "What year did this happen?",
+      "headline": "iTunes Store Opens",
+      "description": "Apple offered legal music downloads for ninety-nine cents per song, giving the recording industry a lifeline after years of rampant piracy.",
       "tier": 1,
       "difficulty_rating": 4,
       "clues": {
         "monday": [],
         "tuesday": [],
-        "wednesday": [],
+        "wednesday": [
+          "The US had invaded Iraq weeks earlier",
+          "The Human Genome Project was completed that same spring"
+        ],
         "thursday": [],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 2003."
+      "context_card": "The music industry had spent four years suing teenagers and losing the public relations battle when a tech company proposed a radical idea: make buying music easier than stealing it. The store sold one million songs in its first five days. Within six years, it was the largest music retailer in the United States, and CDs were relics."
     },
     {
       "id": 89,
       "date": "2026-04-29",
       "slot": 1,
       "day_of_week": "wednesday",
-      "event": "Spotify Launches",
-      "event_formal": "Spotify Launches",
-      "year": 2008,
-      "headline": "Daniel Ek launched the music streaming service Spotify",
-      "description": "What year did this happen?",
+      "event": "The Berlin Wall Falls",
+      "event_formal": "Fall of the Berlin Wall",
+      "year": 1989,
+      "headline": "The Berlin Wall Falls",
+      "description": "East German border guards, overwhelmed by crowds and confused by a bungled press conference, stepped aside — and thousands poured through checkpoints sealed for a generation.",
       "tier": 1,
       "difficulty_rating": 4,
       "clues": {
         "monday": [],
         "tuesday": [],
-        "wednesday": [],
+        "wednesday": [
+          "The Tiananmen Square protests had been crushed just months before",
+          "The first episode of The Simpsons aired that December"
+        ],
         "thursday": [],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 2008."
+      "context_card": "For 28 years, Checkpoint Charlie was the defining symbol of the Cold War. On November 9th, 1989, a confused bureaucrat announced that East Germans could cross freely — and thousands flooded through. No one had planned the announcement. The wall fell because the system was already crumbling."
     },
     {
       "id": 90,
       "date": "2026-04-29",
       "slot": 2,
       "day_of_week": "wednesday",
-      "event": "First iPhone Released",
-      "event_formal": "First iPhone Released",
-      "year": 2007,
-      "headline": "Apple released the first iPhone",
-      "description": "What year did this happen?",
+      "event": "World War I Begins",
+      "event_formal": "Outbreak of World War I",
+      "year": 1914,
+      "headline": "World War I Begins",
+      "description": "The assassination of an archduke in Sarajevo triggered a chain of alliances and ultimatums that, within weeks, plunged the great powers of Europe into the most devastating conflict the world had yet seen.",
       "tier": 1,
       "difficulty_rating": 5,
       "clues": {
         "monday": [],
         "tuesday": [],
-        "wednesday": [],
+        "wednesday": [
+          "The Panama Canal had just opened for business",
+          "Charlie Chaplin made his first film appearance that same year"
+        ],
         "thursday": [],
         "friday": [],
         "saturday": [],
         "sunday": []
       },
-      "context_card": "This event occurred in 2007."
+      "context_card": "The assassination of Archduke Franz Ferdinand in Sarajevo on June 28, 1914, set off a chain reaction of alliance obligations. What was supposed to be a short war became a four-year conflict that killed 17 million people and destroyed four empires: the German, Austro-Hungarian, Ottoman, and Russian empires."
     }
   ]
 }

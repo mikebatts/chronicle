@@ -73,7 +73,7 @@ export default function YearInput({ onSubmit, disabled, previousGuesses }: YearI
     const year = digits.join("");
     if (year.length === 4) {
       const num = parseInt(year, 10);
-      if (num >= 1600 && num <= 2025) {
+      if (num >= 400 && num <= 2025) {
         onSubmit(year);
         setDigits(["", "", "", ""]);
         setTimeout(() => inputRefs[0].current?.focus(), 50);
@@ -130,7 +130,7 @@ export default function YearInput({ onSubmit, disabled, previousGuesses }: YearI
             disabled={disabled || !allFilled}
             className="w-full py-3 px-6 bg-[var(--text-primary)] text-[var(--bg)] font-semibold rounded-lg hover:opacity-90 transition-opacity disabled:opacity-30 disabled:cursor-not-allowed min-h-[48px]"
           >
-            Guess
+            Guess the Year
           </button>
         </>
       )}

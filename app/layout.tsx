@@ -10,6 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://thischronicle.com"),
   title: "Chronicle — Guess the Year",
   description: "A daily history guessing game. One event. Guess the year.",
   openGraph: {
@@ -17,6 +18,21 @@ export const metadata: Metadata = {
     description: "A daily history guessing game.",
     url: "https://thischronicle.com",
     siteName: "Chronicle",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Chronicle — A daily history guessing game",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Chronicle — Guess the Year",
+    description: "A daily history guessing game. One event. Guess the year.",
+    images: ["/opengraph-image"],
   },
 };
 

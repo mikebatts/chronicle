@@ -3,8 +3,13 @@ import type { Puzzle } from "./types";
 
 const puzzles = puzzlesData.puzzles as unknown as Puzzle[];
 
+function getLocalDate(): string {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+}
+
 export function getTodayPuzzle(): Puzzle {
-  const today = new Date().toISOString().split("T")[0];
+  const today = getLocalDate();
   // Find slot 0 (morning) puzzle for today
   const puzzle = puzzles.find((p) => p.date === today && p.slot === 0);
   if (!puzzle) {
@@ -14,7 +19,7 @@ export function getTodayPuzzle(): Puzzle {
 }
 
 export function getTodayPuzzles(): Puzzle[] {
-  const today = new Date().toISOString().split("T")[0];
+  const today = getLocalDate();
   // Get all 3 slots for today, fill missing slots with next available
   const todaySlots = [0, 1, 2].map((slot) =>
     puzzles.find((p) => p.date === today && p.slot === slot)

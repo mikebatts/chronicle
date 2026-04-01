@@ -5,7 +5,7 @@ import type { Puzzle, GameState, GamePhase, AttemptPhase, DigitFeedback, TodaySe
 import { getDigitFeedback } from "@/lib/scoring";
 import { loadState, saveState, loadSession, saveSession, getDefaultSession, getDefaultSlotState } from "@/lib/storage";
 import { getPuzzleNumber } from "@/lib/puzzles";
-import { track } from "@/lib/analytics";
+import { track } from "@vercel/analytics";
 import YearInput from "./YearInput";
 import PuzzleDisplay from "./PuzzleDisplay";
 import DailyResults from "./DailyResults";
@@ -34,8 +34,11 @@ export default function Game({ puzzles }: GameProps) {
   // Track when each slot was shown (for time-to-guess analytics)
   const slotShownTime = useRef<Record<number, number>>({});
 
-  // Use a stable date that doesn't change between server/client renders
-  const [today] = useState(() => new Date().toISOString().split("T")[0]);
+  // Use a stable local date that doesn't change between server/client renders
+  const [today] = useState(() => {
+    const d = new Date();
+    return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+  });
 
   // Initialize session on mount
   useEffect(() => {

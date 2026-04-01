@@ -4,7 +4,7 @@ import { useState } from "react";
 import type { Puzzle, GameState, TodaySession, DigitFeedback } from "@/lib/types";
 import { getPuzzleNumber } from "@/lib/puzzles";
 import { generateDailyShareText } from "@/lib/share";
-import { track } from "@/lib/analytics";
+import { track } from "@vercel/analytics";
 import StatsDisplay from "./StatsDisplay";
 
 const SPARKLE_CONFIG = [
