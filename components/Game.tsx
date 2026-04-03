@@ -279,6 +279,8 @@ export default function Game({ puzzles }: GameProps) {
           onSubmit={handleGuess}
           disabled={currentSlotState.phase !== "playing"}
           previousGuesses={currentSlotState.digitFeedback}
+          answerYear={currentPuzzle.year}
+          guessYears={currentSlotState.guesses}
         />
       </div>
     </div>

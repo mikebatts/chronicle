@@ -2,11 +2,14 @@
 
 import { useState, useRef, useEffect, useCallback } from "react";
 import type { DigitFeedback } from "@/lib/types";
+import { getRowWarmth } from "@/lib/scoring";
 
 interface YearInputProps {
   onSubmit: (year: string) => void;
   disabled?: boolean;
   previousGuesses: DigitFeedback[][];
+  answerYear: number;
+  guessYears: number[];
 }
 
 const COLOR_MAP = {
@@ -15,7 +18,15 @@ const COLOR_MAP = {
   miss: "bg-[var(--digit-miss)] text-white border-[var(--digit-miss)]",
 };
 
-export default function YearInput({ onSubmit, disabled, previousGuesses }: YearInputProps) {
+const WARMTH_CLASS = [
+  "",                  // 0 = cold/exact — no glow
+  "bg-blue-900/20",    // 1 = cool
+  "bg-amber-900/20",   // 2 = warm
+  "bg-orange-900/30",  // 3 = hot
+  "bg-red-900/40",     // 4 = scorching
+];
+
+export default function YearInput({ onSubmit, disabled, previousGuesses, answerYear, guessYears }: YearInputProps) {
   const [digits, setDigits] = useState(["", "", "", ""]);
   const inputRefs = [
     useRef<HTMLInputElement>(null),
@@ -88,19 +99,35 @@ export default function YearInput({ onSubmit, disabled, previousGuesses }: YearI
       {/* Previous guesses grid */}
       {previousGuesses.length > 0 && (
         <div className="flex flex-col items-center gap-2 mb-4">
-          {previousGuesses.map((row, rowIdx) => (
-            <div key={rowIdx} className="flex gap-2 w-full max-w-[340px]">
-              {row.map((df, colIdx) => (
-                <div
-                  key={colIdx}
-                  className={`flex-1 aspect-square max-w-[80px] flex items-center justify-center text-2xl sm:text-3xl font-bold rounded-lg ${COLOR_MAP[df.color]} digit-reveal`}
-                  style={{ animationDelay: `${colIdx * 150}ms` }}
-                >
-                  {df.digit}
+          {previousGuesses.map((row, rowIdx) => {
+            const guessYear = guessYears[rowIdx];
+            const warmth = getRowWarmth(guessYear, answerYear);
+            const warmthClass = WARMTH_CLASS[warmth];
+            // Direction hint: only after the first wrong guess
+            const showHint = rowIdx === 0 && guessYear !== answerYear && previousGuesses.length === 1;
+            const direction = guessYear < answerYear ? "up" : "down";
+
+            return (
+              <div key={rowIdx}>
+                <div className={`flex gap-2 w-full max-w-[340px] rounded-lg p-1 transition-colors ${warmthClass}`}>
+                  {row.map((df, colIdx) => (
+                    <div
+                      key={colIdx}
+                      className={`flex-1 aspect-square max-w-[80px] flex items-center justify-center text-2xl sm:text-3xl font-bold rounded-lg ${COLOR_MAP[df.color]} digit-reveal`}
+                      style={{ animationDelay: `${colIdx * 150}ms` }}
+                    >
+                      {df.digit}
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
-          ))}
+                {showHint && (
+                  <div className="text-xs italic text-gray-400 mt-1 text-center">
+                    {direction === "up" ? "↑ try higher" : "↓ try lower"}
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </div>
       )}
 
