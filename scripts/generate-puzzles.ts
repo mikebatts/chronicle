@@ -1,14 +1,20 @@
 /**
- * Generate puzzle candidates using Claude API.
+ * Generate Chronicle puzzle candidates using the Claude API (24-month backfill).
  *
  * Usage:
- *   npx tsx scripts/generate-puzzles.ts generate --count 5
- *   npx tsx scripts/generate-puzzles.ts stats
+ *   npx tsx scripts/generate-puzzles.ts backfill            # full 2,100-puzzle backfill
+ *   npx tsx scripts/generate-puzzles.ts backfill --limit 1  # only N batches (smoke test)
+ *   npx tsx scripts/generate-puzzles.ts merge               # merge staging -> puzzles.json + image-sources.json
+ *   npx tsx scripts/generate-puzzles.ts stats               # coverage of current puzzles.json
  *
- * Requires ANTHROPIC_API_KEY environment variable.
+ * Requires ANTHROPIC_API_KEY.
  *
- * - generate: Creates N puzzle candidates, saves to data/staging/
- * - stats: Shows coverage of existing puzzles (year range, tiers, difficulty)
+ * Output matches lib/types.ts exactly: NO image_* fields in the JSON; a `description`
+ * field; clues object with all 7 day keys where only the day matching day_of_week is
+ * populated (mon/tue/wed = 2 clues, thu/fri/sat = 1, sunday = 0).
+ *
+ * Image suggestions are kept separately in data/image-sources.json (keyed by puzzle id)
+ * for a later download pass — they are NOT written into puzzles.json.
  */
 
 import fs from "fs";
@@ -17,209 +23,513 @@ import Anthropic from "@anthropic-ai/sdk";
 
 const PUZZLES_PATH = path.join(__dirname, "../data/puzzles.json");
 const STAGING_DIR = path.join(__dirname, "../data/staging");
+const IMAGE_SOURCES_PATH = path.join(__dirname, "../data/image-sources.json");
+
+const RANGE_START = "2024-06-15";
+const RANGE_END = "2026-06-14"; // inclusive
+const SLOTS: (0 | 1 | 2)[] = [0, 1, 2];
+const DAYS = [
+  "sunday",
+  "monday",
+  "tuesday",
+  "wednesday",
+  "thursday",
+  "friday",
+  "saturday",
+] as const;
+type Day = (typeof DAYS)[number];
+
+const CLUES_NEEDED: Record<Day, number> = {
+  sunday: 0,
+  monday: 2,
+  tuesday: 2,
+  wednesday: 2,
+  thursday: 1,
+  friday: 1,
+  saturday: 1,
+};
+
+const MODEL = process.env.PUZZLE_MODEL || "claude-sonnet-4-5-20250929";
+const DAYS_PER_BATCH = 10; // 10 days * 3 slots = 30 puzzles/call
+const CONCURRENCY = 5;
+const MAX_TOKENS = 8000;
+const TEMPERATURE = 0.7;
+
+interface Clues {
+  monday: string[];
+  tuesday: string[];
+  wednesday: string[];
+  thursday: string[];
+  friday: string[];
+  saturday: string[];
+  sunday: string[];
+}
 
 interface Puzzle {
   id: number;
   date: string;
-  day_of_week: string;
+  slot: 0 | 1 | 2;
+  day_of_week: Day;
   event: string;
   event_formal: string;
   year: number;
-  image: string;
-  image_attribution: string;
-  image_source_url: string;
   headline: string;
+  description: string;
   tier: number;
   difficulty_rating: number;
-  clues: {
-    monday: [string, string];
-    tuesday: [string, string];
-    wednesday: [string, string];
-    thursday: string;
-    friday: string;
-    saturday: string;
-  };
+  clues: Clues;
   context_card: string;
 }
+
+interface ImageSuggestion {
+  commons_filename: string;
+  attribution: string;
+}
+
+// ---------- date helpers ----------
+
+function parseDate(s: string): Date {
+  const [y, m, d] = s.split("-").map(Number);
+  return new Date(Date.UTC(y, m - 1, d));
+}
+
+function fmtDate(d: Date): string {
+  return d.toISOString().split("T")[0];
+}
+
+function dayOfWeek(s: string): Day {
+  return DAYS[parseDate(s).getUTCDay()];
+}
+
+function allDatesInRange(): string[] {
+  const out: string[] = [];
+  const end = parseDate(RANGE_END);
+  for (let d = parseDate(RANGE_START); d <= end; d.setUTCDate(d.getUTCDate() + 1)) {
+    out.push(fmtDate(d));
+  }
+  return out;
+}
+
+// ---------- io ----------
 
 function loadPuzzles(): Puzzle[] {
   const raw = fs.readFileSync(PUZZLES_PATH, "utf-8");
   return JSON.parse(raw).puzzles;
 }
 
-function showStats() {
-  const puzzles = loadPuzzles();
-  console.log(`\nTotal puzzles: ${puzzles.length}`);
+function emptyClues(): Clues {
+  return {
+    monday: [],
+    tuesday: [],
+    wednesday: [],
+    thursday: [],
+    friday: [],
+    saturday: [],
+    sunday: [],
+  };
+}
 
-  // Year distribution
-  const years = puzzles.map((p) => p.year).sort((a, b) => a - b);
-  console.log(`Year range: ${years[0]} - ${years[years.length - 1]}`);
+// ---------- era rotation (spreads events across the 1900-2024 range) ----------
 
-  const decades: Record<string, number> = {};
-  for (const y of years) {
-    const decade = `${Math.floor(y / 10) * 10}s`;
-    decades[decade] = (decades[decade] || 0) + 1;
-  }
-  console.log("\nDecade distribution:");
-  for (const [decade, count] of Object.entries(decades).sort()) {
-    console.log(`  ${decade}: ${"█".repeat(count)} ${count}`);
-  }
+const ERAS = [
+  { label: "1900-1929 (turn of the century, WWI, Roaring Twenties)", min: 1900, max: 1929 },
+  { label: "1930-1949 (Great Depression, WWII, post-war)", min: 1930, max: 1949 },
+  { label: "1950-1969 (Cold War, Space Race, civil rights)", min: 1950, max: 1969 },
+  { label: "1970-1989 (détente, technology, cultural shifts)", min: 1970, max: 1989 },
+  { label: "1990-2009 (post-Cold War, digital revolution)", min: 1990, max: 2009 },
+  { label: "2010-2024 (modern era)", min: 2010, max: 2024 },
+];
 
-  // Tier distribution
-  const tiers: Record<number, number> = {};
-  for (const p of puzzles) {
-    tiers[p.tier] = (tiers[p.tier] || 0) + 1;
-  }
-  console.log("\nTier distribution:");
-  for (const [tier, count] of Object.entries(tiers).sort()) {
-    console.log(`  Tier ${tier}: ${count}`);
-  }
+const DOMAIN_FOCI = [
+  "lean toward politics & world affairs",
+  "lean toward science, technology & exploration",
+  "lean toward culture, sports & entertainment",
+  "lean toward art, literature & music",
+];
 
-  // Difficulty distribution
-  const difficulties: Record<number, number> = {};
-  for (const p of puzzles) {
-    difficulties[p.difficulty_rating] = (difficulties[p.difficulty_rating] || 0) + 1;
+// ---------- prompt ----------
+
+interface SlotSpec {
+  i: number;
+  date: string;
+  day: Day;
+  slot: 0 | 1 | 2;
+  cluesNeeded: number;
+}
+
+function buildPrompt(specs: SlotSpec[], batchIdx: number, usedEvents: string[]): string {
+  const era = ERAS[batchIdx % ERAS.length];
+  const domain = DOMAIN_FOCI[batchIdx % DOMAIN_FOCI.length];
+  const specList = specs
+    .map(
+      (s) =>
+        `  { "i": ${s.i}, "date": "${s.date}", "day_of_week": "${s.day}", "clues_needed": ${s.cluesNeeded} }`
+    )
+    .join(",\n");
+
+  const avoid =
+    usedEvents.length > 0
+      ? `\nDo NOT reuse any of these already-used events (pick different historical moments):\n${usedEvents
+          .slice(-400)
+          .join("; ")}\n`
+      : "";
+
+  return `You are generating historical events for Chronicle, a daily year-guessing game. Players see an event and guess the year it happened.
+
+I will give you a list of ${specs.length} slots to fill. For EACH slot, produce one historical event puzzle. Return a JSON array (no markdown, no commentary) where each object has this exact shape:
+
+{
+  "i": <the slot index from the input>,
+  "event": "Short display name (5-8 words)",
+  "event_formal": "Full formal name of the event",
+  "year": <integer 1900-2024>,
+  "headline": "One-line hook. Intriguing. NEVER mention the year.",
+  "description": "2-3 sentence paragraph. Do NOT put the year in the first sentence.",
+  "tier": 1 | 2 | 3,
+  "difficulty_rating": <integer 1-10>,
+  "clues": [<array of EXACTLY clues_needed strings; [] if clues_needed is 0>],
+  "context_card": "2-3 sentences in the voice of a smart friend who loves history. No year in the first sentence.",
+  "image_suggestion": { "commons_filename": "File:Plausible_Wikimedia_Name.jpg", "attribution": "Wikimedia Commons / Source" }
+}
+
+Slots to fill:
+[
+${specList}
+]
+
+Hard rules:
+- year must be an integer between 1900 and 2024 (never 2025+).
+- The event must be historically real and verifiable (has a Wikipedia page).
+- Clues must be historically accurate and interesting on their own, and must NEVER contain the year (no "19xx"/"20xx" digits) or state the exact year in words.
+- Each clue set must escalate broad -> narrow. For a single-clue day, give one tight clue. For "saturday" days, the single clue must be oblique and almost poetic, not a plain fact.
+- Output exactly clues_needed clue strings per slot (0, 1, or 2). Never more, never fewer.
+- The three slots that share the same date MUST be three DIFFERENT events.
+- Do not repeat an event across this batch.
+- This batch should emphasize the era ${era.label} and ${domain}, but variety within that is welcome. Mix geographies (Americas, Europe, Asia, Africa/Middle East/Oceania).
+- Tier 1 = era widely known; Tier 2 = obscure but fascinating; Tier 3 = anniversary/date-anchor event. Roughly 60% tier 1, 30% tier 2, 10% tier 3.
+${avoid}
+Return ONLY the JSON array of ${specs.length} objects.`;
+}
+
+// ---------- parsing & validation ----------
+
+function extractJsonArray(text: string): any[] | null {
+  // strip code fences if present
+  const fenced = text.match(/```(?:json)?\s*([\s\S]*?)```/);
+  const body = fenced ? fenced[1] : text;
+  const start = body.indexOf("[");
+  const end = body.lastIndexOf("]");
+  if (start === -1 || end === -1 || end <= start) return null;
+  try {
+    return JSON.parse(body.slice(start, end + 1));
+  } catch {
+    return null;
   }
-  console.log("\nDifficulty distribution:");
-  for (let d = 1; d <= 10; d++) {
-    const count = difficulties[d] || 0;
-    if (count > 0) {
-      console.log(`  ${d}: ${"█".repeat(count)} ${count}`);
+}
+
+function validateItem(raw: any, spec: SlotSpec): { ok: true } | { ok: false; reason: string } {
+  if (!raw || typeof raw !== "object") return { ok: false, reason: "not an object" };
+  for (const f of [
+    "event",
+    "event_formal",
+    "year",
+    "headline",
+    "description",
+    "tier",
+    "difficulty_rating",
+    "clues",
+    "context_card",
+  ]) {
+    if (!(f in raw)) return { ok: false, reason: `missing ${f}` };
+  }
+  if (typeof raw.year !== "number" || raw.year < 1900 || raw.year > 2024) {
+    return { ok: false, reason: `year ${raw.year} out of range` };
+  }
+  if (![1, 2, 3].includes(raw.tier)) return { ok: false, reason: `bad tier ${raw.tier}` };
+  if (!Array.isArray(raw.clues)) return { ok: false, reason: "clues not array" };
+  if (raw.clues.length !== spec.cluesNeeded) {
+    return { ok: false, reason: `clues length ${raw.clues.length} != ${spec.cluesNeeded}` };
+  }
+  // year leakage check in clues
+  for (const c of raw.clues) {
+    if (typeof c !== "string") return { ok: false, reason: "clue not string" };
+    const m = c.match(/\b(19\d{2}|20[0-2]\d)\b/g);
+    if (m && m.includes(String(raw.year))) return { ok: false, reason: "clue reveals year" };
+  }
+  // year leakage check in headline
+  const hm = String(raw.headline).match(/\b(19\d{2}|20[0-2]\d)\b/g);
+  if (hm && hm.includes(String(raw.year))) return { ok: false, reason: "headline reveals year" };
+  return { ok: true };
+}
+
+function assemble(raw: any, spec: SlotSpec, id: number): Puzzle {
+  const clues = emptyClues();
+  (clues as any)[spec.day] = raw.clues;
+  return {
+    id,
+    date: spec.date,
+    slot: spec.slot,
+    day_of_week: spec.day,
+    event: String(raw.event),
+    event_formal: String(raw.event_formal),
+    year: raw.year,
+    headline: String(raw.headline),
+    description: String(raw.description),
+    tier: raw.tier,
+    difficulty_rating: raw.difficulty_rating,
+    clues,
+    context_card: String(raw.context_card),
+  };
+}
+
+// ---------- generation ----------
+
+async function generateBatch(
+  client: Anthropic,
+  specs: SlotSpec[],
+  batchIdx: number,
+  usedEvents: string[]
+): Promise<{ spec: SlotSpec; raw: any }[]> {
+  let pending = [...specs];
+  const accepted: { spec: SlotSpec; raw: any }[] = [];
+
+  for (let attempt = 0; attempt < 3 && pending.length > 0; attempt++) {
+    const prompt = buildPrompt(pending, batchIdx, usedEvents);
+    let arr: any[] | null = null;
+    try {
+      const resp = await client.messages.create({
+        model: MODEL,
+        max_tokens: MAX_TOKENS,
+        temperature: TEMPERATURE,
+        messages: [{ role: "user", content: prompt }],
+      });
+      const text = resp.content
+        .filter((b: any): b is { type: "text"; text: string } => b.type === "text")
+        .map((b: any) => b.text)
+        .join("");
+      arr = extractJsonArray(text);
+    } catch (err) {
+      console.error(`  [batch ${batchIdx}] API error (attempt ${attempt + 1}): ${(err as Error).message}`);
+      await sleep(2000 * (attempt + 1));
+      continue;
+    }
+    if (!arr) {
+      console.error(`  [batch ${batchIdx}] no JSON array parsed (attempt ${attempt + 1})`);
+      continue;
+    }
+
+    const byIndex = new Map<number, any>();
+    for (const item of arr) {
+      if (item && typeof item.i === "number") byIndex.set(item.i, item);
+    }
+
+    const stillPending: SlotSpec[] = [];
+    for (const spec of pending) {
+      const raw = byIndex.get(spec.i);
+      const v = raw ? validateItem(raw, spec) : { ok: false as const, reason: "missing item" };
+      if (v.ok) {
+        accepted.push({ spec, raw });
+      } else {
+        stillPending.push(spec);
+      }
+    }
+    pending = stillPending;
+    if (pending.length > 0 && attempt < 2) {
+      console.error(`  [batch ${batchIdx}] retrying ${pending.length} invalid/missing slots`);
     }
   }
+
+  if (pending.length > 0) {
+    console.error(`  [batch ${batchIdx}] WARNING: ${pending.length} slots unfilled after retries`);
+  }
+  return accepted;
 }
 
-const GENERATION_PROMPT = `Generate a historical event puzzle for a daily guessing game called Chronicle. Players see an image and headline, then guess the year.
-
-Requirements:
-- Year must be between 1600 and 2025
-- Year must be verifiable on Wikipedia
-- The event should have a readily available public domain image on Wikimedia Commons
-- Clues must NOT reveal the year directly or narrow it to a specific year
-- The headline must NOT mention the year
-- The context card should have an editorial voice (not Wikipedia-style prose)
-- Mix of US, European, and globally significant events
-
-Generate the puzzle as a JSON object with this exact structure:
-{
-  "event": "Short display name",
-  "event_formal": "Formal name for context card",
-  "year": 1900,
-  "image_attribution": "Source, Wikimedia Commons",
-  "image_source_url": "https://commons.wikimedia.org/wiki/File:Example.jpg",
-  "headline": "One-line hook, NO year mentioned",
-  "tier": 1,
-  "difficulty_rating": 5,
-  "clues": {
-    "monday": ["Warm guiding clue 1", "Warm guiding clue 2"],
-    "tuesday": ["Breadcrumb clue 1", "Breadcrumb clue 2"],
-    "wednesday": ["Progressively tighter clue 1", "Progressively tighter clue 2"],
-    "thursday": "Single tight clue",
-    "friday": "Single tight clue",
-    "saturday": "Oblique, almost poetic clue"
-  },
-  "context_card": "2-3 sentences, editorial voice. Don't mention the year in the first sentence."
+function sleep(ms: number): Promise<void> {
+  return new Promise((r) => setTimeout(r, ms));
 }
 
-Tier guide: 1 = well-known globally, 2 = known to history enthusiasts, 3 = niche/surprising.
-Difficulty: 1 = very easy (most people know the year), 10 = very hard.`;
+async function runPool<T>(items: T[], concurrency: number, worker: (item: T, idx: number) => Promise<void>) {
+  let cursor = 0;
+  const runners = Array.from({ length: Math.min(concurrency, items.length) }, async () => {
+    while (cursor < items.length) {
+      const idx = cursor++;
+      await worker(items[idx], idx);
+    }
+  });
+  await Promise.all(runners);
+}
 
-async function generatePuzzles(count: number) {
+function stagingPath(idx: number): string {
+  return path.join(STAGING_DIR, `puzzles-batch-${String(idx).padStart(3, "0")}.json`);
+}
+
+async function backfill(limitBatches?: number) {
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) {
-    console.error("Error: ANTHROPIC_API_KEY environment variable not set.");
+    console.error("Error: ANTHROPIC_API_KEY not set.");
     process.exit(1);
   }
-
   const client = new Anthropic();
   fs.mkdirSync(STAGING_DIR, { recursive: true });
 
-  const existingPuzzles = loadPuzzles();
-  const existingYears = new Set(existingPuzzles.map((p) => p.year));
-  const existingEvents = existingPuzzles.map((p) => p.event.toLowerCase());
+  const existing = loadPuzzles();
+  const covered = new Set(existing.map((p) => `${p.date}#${p.slot}`));
 
-  console.log(`Generating ${count} puzzle candidates...`);
-  console.log(`Existing puzzles: ${existingPuzzles.length} (years: ${[...existingYears].sort().join(", ")})`);
-
-  for (let i = 0; i < count; i++) {
-    console.log(`\nGenerating puzzle ${i + 1}/${count}...`);
-
-    try {
-      const response = await client.messages.create({
-        model: "claude-sonnet-4-5-20250929",
-        max_tokens: 2048,
-        messages: [
-          {
-            role: "user",
-            content: `${GENERATION_PROMPT}\n\nAvoid these years already used: ${[...existingYears].join(", ")}.\nAvoid these events already used: ${existingEvents.join(", ")}.\n\nGenerate ONE unique puzzle now.`,
-          },
-        ],
-      });
-
-      const text = response.content
-        .filter((b): b is { type: "text"; text: string } => b.type === "text")
-        .map((b) => b.text)
-        .join("");
-
-      // Extract JSON from response
-      const jsonMatch = text.match(/\{[\s\S]*\}/);
-      if (!jsonMatch) {
-        console.error("  No JSON found in response");
-        continue;
+  const dates = allDatesInRange();
+  const missingByDate: { date: string; specs: Omit<SlotSpec, "i">[] }[] = [];
+  for (const date of dates) {
+    const day = dayOfWeek(date);
+    const specs: Omit<SlotSpec, "i">[] = [];
+    for (const slot of SLOTS) {
+      if (!covered.has(`${date}#${slot}`)) {
+        specs.push({ date, day, slot, cluesNeeded: CLUES_NEEDED[day] });
       }
+    }
+    if (specs.length > 0) missingByDate.push({ date, specs });
+  }
 
-      const puzzle = JSON.parse(jsonMatch[0]);
+  const totalMissing = missingByDate.reduce((n, d) => n + d.specs.length, 0);
+  console.log(`Range ${RANGE_START} -> ${RANGE_END}: ${dates.length} days`);
+  console.log(`Existing puzzles: ${existing.length}; missing slots to generate: ${totalMissing}`);
 
-      // Validate required fields
-      const required = ["event", "event_formal", "year", "headline", "clues", "context_card"];
-      const missing = required.filter((f) => !(f in puzzle));
-      if (missing.length > 0) {
-        console.error(`  Missing fields: ${missing.join(", ")}`);
-        continue;
+  const batches: { idx: number; specs: SlotSpec[] }[] = [];
+  for (let i = 0; i < missingByDate.length; i += DAYS_PER_BATCH) {
+    const group = missingByDate.slice(i, i + DAYS_PER_BATCH);
+    let localI = 0;
+    const specs: SlotSpec[] = [];
+    for (const d of group) {
+      for (const s of d.specs) {
+        specs.push({ ...s, i: localI++ });
       }
+    }
+    batches.push({ idx: batches.length, specs });
+  }
 
-      // Validate year range
-      if (puzzle.year < 1600 || puzzle.year > 2025) {
-        console.error(`  Year ${puzzle.year} out of range`);
-        continue;
-      }
+  let batchList = batches;
+  if (limitBatches && limitBatches > 0) batchList = batches.slice(0, limitBatches);
 
-      // Save to staging
-      const timestamp = new Date().toISOString().replace(/[:.]/g, "-");
-      const filename = `candidate-${timestamp}-${i}.json`;
-      const filepath = path.join(STAGING_DIR, filename);
-      fs.writeFileSync(filepath, JSON.stringify(puzzle, null, 2));
+  // skip batches whose staging file already exists (resumable)
+  const toRun = batchList.filter((b) => !fs.existsSync(stagingPath(b.idx)));
+  console.log(
+    `Total batches: ${batchList.length}; already staged: ${batchList.length - toRun.length}; to run: ${toRun.length}`
+  );
 
-      console.log(`  ${puzzle.event} (${puzzle.year}) → ${filename}`);
+  const usedEvents: string[] = existing.map((p) => p.event);
+  let completed = 0;
 
-      // Track for dedup within batch
-      existingYears.add(puzzle.year);
-      existingEvents.push(puzzle.event.toLowerCase());
-    } catch (err) {
-      console.error(`  Error: ${(err as Error).message}`);
+  await runPool(toRun, CONCURRENCY, async (batch) => {
+    const accepted = await generateBatch(client, batch.specs, batch.idx, usedEvents);
+    const payload = accepted.map(({ spec, raw }) => ({ spec, raw }));
+    fs.writeFileSync(stagingPath(batch.idx), JSON.stringify(payload, null, 2));
+    for (const { raw } of accepted) usedEvents.push(String(raw.event));
+    completed++;
+    console.log(
+      `  ✓ batch ${batch.idx}: ${accepted.length}/${batch.specs.length} slots (${completed}/${toRun.length} batches done)`
+    );
+  });
+
+  console.log(`\nGeneration done. Staging files in ${STAGING_DIR}. Run \`merge\` to assemble puzzles.json.`);
+}
+
+// ---------- merge ----------
+
+function merge() {
+  const existing = loadPuzzles();
+  const covered = new Set(existing.map((p) => `${p.date}#${p.slot}`));
+
+  const files = fs
+    .readdirSync(STAGING_DIR)
+    .filter((f) => /^puzzles-batch-\d+\.json$/.test(f))
+    .sort();
+
+  const staged: { spec: SlotSpec; raw: any }[] = [];
+  const seen = new Set<string>();
+  for (const f of files) {
+    const arr = JSON.parse(fs.readFileSync(path.join(STAGING_DIR, f), "utf-8"));
+    for (const item of arr) {
+      const key = `${item.spec.date}#${item.spec.slot}`;
+      if (covered.has(key) || seen.has(key)) continue;
+      seen.add(key);
+      staged.push(item);
     }
   }
 
-  console.log(`\nDone. Candidates saved to data/staging/`);
-  console.log("Review each candidate before adding to puzzles.json.");
+  staged.sort((a, b) =>
+    a.spec.date === b.spec.date ? a.spec.slot - b.spec.slot : a.spec.date < b.spec.date ? -1 : 1
+  );
+
+  let nextId = existing.reduce((m, p) => Math.max(m, p.id), 0) + 1;
+  const newPuzzles: Puzzle[] = [];
+  const imageSources: Record<number, { commonsUrl: string; attribution: string }> = {};
+
+  for (const { spec, raw } of staged) {
+    const v = validateItem(raw, spec);
+    if (!v.ok) {
+      console.error(`  skipping ${spec.date}#${spec.slot}: ${v.reason}`);
+      continue;
+    }
+    const id = nextId++;
+    newPuzzles.push(assemble(raw, spec, id));
+    const sug: ImageSuggestion | undefined = raw.image_suggestion;
+    const fname = sug?.commons_filename || `File:${String(raw.event).replace(/\s+/g, "_")}.jpg`;
+    const cleanName = fname.startsWith("File:") ? fname.slice(5) : fname;
+    imageSources[id] = {
+      commonsUrl: `https://commons.wikimedia.org/wiki/File:${encodeURIComponent(cleanName)}`,
+      attribution: sug?.attribution || "Wikimedia Commons",
+    };
+  }
+
+  const all = [...existing, ...newPuzzles];
+  fs.writeFileSync(PUZZLES_PATH, JSON.stringify({ puzzles: all }, null, 2));
+  fs.writeFileSync(IMAGE_SOURCES_PATH, JSON.stringify(imageSources, null, 2));
+
+  console.log(`Merged: ${existing.length} existing + ${newPuzzles.length} new = ${all.length} total`);
+  console.log(`Image sources written: ${Object.keys(imageSources).length} -> ${IMAGE_SOURCES_PATH}`);
+
+  // integrity report
+  const keys = new Set<string>();
+  let dups = 0;
+  for (const p of all) {
+    const k = `${p.date}#${p.slot}`;
+    if (keys.has(k)) dups++;
+    keys.add(k);
+  }
+  const sortedDates = all.map((p) => p.date).sort();
+  console.log(`Date range: ${sortedDates[0]} -> ${sortedDates[sortedDates.length - 1]}`);
+  console.log(`Duplicate (date,slot) pairs: ${dups}`);
 }
 
-// CLI
+// ---------- stats ----------
+
+function showStats() {
+  const puzzles = loadPuzzles();
+  console.log(`\nTotal puzzles: ${puzzles.length}`);
+  const years = puzzles.map((p) => p.year).sort((a, b) => a - b);
+  console.log(`Year range: ${years[0]} - ${years[years.length - 1]}`);
+  const tiers: Record<number, number> = {};
+  for (const p of puzzles) tiers[p.tier] = (tiers[p.tier] || 0) + 1;
+  console.log("Tiers:", tiers);
+  const dates = puzzles.map((p) => p.date).sort();
+  console.log(`Date range: ${dates[0]} -> ${dates[dates.length - 1]}`);
+}
+
+// ---------- CLI ----------
+
 const args = process.argv.slice(2);
 const command = args[0];
 
 if (command === "stats") {
   showStats();
-} else if (command === "generate") {
-  const countIdx = args.indexOf("--count");
-  const count = countIdx >= 0 ? parseInt(args[countIdx + 1], 10) : 5;
-  if (isNaN(count) || count < 1) {
-    console.error("Invalid count");
-    process.exit(1);
-  }
-  generatePuzzles(count);
+} else if (command === "backfill") {
+  const li = args.indexOf("--limit");
+  const limit = li >= 0 ? parseInt(args[li + 1], 10) : undefined;
+  backfill(limit);
+} else if (command === "merge") {
+  merge();
 } else {
   console.log("Usage:");
-  console.log("  npx tsx scripts/generate-puzzles.ts generate --count 5");
+  console.log("  npx tsx scripts/generate-puzzles.ts backfill [--limit N]");
+  console.log("  npx tsx scripts/generate-puzzles.ts merge");
   console.log("  npx tsx scripts/generate-puzzles.ts stats");
 }

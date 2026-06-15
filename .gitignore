@@ -35,3 +35,6 @@ next-env.d.ts
 
 # Puzzle images — not rendered in UI, download via: npm run download-images
 public/images/
+
+# Puzzle generation staging (intermediate batch output)
+data/staging/
