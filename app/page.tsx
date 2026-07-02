@@ -67,8 +67,18 @@ export default function Home() {
 
   if (puzzles.length === 0) {
     return (
-      <main className="min-h-screen flex items-center justify-center">
-        <p className="text-[var(--text-secondary)]">Loading...</p>
+      <main className="min-h-screen flex items-center justify-center p-4">
+        <div className="text-center max-w-sm">
+          <h1
+            className="text-2xl font-semibold mb-2"
+            style={{ fontFamily: "var(--font-serif)" }}
+          >
+            Chronicle
+          </h1>
+          <p className="text-[var(--text-secondary)]">
+            Today&apos;s puzzle isn&apos;t available yet. Check back soon.
+          </p>
+        </div>
       </main>
     );
   }

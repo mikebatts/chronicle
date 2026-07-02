@@ -20,39 +20,17 @@ export function getTodayPuzzle(): Puzzle {
 
 export function getTodayPuzzles(): Puzzle[] {
   const today = getLocalDate();
-  // Get all 3 slots for today, fill missing slots with next available
   const todaySlots = [0, 1, 2].map((slot) =>
     puzzles.find((p) => p.date === today && p.slot === slot)
   );
 
-  // For missing slots, get next day's puzzle or use previous
-  const result: Puzzle[] = [];
-  let fallbackDate = new Date(today);
-
-  for (let i = 0; i < 3; i++) {
-    if (todaySlots[i]) {
-      result.push(todaySlots[i]!);
-    } else {
-      // Find next puzzle for this slot
-      fallbackDate = new Date(today);
-      fallbackDate.setDate(fallbackDate.getDate() + i);
-      const fallbackStr = fallbackDate.toISOString().split("T")[0];
-      const fallback = puzzles.find(
-        (p) => p.date === fallbackStr && p.slot === i
-      );
-      if (fallback) {
-        result.push(fallback);
-      } else {
-        // Use first puzzle as ultimate fallback with modified slot
-        const base = puzzles[0];
-        if (base) {
-          result.push({ ...base, date: fallbackStr, slot: i as 0 | 1 | 2 });
-        }
-      }
-    }
+  // All-or-nothing: Game renders exactly 3 slots. If any slot is missing for
+  // today, report no puzzle rather than recycling content from another date.
+  if (todaySlots.some((p) => !p)) {
+    return [];
   }
 
-  return result;
+  return todaySlots as Puzzle[];
 }
 
 export function getPuzzleByDate(date: string, slot: 0 | 1 | 2 = 0): Puzzle | undefined {

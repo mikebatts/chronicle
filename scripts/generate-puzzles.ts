@@ -19,14 +19,14 @@
 
 import fs from "fs";
 import path from "path";
-import Anthropic from "@anthropic-ai/sdk";
+import { spawn } from "child_process";
 
 const PUZZLES_PATH = path.join(__dirname, "../data/puzzles.json");
 const STAGING_DIR = path.join(__dirname, "../data/staging");
 const IMAGE_SOURCES_PATH = path.join(__dirname, "../data/image-sources.json");
 
-const RANGE_START = "2024-06-15";
-const RANGE_END = "2026-06-14"; // inclusive
+let RANGE_START = "2024-06-15";
+let RANGE_END = "2026-06-14"; // inclusive; override with --from/--to
 const SLOTS: (0 | 1 | 2)[] = [0, 1, 2];
 const DAYS = [
   "sunday",
@@ -49,11 +49,74 @@ const CLUES_NEEDED: Record<Day, number> = {
   saturday: 1,
 };
 
-const MODEL = process.env.PUZZLE_MODEL || "claude-sonnet-4-5-20250929";
-const DAYS_PER_BATCH = 10; // 10 days * 3 slots = 30 puzzles/call
-const CONCURRENCY = 5;
+// Backend: "cli" (default) shells out to the Claude Code CLI on the Max
+// subscription — no per-token cost. Set PUZZLE_BACKEND=openrouter to use the
+// OpenRouter HTTP API instead (requires OPENROUTER_API_KEY).
+const BACKEND = process.env.PUZZLE_BACKEND || "cli";
+const MODEL =
+  process.env.PUZZLE_MODEL ||
+  (BACKEND === "cli" ? "claude-sonnet-4-6" : "anthropic/claude-sonnet-4.5");
+const OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions";
+const DAYS_PER_BATCH = BACKEND === "cli" ? 3 : 10; // CLI: 9 puzzles/call keeps each call fast
+const CONCURRENCY = BACKEND === "cli" ? 3 : 5;
 const MAX_TOKENS = 8000;
 const TEMPERATURE = 0.7;
+const CLI_TIMEOUT_MS = 15 * 60 * 1000;
+
+function callClaudeCLI(prompt: string): Promise<string> {
+  return new Promise((resolve, reject) => {
+    const env = { ...process.env };
+    delete env.ANTHROPIC_API_KEY; // CLI must use its own subscription auth
+    const child = spawn("claude", ["--model", MODEL, "-p"], { env });
+    let out = "";
+    let err = "";
+    const timer = setTimeout(() => {
+      child.kill("SIGKILL");
+      reject(new Error(`claude CLI timed out after ${CLI_TIMEOUT_MS / 1000}s`));
+    }, CLI_TIMEOUT_MS);
+    child.stdout.on("data", (d) => (out += d));
+    child.stderr.on("data", (d) => (err += d));
+    child.on("error", (e) => {
+      clearTimeout(timer);
+      reject(e);
+    });
+    child.on("close", (code) => {
+      clearTimeout(timer);
+      if (code !== 0) reject(new Error(`claude CLI exit ${code}: ${err.slice(0, 200)}`));
+      else resolve(out);
+    });
+    child.stdin.write(prompt);
+    child.stdin.end();
+  });
+}
+
+async function callOpenRouter(prompt: string): Promise<string> {
+  const key = process.env.OPENROUTER_API_KEY;
+  if (!key) throw new Error("OPENROUTER_API_KEY not set");
+  const resp = await fetch(OPENROUTER_URL, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${key}`,
+      "content-type": "application/json",
+    },
+    body: JSON.stringify({
+      model: MODEL,
+      max_tokens: MAX_TOKENS,
+      temperature: TEMPERATURE,
+      messages: [{ role: "user", content: prompt }],
+    }),
+  });
+  if (!resp.ok) {
+    const body = await resp.text();
+    throw new Error(`${resp.status} ${body.slice(0, 200)}`);
+  }
+  const j: any = await resp.json();
+  return j?.choices?.[0]?.message?.content ?? "";
+}
+
+async function callLLM(prompt: string): Promise<string> {
+  return BACKEND === "cli" ? callClaudeCLI(prompt) : callOpenRouter(prompt);
+}
 
 interface Clues {
   monday: string[];
@@ -285,7 +348,6 @@ function assemble(raw: any, spec: SlotSpec, id: number): Puzzle {
 // ---------- generation ----------
 
 async function generateBatch(
-  client: Anthropic,
   specs: SlotSpec[],
   batchIdx: number,
   usedEvents: string[]
@@ -297,16 +359,7 @@ async function generateBatch(
     const prompt = buildPrompt(pending, batchIdx, usedEvents);
     let arr: any[] | null = null;
     try {
-      const resp = await client.messages.create({
-        model: MODEL,
-        max_tokens: MAX_TOKENS,
-        temperature: TEMPERATURE,
-        messages: [{ role: "user", content: prompt }],
-      });
-      const text = resp.content
-        .filter((b: any): b is { type: "text"; text: string } => b.type === "text")
-        .map((b: any) => b.text)
-        .join("");
+      const text = await callLLM(prompt);
       arr = extractJsonArray(text);
     } catch (err) {
       console.error(`  [batch ${batchIdx}] API error (attempt ${attempt + 1}): ${(err as Error).message}`);
@@ -365,12 +418,11 @@ function stagingPath(idx: number): string {
 }
 
 async function backfill(limitBatches?: number) {
-  const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) {
-    console.error("Error: ANTHROPIC_API_KEY not set.");
+  if (BACKEND !== "cli" && !process.env.OPENROUTER_API_KEY) {
+    console.error("Error: OPENROUTER_API_KEY not set.");
     process.exit(1);
   }
-  const client = new Anthropic();
+  console.log(`Using model: ${MODEL} via ${BACKEND === "cli" ? "Claude CLI (subscription)" : "OpenRouter"}`);
   fs.mkdirSync(STAGING_DIR, { recursive: true });
 
   const existing = loadPuzzles();
@@ -419,7 +471,7 @@ async function backfill(limitBatches?: number) {
   let completed = 0;
 
   await runPool(toRun, CONCURRENCY, async (batch) => {
-    const accepted = await generateBatch(client, batch.specs, batch.idx, usedEvents);
+    const accepted = await generateBatch(batch.specs, batch.idx, usedEvents);
     const payload = accepted.map(({ spec, raw }) => ({ spec, raw }));
     fs.writeFileSync(stagingPath(batch.idx), JSON.stringify(payload, null, 2));
     for (const { raw } of accepted) usedEvents.push(String(raw.event));
@@ -519,6 +571,15 @@ function showStats() {
 const args = process.argv.slice(2);
 const command = args[0];
 
+const fromIdx = args.indexOf("--from");
+if (fromIdx >= 0) RANGE_START = args[fromIdx + 1];
+const toIdx = args.indexOf("--to");
+if (toIdx >= 0) RANGE_END = args[toIdx + 1];
+if (!/^\d{4}-\d{2}-\d{2}$/.test(RANGE_START) || !/^\d{4}-\d{2}-\d{2}$/.test(RANGE_END)) {
+  console.error("Error: --from/--to must be YYYY-MM-DD");
+  process.exit(1);
+}
+
 if (command === "stats") {
   showStats();
 } else if (command === "backfill") {
@@ -529,7 +590,7 @@ if (command === "stats") {
   merge();
 } else {
   console.log("Usage:");
-  console.log("  npx tsx scripts/generate-puzzles.ts backfill [--limit N]");
+  console.log("  npx tsx scripts/generate-puzzles.ts backfill [--limit N] [--from YYYY-MM-DD --to YYYY-MM-DD]");
   console.log("  npx tsx scripts/generate-puzzles.ts merge");
   console.log("  npx tsx scripts/generate-puzzles.ts stats");
 }
