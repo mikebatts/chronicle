@@ -246,12 +246,12 @@ I will give you a list of ${specs.length} slots to fill. For EACH slot, produce 
   "event": "Short display name (5-8 words)",
   "event_formal": "Full formal name of the event",
   "year": <integer 1900-2024>,
-  "headline": "One-line hook. Intriguing. NEVER mention the year.",
-  "description": "2-3 sentence paragraph. Do NOT put the year in the first sentence.",
+  "headline": "One-line hook. Intriguing. NEVER mention any year.",
+  "description": "2-3 sentence paragraph. NEVER mention any 4-digit year — players must guess the year.",
   "tier": 1 | 2 | 3,
   "difficulty_rating": <integer 1-10>,
   "clues": [<array of EXACTLY clues_needed strings; [] if clues_needed is 0>],
-  "context_card": "2-3 sentences in the voice of a smart friend who loves history. No year in the first sentence.",
+  "context_card": "2-3 sentences in the voice of a smart friend who loves history. NEVER mention any 4-digit year.",
   "image_suggestion": { "commons_filename": "File:Plausible_Wikimedia_Name.jpg", "attribution": "Wikimedia Commons / Source" }
 }
 
@@ -263,7 +263,7 @@ ${specList}
 Hard rules:
 - year must be an integer between 1900 and 2024 (never 2025+).
 - The event must be historically real and verifiable (has a Wikipedia page).
-- Clues must be historically accurate and interesting on their own, and must NEVER contain the year (no "19xx"/"20xx" digits) or state the exact year in words.
+- The game is YEAR-GUESSING: no 4-digit year (1000-2099) may appear ANYWHERE in event, headline, description, context_card, or clues — not the answer year and not any other year. Use relative phrasing instead ("a decade after the war", "at the height of the Cold War"). Never state the year in words either.
 - Each clue set must escalate broad -> narrow. For a single-clue day, give one tight clue. For "saturday" days, the single clue must be oblique and almost poetic, not a plain fact.
 - Output exactly clues_needed clue strings per slot (0, 1, or 2). Never more, never fewer.
 - The three slots that share the same date MUST be three DIFFERENT events.
@@ -313,15 +313,15 @@ function validateItem(raw: any, spec: SlotSpec): { ok: true } | { ok: false; rea
   if (raw.clues.length !== spec.cluesNeeded) {
     return { ok: false, reason: `clues length ${raw.clues.length} != ${spec.cluesNeeded}` };
   }
-  // year leakage check in clues
+  // year leakage check: NO 4-digit year allowed in any player-visible text
+  const YEAR_LEAK = /\b(1[0-9]{3}|20[0-9]{2})\b/;
   for (const c of raw.clues) {
     if (typeof c !== "string") return { ok: false, reason: "clue not string" };
-    const m = c.match(/\b(19\d{2}|20[0-2]\d)\b/g);
-    if (m && m.includes(String(raw.year))) return { ok: false, reason: "clue reveals year" };
+    if (YEAR_LEAK.test(c)) return { ok: false, reason: "clue contains a year" };
   }
-  // year leakage check in headline
-  const hm = String(raw.headline).match(/\b(19\d{2}|20[0-2]\d)\b/g);
-  if (hm && hm.includes(String(raw.year))) return { ok: false, reason: "headline reveals year" };
+  for (const f of ["event", "headline", "description", "context_card"] as const) {
+    if (YEAR_LEAK.test(String(raw[f]))) return { ok: false, reason: `${f} contains a year` };
+  }
   return { ok: true };
 }
 
